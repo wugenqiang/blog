@@ -459,6 +459,11 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MzA4MC8xOTYyNg=="></div>
+    </div>
+
+  
 
 
 
@@ -597,6 +602,20 @@
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://wugenqiang.github.io/" title="https://wugenqiang.github.io/">EnjoyToShare</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -756,7 +775,51 @@
   
 
   
+  
 
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true# 验证码 默认为false,
+    notify: true# 邮箱通知 , https://github.com/xCss/Valine/wiki，默认为false,
+    appId: 'j5U5IGzSMQcvLyhW1Y6opNX6-gzGzoHsz',
+    appKey: 'orYWc8ltQOxyT6Y9HEQdrizt',
+    placeholder: 'Just go go ^_^',
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true
+  });
+</script>
+
+
+
+
+  
+    <script>
+  window.livereOptions = {
+    refer: 'about/index.html'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
 
   
 
