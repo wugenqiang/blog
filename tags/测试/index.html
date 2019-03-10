@@ -131,7 +131,7 @@
   <meta name="description" content="This is MyBlog Created and Used By WuGenQiang">
 <meta property="og:type" content="website">
 <meta property="og:title" content="EnjoyToShare">
-<meta property="og:url" content="http://wugenqiang.github.io/categories/线性代数/index.html">
+<meta property="og:url" content="http://wugenqiang.github.io/tags/测试/index.html">
 <meta property="og:site_name" content="EnjoyToShare">
 <meta property="og:description" content="This is MyBlog Created and Used By WuGenQiang">
 <meta property="og:locale" content="zh-CN">
@@ -144,7 +144,7 @@
 
 
 
-  <link rel="canonical" href="http://wugenqiang.github.io/categories/线性代数/">
+  <link rel="canonical" href="http://wugenqiang.github.io/tags/测试/">
 
 
 
@@ -154,7 +154,7 @@
   };
 </script>
 
-  <title>分类: 线性代数 | EnjoyToShare</title>
+  <title>标签: 测试 | EnjoyToShare</title>
   
 
 
@@ -262,7 +262,7 @@
         
         
           
-          <li class="menu-item menu-item-tags">
+          <li class="menu-item menu-item-tags menu-item-active">
 
     
     
@@ -279,7 +279,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -473,11 +473,11 @@
   
   
   
-  <div class="post-block category">
+  <div class="post-block tag">
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>线性代数<small>分类</small>
+        <h1>测试<small>标签</small>
         </h1>
       </div>
 
@@ -491,7 +491,7 @@
         
           <a class="post-title-link" href="/2019/03/11/test/" itemprop="url">
             
-              <span itemprop="name">考研</span>
+              <span itemprop="name">测试使用</span>
             
           </a>
         
@@ -577,6 +577,8 @@
                     
                       
                     
+                      
+                    
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   
@@ -589,6 +591,8 @@
                 <div class="site-state-item site-state-tags">
                   
                     
+                    
+                      
                     
                       
                     
@@ -1239,6 +1243,39 @@ setInterval("createtime()",250);
 
 
   
+<style>
+.pdfobject-container {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}
+</style>
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 

@@ -135,7 +135,7 @@
 <meta property="og:site_name" content="EnjoyToShare">
 <meta property="og:description" content="外部链接：  https://github.com/wugenqiang/dataToGithub/blob/master/books/Java/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C(%E6%AD%A3%E5%BC%8F%E7%89%88).pdf   本地连接：">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-10T06:56:21.750Z">
+<meta property="og:updated_time" content="2019-03-10T07:27:10.967Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="book">
 <meta name="twitter:description" content="外部链接：  https://github.com/wugenqiang/dataToGithub/blob/master/books/Java/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C(%E6%AD%A3%E5%BC%8F%E7%89%88).pdf   本地连接：">
@@ -502,7 +502,7 @@
 <ul>
 <li><a href="https://github.com/wugenqiang/dataToGithub/blob/master/books/Java/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C(%E6%AD%A3%E5%BC%8F%E7%89%88).pdf" target="_blank" rel="noopener">https://github.com/wugenqiang/dataToGithub/blob/master/books/Java/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C(%E6%AD%A3%E5%BC%8F%E7%89%88).pdf</a></li>
 </ul>
-<div class="pdf" target="https://github.com/wugenqiang/dataToGithub/blob/master/books/Java/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C(%E6%AD%A3%E5%BC%8F%E7%89%88).pdf" height></div>
+<div class="pdf" target="https://jfds-1252952517.cos.ap-chengdu.myqcloud.com/ml/xgboost.pdf" height></div>
 <p>本地连接：<br><div class="pdf" target="./pdf名字.pdf" height></div></p>
 
         
@@ -588,6 +588,8 @@
                     
                       
                     
+                      
+                    
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   
@@ -600,6 +602,8 @@
                 <div class="site-state-item site-state-tags">
                   
                     
+                    
+                      
                     
                       
                     
@@ -1271,6 +1275,39 @@ setInterval("createtime()",250);
 
 
   
+<style>
+.pdfobject-container {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}
+</style>
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 
