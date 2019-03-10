@@ -146,14 +146,14 @@
 
   <meta name="description" content="This is MyBlog Created and Used By WuGenQiang">
 <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
+<meta property="og:title" content="华丽标签秀">
 <meta property="og:url" content="http://wugenqiang.github.io/tags/index.html">
 <meta property="og:site_name" content="EnjoyToShare">
 <meta property="og:description" content="This is MyBlog Created and Used By WuGenQiang">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-09T16:54:01.779Z">
+<meta property="og:updated_time" content="2019-03-10T17:02:55.338Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="华丽标签秀">
 <meta name="twitter:description" content="This is MyBlog Created and Used By WuGenQiang">
 
 
@@ -171,7 +171,7 @@
   };
 </script>
 
-  <title>tags | EnjoyToShare</title>
+  <title>华丽标签秀 | EnjoyToShare</title>
   
 
 
@@ -330,7 +330,7 @@
         
         
           
-          <li class="menu-item menu-item-摄影">
+          <li class="menu-item menu-item-photos">
 
     
     
@@ -347,7 +347,7 @@
         
         
           
-          <li class="menu-item menu-item-书籍">
+          <li class="menu-item menu-item-book">
 
     
     
@@ -381,7 +381,7 @@
         
         
           
-          <li class="menu-item menu-item-告白">
+          <li class="menu-item menu-item-love">
 
     
     
@@ -392,6 +392,23 @@
     
 
     <a href="/love/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>告白</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-guestbook">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/guestbook" rel="section"><i class="menu-item-icon fa fa-fw fa-amazon"></i> <br>留言</a>
 
   </li>
 
@@ -478,6 +495,9 @@
       
       
     
+      
+      
+    
     
 
   
@@ -494,7 +514,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">tags
+<h1 class="post-title" itemprop="name headline">华丽标签秀
 
 </h1>
 
@@ -514,7 +534,59 @@
       <div class="post-body han-init-context">
         
         
-          
+          <div class="tag-cloud">
+            <!-- <div class="tag-cloud-title">
+                目前共计 4 个标签
+            </div> -->
+            <div class="tag-cloud-tags" id="tags">
+              <a href="/tags/HelloWorld/" style="font-size: 16px; color: #fff">HelloWorld</a> <a href="/tags/Hexo/" style="font-size: 16px; color: #fff">Hexo</a> <a href="/tags/数学/" style="font-size: 16px; color: #fff">数学</a> <a href="/tags/考研/" style="font-size: 16px; color: #fff">考研</a>
+            </div>
+          </div>
+          <br>
+
+          <script type="text/javascript">
+             var alltags=document.getElementById('tags');
+             var tags=alltags.getElementsByTagName('a');
+
+             for (var i = tags.length - 1; i >= 0; i--) {
+               var r=Math.floor(Math.random()*75+130);
+               var g=Math.floor(Math.random()*75+100);
+               var b=Math.floor(Math.random()*75+80);
+               tags[i].style.background = "rgb("+r+","+g+","+b+")";
+             }
+          </script>
+
+          <style type="text/css">
+              div#posts.posts-expand .tag-cloud a{
+             background-color: #f5f7f1;
+             border-radius: 6px;
+             padding-left: 10px;
+             padding-right: 10px;
+             margin-top: 18px;
+
+           }
+
+           .tag-cloud a{
+             background-color: #f5f7f1;
+             border-radius: 4px;
+             padding-right: 5px;
+             padding-left: 5px;
+             margin-right: 5px;
+             margin-left: 0px;
+             margin-top: 8px;
+             margin-bottom: 0px;
+
+           }
+
+           .tag-cloud a:before{
+                content: "📜";
+           }
+
+           .tag-cloud-tags{
+             text-align: left;
+             counter-reset: tags;
+           }
+          </style>
         
       </div>
       
@@ -591,6 +663,10 @@
                 <div class="site-state-item site-state-categories">
                   
                     
+                      <a href="/categories/">
+                    
+                  
+                    
                     
                       
                     
@@ -600,7 +676,7 @@
                     
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -608,6 +684,10 @@
                 
                 
                 <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
                   
                     
                     
@@ -621,7 +701,7 @@
                     
                     <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -912,6 +992,13 @@ setInterval("createtime()",250);
     pageSize: '10' || 10,
     visitor: true
   });
+  //新增以下代码即可，可以移除.info下所有子节点。
+  var infoEle = document.querySelector('#comments .info');
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+    infoEle.childNodes.forEach(function(item) {
+      item.parentNode.removeChild(item);
+    });
+   }
 </script>
 
 

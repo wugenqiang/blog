@@ -151,7 +151,7 @@
 <meta property="og:site_name" content="EnjoyToShare">
 <meta property="og:description" content="This is MyBlog Created and Used By WuGenQiang">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-10T04:22:19.688Z">
+<meta property="og:updated_time" content="2019-03-10T16:46:59.959Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
 <meta name="twitter:description" content="This is MyBlog Created and Used By WuGenQiang">
@@ -330,7 +330,7 @@
         
         
           
-          <li class="menu-item menu-item-摄影">
+          <li class="menu-item menu-item-photos">
 
     
     
@@ -347,7 +347,7 @@
         
         
           
-          <li class="menu-item menu-item-书籍">
+          <li class="menu-item menu-item-book">
 
     
     
@@ -381,7 +381,7 @@
         
         
           
-          <li class="menu-item menu-item-告白">
+          <li class="menu-item menu-item-love">
 
     
     
@@ -392,6 +392,23 @@
     
 
     <a href="/love/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>告白</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-guestbook">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/guestbook" rel="section"><i class="menu-item-icon fa fa-fw fa-amazon"></i> <br>留言</a>
 
   </li>
 
@@ -478,6 +495,9 @@
       
       
     
+      
+      
+    
     
 
   
@@ -514,7 +534,28 @@
       <div class="post-body han-init-context">
         
         
-          
+          <div class="category-all-page">
+            <div class="category-all-title">
+              
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+              目前共计 3 个分类
+            </div>
+            <div class="category-all">
+              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/HelloWorld/">HelloWorld</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/考研数学/">考研数学</a><span class="category-list-count">1</span></li></ul>
+            </div>
+          </div>
         
       </div>
       
@@ -591,6 +632,10 @@
                 <div class="site-state-item site-state-categories">
                   
                     
+                      <a href="/categories/">
+                    
+                  
+                    
                     
                       
                     
@@ -600,7 +645,7 @@
                     
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -608,6 +653,10 @@
                 
                 
                 <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
                   
                     
                     
@@ -621,7 +670,7 @@
                     
                     <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -912,6 +961,13 @@ setInterval("createtime()",250);
     pageSize: '10' || 10,
     visitor: true
   });
+  //新增以下代码即可，可以移除.info下所有子节点。
+  var infoEle = document.querySelector('#comments .info');
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+    infoEle.childNodes.forEach(function(item) {
+      item.parentNode.removeChild(item);
+    });
+   }
 </script>
 
 
