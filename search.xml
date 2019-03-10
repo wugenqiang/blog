@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[测试使用]]></title>
-    <url>%2F2019%2F03%2F11%2Ftest%2F</url>
-    <content type="text"><![CDATA[测试]]></content>
+    <title><![CDATA[数学笔记]]></title>
+    <url>%2F2019%2F03%2F11%2Fmath%2F</url>
+    <content type="text"><![CDATA[数学资料汇总 #高等数学 #线性代数]]></content>
       <categories>
-        <category>测试</category>
+        <category>考研数学</category>
       </categories>
       <tags>
-        <tag>测试</tag>
+        <tag>数学</tag>
+        <tag>考研</tag>
       </tags>
   </entry>
   <entry>
