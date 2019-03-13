@@ -47,16 +47,6 @@
 
 
 
-
-
-
-  
-  
-  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5">
-
-
-
-
   
   
   
@@ -118,7 +108,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
-    fancybox: true,
+    fancybox: false,
     fastclick: false,
     lazyload: false,
     tabs: true,
@@ -155,17 +145,17 @@
     }
 </style>
 
-  <meta name="description" content="Photos    图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($scr">
+  <meta name="description" content="Photos    待续     图片正在加载中…    (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($s">
 <meta property="og:type" content="website">
 <meta property="og:title" content="我的相册">
 <meta property="og:url" content="http://wugenqiang.github.io/photos/index.html">
 <meta property="og:site_name" content="EnjoyToShare">
-<meta property="og:description" content="Photos    图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($scr">
+<meta property="og:description" content="Photos    待续     图片正在加载中…    (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($s">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-13T16:44:44.644Z">
+<meta property="og:updated_time" content="2019-03-13T17:04:41.163Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的相册">
-<meta name="twitter:description" content="Photos    图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($scr">
+<meta name="twitter:description" content="Photos    待续     图片正在加载中…    (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($s">
 
 
 
@@ -543,10 +533,9 @@
       <div class="post-body han-init-context">
         
         
-          <p><link rel="stylesheet" href="./ins.css"><br> <link rel="stylesheet" href="./photoswipe.css"> </p>
-<p><link rel="stylesheet" href="./default-skin/default-skin.css"> </p>
-<div class="photos-btn-wrap"><br>    <a class="photos-btn active" href="javascript:void(0)" target="_blank" rel="noopener">Photos</a><br></div><br><div class="instagram itemscope"><br>    <a href="https://wugenqiang.github.io" target="_blank" class="open-ins">图片正在加载中…</a><br></div>
-
+          <p><link rel="stylesheet" href="./ins.css"></p>
+<p><div class="photos-btn-wrap"><br>    <a class="photos-btn active" href="javascript:void(0)" target="_blank" rel="noopener">Photos</a><br>    <a class="photos-btn" href="#">待续</a><br></div></p>
+<p><div class="instagram itemscope"><br>    <a href="https://wugenqiang.github.io" target="_blank" class="open-ins">图片正在加载中…</a><br></div></p>
 <script>
   (function() {
     var loadScript = function(path) {
@@ -555,10 +544,11 @@
       $script.setAttribute('src', path)
     }
     setTimeout(function() {
-        loadScript('./ins.js')
+      loadScript('./ins.js')
     }, 0)
   })()
 </script>
+
         
       </div>
       
@@ -887,8 +877,6 @@ setInterval("createtime()",250);
 
 
 
-  
-
 
 
   
@@ -918,9 +906,6 @@ setInterval("createtime()",250);
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  
-  <script src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
 
   
 
@@ -946,8 +931,7 @@ setInterval("createtime()",250);
   <script src="/js/src/scrollspy.js?v=7.0.1"></script>
 <script src="/js/src/post-details.js?v=7.0.1"></script>
 
-<script type="text/javascript" src="/js/src/photoswipe.min.js?v="></script>
-<script type="text/javascript" src="/js/src/photoswipe-ui-default.min.js?v="></script>
+
 
 
 
@@ -1488,49 +1472,5 @@ if ($('body').find('div.pdf').length) {
   <div id="aplayer"></div>
   <script type="text/javascript" src="/dist/APlayer.min.js"></script>
   <script type="text/javascript" src="/dist/music.js"></script>
-  <script src="/js/src/photoswipe.min.js?v="></script>
-  <script src="/js/src/photoswipe-ui-default.min.js?v="></script>
-
-  
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-          <div class="pswp__container">
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-          </div>
-          <div class="pswp__ui pswp__ui--hidden">
-              <div class="pswp__top-bar">
-                  <div class="pswp__counter"></div>
-                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                  <button class="pswp__button pswp__button--share" title="Share"></button>
-                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                  <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                  <!-- element will get class pswp__preloader--active when preloader is running -->
-                  <div class="pswp__preloader">
-                      <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                          <div class="pswp__preloader__donut"></div>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                  <div class="pswp__share-tooltip"></div>
-              </div>
-              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-              </button>
-              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-              </button>
-              <div class="pswp__caption">
-                  <div class="pswp__caption__center"></div>
-              </div>
-          </div>
-      </div>
-    </div>
-  
 </body>
 </html>
