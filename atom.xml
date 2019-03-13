@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>EnjoyToShare</title>
   
-  <subtitle>Notes</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wugenqiang.github.io/"/>
