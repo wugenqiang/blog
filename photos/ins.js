@@ -51,7 +51,7 @@
     /******/
     /******/ // __webpack_public_path__
     /******/
-    __webpack_require__.p = &quot;/dist/&quot;;
+    __webpack_require__.p = "/dist/";
     /******/
     /******/ // Load entry module and return exports
     /******/
@@ -65,7 +65,7 @@
     /***/
     function(module, exports, __webpack_require__) {
 
-        &apos;use strict&apos;;
+        'use strict';
 
         __webpack_require__(1);
 
@@ -74,14 +74,14 @@
         var _view2 = _interopRequireDefault(_view);
 
         function _interopRequireDefault(obj) {
-            return obj &amp;&amp; obj.__esModule ? obj : {
+            return obj && obj.__esModule ? obj : {
                 default: obj
             };
         }
 
         /**
          * @name impush-client
-         * @description &#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x8BA9;&#x6211;&#x53D1;&#x5BB6;&#x81F4;&#x5BCC;&#x2026;
+         * @description 这个项目让我发家致富…
          * @date 2016-12-1
          */
 
@@ -93,63 +93,63 @@
             var rect = elem.getBoundingClientRect();
             var style = getComputedStyle(elem, null);
 
-            var mask = document.createElement(&apos;i&apos;);
-            mask.className = &apos;icon-film&apos;;
-            mask.style.color = &apos;#fff&apos;;
-            mask.style.fontSize = &apos;26px&apos;;
-            mask.style.position = &apos;absolute&apos;;
-            mask.style.right = &apos;10px&apos;;
-            mask.style.bottom = &apos;10px&apos;;
+            var mask = document.createElement('i');
+            mask.className = 'icon-film';
+            mask.style.color = '#fff';
+            mask.style.fontSize = '26px';
+            mask.style.position = 'absolute';
+            mask.style.right = '10px';
+            mask.style.bottom = '10px';
             mask.style.zIndex = 1;
             elem.parentNode.appendChild(mask);
         }
 
         var createVideoIncon = function createVideoIncon() {
-            var $videoImg = document.querySelectorAll(&apos;.thumb a[data-type=&quot;video&quot;]&apos;);
-            for (var i = 0, len = $videoImg.length; i &lt; len; i++) {
+            var $videoImg = document.querySelectorAll('.thumb a[data-type="video"]');
+            for (var i = 0, len = $videoImg.length; i < len; i++) {
                 addMask($videoImg[i]);
             }
         };
         var render = function render(res) {
-            var ulTmpl = &quot;&quot;;
-            for (var j = 0, len2 = res.list.length; j &lt; len2; j++) {
+            var ulTmpl = "";
+            for (var j = 0, len2 = res.list.length; j < len2; j++) {
                 var data = res.list[j].arr;
-                var liTmpl = &quot;&quot;;
-                for (var i = 0, len = data.link.length; i &lt; len; i++) {
-                    var minSrc = &apos;https://raw.githubusercontent.com/wugenqiang/myblog_album/master/min_photos/&apos; + data.link[i];
-                    var src = &apos;https://raw.githubusercontent.com/wugenqiang/myblog_album/master/photos/&apos; + data.link[i];
+                var liTmpl = "";
+                for (var i = 0, len = data.link.length; i < len; i++) {
+                    var minSrc = 'https://raw.githubusercontent.com/wugenqiang/myblog_album/master/min_photos/' + data.link[i];
+                    var src = 'https://raw.githubusercontent.com/wugenqiang/myblog_album/master/photos/' + data.link[i];
                     var type = data.type[i];
-                    var target = src + (type === &apos;video&apos; ? &apos;.mp4&apos; : &apos;.jpg&apos;);
-                    src += &apos;&apos;;
-                    liTmpl += &apos;<figure class="thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">\
-            <a href="&apos; + src + &apos;" itemprop="contentUrl" data-size="1080x1080" data-type="&apos; + type + &apos;" data-target="&apos; + src + &apos;">\
-              <img class="reward-img" data-type="&apos; + type + &apos;" data-src="&apos; + minSrc + &apos;" src="assets/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
+                    var target = src + (type === 'video' ? '.mp4' : '.jpg');
+                    src += '';
+                    liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">\
+            <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + src + '">\
+              <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="assets/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
             </a>\
-            <figcaption style="display:none" itemprop="caption description">&apos; + data.text[i] + &apos;</figcaption>\
-        </figure>&apos;;
+            <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
+        </figure>';
                 }
-                ulTmpl = ulTmpl + &apos;<section class="archives album"><h1 class="year">&apos; + data.year + &apos;&#x5E74;<em>&apos; + data.month + &apos;&#x6708;</em></h1>\
-    <ul class="img-box-ul">&apos; + liTmpl + &apos;</ul>\
-    </section>&apos;;
+                ulTmpl = ulTmpl + '<section class="archives album"><h1 class="year">' + data.year + '年<em>' + data.month + '月</em></h1>\
+    <ul class="img-box-ul">' + liTmpl + '</ul>\
+    </section>';
             }
-            document.querySelector(&apos;.instagram&apos;).innerHTML = &apos;<div class="photos" itemscope itemtype="http://schema.org/ImageGallery">&apos; + ulTmpl + &apos;</div>&apos;;
+            document.querySelector('.instagram').innerHTML = '<div class="photos" itemscope itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
             createVideoIncon();
             _view2.default.init();
         };
 
         var replacer = function replacer(str) {
-            var arr = str.split(&quot;/&quot;);
-            return &quot;/assets/ins/&quot; + arr[arr.length - 1];
+            var arr = str.split("/");
+            return "/assets/ins/" + arr[arr.length - 1];
         };
 
         var ctrler = function ctrler(data) {
             var imgObj = {};
-            for (var i = 0, len = data.length; i &lt; len; i++) {
+            for (var i = 0, len = data.length; i < len; i++) {
                 var y = data[i].y;
                 var m = data[i].m;
                 var src = replacer(data[i].src);
                 var text = data[i].text;
-                var key = y + &quot;&quot; + ((m + &quot;&quot;).length == 1 ? &quot;0&quot; + m : m);
+                var key = y + "" + ((m + "").length == 1 ? "0" + m : m);
                 if (imgObj[key]) {
                     imgObj[key].srclist.push(src);
                     imgObj[key].text.push(text);
@@ -168,10 +168,10 @@
         function loadData(success) {
             if (!searchData) {
                 var xhr = new XMLHttpRequest();
-                xhr.open(&apos;GET&apos;, &apos;./data.json?t=&apos; + +new Date(), true);
+                xhr.open('GET', './data.json?t=' + +new Date(), true);
 
                 xhr.onload = function() {
-                    if (this.status &gt;= 200 &amp;&amp; this.status &lt; 300) {
+                    if (this.status >= 200 && this.status < 300) {
                         var res = JSON.parse(this.response);
                         searchData = res;
                         success(searchData);
@@ -210,17 +210,17 @@
 
         /* WEBPACK VAR INJECTION */
         (function(global) {
-            &apos;use strict&apos;;
+            'use strict';
 
             var inViewport = __webpack_require__(3);
-            var lazyAttrs = [&apos;data-src&apos;];
+            var lazyAttrs = ['data-src'];
 
             global.lzld = lazyload();
 
             // Provide libs using getAttribute early to get the good src
             // and not the fake data-src
-            replaceGetAttribute(&apos;Image&apos;);
-            replaceGetAttribute(&apos;IFrame&apos;);
+            replaceGetAttribute('Image');
+            replaceGetAttribute('IFrame');
 
             function registerLazyAttr(attr) {
                 if (indexOf.call(lazyAttrs, attr) === -1) {
@@ -230,12 +230,12 @@
 
             function lazyload(opts) {
                 opts = merge({
-                    &apos;offset&apos;: 333,
-                    &apos;src&apos;: &apos;data-src&apos;,
-                    &apos;container&apos;: false
+                    'offset': 333,
+                    'src': 'data-src',
+                    'container': false
                 }, opts || {});
 
-                if (typeof opts.src === &apos;string&apos;) {
+                if (typeof opts.src === 'string') {
                     registerLazyAttr(opts.src);
                 }
 
@@ -248,12 +248,12 @@
                         elt.src = src;
                     }
 
-                    elt.setAttribute(&apos;data-lzled&apos;, true);
+                    elt.setAttribute('data-lzled', true);
                     elts[indexOf.call(elts, elt)] = null;
                 }
 
                 function findRealSrc(elt) {
-                    if (typeof opts.src === &apos;function&apos;) {
+                    if (typeof opts.src === 'function') {
                         return opts.src(elt);
                     }
 
@@ -262,9 +262,9 @@
 
                 function register(elt) {
                     elt.onload = null;
-                    elt.removeAttribute(&apos;onload&apos;);
+                    elt.removeAttribute('onload');
                     elt.onerror = null;
-                    elt.removeAttribute(&apos;onerror&apos;);
+                    elt.removeAttribute('onerror');
 
                     if (indexOf.call(elts, elt) === -1) {
                         inViewport(elt, opts, show);
@@ -275,16 +275,16 @@
             }
 
             function replaceGetAttribute(elementName) {
-                var fullname = &apos;HTML&apos; + elementName + &apos;Element&apos;;
+                var fullname = 'HTML' + elementName + 'Element';
                 if (fullname in global === false) {
                     return;
                 }
 
                 var original = global[fullname].prototype.getAttribute;
                 global[fullname].prototype.getAttribute = function(name) {
-                    if (name === &apos;src&apos;) {
+                    if (name === 'src') {
                         var realSrc;
-                        for (var i = 0, max = lazyAttrs.length; i &lt; max; i++) {
+                        for (var i = 0, max = lazyAttrs.length; i < max; i++) {
                             realSrc = original.call(this, lazyAttrs[i]);
                             if (realSrc) {
                                 break;
@@ -312,7 +312,7 @@
 
             // http://webreflection.blogspot.fr/2011/06/partial-polyfills.html
             function indexOf(value) {
-                for (var i = this.length; i-- &amp;&amp; this[i] !== value;) {}
+                for (var i = this.length; i-- && this[i] !== value;) {}
                 return i;
             }
 
@@ -330,7 +330,7 @@
     /***/
     function(module, exports) {
 
-        &apos;use strict&apos;;
+        'use strict';
 
         var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
 
@@ -338,7 +338,7 @@
             // (children of gallerySelector)
             var parseThumbnailElements = function parseThumbnailElements(el) {
                 el = el.parentNode.parentNode;
-                var thumbElements = el.getElementsByClassName(&apos;thumb&apos;),
+                var thumbElements = el.getElementsByClassName('thumb'),
                     numNodes = thumbElements.length,
                     items = [],
                     figureEl,
@@ -349,7 +349,7 @@
                     target,
                     item;
 
-                for (var i = 0; i &lt; numNodes; i++) {
+                for (var i = 0; i < numNodes; i++) {
 
                     figureEl = thumbElements[i]; //
 
@@ -360,26 +360,26 @@
 
                     linkEl = figureEl.children[0]; //
 
-                    size = linkEl.getAttribute(&apos;data-size&apos;).split(&apos;x&apos;);
-                    type = linkEl.getAttribute(&apos;data-type&apos;);
-                    target = linkEl.getAttribute(&apos;data-target&apos;);
+                    size = linkEl.getAttribute('data-size').split('x');
+                    type = linkEl.getAttribute('data-type');
+                    target = linkEl.getAttribute('data-target');
                     // create slide object
                     item = {
-                        src: linkEl.getAttribute(&apos;href&apos;),
+                        src: linkEl.getAttribute('href'),
                         w: parseInt(size[0], 10),
                         h: parseInt(size[1], 10)
                     };
 
-                    if (figureEl.children.length &gt; 1) {
+                    if (figureEl.children.length > 1) {
                         item.title = figureEl.children[1].innerHTML;
                     }
 
-                    if (linkEl.children.length &gt; 0) {
-                        item.msrc = linkEl.children[0].getAttribute(&apos;src&apos;);
+                    if (linkEl.children.length > 0) {
+                        item.msrc = linkEl.children[0].getAttribute('src');
                         item.type = type;
                         item.target = target;
-                        item.html = &apos;<video src="&apos; + target + &apos;" controls="controls" autoplay="autoplay"></video>&apos;;
-                        if (type === &apos;video&apos;) {
+                        item.html = '<video src="' + target + '" controls="controls" autoplay="autoplay"></video>';
+                        if (type === 'video') {
                             //item.src = null;
                         }
                     }
@@ -393,7 +393,7 @@
 
             // find nearest parent element
             var closest = function closest(el, fn) {
-                return el &amp;&amp; (fn(el) ? el : closest(el.parentNode, fn));
+                return el && (fn(el) ? el : closest(el.parentNode, fn));
             };
 
             // triggers when user clicks on thumbnail
@@ -405,7 +405,7 @@
 
                 // find root element of slide
                 var clickedListItem = closest(eTarget, function(el) {
-                    return el.tagName &amp;&amp; el.tagName.toUpperCase() === &apos;FIGURE&apos;;
+                    return el.tagName && el.tagName.toUpperCase() === 'FIGURE';
                 });
 
                 if (!clickedListItem) {
@@ -418,12 +418,12 @@
 
                     // childNodes = clickedListItem.parentNode.childNodes,
                     // numChildNodes = childNodes.length,
-                    childNodes = document.getElementsByClassName(&apos;thumb&apos;),
+                    childNodes = document.getElementsByClassName('thumb'),
                     numChildNodes = childNodes.length,
                     nodeIndex = 0,
                     index;
 
-                for (var i = 0; i &lt; numChildNodes; i++) {
+                for (var i = 0; i < numChildNodes; i++) {
                     if (childNodes[i].nodeType !== 1) {
                         continue;
                     }
@@ -435,29 +435,29 @@
                     nodeIndex++;
                 }
 
-                if (index &gt;= 0) {
+                if (index >= 0) {
                     // open PhotoSwipe if valid index found
                     openPhotoSwipe(index, clickedGallery);
                 }
                 return false;
             };
 
-            // parse picture index and gallery index from URL (#&amp;pid=1&amp;gid=2)
+            // parse picture index and gallery index from URL (#&pid=1&gid=2)
             var photoswipeParseHash = function photoswipeParseHash() {
                 var hash = window.location.hash.substring(1),
                     params = {};
 
-                if (hash.length &lt; 5) {
+                if (hash.length < 5) {
                     return params;
                 }
 
-                var vars = hash.split(&apos;&amp;&apos;);
-                for (var i = 0; i &lt; vars.length; i++) {
+                var vars = hash.split('&');
+                for (var i = 0; i < vars.length; i++) {
                     if (!vars[i]) {
                         continue;
                     }
-                    var pair = vars[i].split(&apos;=&apos;);
-                    if (pair.length &lt; 2) {
+                    var pair = vars[i].split('=');
+                    if (pair.length < 2) {
                         continue;
                     }
                     params[pair[0]] = pair[1];
@@ -471,7 +471,7 @@
             };
 
             var openPhotoSwipe = function openPhotoSwipe(index, galleryElement, disableAnimation, fromURL) {
-                var pswpElement = document.querySelectorAll(&apos;.pswp&apos;)[0],
+                var pswpElement = document.querySelectorAll('.pswp')[0],
                     gallery,
                     options,
                     items;
@@ -481,11 +481,11 @@
                 options = {
 
                     // define gallery index (for URL)
-                    galleryUID: galleryElement.getAttribute(&apos;data-pswp-uid&apos;),
+                    galleryUID: galleryElement.getAttribute('data-pswp-uid'),
 
                     getThumbBoundsFn: function getThumbBoundsFn(index) {
-                        // See Options -&gt; getThumbBoundsFn section of documentation for more info
-                        var thumbnail = items[index].el.getElementsByTagName(&apos;img&apos;)[0],
+                        // See Options -> getThumbBoundsFn section of documentation for more info
+                        var thumbnail = items[index].el.getElementsByTagName('img')[0],
                             // find thumbnail
                             pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
                             rect = thumbnail.getBoundingClientRect();
@@ -504,7 +504,7 @@
                     if (options.galleryPIDs) {
                         // parse real index when custom PIDs are used
                         // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
-                        for (var j = 0; j &lt; items.length; j++) {
+                        for (var j = 0; j < items.length; j++) {
                             if (items[j].pid == index) {
                                 options.index = j;
                                 break;
@@ -541,43 +541,43 @@
                 var changeHandle = function changeHandle() {
                     var item = gallery.currItem;
                     stopVideoHandle();
-                    if (item.type === &apos;video&apos;) {
+                    if (item.type === 'video') {
                         var $ctn = item.container;
-                        var style = $ctn.getElementsByClassName(&apos;pswp__img&apos;)[0].style;
-                        var $video = document.createElement(&apos;video&apos;);
-                        $video.setAttribute(&apos;autoplay&apos;, &apos;autoplay&apos;);
-                        $video.setAttribute(&apos;controls&apos;, &apos;controls&apos;);
-                        $video.setAttribute(&apos;src&apos;, item.target);
+                        var style = $ctn.getElementsByClassName('pswp__img')[0].style;
+                        var $video = document.createElement('video');
+                        $video.setAttribute('autoplay', 'autoplay');
+                        $video.setAttribute('controls', 'controls');
+                        $video.setAttribute('src', item.target);
                         $video.style.width = style.width;
                         $video.style.height = style.height;
-                        $video.style.position = &apos;absolute&apos;;
+                        $video.style.position = 'absolute';
                         $video.style.zIndex = 2;
                         $tempVideo = $video;
                         $ctn.appendChild($video);
                     }
                 };
-                gallery.listen(&apos;initialZoomIn&apos;, changeHandle);
-                gallery.listen(&apos;afterChange&apos;, changeHandle);
-                gallery.listen(&apos;initialZoomOut&apos;, stopVideoHandle);
+                gallery.listen('initialZoomIn', changeHandle);
+                gallery.listen('afterChange', changeHandle);
+                gallery.listen('initialZoomOut', stopVideoHandle);
             };
 
             // loop through all gallery elements and bind events
             var galleryElements = document.querySelectorAll(gallerySelector);
-            for (var i = 0, l = galleryElements.length; i &lt; l; i++) {
-                galleryElements[i].setAttribute(&apos;data-pswp-uid&apos;, i + 1);
+            for (var i = 0, l = galleryElements.length; i < l; i++) {
+                galleryElements[i].setAttribute('data-pswp-uid', i + 1);
                 galleryElements[i].onclick = onThumbnailsClick;
             }
 
-            // Parse URL and open gallery if it contains #&amp;pid=3&amp;gid=1
+            // Parse URL and open gallery if it contains #&pid=3&gid=1
             var hashData = photoswipeParseHash();
-            if (hashData.pid &amp;&amp; hashData.gid) {
+            if (hashData.pid && hashData.gid) {
                 openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
             }
         };
 
         var Viewer = function() {
             function init() {
-                initPhotoSwipeFromDOM(&apos;.photos&apos;);
+                initPhotoSwipeFromDOM('.photos');
             }
             return {
                 init: init
@@ -597,7 +597,7 @@
             module.exports = inViewport;
 
             var instances = [];
-            var supportsMutationObserver = typeof global.MutationObserver === &apos;function&apos;;
+            var supportsMutationObserver = typeof global.MutationObserver === 'function';
 
             function inViewport(elt, params, cb) {
                 var opts = {
@@ -605,7 +605,7 @@
                     offset: 0
                 };
 
-                if (params === undefined || typeof params === &apos;function&apos;) {
+                if (params === undefined || typeof params === 'function') {
                     cb = params;
                     params = {};
                 }
@@ -613,7 +613,7 @@
                 var container = opts.container = params.container || opts.container;
                 var offset = opts.offset = params.offset || opts.offset;
 
-                for (var i = 0; i &lt; instances.length; i++) {
+                for (var i = 0; i < instances.length; i++) {
                     if (instances[i].container === container) {
                         return instances[i].isInViewport(elt, offset, cb);
                     }
@@ -626,7 +626,7 @@
 
             function addEvent(el, type, fn) {
                 if (el.attachEvent) {
-                    el.attachEvent(&apos;on&apos; + type, fn);
+                    el.attachEvent('on' + type, fn);
                 } else {
                     el.addEventListener(type, fn, false);
                 }
@@ -637,7 +637,7 @@
                 return function() {
                     var context = this,
                         args = arguments;
-                    var callNow = immediate &amp;&amp; !timeout;
+                    var callNow = immediate && !timeout;
                     clearTimeout(timeout);
                     timeout = setTimeout(later, wait);
                     if (callNow) func.apply(context, args);
@@ -656,11 +656,11 @@
                 }
                 return global.document.documentElement.compareDocumentPosition ?
                     function(a, b) {
-                        return !!(a.compareDocumentPosition(b) &amp; 16);
+                        return !!(a.compareDocumentPosition(b) & 16);
                     } :
                     global.document.documentElement.contains ?
                         function(a, b) {
-                            return a !== b &amp;&amp; (a.contains ? a.contains(b) : false);
+                            return a !== b && (a.contains ? a.contains(b) : false);
                         } :
                         function(a, b) {
                             while (b = b.parentNode) {
@@ -678,10 +678,10 @@
                 var scrollContainer = container === global.document.body ? global : container;
                 var debouncedCheck = debounce(watches.checkAll(watchInViewport), 15);
 
-                addEvent(scrollContainer, &apos;scroll&apos;, debouncedCheck);
+                addEvent(scrollContainer, 'scroll', debouncedCheck);
 
                 if (scrollContainer === global) {
-                    addEvent(global, &apos;resize&apos;, debouncedCheck);
+                    addEvent(global, 'resize', debouncedCheck);
                 }
 
                 if (supportsMutationObserver) {
@@ -760,10 +760,10 @@
                     // The element must overlap with the visible part of the viewport
                     var visible =
                         (
-                            (eltRect.right &gt; viewport.left) &amp;&amp;
-                            (eltRect.left &lt; viewport.right) &amp;&amp;
-                            (eltRect.bottom &gt; viewport.top) &amp;&amp;
-                            (eltRect.top &lt; viewport.bottom)
+                            (eltRect.right > viewport.left) &&
+                            (eltRect.left < viewport.right) &&
+                            (eltRect.bottom > viewport.top) &&
+                            (eltRect.top < viewport.bottom)
                         );
 
                     return visible;
@@ -792,7 +792,7 @@
                 }
 
                 function indexOf(elt) {
-                    for (var i = watches.length - 1; i &gt;= 0; i--) {
+                    for (var i = watches.length - 1; i >= 0; i--) {
                         if (watches[i][0] === elt) {
                             return i;
                         }
@@ -806,7 +806,7 @@
 
                 function checkAll(cb) {
                     return function() {
-                        for (var i = watches.length - 1; i &gt;= 0; i--) {
+                        for (var i = watches.length - 1; i >= 0; i--) {
                             cb.apply(this, watches[i]);
                         }
                     };
@@ -845,7 +845,7 @@
                         Array.prototype.slice.call(mutation.addedNodes),
                         mutation.target
                     );
-                    return filter.call(nodes, watches.isWatched).length &gt; 0;
+                    return filter.call(nodes, watches.isWatched).length > 0;
                 }
             }
 
@@ -857,22 +857,4 @@
         /***/
     }
     /******/
-]);<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+]);

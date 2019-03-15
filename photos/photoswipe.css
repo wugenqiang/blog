@@ -26,7 +26,7 @@
 
 /* style is added when JS option showHideOpacity is set to true */
 .pswp--animate_opacity {
-  /* 0.001, because opacity:0 doesn&apos;t trigger Paint action, which causes lag at start of transition */
+  /* 0.001, because opacity:0 doesn't trigger Paint action, which causes lag at start of transition */
   opacity: 0.001;
   will-change: opacity;
   /* for open/close transition */
@@ -177,22 +177,3 @@
 .pswp__error-msg a {
   color: #CCC;
   text-decoration: underline; }
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
