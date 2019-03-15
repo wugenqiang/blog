@@ -4,6 +4,12 @@ const ap = new APlayer({
   autoplay: false,
   audio: [
     {
+      name: '东西',
+      artist: '林俊呈',
+      url: 'http://www.ytmp3.cn/down/54720.mp3',
+      cover: 'https://raw.githubusercontent.com/wugenqiang/myblog_album/master/photos/2019-01-07_150.jpg',
+    },
+    {
       name: '风筝误',
       artist: '刘珂矣',
       url: 'http://up.mcyt.net/?down/46644.mp3',
@@ -38,12 +44,6 @@ const ap = new APlayer({
       artist: '蔡健雅',
       url: 'http://www.ytmp3.cn/down/51502.mp3',
       cover: 'http://img.ytmp3.cn/image/44.jpg',
-    },
-    {
-      name: '东西',
-      artist: '林俊呈',
-      url: 'http://www.ytmp3.cn/down/54720.mp3',
-      cover: 'https://raw.githubusercontent.com/wugenqiang/myblog_album/master/photos/2019-01-07_150.jpg',
     },
     {
       name: '起风了',
