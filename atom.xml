@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wugenqiang.github.io/"/>
-  <updated>2019-03-16T11:38:24.000Z</updated>
+  <updated>2019-03-16T23:37:41.000Z</updated>
   <id>http://wugenqiang.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客NexT主题开启文章目录和调整样式</title>
+    <link href="http://wugenqiang.github.io/2019/03/17/Hexo%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%E5%92%8C%E8%B0%83%E6%95%B4%E6%A0%B7%E5%BC%8F/"/>
+    <id>http://wugenqiang.github.io/2019/03/17/Hexo博客NexT主题开启文章目录和调整样式/</id>
+    <published>2019-03-16T23:37:41.000Z</published>
+    <updated>2019-03-16T23:37:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。</p><h2 id="二、修改样式文件custom-styl"><a href="#二、修改样式文件custom-styl" class="headerlink" title="二、修改样式文件custom.styl"></a>二、修改样式文件custom.styl</h2><p>文章目录样式文件custom.styl文件位于<code>themes/next/source/css/_custom</code></p><p>打开后添加内容：</p><h3 id="1-文章目录默认展开"><a href="#1-文章目录默认展开" class="headerlink" title="1.文章目录默认展开"></a>1.文章目录默认展开</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//文章目录默认展开</span><br><span class="line">.post-toc .nav .nav-child &#123; display: block; &#125;</span><br></pre></td></tr></table></figure><h3 id="2-文章目录字体大小调整"><a href="#2-文章目录字体大小调整" class="headerlink" title="2.文章目录字体大小调整"></a>2.文章目录字体大小调整</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.post-toc ol &#123;  </span><br><span class="line">  font-size : 13px;     </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="三、修改主题配置文件"><a href="#三、修改主题配置文件" class="headerlink" title="三、修改主题配置文件"></a>三、修改主题配置文件</h2><p>主题配置文件位于<code>themes/next/_config.yml</code></p><p>每行目录超长自动换行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  enable: true  </span><br><span class="line">  wrap: true</span><br></pre></td></tr></table></figure><h2 id="四、结果图展示"><a href="#四、结果图展示" class="headerlink" title="四、结果图展示"></a>四、结果图展示</h2><p><img src="https://i.loli.net/2019/03/16/5c8d1b75707ae.png" alt="文章目录.png"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;p&gt;Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。&lt;/p&gt;
+&lt;h2 id=&quot;二、修改样式文
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://wugenqiang.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://wugenqiang.github.io/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Springboot实现小程序端发送邮箱验证码功能</title>
