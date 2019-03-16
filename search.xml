@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Springboot实现邮箱验证码功能]]></title>
+    <url>%2F2019%2F03%2F16%2FSpringboot%E5%AE%9E%E7%8E%B0%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%8A%9F%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[Springboot实现小程序端的邮箱验证一、配置项 配置pom文件，引入发送邮件的依赖 在pom文件中添加： 12345&lt;!--邮件发送核心包--&gt;&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-mail&lt;/artifactId&gt;&lt;/dependency&gt; 修改配置文件application.yml，这里以QQ邮箱为例 我这里使用的是yml方式，当然也可以采用properties方式来写 1234567891011121314#邮件发送配置spring: mail: default-encoding: UTF-8 host: smtp.qq.com username: 你的邮箱 password: 邮箱授权码 properties: mail: smtp: auth: true starttls: enable: true required: true 邮箱授权码可以按以下方法获取: 打开QQ邮箱网页→设置→账户→POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务→开启POP3/SMTP服务，然后就能看到授权码了 二、编写mailService和mailServiceImpl即邮件服务层和邮件服务接口实现层 ${spring.mail.username}是在yml中配置的属性，这里有一个方法，第一个是发送普通邮件，第二个是发送带有附件的邮件 邮件服务层（IMailService） 12345678public interface IMailService &#123; //发送普通邮件 void sendSimpleMail(String to,String title,String content); //发送带有附件的邮件 void sendAttachmentsMail(String to, String title, String content, List&lt;File&gt; fileList);&#125; 邮件服务接口实现层（MailServiceImpl） 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849@Servicepublic class MailServiceImpl implements IMailService &#123; @Value(&quot;$&#123;spring.mail.username&#125;&quot;) private String from; @Resource private JavaMailSender mailSender; Logger logger = LoggerFactory.getLogger(this.getClass()); //发送普通邮件 @Override public void sendSimpleMail(String to, String title, String content) &#123; SimpleMailMessage message = new SimpleMailMessage(); message.setFrom(from); message.setTo(to); message.setSubject(title); message.setText(content); mailSender.send(message); logger.info(&quot;邮件发送成功&quot;); &#125; //发送带有附件的邮件 @Override public void sendAttachmentsMail(String to, String title, String content, List&lt;File&gt; fileList) &#123; MimeMessage message = mailSender.createMimeMessage(); try &#123; MimeMessageHelper helper = new MimeMessageHelper(message,true); helper.setFrom(from); helper.setTo(to); helper.setSubject(title); helper.setText(content); String fileName = null; for (File file:fileList) &#123; fileName = MimeUtility.encodeText(file.getName(), &quot;GB2312&quot;, &quot;B&quot;); helper.addAttachment(fileName, file); &#125; &#125; catch (Exception e) &#123; e.printStackTrace(); &#125; mailSender.send(message); logger.info(&quot;邮件发送成功&quot;); &#125;&#125; 三、编写controller即邮件发送控制层 12345678910111213141516171819@Controllerpublic class MailController &#123; @Resource private IMailService mailService; @RequestMapping(&quot;getCheckCode&quot;) @ResponseBody public String getCheckCode(String email)&#123; String checkCode = String.valueOf(new Random().nextInt(899999) + 100000); String message = &quot;您的注册验证码为：&quot;+checkCode; try &#123; mailService.sendSimpleMail(email, &quot;注册验证码&quot;, message); &#125;catch (Exception e)&#123; return &quot;&quot;; &#125; return checkCode; &#125;&#125; 四、编写小程序邮箱验证页面]]></content>
+      <categories>
+        <category>Springboot</category>
+        <category>小程序</category>
+      </categories>
+      <tags>
+        <tag>邮箱验证</tag>
+        <tag>Springboot</tag>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[数学笔记]]></title>
     <url>%2F2019%2F03%2F11%2Fmath%2F</url>
     <content type="text"><![CDATA[数学资料汇总 #高等数学 #线性代数]]></content>
@@ -18,7 +32,6 @@
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <categories>
         <category>Hexo</category>
-        <category>HelloWorld</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
