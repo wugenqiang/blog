@@ -17,7 +17,7 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Springboot实现邮箱验证码功能</title>
+    <title>Springboot实现小程序端发送邮箱验证码功能</title>
     <link href="http://wugenqiang.github.io/2019/03/16/Springboot%E5%AE%9E%E7%8E%B0%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%8A%9F%E8%83%BD/"/>
     <id>http://wugenqiang.github.io/2019/03/16/Springboot实现邮箱验证码功能/</id>
     <published>2019-03-16T11:38:24.000Z</published>
