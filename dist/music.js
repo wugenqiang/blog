@@ -1,6 +1,9 @@
 const ap = new APlayer({
   container: document.getElementById('aplayer'),
-  fixed: true,
+  //fixed: true,
+  //mini: true,
+  listFolded: true,
+  listMaxHeight: 7,
   autoplay: false,
   audio: [
     {
