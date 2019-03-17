@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo获取网易云音乐外链]]></title>
+    <url>%2F2019%2F03%2F17%2FHexo%E8%8E%B7%E5%8F%96%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%A4%96%E9%93%BE%2F</url>
+    <content type="text"><![CDATA[Hexo获取网易云音乐外链网易云音乐MP3外链真实地址获取方法，可用于各种背景音乐、直链播放… 一、进入网易云音乐官网打开网易云音乐，找到喜欢的歌，复制网址的ID， 例如： 地址为：https://music.163.com/#/song?id=350909 id就是350909 那么，这首歌的MP3外链地址就是：https://music.163.com/song/media/outer/url?id=350909.mp3 是不是很简单呢，咱们来播放一下 二、放入Hexo中播放使用下面的格式： 1&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/song/media/outer/url?id=350909.mp3&quot;&gt;&lt;/iframe&gt; 可以自己到我的技术博客那个音乐吧浏览，底部哦 这是地址，比小心心~~ 我是地址点我点我哟]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo博客NexT主题开启文章目录和调整样式]]></title>
     <url>%2F2019%2F03%2F17%2FHexo%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%E5%92%8C%E8%B0%83%E6%95%B4%E6%A0%B7%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[一、前言Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。 二、修改样式文件custom.styl文章目录样式文件custom.styl文件位于themes/next/source/css/_custom 打开后添加内容： 1.文章目录默认展开12//文章目录默认展开.post-toc .nav .nav-child &#123; display: block; &#125; 2.文章目录字体大小调整123.post-toc ol &#123; font-size : 13px; &#125; 三、修改主题配置文件主题配置文件位于themes/next/_config.yml 每行目录超长自动换行 123toc: enable: true wrap: true 四、结果图展示]]></content>
