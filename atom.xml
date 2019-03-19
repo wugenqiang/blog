@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wugenqiang.github.io/"/>
-  <updated>2019-03-19T09:37:58.000Z</updated>
+  <updated>2019-03-17T14:50:29.000Z</updated>
   <id>http://wugenqiang.github.io/</id>
   
   <author>
@@ -15,34 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hexo博客设置个人域名</title>
-    <link href="http://wugenqiang.github.io/2019/03/19/Hexo%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/"/>
-    <id>http://wugenqiang.github.io/2019/03/19/Hexo博客设置个人域名/</id>
-    <published>2019-03-19T09:37:58.000Z</published>
-    <updated>2019-03-19T09:37:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote><blockquote><p>现在你的个人网站的地址是 yourname.github.io，</p></blockquote><p>如果觉得这个网址逼格不太够，这就需要你设置个人域名了。</p><p>我是在腾讯云解析的</p><p>192.30.252.153 和 192.30.252.154 是GitHub的服务器地址。</p></blockquote><p>如下图：</p><p><img src="https://i.loli.net/2019/03/19/5c904a59e4620.png" alt="个人域名1.png"></p><h2 id="设置域名"><a href="#设置域名" class="headerlink" title="设置域名"></a>设置域名</h2><p>登录GitHub，进入之前创建的仓库，点击settings，设置Custom domain，输入你的域名</p><p>然后在你的博客文件source中创建一个名为CNAME文件，不要后缀。写上你的域名。</p><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>最后，在gitbash中，输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;现在你的个人网站的地址是 yourname.github.io，&lt;/p&gt;
-&lt;/block
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://wugenqiang.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://wugenqiang.github.io/tags/Hexo/"/>
-    
-  </entry>
   
   <entry>
     <title>Hexo获取网易云音乐外链</title>
