@@ -148,6 +148,17 @@
     }
 </style>
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
   <meta name="description" content="添加如下代码：给 hexo next 加上背景图片，只需要在 themes\next\source\css_custom\custom.styl 文件中 添加几行代码： 12345678910111213@media screen and (min-width:1200px) &amp;#123;    body &amp;#123;    background-image:url(/images/backgro">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
@@ -974,7 +985,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.3k字</span>
+  <span class="post-count">博客全站共5.4k字</span>
 </div>
 
         
