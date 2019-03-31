@@ -654,6 +654,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">title: Hexo+NexT拥抱舒爽</span><br><span class="line">tags:</span><br><span class="line">  - Hexo</span><br><span class="line">  - NexT</span><br><span class="line">categories:</span><br><span class="line">  - Hexo</span><br><span class="line">author: WuGenQiang</span><br><span class="line">password: 123456</span><br><span class="line">date: 2019-03-31 19:01:35</span><br><span class="line">updated: 2019-03-31 19:01:35</span><br></pre></td></tr></table></figure>
 <p>效果如图所示：</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331210050.png" alt></p>
+<h2 id="优化深色代码高亮背景"><a href="#优化深色代码高亮背景" class="headerlink" title="优化深色代码高亮背景"></a>优化深色代码高亮背景</h2><p>在主题配置文件修改代码高亮背景为深色背景后，当在博客文章上选择代码时，选择到的颜色也为深色，虽然和背景色还是有点点区别，但是不好区分。所以经过一番研究，才有了以下优化教程。</p>
+<p>在myblog/themes/next/source/css/_custom/custom.styl中添加以下样式代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//page code background-color</span><br><span class="line">.code ::selection &#123;</span><br><span class="line">    background: #2593a6;</span><br><span class="line">    color: #fff;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//gitalk code background-color </span><br><span class="line">.gt-container .gt-comment-content .highlight pre, .markdown-body pre&#123;</span><br><span class="line">    background-color: #2d2d2d;</span><br><span class="line">&#125;</span><br><span class="line">.gt-container .gt-comment-content .highlight ::selection &#123;</span><br><span class="line">    background: #2593a6;</span><br><span class="line">    color: #fff;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上代码优化了所以高亮代码区域，包括gitalk评论区的高亮代码。 这些样式代码是通过浏览器调试而得，如有其它样式的需求，可参考本示例在浏览器中调试。</p>
 
       
     </div>
@@ -939,7 +943,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#页面优化"><span class="nav-number">2.</span> <span class="nav-text">页面优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改文章底部-为图标"><span class="nav-number">2.1.</span> <span class="nav-text">修改文章底部#为图标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#点击出现爱心效果"><span class="nav-number">2.2.</span> <span class="nav-text">点击出现爱心效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章加密访问"><span class="nav-number">2.3.</span> <span class="nav-text">文章加密访问</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#页面优化"><span class="nav-number">2.</span> <span class="nav-text">页面优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改文章底部-为图标"><span class="nav-number">2.1.</span> <span class="nav-text">修改文章底部#为图标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#点击出现爱心效果"><span class="nav-number">2.2.</span> <span class="nav-text">点击出现爱心效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章加密访问"><span class="nav-number">2.3.</span> <span class="nav-text">文章加密访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化深色代码高亮背景"><span class="nav-number">2.4.</span> <span class="nav-text">优化深色代码高亮背景</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1005,7 +1009,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.4k字</span>
+  <span class="post-count">博客全站共5.6k字</span>
 </div>
 
         

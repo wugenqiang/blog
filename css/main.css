@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #44d4df;
+  background: #77ff2e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3266,4 +3266,16 @@ ul.breadcrumb li+li:last-child {
 }
 .site-meta {
   background: 'normal';
+}
+.code ::selection {
+  background: #2593a6;
+  color: #fff;
+}
+.gt-container .gt-comment-content .highlight pre,
+.markdown-body pre {
+  background-color: #2d2d2d;
+}
+.gt-container .gt-comment-content .highlight ::selection {
+  background: #2593a6;
+  color: #fff;
 }
