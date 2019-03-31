@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wugenqiang.github.io/"/>
-  <updated>2019-03-31T14:32:26.000Z</updated>
+  <updated>2019-03-31T16:37:53.000Z</updated>
   <id>http://wugenqiang.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PicGo+GitHub图床，让Markdown飞起</title>
+    <link href="http://wugenqiang.github.io/2019/04/01/PicGo-GitHub%E5%9B%BE%E5%BA%8A%EF%BC%8C%E8%AE%A9Markdown%E9%A3%9E%E8%B5%B7/"/>
+    <id>http://wugenqiang.github.io/2019/04/01/PicGo-GitHub图床，让Markdown飞起/</id>
+    <published>2019-03-31T16:37:53.000Z</published>
+    <updated>2019-03-31T16:37:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="PicGo介绍"><a href="#PicGo介绍" class="headerlink" title="PicGo介绍"></a>PicGo介绍</h1><p>这是一款图片上传的工具，目前支持微博图床，七牛图床，腾讯云，又拍云，GitHub等图床，未来将支持更多图床。</p><p>所以解决问题的思路就是，将本地的文件，或者剪切板上面的截图发送图床，然后生成在线图片的链接，这样就可以</p><p>让Markdown文档飞起来了，走到哪就可以用到哪~~</p><p>在众多的图床中，我选择的GitHub图床，其它类型的图床如果你们有兴趣的话可以试一下，主要我对于Github有特殊的感</p><p>情，很难割舍~~</p><h1 id="下载PicGo"><a href="#下载PicGo" class="headerlink" title="下载PicGo"></a>下载PicGo</h1><h2 id="进入下载链接"><a href="#进入下载链接" class="headerlink" title="进入下载链接"></a>进入下载链接</h2><p>下载链接为：<a href="https://github.com/Molunerfinn/PicGo/releases/tag/v2.0.5" target="_blank" rel="noopener">https://github.com/Molunerfinn/PicGo/releases/tag/v2.0.5</a></p><h2 id="选择安装包下载"><a href="#选择安装包下载" class="headerlink" title="选择安装包下载"></a>选择安装包下载</h2><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331164455.png" alt></p><h2 id="安装软件包"><a href="#安装软件包" class="headerlink" title="安装软件包"></a>安装软件包</h2><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331164603.png" alt></p><h1 id="创建GitHub图床"><a href="#创建GitHub图床" class="headerlink" title="创建GitHub图床"></a>创建GitHub图床</h1><h2 id="需要注册-登陆GitHub账号"><a href="#需要注册-登陆GitHub账号" class="headerlink" title="需要注册/登陆GitHub账号"></a>需要注册/登陆GitHub账号</h2><blockquote><p>已经有了自行跳过这一步</p></blockquote><blockquote><p>申请GitHub账号很简单，我就不演示了</p></blockquote><h2 id="创建Repository"><a href="#创建Repository" class="headerlink" title="创建Repository"></a>创建Repository</h2><p>随便命名，我的比较简单，直接是picGo</p><h2 id="生成Token"><a href="#生成Token" class="headerlink" title="生成Token"></a>生成Token</h2><p>生成一个Token用于操作GitHub repository</p><p>Settings -&gt; Developer settings -&gt; Personal access tokens </p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331165930.png" alt></p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331170203.png" alt></p><p>然后确定提交，复制生成一串字符 token，这个 token 只出现一次，所以要保存一下。</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331170410.png" alt></p><h1 id="配置PicGo客户端"><a href="#配置PicGo客户端" class="headerlink" title="配置PicGo客户端"></a>配置PicGo客户端</h1><p>如下图配置：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331170716.png" alt></p><p>说明：</p><ul><li>仓库名 即你的仓库名</li><li>分支名 默认 master</li><li>Token 就是刚刚复制的那一串字符</li><li>存储路径 这个可以填也可以不填，填了的话图片就上传到这个文件夹</li><li>域名 这个要改一下 格式： <a href="https://raw.githubusercontent.com/[仓库名]/master" target="_blank" rel="noopener">https://raw.githubusercontent.com/[仓库名]/master</a></li></ul><p>然后点确定就OK了，不妨试试。</p><h1 id="小结一下"><a href="#小结一下" class="headerlink" title="小结一下"></a>小结一下</h1><p>PicGo是一个不错的软件，真的很好使用，虽然我只用了两天，但是我爱不释手，我之前自己写过图床，但是需要有自己的</p><p>云服务器才可访问，所以我自己上网查资料，找到了这个好用的图床工具。</p><p>上面的步骤都设置好之后，就可以让自己的Markdown文档飞起来了，来试试吧~~</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;PicGo介绍&quot;&gt;&lt;a href=&quot;#PicGo介绍&quot; class=&quot;headerlink&quot; title=&quot;PicGo介绍&quot;&gt;&lt;/a&gt;PicGo介绍&lt;/h1&gt;&lt;p&gt;这是一款图片上传的工具，目前支持微博图床，七牛图床，腾讯云，又拍云，GitHub等图床，未来将支持更
+      
+    
+    </summary>
+    
+      <category term="Markdown" scheme="http://wugenqiang.github.io/categories/Markdown/"/>
+    
+    
+      <category term="Markdown" scheme="http://wugenqiang.github.io/tags/Markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown功能点讲解</title>
@@ -67,11 +92,11 @@
       <category term="考研" scheme="http://wugenqiang.github.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/"/>
     
     
-      <category term="考研" scheme="http://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94/"/>
-    
       <category term="课程复习整理" scheme="http://wugenqiang.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
     
       <category term="数据结构" scheme="http://wugenqiang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="考研" scheme="http://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94/"/>
     
   </entry>
   
@@ -98,9 +123,9 @@
       <category term="考研" scheme="http://wugenqiang.github.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/"/>
     
     
-      <category term="考研" scheme="http://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94/"/>
-    
       <category term="课程复习整理" scheme="http://wugenqiang.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
+    
+      <category term="考研" scheme="http://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94/"/>
     
       <category term="计算机网络" scheme="http://wugenqiang.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PicGo+GitHub图床，让Markdown飞起]]></title>
+    <url>%2F2019%2F04%2F01%2FPicGo-GitHub%E5%9B%BE%E5%BA%8A%EF%BC%8C%E8%AE%A9Markdown%E9%A3%9E%E8%B5%B7%2F</url>
+    <content type="text"><![CDATA[PicGo介绍这是一款图片上传的工具，目前支持微博图床，七牛图床，腾讯云，又拍云，GitHub等图床，未来将支持更多图床。 所以解决问题的思路就是，将本地的文件，或者剪切板上面的截图发送图床，然后生成在线图片的链接，这样就可以 让Markdown文档飞起来了，走到哪就可以用到哪~~ 在众多的图床中，我选择的GitHub图床，其它类型的图床如果你们有兴趣的话可以试一下，主要我对于Github有特殊的感 情，很难割舍~~ 下载PicGo进入下载链接下载链接为：https://github.com/Molunerfinn/PicGo/releases/tag/v2.0.5 选择安装包下载 安装软件包 创建GitHub图床需要注册/登陆GitHub账号 已经有了自行跳过这一步 申请GitHub账号很简单，我就不演示了 创建Repository随便命名，我的比较简单，直接是picGo 生成Token生成一个Token用于操作GitHub repository Settings -&gt; Developer settings -&gt; Personal access tokens 然后确定提交，复制生成一串字符 token，这个 token 只出现一次，所以要保存一下。 配置PicGo客户端如下图配置： 说明： 仓库名 即你的仓库名 分支名 默认 master Token 就是刚刚复制的那一串字符 存储路径 这个可以填也可以不填，填了的话图片就上传到这个文件夹 域名 这个要改一下 格式： https://raw.githubusercontent.com/[仓库名]/master 然后点确定就OK了，不妨试试。 小结一下PicGo是一个不错的软件，真的很好使用，虽然我只用了两天，但是我爱不释手，我之前自己写过图床，但是需要有自己的 云服务器才可访问，所以我自己上网查资料，找到了这个好用的图床工具。 上面的步骤都设置好之后，就可以让自己的Markdown文档飞起来了，来试试吧~~]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Markdown功能点讲解]]></title>
     <url>%2F2019%2F03%2F31%2FMarkdown%E5%8A%9F%E8%83%BD%E7%82%B9%E8%AE%B2%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[提起Markdown，对我来说是毕设、是项目、是不可多得的助手。 基础语法标题Markdown支持6种级别的标题，对应html标签 h1 ~ h6 123456# h1## h2### h3#### h4##### h5###### h6 段落及区块引用Markdown提供了一个特殊符号 &gt; 用于段首进行强调，被强调的文字部分将会高亮显示 1&gt; 这段文字将会被高亮显示... 以上标记显示效果如下： 插入链接或图片Markdown针对链接和图片的处理也比较简单，可以使用下面的语法进行标记 12[点击跳转至百度](http://www.baidu.com)![图片](https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 以上标记显示效果如下： 点击跳转至百度 注： 引用图片和链接的唯一区别就是在最前方添加一个感叹号。 列表Markdown支持有序列表和无序列表两种形式： 无序列表使用 * 或 + 或 - 标识 有序列表使用数字加 . 标识，例如：1. 分隔线有时候，为了排版漂亮，可能会加入分隔线。Markdown加入分隔线非常简单，使用下面任意一种形式都可以 12***--- 以上标记显示效果如下： 强调有时候，我们对某一部分文字进行强调，使用 * 或 _ 包裹即可。使用单一符号标记的效果是斜体，使用两个符号标记的效果是加粗 12345*这里是斜体*_这里是斜体_**这里是加粗**__这里是加粗__ 这里是斜体这里是斜体 这里是加粗这里是加粗 高级用法插入代码块Markdown在IT圈子里面比较流行的一个重要原因是，它能够轻松漂亮地插入代码。 方法是，使用反引号 ` 进行包裹即可。如果是行内代码引用，使用单个反引号进行包裹 这是一段var x = 3行内代码 如果插入一整段代码，需要至少使用两个以上反引号进行包裹， 看效果： 123fun (x: Int, y: Int): Int &#123; return x + y&#125; 注：很多人不知道怎么输入反引号。在英文模式下，找到键盘最左侧esc键下面的第一个键点击即可。 插入表格表格是Markdown语法中比较复杂的一个，其语法如下： 123表头|条目一|条目二:---:|:---:|:---:项目|项目一|项目二 以上标记显示效果如下： 表头 条目一 条目二 项目 项目一 项目二 注：三个短斜杠左右的冒号用于控制对齐方式，只放置左边冒号表示文字居左，只放置右边冒号表示文字居右，如果两边都放置冒号表示文字居中。 特殊符号处理Markdown使用反斜杠\插入语法中用到的特殊符号。在Markdown中，主要有以下几种特殊符号需要处理： 123456789101112\ 反斜线` 反引号* 星号_ 底线&#123;&#125; 花括号[] 方括号() 括弧# 井字号+ 加号- 减号. 英文句点! 惊叹号 例如，如果你需要插入反斜杠，就连续输入两个反斜杠即可：\ =&gt; \ 。 注：在内容中输入以上特殊符号的时候一定要注意转义，否则将导致内容显示不全，甚至排版混乱。]]></content>
@@ -20,9 +31,9 @@
         <category>考研</category>
       </categories>
       <tags>
-        <tag>考研</tag>
         <tag>课程复习整理</tag>
         <tag>数据结构</tag>
+        <tag>考研</tag>
       </tags>
   </entry>
   <entry>
@@ -34,8 +45,8 @@
         <category>考研</category>
       </categories>
       <tags>
-        <tag>考研</tag>
         <tag>课程复习整理</tag>
+        <tag>考研</tag>
         <tag>计算机网络</tag>
       </tags>
   </entry>
