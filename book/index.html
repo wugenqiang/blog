@@ -150,14 +150,14 @@
 
   <meta name="description" content="Java开发规范   世界500强面试题">
 <meta property="og:type" content="website">
-<meta property="og:title" content="book">
+<meta property="og:title" content="书籍">
 <meta property="og:url" content="http://wugenqiang.github.io/book/index.html">
 <meta property="og:site_name" content="EnjoyToShare">
 <meta property="og:description" content="Java开发规范   世界500强面试题">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-17T15:06:49.449Z">
+<meta property="og:updated_time" content="2019-03-31T17:38:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="book">
+<meta name="twitter:title" content="书籍">
 <meta name="twitter:description" content="Java开发规范   世界500强面试题">
 
 
@@ -177,7 +177,7 @@
   };
 </script>
 
-  <title>book | EnjoyToShare</title>
+  <title>书籍 | EnjoyToShare</title>
   
 
 
@@ -541,7 +541,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">book
+<h1 class="post-title" itemprop="name headline">书籍
 
 </h1>
 
@@ -586,6 +586,14 @@
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1022,6 +1030,38 @@ setInterval("createtime()",250);
 
   
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'ee225c7b65db41a1b788',
+    clientSecret: 'f10a884c103d89748d0f05e44ab219c3633dd05f',
+    repo: 'wugenqiang.github.io',
+    owner: 'wugenqiang',
+    admin: ['wugenqiang'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+
+  
 
 
   
