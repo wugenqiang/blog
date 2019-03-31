@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wugenqiang.github.io/"/>
-  <updated>2019-03-31T10:55:02.000Z</updated>
+  <updated>2019-03-31T14:32:26.000Z</updated>
   <id>http://wugenqiang.github.io/</id>
   
   <author>
@@ -15,6 +15,121 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown功能点讲解</title>
+    <link href="http://wugenqiang.github.io/2019/03/31/Markdown%E5%8A%9F%E8%83%BD%E7%82%B9%E8%AE%B2%E8%A7%A3/"/>
+    <id>http://wugenqiang.github.io/2019/03/31/Markdown功能点讲解/</id>
+    <published>2019-03-31T14:32:26.000Z</published>
+    <updated>2019-03-31T14:32:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p> 提起Markdown，对我来说是毕设、是项目、是不可多得的助手。</p></blockquote><h1 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>Markdown支持6种级别的标题，对应html标签 h1 ~ h6</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># h1</span><br><span class="line">## h2</span><br><span class="line">### h3</span><br><span class="line">#### h4</span><br><span class="line">##### h5</span><br><span class="line">###### h6</span><br></pre></td></tr></table></figure><h2 id="段落及区块引用"><a href="#段落及区块引用" class="headerlink" title="段落及区块引用"></a>段落及区块引用</h2><p>Markdown提供了一个特殊符号 &gt; 用于段首进行强调，被强调的文字部分将会高亮显示</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 这段文字将会被高亮显示...</span><br></pre></td></tr></table></figure><p>以上标记显示效果如下：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331144721.png" alt></p><h2 id="插入链接或图片"><a href="#插入链接或图片" class="headerlink" title="插入链接或图片"></a>插入链接或图片</h2><p>Markdown针对链接和图片的处理也比较简单，可以使用下面的语法进行标记</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[点击跳转至百度](http://www.baidu.com)</span><br><span class="line">![图片](https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</span><br></pre></td></tr></table></figure><p>以上标记显示效果如下：</p><p><a href="http://www.baidu.com" target="_blank" rel="noopener">点击跳转至百度</a><br><img src="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片"></p><p>注： 引用图片和链接的唯一区别就是在最前方添加一个感叹号。</p><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>Markdown支持有序列表和无序列表两种形式：</p><ul><li><p>无序列表使用 * 或 + 或 - 标识</p></li><li><p>有序列表使用数字加 . 标识，例如：1.</p></li></ul><h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h2><p>有时候，为了排版漂亮，可能会加入分隔线。Markdown加入分隔线非常简单，使用下面任意一种形式都可以</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>以上标记显示效果如下：</p><hr><hr><h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><p>有时候，我们对某一部分文字进行强调，使用 * 或 _ 包裹即可。使用单一符号标记的效果是斜体，使用两个符号标记的效果是加粗</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*这里是斜体*</span><br><span class="line">_这里是斜体_</span><br><span class="line"></span><br><span class="line">**这里是加粗**</span><br><span class="line">__这里是加粗__</span><br></pre></td></tr></table></figure><p><em>这里是斜体</em><br><em>这里是斜体</em></p><p><strong>这里是加粗</strong><br><strong>这里是加粗</strong></p><h1 id="高级用法"><a href="#高级用法" class="headerlink" title="高级用法"></a>高级用法</h1><h2 id="插入代码块"><a href="#插入代码块" class="headerlink" title="插入代码块"></a>插入代码块</h2><p>Markdown在IT圈子里面比较流行的一个重要原因是，它能够轻松漂亮地插入代码。</p><p>方法是，使用反引号 ` 进行包裹即可。如果是行内代码引用，使用单个反引号进行包裹</p><p>这是一段var x = 3行内代码</p><p>如果插入一整段代码，需要至少使用两个以上反引号进行包裹， 看效果：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fun (x: Int, y: Int): Int &#123;</span><br><span class="line">  return x + y</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>注：很多人不知道怎么输入反引号。在英文模式下，找到键盘最左侧esc键下面的第一个键点击即可。</p><h2 id="插入表格"><a href="#插入表格" class="headerlink" title="插入表格"></a>插入表格</h2><p>表格是Markdown语法中比较复杂的一个，其语法如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">表头|条目一|条目二</span><br><span class="line">:---:|:---:|:---:</span><br><span class="line">项目|项目一|项目二</span><br></pre></td></tr></table></figure><p>以上标记显示效果如下：</p><table><thead><tr><th style="text-align:center">表头</th><th style="text-align:center">条目一</th><th style="text-align:center">条目二</th></tr></thead><tbody><tr><td style="text-align:center">项目</td><td style="text-align:center">项目一</td><td style="text-align:center">项目二</td></tr></tbody></table><p>注：三个短斜杠左右的冒号用于控制对齐方式，只放置左边冒号表示文字居左，只放置右边冒号表示文字居右，如果两边都放置冒号表示文字居中。</p><h2 id="特殊符号处理"><a href="#特殊符号处理" class="headerlink" title="特殊符号处理"></a>特殊符号处理</h2><p>Markdown使用反斜杠\插入语法中用到的特殊符号。在Markdown中，主要有以下几种特殊符号需要处理：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\   反斜线</span><br><span class="line">`   反引号</span><br><span class="line">*   星号</span><br><span class="line">_   底线</span><br><span class="line">&#123;&#125;  花括号</span><br><span class="line">[]  方括号</span><br><span class="line">()  括弧</span><br><span class="line">#   井字号</span><br><span class="line">+   加号</span><br><span class="line">-   减号</span><br><span class="line">.   英文句点</span><br><span class="line">!   惊叹号</span><br></pre></td></tr></table></figure><p>例如，如果你需要插入反斜杠，就连续输入两个反斜杠即可：\ =&gt; \ 。</p><p>注：在内容中输入以上特殊符号的时候一定要注意转义，否则将导致内容显示不全，甚至排版混乱。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt; 提起Markdown，对我来说是毕设、是项目、是不可多得的助手。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;基础语法&quot;&gt;&lt;a href=&quot;#基础语法&quot; class=&quot;headerlink&quot; title=&quot;基础语法&quot;&gt;&lt;/a&gt;基础语法&lt;/
+      
+    
+    </summary>
+    
+      <category term="Markdown" scheme="http://wugenqiang.github.io/categories/Markdown/"/>
+    
+    
+      <category term="Markdown" scheme="http://wugenqiang.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构知识整理</title>
+    <link href="http://wugenqiang.github.io/2019/03/31/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
+    <id>http://wugenqiang.github.io/2019/03/31/数据结构知识整理/</id>
+    <published>2019-03-31T14:13:40.000Z</published>
+    <updated>2019-03-31T14:13:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h1&gt;
+      
+    
+    </summary>
+    
+      <category term="课程复习整理" scheme="http://wugenqiang.github.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
+    
+      <category term="考研" scheme="http://wugenqiang.github.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/"/>
+    
+    
+      <category term="考研" scheme="http://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94/"/>
+    
+      <category term="课程复习整理" scheme="http://wugenqiang.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
+    
+      <category term="数据结构" scheme="http://wugenqiang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络知识整理</title>
+    <link href="http://wugenqiang.github.io/2019/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <id>http://wugenqiang.github.io/2019/03/31/计算机网络/</id>
+    <published>2019-03-31T13:56:38.000Z</published>
+    <updated>2019-03-31T13:56:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h1&gt;
+      
+    
+    </summary>
+    
+      <category term="课程复习整理" scheme="http://wugenqiang.github.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
+    
+      <category term="考研" scheme="http://wugenqiang.github.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/"/>
+    
+    
+      <category term="考研" scheme="http://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94/"/>
+    
+      <category term="课程复习整理" scheme="http://wugenqiang.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
+    
+      <category term="计算机网络" scheme="http://wugenqiang.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Next 加入背景图片</title>
+    <link href="http://wugenqiang.github.io/2019/03/31/Hexo-Next-%E5%8A%A0%E5%85%A5%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BDgitalk-1/"/>
+    <id>http://wugenqiang.github.io/2019/03/31/Hexo-Next-加入评论功能gitalk-1/</id>
+    <published>2019-03-31T13:21:57.000Z</published>
+    <updated>2019-03-31T13:21:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="添加如下代码："><a href="#添加如下代码：" class="headerlink" title="添加如下代码："></a>添加如下代码：</h2><p>给 hexo next 加上背景图片，只需要在 themes\next\source\css_custom\custom.styl 文件中</p><p>添加几行代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (min-width:1200px) &#123;</span><br><span class="line"></span><br><span class="line">    body &#123;</span><br><span class="line">    background-image:url(/images/background.jpg);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%; </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    #footer a &#123;</span><br><span class="line">        color:#eee;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>ok</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;添加如下代码：&quot;&gt;&lt;a href=&quot;#添加如下代码：&quot; class=&quot;headerlink&quot; title=&quot;添加如下代码：&quot;&gt;&lt;/a&gt;添加如下代码：&lt;/h2&gt;&lt;p&gt;给 hexo next 加上背景图片，只需要在 themes\next\source\css_cus
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://wugenqiang.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://wugenqiang.github.io/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo Next 加入评论功能gitalk</title>
@@ -128,65 +243,6 @@
       <category term="Springboot" scheme="http://wugenqiang.github.io/tags/Springboot/"/>
     
       <category term="小程序" scheme="http://wugenqiang.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数学笔记</title>
-    <link href="http://wugenqiang.github.io/2019/03/11/math/"/>
-    <id>http://wugenqiang.github.io/2019/03/11/math/</id>
-    <published>2019-03-10T20:07:12.000Z</published>
-    <updated>2019-03-16T11:43:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<center>数学资料汇总</center><p><br></p><p>#高等数学</p><div class="pdf" target="https://wugenqiang.github.io/book/postgraduate/数学高数部分20190226.pdf" height></div><p>#线性代数</p><div class="pdf" target="https://wugenqiang.github.io/book/postgraduate/线性代数20190226.pdf" height></div><p><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;center&gt;数学资料汇总&lt;/center&gt;
-
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;#高等数学&lt;/p&gt;
-&lt;div class=&quot;pdf&quot; target=&quot;https://wugenqiang.github.io/book/postgraduate/数学高数部分20190226.pd
-      
-    
-    </summary>
-    
-      <category term="考研数学" scheme="http://wugenqiang.github.io/categories/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/"/>
-    
-    
-      <category term="数学" scheme="http://wugenqiang.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="考研" scheme="http://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://wugenqiang.github.io/2019/03/09/hello-world/"/>
-    <id>http://wugenqiang.github.io/2019/03/09/hello-world/</id>
-    <published>2019-03-09T00:00:00.000Z</published>
-    <updated>2019-03-16T11:42:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://wugenqiang.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://wugenqiang.github.io/tags/Hexo/"/>
-    
-      <category term="HelloWorld" scheme="http://wugenqiang.github.io/tags/HelloWorld/"/>
     
   </entry>
   
