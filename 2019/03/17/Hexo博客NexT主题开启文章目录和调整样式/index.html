@@ -148,6 +148,17 @@
     }
 </style>
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
+                alert('密码不正确,请询问主编大大');
+                history.back();
+            }
+        }
+    })();
+</script>
+
   <meta name="description" content="一、前言Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。 二、修改样式文件custom.styl文章目录样式文件custom.styl文件位于themes/next/source/css/_custom 打开后添加内容： 1.文章目录默认展开12//文章目录默认展开.post-toc .nav .nav-child &amp;#123; display: block;">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
@@ -180,16 +191,6 @@
   };
 </script>
 
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入查看密码') !== ''){
-                alert('密码不正确,请询问主编大大');
-                history.back();
-            }
-        }
-    })();
-</script>
 
 
   <title>Hexo博客NexT主题开启文章目录和调整样式 | EnjoyToShare</title>

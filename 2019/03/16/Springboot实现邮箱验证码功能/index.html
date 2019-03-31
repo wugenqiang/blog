@@ -148,6 +148,17 @@
     }
 </style>
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
+                alert('密码不正确,请询问主编大大');
+                history.back();
+            }
+        }
+    })();
+</script>
+
   <meta name="description" content="Springboot实现小程序端的邮箱验证一、配置项 配置pom文件，引入发送邮件的依赖  在pom文件中添加： 12345&amp;lt;!--邮件发送核心包--&amp;gt;&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-starter">
 <meta name="keywords" content="邮箱验证,Springboot,小程序">
 <meta property="og:type" content="article">
@@ -182,16 +193,6 @@
   };
 </script>
 
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入查看密码') !== ''){
-                alert('密码不正确,请询问主编大大');
-                history.back();
-            }
-        }
-    })();
-</script>
 
 
   <title>Springboot实现小程序端发送邮箱验证码功能 | EnjoyToShare</title>

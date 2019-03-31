@@ -148,6 +148,17 @@
     }
 </style>
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
+                alert('密码不正确,请询问主编大大');
+                history.back();
+            }
+        }
+    })();
+</script>
+
   <meta name="description" content="写在前面本文主要是Hexo+NexT主题的配置以及页面的样式优化 本篇文档参考了许多大佬的文章以及配置文件，在此感谢大佬们。 本文参考的文章都会直接给出原文链接或者以注脚的形式标记出处，如有遗漏，欢迎指出。 本文内容会在后续的优化中慢慢补充完整~~ 首先在配置Hexo+NexT之前，最好阅读一下Hexo官方文档和NexT使用文档 页面优化修改文章底部#为图标修改模板/themes/next/lay">
 <meta name="keywords" content="Hexo,NexT">
 <meta property="og:type" content="article">
@@ -182,16 +193,6 @@
   };
 </script>
 
-<script>
-    (function(){
-        if('123456'){
-            if (prompt('请输入查看密码') !== '123456'){
-                alert('密码不正确,请询问主编大大');
-                history.back();
-            }
-        }
-    })();
-</script>
 
 
   <title>Hexo+NexT拥抱舒爽 | EnjoyToShare</title>
