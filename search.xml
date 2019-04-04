@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo博客绑定个人域名]]></title>
+    <url>%2F2019%2F04%2F04%2FHexo%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[前段时间用hexo搭建的gitpage个人博客，域名默认也是 github 下的二级域名：username.github.io,现在为了提升格调准备将自己的博客指向一个新的域名。 下面来记录下过程。 购买域名如果想要免费的域名，可以到下面网址购买：http://www.dot.tk/en/index.html?lang=en当然，如果有条件，最好到阿里云或者腾讯云等地方购买域名，听说1元优惠域名还是很多的 域名解析首先获取自己 github 的二级域名的 IP地址，windows 下直接在 cmd 里 Ping 一下自己的博客就会得到 IP 地址： 我的ip是185.199.111.153下面通过 DNS域名解析将购买的域名指向 github 的二级域名：username.github.io，我的是在腾讯云购买的1元用一年的，进入腾讯云的管理控制台-域名与网站-云解析 DNS，进入域名的解析设置，点击新手指导，将得到的 IP 地址填到记录值一栏，点击确定就 OK 了。填完以后的解析列表会出现： 记录值就是自己 github 的二级域名的 IP地址。 设置CNAME在 hexo 项目下，source 文件夹下面创建 CNAME 文件（没有后缀名的），在里面写上购买的域名。比如：blog.enjoytoshare.club 在 github 上面，打开 username.github.io 项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。比如： 好了，新域名配置完成，可以访问了。]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>域名</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[英语知识整理]]></title>
     <url>%2F2019%2F04%2F02%2F%E8%8B%B1%E8%AF%AD%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86%2F</url>
     <content type="text"><![CDATA[222]]></content>
@@ -90,7 +102,7 @@
   <entry>
     <title><![CDATA[PicGo+GitHub图床，让Markdown飞起]]></title>
     <url>%2F2019%2F04%2F01%2FPicGo-GitHub%E5%9B%BE%E5%BA%8A%EF%BC%8C%E8%AE%A9Markdown%E9%A3%9E%E8%B5%B7%2F</url>
-    <content type="text"><![CDATA[PicGo介绍这是一款图片上传的工具，目前支持微博图床，七牛图床，腾讯云，又拍云，GitHub等图床，未来将支持更多图床。 所以解决问题的思路就是，将本地的文件，或者剪切板上面的截图发送图床，然后生成在线图片的链接，这样就可以 让Markdown文档飞起来了，走到哪就可以用到哪~~ 在众多的图床中，我选择的GitHub图床，其它类型的图床如果你们有兴趣的话可以试一下，主要我对于Github有特殊的感 情，很难割舍~~ 下载PicGo进入下载链接下载链接为：https://github.com/Molunerfinn/PicGo/releases/tag/v2.0.5 选择安装包下载 安装软件包 创建GitHub图床需要注册/登陆GitHub账号 已经有了自行跳过这一步 申请GitHub账号很简单，我就不演示了 创建Repository随便命名，我的比较简单，直接是picGo 生成Token生成一个Token用于操作GitHub repository Settings -&gt; Developer settings -&gt; Personal access tokens 然后确定提交，复制生成一串字符 token，这个 token 只出现一次，所以要保存一下。 配置PicGo客户端如下图配置： 说明： 仓库名 即你的仓库名 分支名 默认 master Token 就是刚刚复制的那一串字符 存储路径 这个可以填也可以不填，填了的话图片就上传到这个文件夹 域名 这个要改一下 格式： https://raw.githubusercontent.com/[仓库名]/master 然后点确定就OK了，不妨试试。 小结一下PicGo是一个不错的软件，真的很好使用，虽然我只用了两天，但是我爱不释手，我之前自己写过图床，但是需要有自己的 云服务器才可访问，所以我自己上网查资料，找到了这个好用的图床工具。 上面的步骤都设置好之后，就可以让自己的Markdown文档飞起来了，来试试吧~~]]></content>
+    <content type="text"><![CDATA[PicGo+GitHub图床，让Markdown飞起 PicGo介绍这是一款图片上传的工具，目前支持微博图床，七牛图床，腾讯云，又拍云，GitHub等图床，未来将支持更多图床。 所以解决问题的思路就是，将本地的文件，或者剪切板上面的截图发送图床，然后生成在线图片的链接，这样就可以 让Markdown文档飞起来了，走到哪就可以用到哪~~ 在众多的图床中，我选择的GitHub图床，其它类型的图床如果你们有兴趣的话可以试一下，主要我对于Github有特殊的感 情，很难割舍~~ 下载PicGo进入下载链接下载链接为：https://github.com/Molunerfinn/PicGo/releases/tag/v2.0.5 选择安装包下载 安装软件包 创建GitHub图床需要注册/登陆GitHub账号 已经有了自行跳过这一步 申请GitHub账号很简单，我就不演示了 创建Repository随便命名，我的比较简单，直接是picGo 生成Token生成一个Token用于操作GitHub repository Settings -&gt; Developer settings -&gt; Personal access tokens 然后确定提交，复制生成一串字符 token，这个 token 只出现一次，所以要保存一下。 配置PicGo客户端如下图配置： 说明： 仓库名 即你的仓库名 分支名 默认 master Token 就是刚刚复制的那一串字符 存储路径 这个可以填也可以不填，填了的话图片就上传到这个文件夹 域名 这个要改一下 格式： https://raw.githubusercontent.com/[仓库名]/master 然后点确定就OK了，不妨试试。 小结一下PicGo是一个不错的软件，真的很好使用，虽然我只用了两天，但是我爱不释手，我之前自己写过图床，但是需要有自己的 云服务器才可访问，所以我自己上网查资料，找到了这个好用的图床工具。 上面的步骤都设置好之后，就可以让自己的Markdown文档飞起来了，来试试吧~~]]></content>
       <categories>
         <category>Markdown</category>
       </categories>
