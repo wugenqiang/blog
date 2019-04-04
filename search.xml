@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo博客自定义域名开启HTTPS]]></title>
+    <url>%2F2019%2F04%2F05%2FHexo%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%BC%80%E5%90%AFHTTPS%2F</url>
+    <content type="text"><![CDATA[GitHub官方曾经宣布，GitHub Pages的自定义域名获得对HTTPS的支持。 自己博客没有启用HTTPS，看到消息后，就想着折腾下吧。其实，很简单的，对着官方教程一步步来就可以了。 首先，打开仓库的Settings，找到GitHub Pages项，有一个Enforce HTTPS，在前面的框打上钩就可以了。完成后，博客就全站支持HTTPS了。 效果如下： 但是爆红就让人心态不好了，所以下面使用Netlify来优化https方案 Netlify (推荐) 可以使用 CLI 上传代码 支持自定义域名且自定义域名支持一键开启 https（证书来自 Let’s Encrype） 支持强制让用户通过 https 访问网站（开启后此功能后，http 的访问一律会 301 跳转到 https 支持自动构建 支持重定向（Redirects）和重写（Rewrites）功能 数据通过 HTTP2 协议传输 提供 webhooks 与 API Netlify部署网站首先去 Netlify 注册账号登录（https://www.netlify.com/） 接着点击页面右上角的 New site from Git 这里选择的 GitHub ,别忘记勾选访问公共仓库选项.之后授权给 Netlify 指定Repository,然后 Deploy 设置自定义域名点击 Domain settings 然后点击 Add custom domain. 然后到域名解析处,修改域名CNAME记录,记录值就是设置完域名页面显示的配置值 添加SSL证书设置完成域名绑定后,设置中心选项有所变化 , 点击 至此配置完成 效果显示： 完美~~]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>域名</tag>
+        <tag>Https</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo博客绑定个人域名]]></title>
     <url>%2F2019%2F04%2F04%2FHexo%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%2F</url>
     <content type="text"><![CDATA[前段时间用hexo搭建的gitpage个人博客，域名默认也是 github 下的二级域名：username.github.io,现在为了提升格调准备将自己的博客指向一个新的域名。 下面来记录下过程。 购买域名如果想要免费的域名，可以到下面网址购买：http://www.dot.tk/en/index.html?lang=en当然，如果有条件，最好到阿里云或者腾讯云等地方购买域名，听说1元优惠域名还是很多的 域名解析首先获取自己 github 的二级域名的 IP地址，windows 下直接在 cmd 里 Ping 一下自己的博客就会得到 IP 地址： 我的ip是185.199.111.153下面通过 DNS域名解析将购买的域名指向 github 的二级域名：username.github.io，我的是在腾讯云购买的1元用一年的，进入腾讯云的管理控制台-域名与网站-云解析 DNS，进入域名的解析设置，点击新手指导，将得到的 IP 地址填到记录值一栏，点击确定就 OK 了。填完以后的解析列表会出现： 记录值就是自己 github 的二级域名的 IP地址。 设置CNAME在 hexo 项目下，source 文件夹下面创建 CNAME 文件（没有后缀名的），在里面写上购买的域名。比如：blog.enjoytoshare.club 在 github 上面，打开 username.github.io 项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。比如： 好了，新域名配置完成，可以访问了。]]></content>
@@ -132,8 +145,8 @@
       </categories>
       <tags>
         <tag>课程复习整理</tag>
-        <tag>数据结构</tag>
         <tag>考研</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
