@@ -178,7 +178,7 @@
   <entry>
     <title><![CDATA[Hexo NexT 加入背景图片]]></title>
     <url>%2F2019%2F03%2F31%2FHexo-Next-%E5%8A%A0%E5%85%A5%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BDgitalk-1%2F</url>
-    <content type="text"><![CDATA[添加如下代码：给 hexo next 加上背景图片，只需要在 themes\next\source\css_custom\custom.styl 文件中 添加几行代码： 12345678910111213@media screen and (min-width:1200px) &#123; body &#123; background-image:url(/images/background.jpg); background-repeat: no-repeat; background-attachment:fixed; background-position:50% 50%; &#125; #footer a &#123; color:#eee; &#125;&#125; ok]]></content>
+    <content type="text"><![CDATA[添加如下代码：给 hexo next 加上背景图片，只需要在 themes\next\source\css \ _custom\custom.styl 文件中 添加几行代码： 12345678910111213@media screen and (min-width:1200px) &#123; body &#123; background-image:url(/images/background.jpg); background-repeat: no-repeat; background-attachment:fixed; background-position:50% 50%; &#125; #footer a &#123; color:#eee; &#125;&#125; ok]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
