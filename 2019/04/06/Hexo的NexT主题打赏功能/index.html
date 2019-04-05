@@ -633,12 +633,12 @@
       
         <h2 id="准备支付宝和微信二维码"><a href="#准备支付宝和微信二维码" class="headerlink" title="准备支付宝和微信二维码"></a>准备支付宝和微信二维码</h2><p>首先要生成支付宝和微信收钱二维码</p>
 <h2 id="在-config-yml中配置图片"><a href="#在-config-yml中配置图片" class="headerlink" title="在_config.yml中配置图片"></a>在_config.yml中配置图片</h2><p>wechat.jpg、alipay.jpg图片放入themes/next/source/images中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reward:</span><br><span class="line">  enable: true</span><br><span class="line">  #打赏功能</span><br><span class="line">  comment: 原创技术分享，您的支持将鼓励我继续创作</span><br><span class="line">  wechatpay: /images/wechat.jpg</span><br><span class="line">  alipay: /images/alipay.jpg</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reward:</span><br><span class="line">  enable: <span class="literal">true</span></span><br><span class="line">  #打赏功能</span><br><span class="line">  comment: 原创技术分享，您的支持将鼓励我继续创作</span><br><span class="line">  wechatpay: <span class="regexp">/images/</span>wechat.jpg</span><br><span class="line">  alipay: <span class="regexp">/images/</span>alipay.jpg</span><br></pre></td></tr></table></figure>
 <p>到目前为止，已经实现了需要的功能，如图所示：</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405180715.png" alt></p>
 <p>但是出现闪动Bug，所以进行下面的修复</p>
 <h2 id="修复闪动Bug"><a href="#修复闪动Bug" class="headerlink" title="修复闪动Bug"></a>修复闪动Bug</h2><p>修改next/source/css/_common/components/post/post-reward.styl，注释掉下面部分即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  /*注释此部分</span><br><span class="line">#QR &gt; div:hover p &#123;</span><br><span class="line">  animation: roll 0.1s infinite linear;</span><br><span class="line">  -webkit-animation: roll 0.1s infinite linear;</span><br><span class="line">  -moz-animation: roll 0.1s infinite linear;</span><br><span class="line">&#125;*/</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/*注释此部分</span><br><span class="line"><span class="comment">#QR &gt; div:hover p &#123;</span></span><br><span class="line">  animation: roll <span class="number">0.1</span>s infinite linear;</span><br><span class="line">  -webkit-animation: roll <span class="number">0.1</span>s infinite linear;</span><br><span class="line">  -moz-animation: roll <span class="number">0.1</span>s infinite linear;</span><br><span class="line">&#125;*/</span><br></pre></td></tr></table></figure>
 <p>好啦，到这里大功告成，完美~~</p>
 
       
@@ -715,6 +715,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/04/06/Hexo之修改内容区域的宽度/" rel="prev" title="Hexo之修改内容区域的宽度">
+                Hexo之修改内容区域的宽度 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -787,7 +791,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -896,37 +900,45 @@
                 <span class="links-of-author-item">
                   
                   
+                    
+                  
                   
                     
                   
-                  <a href="https://github.com/wugenqiang" title="GitHub &rarr; https://github.com/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+                  <a href="https://github.com/wugenqiang" title="GitHub &rarr; https://github.com/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
+                    
+                  
                   
                     
                   
-                  <a href="mailto:2422676183@qq.com" title="E-Mail &rarr; mailto:2422676183@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+                  <a href="https://gitee.com/wugenqiang" title="Gitee &rarr; https://gitee.com/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-gitlab"></i>Gitee</a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
+                    
+                  
                   
                     
                   
-                  <a href="https://blog.csdn.net/wugenqiang" title="CSDN &rarr; https://blog.csdn.net/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-heartbeat"></i></a>
+                  <a href="https://blog.csdn.net/wugenqiang" title="CSDN &rarr; https://blog.csdn.net/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-heartbeat"></i>CSDN</a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
+                    
+                  
                   
                     
                   
-                  <a href="https://gitee.com/wugenqiang" title="Gitee &rarr; https://gitee.com/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-gitlab"></i></a>
+                  <a href="https://dev.tencent.com/u/wugenqiang" title="Coding &rarr; https://dev.tencent.com/u/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Coding</a>
                 </span>
               
             </div>
@@ -1040,7 +1052,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共8.2k字</span>
+  <span class="post-count">博客全站共8.3k字</span>
 </div>
 
         
