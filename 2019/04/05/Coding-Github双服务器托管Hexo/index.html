@@ -163,6 +163,10 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405100027.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405100903.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405101028.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103203.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103257.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103808.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405104001.png">
 <meta property="og:updated_time" content="2019-04-05T09:36:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Coding+Github双服务器托管Hexo">
@@ -605,35 +609,18 @@
           
             
             
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/05/Coding-Github双服务器托管Hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/05/Coding-Github双服务器托管Hexo/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
           
-            <span id="/2019/04/05/Coding-Github双服务器托管Hexo/" class="leancloud_visitors" data-flag-title="Coding+Github双服务器托管Hexo">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
             </span>
-          
-
           
 
           
@@ -674,6 +661,16 @@
 <li><a href="http://wugenqiang.coding.me/" target="_blank" rel="noopener">http://wugenqiang.coding.me/</a></li>
 <li><a href="https://wugenqiang.github.io/">https://wugenqiang.github.io/</a></li>
 </ul>
+<h1 id="设置自定义域名"><a href="#设置自定义域名" class="headerlink" title="设置自定义域名"></a>设置自定义域名</h1><p>对于Github来说，可参考：</p>
+<ul>
+<li><a href="https://wugenqiang.github.io/2019/04/04/Hexo%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/#more">Hexo博客绑定个人域名</a></li>
+</ul>
+<p>对于Coding来说，来进行下面步骤：<br>1.进入项目，进入Page服务页<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103203.png" alt></p>
+<p>点击设置进入</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103257.png" alt></p>
+<p>2.设置域名指向<br>设置自定义域名指向wugenqiang.coding.me</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103808.png" alt></p>
+<p>ok<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405104001.png" alt></p>
 
       
     </div>
@@ -741,7 +738,7 @@
           
 
   
-    <div class="comments" id="comments">
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -979,7 +976,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署优化Hexo"><span class="nav-number">2.</span> <span class="nav-text">部署优化Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建Github公开库"><span class="nav-number">3.</span> <span class="nav-text">创建Github公开库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建Coding公开库"><span class="nav-number">4.</span> <span class="nav-text">创建Coding公开库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">4.1.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启page服务"><span class="nav-number">4.2.</span> <span class="nav-text">开启page服务</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置服务并将文件部署到Github"><span class="nav-number">5.</span> <span class="nav-text">配置服务并将文件部署到Github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改-config-yml"><span class="nav-number">5.1.</span> <span class="nav-text">修改_config.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成静态文件发布"><span class="nav-number">5.2.</span> <span class="nav-text">生成静态文件发布</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#预览地址"><span class="nav-number">6.</span> <span class="nav-text">预览地址</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署优化Hexo"><span class="nav-number">2.</span> <span class="nav-text">部署优化Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建Github公开库"><span class="nav-number">3.</span> <span class="nav-text">创建Github公开库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建Coding公开库"><span class="nav-number">4.</span> <span class="nav-text">创建Coding公开库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">4.1.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启page服务"><span class="nav-number">4.2.</span> <span class="nav-text">开启page服务</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置服务并将文件部署到Github"><span class="nav-number">5.</span> <span class="nav-text">配置服务并将文件部署到Github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改-config-yml"><span class="nav-number">5.1.</span> <span class="nav-text">修改_config.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成静态文件发布"><span class="nav-number">5.2.</span> <span class="nav-text">生成静态文件发布</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#预览地址"><span class="nav-number">6.</span> <span class="nav-text">预览地址</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置自定义域名"><span class="nav-number">7.</span> <span class="nav-text">设置自定义域名</span></a></li></ol></div>
             
 
           </div>
@@ -1049,6 +1046,32 @@ setInterval("createtime()",250);
 </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-android"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -1180,42 +1203,36 @@ setInterval("createtime()",250);
   
 
   
+
+
   
+    
 
-<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
 
 
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
+  var gitalk = new Gitalk({
+    clientID: '09e05981e2532e9d89eb',
+    clientSecret: 'e707a524d008294dff411fa5e7435849261b1678',
+    repo: 'wugenqiang.github.io',
+    owner: 'wugenqiang',
+    admin: ['wugenqiang'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
   });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: true,
-    appId: 'j5U5IGzSMQcvLyhW1Y6opNX6-gzGzoHsz',
-    appKey: 'orYWc8ltQOxyT6Y9HEQdrizt',
-    placeholder: 'Just go go ^_^',
-    avatar: 'wavatar',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true
-  });
-  //新增以下代码即可，可以移除.info下所有子节点。
-  var infoEle = document.querySelector('#comments .info');
-  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
-    infoEle.childNodes.forEach(function(item) {
-      item.parentNode.removeChild(item);
-    });
-   }
+  gitalk.render('gitalk-container');
 </script>
-
-
 
 
   
