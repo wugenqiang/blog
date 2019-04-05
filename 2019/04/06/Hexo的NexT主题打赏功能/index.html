@@ -149,21 +149,20 @@
 </style>
 
 
-  <meta name="description" content="准备支付宝和微信二维码首先要生成支付宝和微信收钱二维码 比如我这样的：   在_config.yml中配置图片wechat.jpg、aipay.jpg图片放入themes/next/source/images中 1234#打赏功能reward_comment: 原创技术分享，您的支持将鼓励我继续创作wechatpay: /images/wechat.jpgalipay: /images/aipay">
+  <meta name="description" content="准备支付宝和微信二维码首先要生成支付宝和微信收钱二维码 在_config.yml中配置图片wechat.jpg、alipay.jpg图片放入themes/next/source/images中 123456reward:  enable: true  #打赏功能  comment: 原创技术分享，您的支持将鼓励我继续创作  wechatpay: /images/wechat.jpg  alipay">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo的NexT主题打赏功能">
 <meta property="og:url" content="https://wugenqiang.github.io/2019/04/06/Hexo的NexT主题打赏功能/index.html">
 <meta property="og:site_name" content="EnjoyToShare">
-<meta property="og:description" content="准备支付宝和微信二维码首先要生成支付宝和微信收钱二维码 比如我这样的：   在_config.yml中配置图片wechat.jpg、aipay.jpg图片放入themes/next/source/images中 1234#打赏功能reward_comment: 原创技术分享，您的支持将鼓励我继续创作wechatpay: /images/wechat.jpgalipay: /images/aipay">
+<meta property="og:description" content="准备支付宝和微信二维码首先要生成支付宝和微信收钱二维码 在_config.yml中配置图片wechat.jpg、alipay.jpg图片放入themes/next/source/images中 123456reward:  enable: true  #打赏功能  comment: 原创技术分享，您的支持将鼓励我继续创作  wechatpay: /images/wechat.jpg  alipay">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/zhifubaozhifu.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/weixinzhifu.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405180715.png">
 <meta property="og:updated_time" content="2019-04-05T17:37:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo的NexT主题打赏功能">
-<meta name="twitter:description" content="准备支付宝和微信二维码首先要生成支付宝和微信收钱二维码 比如我这样的：   在_config.yml中配置图片wechat.jpg、aipay.jpg图片放入themes/next/source/images中 1234#打赏功能reward_comment: 原创技术分享，您的支持将鼓励我继续创作wechatpay: /images/wechat.jpgalipay: /images/aipay">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/zhifubaozhifu.jpg">
+<meta name="twitter:description" content="准备支付宝和微信二维码首先要生成支付宝和微信收钱二维码 在_config.yml中配置图片wechat.jpg、alipay.jpg图片放入themes/next/source/images中 123456reward:  enable: true  #打赏功能  comment: 原创技术分享，您的支持将鼓励我继续创作  wechatpay: /images/wechat.jpg  alipay">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405180715.png">
 
 
 
@@ -633,12 +632,14 @@
 
       
         <h2 id="准备支付宝和微信二维码"><a href="#准备支付宝和微信二维码" class="headerlink" title="准备支付宝和微信二维码"></a>准备支付宝和微信二维码</h2><p>首先要生成支付宝和微信收钱二维码</p>
-<p>比如我这样的：</p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/zhifubaozhifu.jpg" alt></p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/weixinzhifu.png" alt></p>
-<h2 id="在-config-yml中配置图片"><a href="#在-config-yml中配置图片" class="headerlink" title="在_config.yml中配置图片"></a>在_config.yml中配置图片</h2><p>wechat.jpg、aipay.jpg图片放入themes/next/source/images中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#打赏功能</span><br><span class="line">reward_comment: 原创技术分享，您的支持将鼓励我继续创作</span><br><span class="line">wechatpay: /images/wechat.jpg</span><br><span class="line">alipay: /images/aipay.jpg</span><br></pre></td></tr></table></figure>
-<h2 id="修复煽动bug"><a href="#修复煽动bug" class="headerlink" title="修复煽动bug"></a>修复煽动bug</h2><p>修改next/source/css/_common/components/post/post-reward.styl，注释wechat:hover和alipay:hover</p>
+<h2 id="在-config-yml中配置图片"><a href="#在-config-yml中配置图片" class="headerlink" title="在_config.yml中配置图片"></a>在_config.yml中配置图片</h2><p>wechat.jpg、alipay.jpg图片放入themes/next/source/images中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reward:</span><br><span class="line">  enable: true</span><br><span class="line">  #打赏功能</span><br><span class="line">  comment: 原创技术分享，您的支持将鼓励我继续创作</span><br><span class="line">  wechatpay: /images/wechat.jpg</span><br><span class="line">  alipay: /images/alipay.jpg</span><br></pre></td></tr></table></figure>
+<p>到目前为止，已经实现了需要的功能，如图所示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405180715.png" alt></p>
+<p>但是出现闪动Bug，所以进行下面的修复</p>
+<h2 id="修复闪动Bug"><a href="#修复闪动Bug" class="headerlink" title="修复闪动Bug"></a>修复闪动Bug</h2><p>修改next/source/css/_common/components/post/post-reward.styl，注释掉下面部分即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  /*注释此部分</span><br><span class="line">#QR &gt; div:hover p &#123;</span><br><span class="line">  animation: roll 0.1s infinite linear;</span><br><span class="line">  -webkit-animation: roll 0.1s infinite linear;</span><br><span class="line">  -moz-animation: roll 0.1s infinite linear;</span><br><span class="line">&#125;*/</span><br></pre></td></tr></table></figure>
+<p>好啦，到这里大功告成，完美~~</p>
 
       
     </div>
@@ -654,6 +655,35 @@
     
       
     
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>原创技术分享，您的支持将鼓励我继续创作</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat.jpg" alt="WuGenQiang 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="WuGenQiang 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
@@ -944,7 +974,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备支付宝和微信二维码"><span class="nav-number">1.</span> <span class="nav-text">准备支付宝和微信二维码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在-config-yml中配置图片"><span class="nav-number">2.</span> <span class="nav-text">在_config.yml中配置图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修复煽动bug"><span class="nav-number">3.</span> <span class="nav-text">修复煽动bug</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备支付宝和微信二维码"><span class="nav-number">1.</span> <span class="nav-text">准备支付宝和微信二维码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在-config-yml中配置图片"><span class="nav-number">2.</span> <span class="nav-text">在_config.yml中配置图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修复闪动Bug"><span class="nav-number">3.</span> <span class="nav-text">修复闪动Bug</span></a></li></ol></div>
             
 
           </div>
@@ -1010,7 +1040,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共8.1k字</span>
+  <span class="post-count">博客全站共8.2k字</span>
 </div>
 
         
