@@ -617,6 +617,17 @@
 
           
           
+            <span id="/2019/03/31/计算机网络/" class="leancloud_visitors" data-flag-title="计算机网络知识整理">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
 
           
 
@@ -792,6 +803,17 @@
 
           
           
+            <span id="/2019/03/31/Hexo-Next-加入评论功能gitalk-1/" class="leancloud_visitors" data-flag-title="Hexo NexT 加入背景图片">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
 
           
 
@@ -960,6 +982,17 @@
           
 
           
+          
+            <span id="/2019/03/31/Hexo-Next-加入评论功能gitalk/" class="leancloud_visitors" data-flag-title="Hexo NexT 加入评论功能gitalk">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1143,6 +1176,17 @@ Gitalk:
 
           
           
+            <span id="/2019/03/17/Hexo获取网易云音乐外链/" class="leancloud_visitors" data-flag-title="Hexo获取网易云音乐外链">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
 
           
 
@@ -1315,6 +1359,17 @@ id就是350909
           
 
           
+          
+            <span id="/2019/03/17/Hexo博客NexT主题开启文章目录和调整样式/" class="leancloud_visitors" data-flag-title="Hexo博客NexT主题开启文章目录和调整样式">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1492,6 +1547,17 @@ id就是350909
           
 
           
+          
+            <span id="/2019/03/16/Springboot实现邮箱验证码功能/" class="leancloud_visitors" data-flag-title="Springboot实现小程序端发送邮箱验证码功能">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1854,36 +1920,10 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共7.6k字</span>
+  <span class="post-count">博客全站共7.9k字</span>
 </div>
 
         
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-android"></i>
-    </span>
-    <span class="site-uv" title="总访客量">
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-    </span>
-  
-
-  
-    <span class="post-meta-divider">|</span>
-  
-
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-eye"></i>
-    </span>
-    <span class="site-pv" title="总访问量">
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-    </span>
-  
-</div>
-
 
 
 
@@ -2008,6 +2048,42 @@ setInterval("createtime()",250);
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'j5U5IGzSMQcvLyhW1Y6opNX6-gzGzoHsz',
+    appKey: 'orYWc8ltQOxyT6Y9HEQdrizt',
+    placeholder: 'Just go go ^_^',
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true
+  });
+  //新增以下代码即可，可以移除.info下所有子节点。
+  var infoEle = document.querySelector('#comments .info');
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+    infoEle.childNodes.forEach(function(item) {
+      item.parentNode.removeChild(item);
+    });
+   }
+</script>
+
+
 
 
 
