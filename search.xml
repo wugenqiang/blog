@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Coding+Github双服务器托管Hexo]]></title>
+    <url>%2F2019%2F04%2F05%2FCoding-Github%E5%8F%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%89%98%E7%AE%A1Hexo%2F</url>
+    <content type="text"><![CDATA[写在前面 其实之前是用的wordpress在阿里云上挂着。觉得Hexo好像更符合现在我的审美，so, do it! 所以我选择了Hexo 部署优化Hexo这一步我之前写过，在这里我就不详细赘述了啊 Hexo+NexT拥抱舒爽 创建github公开库 Hexo博客上传至Github 创建Coding公开库创建腾讯云开发者平台（或Coding）公开库，因为目前两家公司战略合作，现在共用了。https://dev.tencent.com/ 创建项目项目地址格式是 username.coding.me，格式不对会404哦，项目名称随便，确定就ok例如我的： 开启page服务创建完记得进入代码浏览，看看是否正确生成，然后进入page服务，然后开启开启成功效果图： 配置服务并将文件部署到Github]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo博客自定义域名开启HTTPS]]></title>
     <url>%2F2019%2F04%2F05%2FHexo%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%BC%80%E5%90%AFHTTPS%2F</url>
     <content type="text"><![CDATA[GitHub官方曾经宣布，GitHub Pages的自定义域名获得对HTTPS的支持。 自己博客没有启用HTTPS，看到消息后，就想着折腾下吧。其实，很简单的，对着官方教程一步步来就可以了。 首先，打开仓库的Settings，找到GitHub Pages项，有一个Enforce HTTPS，在前面的框打上钩就可以了。完成后，博客就全站支持HTTPS了。 效果如下： 但是爆红就让人心态不好了，所以下面使用Netlify来优化https方案 Netlify (推荐) 可以使用 CLI 上传代码 支持自定义域名且自定义域名支持一键开启 https（证书来自 Let’s Encrype） 支持强制让用户通过 https 访问网站（开启后此功能后，http 的访问一律会 301 跳转到 https 支持自动构建 支持重定向（Redirects）和重写（Rewrites）功能 数据通过 HTTP2 协议传输 提供 webhooks 与 API NetlifyNetlify是一家专注于提供静态网站托管服务的公司，通过自己的内容分发网络，将提前建立好的静态页面呈献给访客，节约了加载的时间。 部署网站首先去 Netlify 注册账号登录（https://www.netlify.com/） 接着点击页面右上角的 New site from Git 这里选择的 GitHub ,别忘记勾选访问公共仓库选项.之后授权给 Netlify 指定Repository,然后 Deploy 设置自定义域名点击 Domain settings 然后点击 Add custom domain. 然后到域名解析处,修改域名CNAME记录,记录值就是设置完域名页面显示的配置值 添加SSL证书设置完成域名绑定后,设置中心选项有所变化 , 点击 至此配置完成 效果显示： 完美~~]]></content>
