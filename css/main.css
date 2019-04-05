@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e557bf;
+  background: #9847c4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3281,7 +3281,7 @@ ul.breadcrumb li+li:last-child {
 }
 @media screen and (min-width: 1200px) {
   body {
-    background-image: url("https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/bg.jpg");
+    background-image: url("/images/bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
