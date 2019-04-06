@@ -15,7 +15,7 @@
   <entry>
     <title><![CDATA[Hexo之修改内容区域的宽度]]></title>
     <url>%2F2019%2F04%2F06%2FHexo%E4%B9%8B%E4%BF%AE%E6%94%B9%E5%86%85%E5%AE%B9%E5%8C%BA%E5%9F%9F%E7%9A%84%E5%AE%BD%E5%BA%A6%2F</url>
-    <content type="text"><![CDATA[修改内容区域的宽度编辑主题的 source/css/_variables/custom.styl 文件，新增变量： 12345// 修改成你期望的宽度$content-desktop = 700px// 当视窗超过 1600px 后的宽度$content-desktop-large = 1050px]]></content>
+    <content type="text"><![CDATA[修改内容区域的宽度编辑主题的 source/css/_variables/custom.styl 文件，新增变量： 1234// 修改成你期望的宽度$content-desktop = 700px// 当视窗超过 1600px 后的宽度$content-desktop-large = 1050px]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
