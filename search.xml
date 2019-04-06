@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo文章中图片点击实现全屏查看]]></title>
+    <url>%2F2019%2F04%2F06%2FHexo%E6%96%87%E7%AB%A0%E4%B8%AD%E5%9B%BE%E7%89%87%E7%82%B9%E5%87%BB%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%8F%E6%9F%A5%E7%9C%8B%2F</url>
+    <content type="text"><![CDATA[写在前面方法一存在图片放大后不美观，建议直接跳到方法二如果想尝试解决第一种方法出现的Bug，可以尝试一下，然后我们讨论一下，方便的话可以加我QQ：2422676183 方法一修改post-details.js文件文件目录：/themes/next/source/js/src/post-details.js在文件最后添加： 1234567891011121314151617181920212223242526//----自定义js----------------function createImgEventFullScreen() &#123; var imgs = $(".post-body").find("img"); console.log(imgs); for(var i = 0;i &lt; imgs.length;i++) &#123; // $(imgs[i]).click(createCover(imgs[i])); imgs[i].onclick= function(e) &#123; var src = e.srcElement.currentSrc; createCover(src) &#125; &#125; function createCover (src) &#123; console.log(src); var cover = $("&lt;div id='fullScreenCover' class='zhao-cover-img-container'&gt;&lt;img class='zhao-cover-img' src='"+src+"'/&gt;&lt;/div&gt;"); $("#fullScreenCover").remove(); $("body").append(cover); $("body").addClass("zhao-no-scroll"); $("#fullScreenCover").click(function()&#123; $("#fullScreenCover").remove(); $("body").removeClass("zhao-no-scroll"); &#125;) &#125;&#125;setTimeout(function()&#123; createImgEventFullScreen();&#125;,1000) 修改custom.styl文件文件目录：/themes/next/source/css/_custom/custom.styl在文件最后添加： 12345678910111213141516171819202122.zhao-cover-img-container&#123; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 10002; text-align: center; background-color: #000; overflow-y: scroll;&#125;.zhao-cover-img&#123; width: 100%; position: absolute; top: 0; bottom: 0;&#125;.zhao-no-scroll&#123; width: 100%; height: 100vh; overflow: hidden;&#125; 不过还是会存在一个小bug，大图片图片放大时有点不美观如果您知道如何解决可以给我留言，谢谢啦 方法二这种方法使用了图片浏览放大功能fancybox插件 切换到lib目录1cd next/source/lib 下载插件1git clone https://github.com/theme-next/theme-next-fancybox3 fancybox 更改主题配置文件更改next/_config.yml文件 1fancybox： true 测试效果部署hexo s之后点击图片，如图： 完美，这种效果我很满意，你觉得呢，还是大神优秀啊~~ 好好学习！]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[DaoVoice实现在线联系]]></title>
     <url>%2F2019%2F04%2F06%2FDaoVoice%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BF%E8%81%94%E7%B3%BB%2F</url>
     <content type="text"><![CDATA[绝佳的用户沟通工具 注册登录DaoVoice注册登录地址如下:http://www.daovoice.io/官网进行注册,需要邀请码: b6dbddb6 复制粘贴就可以了~!或者通过下面链接进入：http://dashboard.daovoice.io/get-started?invite_code=b6dbddb6 复制粘贴代码修改的hexo的文件路劲如下: themes/next/layout/_partials/head.swig 添加下面的代码: 12345678&#123;% if theme.daovoice %&#125; &lt;script&gt;(function(i,s,o,g,r,a,m)&#123;i["DaoVoiceObject"]=r;i[r]=i[r]||function()&#123;(i[r].q=i[r].q||[]).push(arguments)&#125;,i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)&#125;)(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/b6dbddb6.js","daovoice") daovoice('init', &#123; app_id: "你获取的appid"&#125;);daovoice('update'); &lt;/script&gt;&#123;% endif %&#125; 这段代码从这里找： 根据你自己的进行修改，参照下图： 修改主题的配置文件在主题的配置文件中添加: 12daovoice: truedaovoice_app_id: 我们注册获取的id 重新部署输入hexo s部署之后发现DaoVoice官网会提示 同时网页右下角出现了DaoVoice的图标 测试输入hello wugenqiang 回车键发送，效果如图： 与此同时，DaoVoice后台也同样收到了信息 如果每次都要登录DaoVoice进行回复有些麻烦，所以建议在DaoVocie内绑定微信，然后使用DaoVoice的小程序进行手机上的回复操作就很方便了。 绑定微信的途径：]]></content>
