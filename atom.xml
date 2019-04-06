@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hexo文章中图片点击实现全屏查看</title>
-    <link href="https://wugenqiang.github.io/2019/04/06/Hexo%E6%96%87%E7%AB%A0%E4%B8%AD%E5%9B%BE%E7%89%87%E7%82%B9%E5%87%BB%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%8F%E6%9F%A5%E7%9C%8B/"/>
-    <id>https://wugenqiang.github.io/2019/04/06/Hexo文章中图片点击实现全屏查看/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-picture-screen/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-picture-screen/</id>
     <published>2019-04-06T14:10:48.000Z</published>
     <updated>2019-04-06T14:10:48.000Z</updated>
     
@@ -43,8 +43,8 @@
   
   <entry>
     <title>DaoVoice实现在线联系</title>
-    <link href="https://wugenqiang.github.io/2019/04/06/DaoVoice%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BF%E8%81%94%E7%B3%BB/"/>
-    <id>https://wugenqiang.github.io/2019/04/06/DaoVoice实现在线联系/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-daovoice/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-daovoice/</id>
     <published>2019-04-06T10:13:16.000Z</published>
     <updated>2019-04-06T10:13:16.000Z</updated>
     
@@ -67,8 +67,8 @@
   
   <entry>
     <title>Hexo之修改内容区域的宽度</title>
-    <link href="https://wugenqiang.github.io/2019/04/06/Hexo%E4%B9%8B%E4%BF%AE%E6%94%B9%E5%86%85%E5%AE%B9%E5%8C%BA%E5%9F%9F%E7%9A%84%E5%AE%BD%E5%BA%A6/"/>
-    <id>https://wugenqiang.github.io/2019/04/06/Hexo之修改内容区域的宽度/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-edit-screen/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-edit-screen/</id>
     <published>2019-04-05T23:20:27.000Z</published>
     <updated>2019-04-05T23:20:27.000Z</updated>
     
@@ -92,8 +92,8 @@
   
   <entry>
     <title>Hexo的NexT主题打赏功能</title>
-    <link href="https://wugenqiang.github.io/2019/04/06/Hexo%E7%9A%84NexT%E4%B8%BB%E9%A2%98%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/"/>
-    <id>https://wugenqiang.github.io/2019/04/06/Hexo的NexT主题打赏功能/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-donate/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-donate/</id>
     <published>2019-04-05T17:37:10.000Z</published>
     <updated>2019-04-05T17:37:10.000Z</updated>
     
@@ -118,12 +118,12 @@
   
   <entry>
     <title>Coding+Github双服务器托管Hexo</title>
-    <link href="https://wugenqiang.github.io/2019/04/05/Coding-Github%E5%8F%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%89%98%E7%AE%A1Hexo/"/>
-    <id>https://wugenqiang.github.io/2019/04/05/Coding-Github双服务器托管Hexo/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-server-hosting/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-server-hosting/</id>
     <published>2019-04-05T09:36:34.000Z</published>
     <updated>2019-04-05T09:36:34.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>其实之前是用的wordpress在阿里云上挂着。<br>觉得Hexo好像更符合现在我的审美，so, do it! 所以我选择了Hexo</p><h1 id="部署优化Hexo"><a href="#部署优化Hexo" class="headerlink" title="部署优化Hexo"></a>部署优化Hexo</h1><p>这一步我之前写过，在这里我就不详细赘述了啊</p><ul><li><a href="https://wugenqiang.github.io/2019/04/01/Hexo-NexT拥抱舒爽/">Hexo+NexT拥抱舒爽</a></li></ul><h1 id="创建Github公开库"><a href="#创建Github公开库" class="headerlink" title="创建Github公开库"></a>创建Github公开库</h1><ul><li><a href="https://blog.csdn.net/wugenqiang/article/details/88373385" target="_blank" rel="noopener">Hexo博客上传至Github</a></li></ul><h1 id="创建Coding公开库"><a href="#创建Coding公开库" class="headerlink" title="创建Coding公开库"></a>创建Coding公开库</h1><p>创建腾讯云开发者平台（或Coding）公开库，因为目前两家公司战略合作，现在共用了。<br><a href="https://dev.tencent.com/" target="_blank" rel="noopener">https://dev.tencent.com/</a></p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405095056.png" alt></p><h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>项目地址格式是 username.coding.me，格式不对会404哦，项目名称随便，确定就ok<br>例如我的：<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405095539.png" alt></p><h2 id="开启page服务"><a href="#开启page服务" class="headerlink" title="开启page服务"></a>开启page服务</h2><p>创建完记得进入代码浏览，看看是否正确生成，然后进入page服务，然后开启<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405095901.png" alt><br>开启成功效果图：<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405100027.png" alt></p><h1 id="配置服务并将文件部署到Github"><a href="#配置服务并将文件部署到Github" class="headerlink" title="配置服务并将文件部署到Github"></a>配置服务并将文件部署到Github</h1><h2 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h2><p>修改Hexo根目录下 _config.yml 文件，找到最下面的 deploy，格式类似我这样的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  #repository: https://github.com/wugenqiang/wugenqiang.github.io.git #复制过来</span><br><span class="line">  #branch: master</span><br><span class="line">  repo:</span><br><span class="line">    github: https://github.com/wugenqiang/wugenqiang.github.io.git,master</span><br><span class="line">    coding: https://dev.tencent.com/u/wugenqiang/p/wugenqiang.coding.me.git,master</span><br></pre></td></tr></table></figure><h2 id="生成静态文件发布"><a href="#生成静态文件发布" class="headerlink" title="生成静态文件发布"></a>生成静态文件发布</h2><p>执行hexo clean &amp;&amp; hexo g &amp;&amp; hexo s 清除缓存，生成静态文件，本地发布<br>页面上没问题的话，就可以执行hexo d</p><p>会弹出输入github账号密码，和腾讯开发者平台的账号密码。<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405100903.png" alt><br>后面通过生成ssh私钥，公钥就不用频繁输入用户名密码</p><p>部署成功，按照各自平台的pages服务提示的网址即可访问<br>在这里我就演示coding的吧，嘿嘿<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405101028.png" alt></p><h1 id="预览地址"><a href="#预览地址" class="headerlink" title="预览地址"></a>预览地址</h1><ul><li><a href="http://wugenqiang.coding.me/" target="_blank" rel="noopener">http://wugenqiang.coding.me/</a></li><li><a href="https://wugenqiang.github.io/">https://wugenqiang.github.io/</a></li></ul><h1 id="设置自定义域名"><a href="#设置自定义域名" class="headerlink" title="设置自定义域名"></a>设置自定义域名</h1><p>对于Github来说，可参考：</p><ul><li><a href="https://wugenqiang.github.io/2019/04/04/Hexo%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/#more">Hexo博客绑定个人域名</a></li></ul><p>对于Coding来说，来进行下面步骤：<br>1.进入项目，进入Page服务页<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103203.png" alt></p><p>点击设置进入</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103257.png" alt></p><p>2.设置域名指向<br>设置自定义域名指向wugenqiang.coding.me</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103808.png" alt></p><p>ok<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405104001.png" alt></p><h1 id="加快访问速度"><a href="#加快访问速度" class="headerlink" title="加快访问速度"></a>加快访问速度</h1><p>修改解析记录，点击 修改，然后将github解析线路改成海外，然后保存，这样国外的用户访问你的博客的话会跳转到你的github的页面。国内默认coding.me，加快访问速度，欧耶</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405113112.png" alt></p><p>来访问试试吧，嘿嘿嘿 <a href="https://blog.enjoytoshare.club/" target="_blank" rel="noopener">死命点我吧，亲</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>其实之前是用的wordpress在阿里云上挂着。<br>觉得Hexo好像更符合现在我的审美，so, do it! 所以我选择了Hexo</p><h1 id="部署优化Hexo"><a href="#部署优化Hexo" class="headerlink" title="部署优化Hexo"></a>部署优化Hexo</h1><p>这一步我之前写过，在这里我就不详细赘述了啊</p><ul><li><a href="https://wugenqiang.github.io/article/hexo-do-optimization/#more">Hexo+NexT拥抱舒爽</a></li></ul><h1 id="创建Github公开库"><a href="#创建Github公开库" class="headerlink" title="创建Github公开库"></a>创建Github公开库</h1><ul><li><a href="https://blog.csdn.net/wugenqiang/article/details/88373385" target="_blank" rel="noopener">Hexo博客上传至Github</a></li></ul><h1 id="创建Coding公开库"><a href="#创建Coding公开库" class="headerlink" title="创建Coding公开库"></a>创建Coding公开库</h1><p>创建腾讯云开发者平台（或Coding）公开库，因为目前两家公司战略合作，现在共用了。<br><a href="https://dev.tencent.com/" target="_blank" rel="noopener">https://dev.tencent.com/</a></p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405095056.png" alt></p><h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>项目地址格式是 username.coding.me，格式不对会404哦，项目名称随便，确定就ok<br>例如我的：<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405095539.png" alt></p><h2 id="开启page服务"><a href="#开启page服务" class="headerlink" title="开启page服务"></a>开启page服务</h2><p>创建完记得进入代码浏览，看看是否正确生成，然后进入page服务，然后开启<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405095901.png" alt><br>开启成功效果图：<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405100027.png" alt></p><h1 id="配置服务并将文件部署到Github"><a href="#配置服务并将文件部署到Github" class="headerlink" title="配置服务并将文件部署到Github"></a>配置服务并将文件部署到Github</h1><h2 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h2><p>修改Hexo根目录下 _config.yml 文件，找到最下面的 deploy，格式类似我这样的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  #repository: https://github.com/wugenqiang/wugenqiang.github.io.git #复制过来</span><br><span class="line">  #branch: master</span><br><span class="line">  repo:</span><br><span class="line">    github: https://github.com/wugenqiang/wugenqiang.github.io.git,master</span><br><span class="line">    coding: https://dev.tencent.com/u/wugenqiang/p/wugenqiang.coding.me.git,master</span><br></pre></td></tr></table></figure><h2 id="生成静态文件发布"><a href="#生成静态文件发布" class="headerlink" title="生成静态文件发布"></a>生成静态文件发布</h2><p>执行hexo clean &amp;&amp; hexo g &amp;&amp; hexo s 清除缓存，生成静态文件，本地发布<br>页面上没问题的话，就可以执行hexo d</p><p>会弹出输入github账号密码，和腾讯开发者平台的账号密码。<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405100903.png" alt><br>后面通过生成ssh私钥，公钥就不用频繁输入用户名密码</p><p>部署成功，按照各自平台的pages服务提示的网址即可访问<br>在这里我就演示coding的吧，嘿嘿<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405101028.png" alt></p><h1 id="预览地址"><a href="#预览地址" class="headerlink" title="预览地址"></a>预览地址</h1><ul><li><a href="http://wugenqiang.coding.me/" target="_blank" rel="noopener">http://wugenqiang.coding.me/</a></li><li><a href="https://wugenqiang.github.io/">https://wugenqiang.github.io/</a></li></ul><h1 id="设置自定义域名"><a href="#设置自定义域名" class="headerlink" title="设置自定义域名"></a>设置自定义域名</h1><p>对于Github来说，可参考：</p><ul><li><a href="https://wugenqiang.github.io/2019/04/04/Hexo%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/#more">Hexo博客绑定个人域名</a></li></ul><p>对于Coding来说，来进行下面步骤：<br>1.进入项目，进入Page服务页<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103203.png" alt></p><p>点击设置进入</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103257.png" alt></p><p>2.设置域名指向<br>设置自定义域名指向wugenqiang.coding.me</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103808.png" alt></p><p>ok<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405104001.png" alt></p><h1 id="加快访问速度"><a href="#加快访问速度" class="headerlink" title="加快访问速度"></a>加快访问速度</h1><p>修改解析记录，点击 修改，然后将github解析线路改成海外，然后保存，这样国外的用户访问你的博客的话会跳转到你的github的页面。国内默认coding.me，加快访问速度，欧耶</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405113112.png" alt></p><p>来访问试试吧，嘿嘿嘿 <a href="https://blog.enjoytoshare.club/" target="_blank" rel="noopener">死命点我吧，亲</a></p>]]></content>
     
     <summary type="html">
     
@@ -143,8 +143,8 @@
   
   <entry>
     <title>Hexo博客自定义域名开启HTTPS</title>
-    <link href="https://wugenqiang.github.io/2019/04/05/Hexo%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%BC%80%E5%90%AFHTTPS/"/>
-    <id>https://wugenqiang.github.io/2019/04/05/Hexo博客自定义域名开启HTTPS/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-https/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-https/</id>
     <published>2019-04-04T16:44:18.000Z</published>
     <updated>2019-04-04T16:44:18.000Z</updated>
     
@@ -169,8 +169,8 @@
   
   <entry>
     <title>Hexo博客绑定个人域名</title>
-    <link href="https://wugenqiang.github.io/2019/04/04/Hexo%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/"/>
-    <id>https://wugenqiang.github.io/2019/04/04/Hexo博客绑定个人域名/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-domain/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-domain/</id>
     <published>2019-04-04T15:47:54.000Z</published>
     <updated>2019-04-04T15:47:54.000Z</updated>
     
@@ -193,8 +193,8 @@
   
   <entry>
     <title>英语知识整理</title>
-    <link href="https://wugenqiang.github.io/2019/04/02/%E8%8B%B1%E8%AF%AD%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
-    <id>https://wugenqiang.github.io/2019/04/02/英语知识整理/</id>
+    <link href="https://wugenqiang.github.io/article/english-arrangement/"/>
+    <id>https://wugenqiang.github.io/article/english-arrangement/</id>
     <published>2019-04-02T10:49:43.000Z</published>
     <updated>2019-04-02T10:49:43.000Z</updated>
     
@@ -227,8 +227,8 @@
   
   <entry>
     <title>概率论与数理统计知识整理</title>
-    <link href="https://wugenqiang.github.io/2019/04/02/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
-    <id>https://wugenqiang.github.io/2019/04/02/概率论与数理统计知识整理/</id>
+    <link href="https://wugenqiang.github.io/article/probability-theory-arrangement/"/>
+    <id>https://wugenqiang.github.io/article/probability-theory-arrangement/</id>
     <published>2019-04-02T10:49:14.000Z</published>
     <updated>2019-04-02T10:49:14.000Z</updated>
     
@@ -261,8 +261,8 @@
   
   <entry>
     <title>线性代数知识整理</title>
-    <link href="https://wugenqiang.github.io/2019/04/02/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
-    <id>https://wugenqiang.github.io/2019/04/02/线性代数知识整理/</id>
+    <link href="https://wugenqiang.github.io/article/linear-arrangement/"/>
+    <id>https://wugenqiang.github.io/article/linear-arrangement/</id>
     <published>2019-04-02T10:48:51.000Z</published>
     <updated>2019-04-02T10:48:51.000Z</updated>
     
@@ -295,8 +295,8 @@
   
   <entry>
     <title>高等数学知识整理</title>
-    <link href="https://wugenqiang.github.io/2019/04/02/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
-    <id>https://wugenqiang.github.io/2019/04/02/高等数学知识整理/</id>
+    <link href="https://wugenqiang.github.io/article/advanced-mathematics-arrangement/"/>
+    <id>https://wugenqiang.github.io/article/advanced-mathematics-arrangement/</id>
     <published>2019-04-02T10:47:34.000Z</published>
     <updated>2019-04-02T10:47:34.000Z</updated>
     
@@ -329,8 +329,8 @@
   
   <entry>
     <title>近现代史知识整理</title>
-    <link href="https://wugenqiang.github.io/2019/04/02/%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%8F%B2%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
-    <id>https://wugenqiang.github.io/2019/04/02/近现代史知识整理/</id>
+    <link href="https://wugenqiang.github.io/article/modern-history-arrangement/"/>
+    <id>https://wugenqiang.github.io/article/modern-history-arrangement/</id>
     <published>2019-04-02T10:30:37.000Z</published>
     <updated>2019-04-02T10:30:37.000Z</updated>
     
@@ -363,8 +363,8 @@
   
   <entry>
     <title>Hexo+NexT拥抱舒爽</title>
-    <link href="https://wugenqiang.github.io/2019/04/01/Hexo-NexT%E6%8B%A5%E6%8A%B1%E8%88%92%E7%88%BD/"/>
-    <id>https://wugenqiang.github.io/2019/04/01/Hexo-NexT拥抱舒爽/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-optimization/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-optimization/</id>
     <published>2019-03-31T19:01:35.000Z</published>
     <updated>2019-03-31T19:01:35.000Z</updated>
     
@@ -387,8 +387,8 @@
   
   <entry>
     <title>PicGo+GitHub图床，让Markdown飞起</title>
-    <link href="https://wugenqiang.github.io/2019/04/01/PicGo-GitHub%E5%9B%BE%E5%BA%8A%EF%BC%8C%E8%AE%A9Markdown%E9%A3%9E%E8%B5%B7/"/>
-    <id>https://wugenqiang.github.io/2019/04/01/PicGo-GitHub图床，让Markdown飞起/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-optimization-picture/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-optimization-picture/</id>
     <published>2019-03-31T16:37:53.000Z</published>
     <updated>2019-03-31T16:37:53.000Z</updated>
     
@@ -409,8 +409,8 @@
   
   <entry>
     <title>Markdown功能点讲解</title>
-    <link href="https://wugenqiang.github.io/2019/03/31/Markdown%E5%8A%9F%E8%83%BD%E7%82%B9%E8%AE%B2%E8%A7%A3/"/>
-    <id>https://wugenqiang.github.io/2019/03/31/Markdown功能点讲解/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-optimization-markdown/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-optimization-markdown/</id>
     <published>2019-03-31T14:32:26.000Z</published>
     <updated>2019-03-31T14:32:26.000Z</updated>
     
@@ -437,8 +437,8 @@
   
   <entry>
     <title>算法与数据结构知识整理</title>
-    <link href="https://wugenqiang.github.io/2019/03/31/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
-    <id>https://wugenqiang.github.io/2019/03/31/数据结构知识整理/</id>
+    <link href="https://wugenqiang.github.io/article/algorithm-arrangement/"/>
+    <id>https://wugenqiang.github.io/article/algorithm-arrangement/</id>
     <published>2019-03-31T14:13:40.000Z</published>
     <updated>2019-03-31T14:13:40.000Z</updated>
     
@@ -473,8 +473,8 @@
   
   <entry>
     <title>计算机网络知识整理</title>
-    <link href="https://wugenqiang.github.io/2019/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    <id>https://wugenqiang.github.io/2019/03/31/计算机网络/</id>
+    <link href="https://wugenqiang.github.io/article/network-arrangement/"/>
+    <id>https://wugenqiang.github.io/article/network-arrangement/</id>
     <published>2019-03-31T13:56:38.000Z</published>
     <updated>2019-03-31T13:56:38.000Z</updated>
     
@@ -506,8 +506,8 @@
   
   <entry>
     <title>Hexo NexT 加入背景图片</title>
-    <link href="https://wugenqiang.github.io/2019/03/31/Hexo-Next-%E5%8A%A0%E5%85%A5%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BDgitalk-1/"/>
-    <id>https://wugenqiang.github.io/2019/03/31/Hexo-Next-加入评论功能gitalk-1/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-bg-picture/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-bg-picture/</id>
     <published>2019-03-31T13:21:57.000Z</published>
     <updated>2019-03-31T13:21:57.000Z</updated>
     
@@ -531,8 +531,8 @@
   
   <entry>
     <title>Hexo NexT 加入评论功能gitalk</title>
-    <link href="https://wugenqiang.github.io/2019/03/31/Hexo-Next-%E5%8A%A0%E5%85%A5%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BDgitalk/"/>
-    <id>https://wugenqiang.github.io/2019/03/31/Hexo-Next-加入评论功能gitalk/</id>
+    <link href="https://wugenqiang.github.io/article/index/"/>
+    <id>https://wugenqiang.github.io/article/index/</id>
     <published>2019-03-31T10:55:02.000Z</published>
     <updated>2019-03-31T10:55:02.000Z</updated>
     
@@ -564,8 +564,8 @@
   
   <entry>
     <title>Hexo获取网易云音乐外链</title>
-    <link href="https://wugenqiang.github.io/2019/03/17/Hexo%E8%8E%B7%E5%8F%96%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%A4%96%E9%93%BE/"/>
-    <id>https://wugenqiang.github.io/2019/03/17/Hexo获取网易云音乐外链/</id>
+    <link href="https://wugenqiang.github.io/article/hexo-do-music-link/"/>
+    <id>https://wugenqiang.github.io/article/hexo-do-music-link/</id>
     <published>2019-03-17T14:50:29.000Z</published>
     <updated>2019-03-17T14:50:29.000Z</updated>
     
