@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[IDEA通过插件安装Gitee并clone项目]]></title>
+    <url>%2Farticle%2Fgit_idea_clone.html</url>
+    <content type="text"><![CDATA[一、前言在最新插件版本: 2018.3.1.（2019-01-10 发布）中码云 IDEA 插件已经由gitosc更名为gitee。同时值得注意的是：新版插件gitee菜单已经和git菜单合并。 二、安装插件1. 通过“插件管理”安装启动 IDEA，在启动界面选择菜单Configure-Plugins在弹出的插件市场中搜索关键字Gitee，在搜索结果中找到Gitee插件，点击Install安装插件。重启 IDEA 使插件生效 2. 通过“首选项-&gt;插件”安装启动 IDEA，选择菜单File-Settings打开），选择Plugins在弹出的插件市场中搜索关键字Gitee，在搜索结果中找到Gitee插件，点击Install安装插件。重启 IDEA 使插件生效 三、登陆并拉取仓库代码1. 启动 idea，选择VCS- Check out from Version Control - git说明：因为最新版本发生了变更，gitee 选项和 git 已经合并，所以这里选择git 2. 输入登录名和密码绑定gitee 如图所示： 3. 选择仓库进行clone点击选框中的向下箭头，会显示当前用户在码云上的所有仓库，可选择任意仓库进行 clone 4. 查看效果到这里就算ok了，接下来就可以直接通过IDEA导入项目，然后通过git进行pull和push操作了，在这里我就不做演示了，如有问题可以留言,或者点击右下角和我在线交流。]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Gitee</tag>
+        <tag>IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo文章中图片点击实现全屏查看]]></title>
     <url>%2Farticle%2Fhexo-do-picture-screen.html</url>
     <content type="text"><![CDATA[1 写在前面方法一存在图片放大后不美观，建议直接跳到方法二如果想尝试解决第一种方法出现的Bug，可以尝试一下，然后我们讨论一下，方便的话可以加我QQ：2422676183 2 方法一2.1 修改post-details.js文件文件目录：/themes/next/source/js/src/post-details.js在文件最后添加： 1234567891011121314151617181920212223242526//----自定义js----------------function createImgEventFullScreen() &#123; var imgs = $(".post-body").find("img"); console.log(imgs); for(var i = 0;i &lt; imgs.length;i++) &#123; // $(imgs[i]).click(createCover(imgs[i])); imgs[i].onclick= function(e) &#123; var src = e.srcElement.currentSrc; createCover(src) &#125; &#125; function createCover (src) &#123; console.log(src); var cover = $("&lt;div id='fullScreenCover' class='zhao-cover-img-container'&gt;&lt;img class='zhao-cover-img' src='"+src+"'/&gt;&lt;/div&gt;"); $("#fullScreenCover").remove(); $("body").append(cover); $("body").addClass("zhao-no-scroll"); $("#fullScreenCover").click(function()&#123; $("#fullScreenCover").remove(); $("body").removeClass("zhao-no-scroll"); &#125;) &#125;&#125;setTimeout(function()&#123; createImgEventFullScreen();&#125;,1000) 2.2 修改custom.styl文件文件目录：/themes/next/source/css/_custom/custom.styl在文件最后添加： 12345678910111213141516171819202122.zhao-cover-img-container&#123; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 10002; text-align: center; background-color: #000; overflow-y: scroll;&#125;.zhao-cover-img&#123; width: 100%; position: absolute; top: 0; bottom: 0;&#125;.zhao-no-scroll&#123; width: 100%; height: 100vh; overflow: hidden;&#125; 不过还是会存在一个小bug，大图片图片放大时有点不美观如果您知道如何解决可以给我留言，谢谢啦 3 方法二这种方法使用了图片浏览放大功能fancybox插件 3.1 切换到lib目录1cd next/source/lib 3.2 下载插件1git clone https://github.com/theme-next/theme-next-fancybox3 fancybox 3.3 更改主题配置文件更改next/_config.yml文件 1fancybox: true 3.4 测试效果部署hexo s之后点击图片，如图： 完美，这种效果我很满意，你觉得呢，还是大神优秀啊~~ 好好学习！]]></content>
@@ -201,8 +213,8 @@
       </categories>
       <tags>
         <tag>课程复习整理</tag>
-        <tag>数据结构</tag>
         <tag>考研</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>

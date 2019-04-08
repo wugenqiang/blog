@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wugenqiang.github.io/"/>
-  <updated>2019-04-06T14:10:48.000Z</updated>
+  <updated>2019-04-08T18:00:18.000Z</updated>
   <id>https://wugenqiang.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IDEA通过插件安装Gitee并clone项目</title>
+    <link href="https://wugenqiang.github.io/article/git_idea_clone.html"/>
+    <id>https://wugenqiang.github.io/article/git_idea_clone.html</id>
+    <published>2019-04-08T18:00:18.000Z</published>
+    <updated>2019-04-08T18:00:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h1><p>在最新插件版本: 2018.3.1.（2019-01-10 发布）中码云 IDEA 插件已经由gitosc更名为gitee。<br>同时值得注意的是：新版插件gitee菜单已经和git菜单合并。</p><h1 id="二、安装插件"><a href="#二、安装插件" class="headerlink" title="二、安装插件"></a>二、安装插件</h1><h2 id="1-通过“插件管理”安装"><a href="#1-通过“插件管理”安装" class="headerlink" title="1. 通过“插件管理”安装"></a>1. 通过“插件管理”安装</h2><p>启动 IDEA，在启动界面选择菜单Configure-Plugins<br>在弹出的插件市场中搜索关键字Gitee，在搜索结果中找到Gitee插件，点击Install安装插件。<br>重启 IDEA 使插件生效</p><p><img src="https://upload-images.jianshu.io/upload_images/13658123-59f94c533974d0e9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="20190408_01.jpg"></p><h2 id="2-通过“首选项-gt-插件”安装"><a href="#2-通过“首选项-gt-插件”安装" class="headerlink" title="2. 通过“首选项-&gt;插件”安装"></a>2. 通过“首选项-&gt;插件”安装</h2><p>启动 IDEA，选择菜单File-Settings打开），选择Plugins<br>在弹出的插件市场中搜索关键字Gitee，在搜索结果中找到Gitee插件，点击Install安装插件。<br>重启 IDEA 使插件生效</p><h1 id="三、登陆并拉取仓库代码"><a href="#三、登陆并拉取仓库代码" class="headerlink" title="三、登陆并拉取仓库代码"></a>三、登陆并拉取仓库代码</h1><h2 id="1-启动-idea，选择VCS-Check-out-from-Version-Control-git"><a href="#1-启动-idea，选择VCS-Check-out-from-Version-Control-git" class="headerlink" title="1. 启动 idea，选择VCS- Check out from Version Control - git"></a>1. 启动 idea，选择VCS- Check out from Version Control - git</h2><p>说明：因为最新版本发生了变更，gitee 选项和 git 已经合并，所以这里选择git</p><p><img src="https://upload-images.jianshu.io/upload_images/13658123-9608b3bcff59ed65.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="20190408_02.jpg"></p><h2 id="2-输入登录名和密码绑定gitee"><a href="#2-输入登录名和密码绑定gitee" class="headerlink" title="2. 输入登录名和密码绑定gitee"></a>2. 输入登录名和密码绑定gitee</h2><p><img src="https://upload-images.jianshu.io/upload_images/13658123-6a43e8867916c621.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="20190408_03.jpg"></p><p>如图所示：</p><p><img src="https://upload-images.jianshu.io/upload_images/13658123-46f922e60f2eb501.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="20190408_04.jpg"></p><h2 id="3-选择仓库进行clone"><a href="#3-选择仓库进行clone" class="headerlink" title="3. 选择仓库进行clone"></a>3. 选择仓库进行clone</h2><p>点击选框中的向下箭头，会显示当前用户在码云上的所有仓库，可选择任意仓库进行 clone</p><p><img src="https://upload-images.jianshu.io/upload_images/13658123-04cbb1593cdfb426.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="20190408_05.jpg"></p><h2 id="4-查看效果"><a href="#4-查看效果" class="headerlink" title="4. 查看效果"></a>4. 查看效果</h2><p><img src="https://upload-images.jianshu.io/upload_images/13658123-8a68acf9bae5b7e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="20190408_06.jpg"><br>到这里就算ok了，接下来就可以直接通过IDEA导入项目，然后通过git进行pull和push操作了，在这里我就不做演示了，如有问题可以留言,或者点击右下角和我在线交流。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h1&gt;&lt;p&gt;在最新插件版本: 2018.3.1.（2019-01-10 发布）中码云 IDEA 插件已经由gitosc更名为gitee。
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="https://wugenqiang.github.io/categories/Git/"/>
+    
+    
+      <category term="Gitee" scheme="https://wugenqiang.github.io/tags/Gitee/"/>
+    
+      <category term="IDEA" scheme="https://wugenqiang.github.io/tags/IDEA/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo文章中图片点击实现全屏查看</title>
@@ -459,9 +486,9 @@
     
       <category term="课程复习整理" scheme="https://wugenqiang.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
     
-      <category term="数据结构" scheme="https://wugenqiang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
       <category term="考研" scheme="https://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94/"/>
+    
+      <category term="数据结构" scheme="https://wugenqiang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
@@ -551,31 +578,6 @@
       <category term="Hexo" scheme="https://wugenqiang.github.io/tags/Hexo/"/>
     
       <category term="gitalk" scheme="https://wugenqiang.github.io/tags/gitalk/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo获取网易云音乐外链</title>
-    <link href="https://wugenqiang.github.io/article/hexo-do-music-link.html"/>
-    <id>https://wugenqiang.github.io/article/hexo-do-music-link.html</id>
-    <published>2019-03-17T14:50:29.000Z</published>
-    <updated>2019-03-17T14:50:29.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo获取网易云音乐外链"><a href="#Hexo获取网易云音乐外链" class="headerlink" title="Hexo获取网易云音乐外链"></a>Hexo获取网易云音乐外链</h1><p>网易云音乐MP3外链真实地址获取方法，可用于各种背景音乐、直链播放…</p><h2 id="一、进入网易云音乐官网"><a href="#一、进入网易云音乐官网" class="headerlink" title="一、进入网易云音乐官网"></a>一、进入网易云音乐官网</h2><p>打开<a href="https://music.163.com/" target="_blank" rel="noopener">网易云音乐</a>，找到喜欢的歌，复制网址的ID，</p><p>例如：</p><p><img src="https://i.loli.net/2019/03/17/5c8def694f412.png" alt="网易云音乐外链7.png"></p><p>地址为：<a href="https://music.163.com/#/song?id=350909" target="_blank" rel="noopener">https://music.163.com/#/song?id=350909</a></p><p>id就是350909</p><p>那么，这首歌的MP3外链地址就是：<a href="https://music.163.com/song/media/outer/url?id=350909.mp3" target="_blank" rel="noopener">https://music.163.com/song/media/outer/url?id=350909.mp3</a></p><p>是不是很简单呢，咱们来播放一下</p><p><img src="https://i.loli.net/2019/03/17/5c8defddbac24.png" alt="网易云音乐外链8.png"></p><h2 id="二、放入Hexo中播放"><a href="#二、放入Hexo中播放" class="headerlink" title="二、放入Hexo中播放"></a>二、放入Hexo中播放</h2><p>使用下面的格式，插在你希望的地方就可以啦：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/song/media/outer/url?id=350909.mp3&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2019/03/17/5c8df101905c1.png" alt="网易云音乐外链9.png"></p><p>可以自己到我的技术博客那个音乐吧浏览，底部哦</p><p>这是地址，比小心心~~ <a href="https://wugenqiang.github.io/laboratory/music/index.html">我是地址点我点我哟</a></p><p>其实这个还有一个好处就是可以下载，唯一的小缺憾就是不美观耶，不过耳朵舒服呢</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Hexo获取网易云音乐外链&quot;&gt;&lt;a href=&quot;#Hexo获取网易云音乐外链&quot; class=&quot;headerlink&quot; title=&quot;Hexo获取网易云音乐外链&quot;&gt;&lt;/a&gt;Hexo获取网易云音乐外链&lt;/h1&gt;&lt;p&gt;网易云音乐MP3外链真实地址获取方法，可用于各种背景
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="https://wugenqiang.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://wugenqiang.github.io/tags/Hexo/"/>
     
   </entry>
   
