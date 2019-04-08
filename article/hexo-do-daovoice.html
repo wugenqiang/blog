@@ -640,20 +640,20 @@
         <center>绝佳的用户沟通工具</center>
 
 <a id="more"></a>
-<h1 id="注册登录DaoVoice"><a href="#注册登录DaoVoice" class="headerlink" title="注册登录DaoVoice"></a>注册登录DaoVoice</h1><p>注册登录地址如下:<br><a href="http://www.daovoice.io/" target="_blank" rel="noopener">http://www.daovoice.io/</a><br>官网进行注册,需要邀请码:  b6dbddb6 复制粘贴就可以了~!<br>或者通过下面链接进入：<br><a href="http://dashboard.daovoice.io/get-started?invite_code=b6dbddb6" target="_blank" rel="noopener">http://dashboard.daovoice.io/get-started?invite_code=b6dbddb6</a></p>
-<h1 id="复制粘贴代码"><a href="#复制粘贴代码" class="headerlink" title="复制粘贴代码"></a>复制粘贴代码</h1><p>修改的hexo的文件路劲如下: themes/next/layout/_partials/head.swig 添加下面的代码:</p>
+<h1 id="1-注册登录DaoVoice"><a href="#1-注册登录DaoVoice" class="headerlink" title="1 注册登录DaoVoice"></a>1 注册登录DaoVoice</h1><p>注册登录地址如下:<br><a href="http://www.daovoice.io/" target="_blank" rel="noopener">http://www.daovoice.io/</a><br>官网进行注册,需要邀请码:  b6dbddb6 复制粘贴就可以了~!<br>或者通过下面链接进入：<br><a href="http://dashboard.daovoice.io/get-started?invite_code=b6dbddb6" target="_blank" rel="noopener">http://dashboard.daovoice.io/get-started?invite_code=b6dbddb6</a></p>
+<h1 id="2-复制粘贴代码"><a href="#2-复制粘贴代码" class="headerlink" title="2 复制粘贴代码"></a>2 复制粘贴代码</h1><p>修改的hexo的文件路劲如下: themes/next/layout/_partials/head.swig 添加下面的代码:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> theme.daovoice %&#125;</span><br><span class="line"> &lt;script&gt;(<span class="function"><span class="keyword">function</span>(<span class="params">i,s,o,g,r,a,m</span>)</span>&#123;i[<span class="string">"DaoVoiceObject"</span>]=r;i[r]=i[r]||<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;(i[r].q=i[r].q||[]).push(<span class="built_in">arguments</span>)&#125;,i[r].l=<span class="number">1</span>*<span class="keyword">new</span> <span class="built_in">Date</span>();a=s.createElement(o),m=s.getElementsByTagName(o)[<span class="number">0</span>];a.async=<span class="number">1</span>;a.src=g;a.charset=<span class="string">"utf-8"</span>;m.parentNode.insertBefore(a,m)&#125;)(<span class="built_in">window</span>,<span class="built_in">document</span>,<span class="string">"script"</span>,(<span class="string">'https:'</span> == <span class="built_in">document</span>.location.protocol ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">"//widget.daovoice.io/widget/b6dbddb6.js"</span>,<span class="string">"daovoice"</span>)</span><br><span class="line"> daovoice(<span class="string">'init'</span>, &#123;</span><br><span class="line">  app_id: <span class="string">"你获取的appid"</span></span><br><span class="line">&#125;);</span><br><span class="line">daovoice(<span class="string">'update'</span>);</span><br><span class="line"> &lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&#123;% endif %&#125;</span></span><br></pre></td></tr></table></figure>
 <p>这段代码从这里找：</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406110355.png" alt></p>
 <p>根据你自己的进行修改，参照下图：</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406103518.png" alt></p>
-<h1 id="修改主题的配置文件"><a href="#修改主题的配置文件" class="headerlink" title="修改主题的配置文件"></a>修改主题的配置文件</h1><p>在主题的配置文件中添加:</p>
+<h1 id="3-修改主题的配置文件"><a href="#3-修改主题的配置文件" class="headerlink" title="3 修改主题的配置文件"></a>3 修改主题的配置文件</h1><p>在主题的配置文件中添加:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">daovoice: <span class="literal">true</span></span><br><span class="line">daovoice_app_id: 我们注册获取的id</span><br></pre></td></tr></table></figure>
-<h1 id="重新部署"><a href="#重新部署" class="headerlink" title="重新部署"></a>重新部署</h1><p>输入hexo s部署之后发现DaoVoice官网会提示</p>
+<h1 id="4-重新部署"><a href="#4-重新部署" class="headerlink" title="4 重新部署"></a>4 重新部署</h1><p>输入hexo s部署之后发现DaoVoice官网会提示</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406104400.png" alt></p>
 <p>同时网页右下角出现了DaoVoice的图标</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406104538.png" alt></p>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>输入hello wugenqiang</p>
+<h1 id="5-测试"><a href="#5-测试" class="headerlink" title="5 测试"></a>5 测试</h1><p>输入hello wugenqiang</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406104806.png" alt></p>
 <p>回车键发送，效果如图：</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406104855.png" alt></p>
@@ -1013,7 +1013,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#注册登录DaoVoice"><span class="nav-text">注册登录DaoVoice</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#复制粘贴代码"><span class="nav-text">复制粘贴代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改主题的配置文件"><span class="nav-text">修改主题的配置文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#重新部署"><span class="nav-text">重新部署</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#测试"><span class="nav-text">测试</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-注册登录DaoVoice"><span class="nav-text">1 注册登录DaoVoice</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-复制粘贴代码"><span class="nav-text">2 复制粘贴代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-修改主题的配置文件"><span class="nav-text">3 修改主题的配置文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-重新部署"><span class="nav-text">4 重新部署</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-测试"><span class="nav-text">5 测试</span></a></li></ol></div>
             
 
           </div>
@@ -1086,7 +1086,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共9.1k字</span>
+  <span class="post-count">博客全站共9.2k字</span>
 </div>
 
         
