@@ -12,3 +12,4 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 Sitemap: https://blog.enjoytoshare.club/sitemap.xml
+Sitemap: https://blog.enjoytoshare.club/baidusitemap.xml
