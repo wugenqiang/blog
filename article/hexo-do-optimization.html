@@ -18,6 +18,7 @@
 <script src="/js/src/photoswipe-ui-default.min.js?v="></script>
 
   <meta charset="UTF-8">
+<meta name="google-site-verification" content="RK_KkmN-cdriQT8jq3jsDsJJxFhyIRzHA4daqKePNk8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -159,6 +160,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331200832.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331210050.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409142957.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150235.png">
 <meta property="og:updated_time" content="2019-04-09T13:35:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+NexT搭建博客拥抱舒爽">
@@ -695,6 +697,9 @@
 <h2 id="4-3-开启百度自动推送"><a href="#4-3-开启百度自动推送" class="headerlink" title="4.3 开启百度自动推送"></a>4.3 开启百度自动推送</h2><p>在主题配置文件<code>_config.yml</code>中添加如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">baidu_push: true</span><br></pre></td></tr></table></figure></p>
 <h2 id="4-4-提交站点到Google"><a href="#4-4-提交站点到Google" class="headerlink" title="4.4 提交站点到Google"></a>4.4 提交站点到Google</h2><p>首先保证你要能翻墙出去，连到谷歌，如果没有VPN，可参考下面网址获取：<a href="https://blog.enjoytoshare.club/laboratory/toolBox/index.html">工具盒子</a></p>
 <p>打开<a href="https://www.google.com/webmasters/#?modal_active=none" target="_blank" rel="noopener">Google Search Console</a>，根据提示注册好之后，添加你的博客域名。</p>
+<p>然后进行站点验证：<br>我选择了备用方法中的HTML 标记，将给出的元标记复制到\themes\next\layout_partials\head\head.swig文件中。</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150235.png" alt></p>
+<p>添加后运行hexo d -g将改动提交。稍后就可以验证成功了。</p>
 <h2 id="4-5-使用各大搜索引擎站长工具"><a href="#4-5-使用各大搜索引擎站长工具" class="headerlink" title="4.5 使用各大搜索引擎站长工具"></a>4.5 使用各大搜索引擎站长工具</h2><p>在搜索引擎搜索框输入<code>site:your.domain</code>可以查看域名是否被该搜索引擎收录，用户可以使用各大搜索引擎站长工具提交个人博客网址。</p>
 
       
@@ -1130,7 +1135,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共11.2k字</span>
+  <span class="post-count">博客全站共11.3k字</span>
 </div>
 
         
