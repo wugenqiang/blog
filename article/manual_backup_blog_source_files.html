@@ -149,16 +149,26 @@
 
 
 
-  <meta name="description" content="Sometimes your whole life boils down to one insame move">
-<meta property="og:type" content="website">
-<meta property="og:title" content="EnjoyToShare">
-<meta property="og:url" content="https://blog.enjoytoshare.club/categories/小程序/index.html">
+  <meta name="description" content="一、前言自从接触了Hexo+NexT之后，发现离不开了，以后有能力的时候一定重新架构一下，使得更加个性化，最大程度的满足我们对于软件的需求，大家都知道，如果写东西在本地的话，最怕的应该就是更换电脑，还要重新搭建博客了，所以备份对于我们来说特别重要！备份博客就是本篇博客文章的主旨了，一定要攻下这座城堡。我曾经看过Git备份Hexo博客源文件的方式，所以在这里记录一下……">
+<meta name="keywords" content="Hexo,Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git命令手动备份Hexo博客源文件">
+<meta property="og:url" content="https://blog.enjoytoshare.club/article/manual_backup_blog_source_files.html">
 <meta property="og:site_name" content="EnjoyToShare">
-<meta property="og:description" content="Sometimes your whole life boils down to one insame move">
+<meta property="og:description" content="一、前言自从接触了Hexo+NexT之后，发现离不开了，以后有能力的时候一定重新架构一下，使得更加个性化，最大程度的满足我们对于软件的需求，大家都知道，如果写东西在本地的话，最怕的应该就是更换电脑，还要重新搭建博客了，所以备份对于我们来说特别重要！备份博客就是本篇博客文章的主旨了，一定要攻下这座城堡。我曾经看过Git备份Hexo博客源文件的方式，所以在这里记录一下……">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409192241.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409194211.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202006.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202215.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409200850.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202447.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409205709.png">
+<meta property="og:updated_time" content="2019-04-09T19:04:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EnjoyToShare">
-<meta name="twitter:description" content="Sometimes your whole life boils down to one insame move">
+<meta name="twitter:title" content="Git命令手动备份Hexo博客源文件">
+<meta name="twitter:description" content="一、前言自从接触了Hexo+NexT之后，发现离不开了，以后有能力的时候一定重新架构一下，使得更加个性化，最大程度的满足我们对于软件的需求，大家都知道，如果写东西在本地的话，最怕的应该就是更换电脑，还要重新搭建博客了，所以备份对于我们来说特别重要！备份博客就是本篇博客文章的主旨了，一定要攻下这座城堡。我曾经看过Git备份Hexo博客源文件的方式，所以在这里记录一下……">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409192241.png">
 
 
 
@@ -167,7 +177,7 @@
 
 
 
-  <link rel="canonical" href="https://blog.enjoytoshare.club/categories/小程序/">
+  <link rel="canonical" href="https://blog.enjoytoshare.club/article/manual_backup_blog_source_files.html">
 
 
 
@@ -188,7 +198,7 @@
     })();
 </script>
 
-  <title>分类: 小程序 | EnjoyToShare</title>
+  <title>Git命令手动备份Hexo博客源文件 | EnjoyToShare</title>
   
 
 
@@ -237,7 +247,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/wugenqiang" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -314,7 +324,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -504,98 +514,273 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>小程序<small>分类</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.enjoytoshare.club/article/manual_backup_blog_source_files.html">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WuGenQiang">
+      <meta itemprop="description" content="Sometimes your whole life boils down to one insame move">
+      <meta itemprop="image" content="/images/fighting_wugenqiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EnjoyToShare">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/article/mailbox-verification-on-small-program.html" itemprop="url">
-            
-              <span itemprop="name">Springboot实现小程序端发送邮箱验证码功能</span>
-            
-          </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">Git命令手动备份Hexo博客源文件
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-16T11:38:24Z" content="2019-03-16">
-          03-16
-        </time>
-      </div>
+              
+            
+          </h2>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
+            
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-09 19:04:19" itemprop="dateCreated datePublished" datetime="2019-04-09T19:04:19Z">2019-04-09</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h1><p>自从接触了Hexo+NexT之后，发现离不开了，以后有能力的时候一定重新架构一下，使得更加个性化，最大程度的满足我们对于软件的需求，大家都知道，如果写东西在本地的话，最怕的应该就是更换电脑，还要重新搭建博客了，所以备份对于我们来说特别重要！备份博客就是本篇博客文章的主旨了，一定要攻下这座城堡。<br>我曾经看过Git备份Hexo博客源文件的方式，所以在这里记录一下……</p>
+<a id="more"></a>
+<h1 id="二、方案"><a href="#二、方案" class="headerlink" title="二、方案"></a>二、方案</h1><p>想到的解决办法无非是:</p>
+<ul>
+<li>直接U盘拷贝</li>
+<li>博客文件托管在Github或者Gitee上</li>
+</ul>
+<p>Git提交正确步骤：<br>（1）git init //初始化仓库<br>（2）git add .(文件name) //添加文件到本地仓库<br>（3）git commit -m “first commit” //添加文件描述信息<br>（4）git remote add origin + 远程仓库地址 //链接远程仓库，创建主分支<br>（5）git pull –rebase origin master // 把本地仓库的变化连接到远程仓库主分支<br>（6）git push -u origin master //把本地仓库的文件推送到远程仓库</p>
+<p>考虑了很多方面，觉得还是进行托管最符合我们的需求。</p>
+<h1 id="三、实现"><a href="#三、实现" class="headerlink" title="三、实现"></a>三、实现</h1><p>当然可以直接通过IDEA进行上传到Github或者Gitee上，为了熟悉一下git操作，在这里使用一下git基础命令来完成上传任务。</p>
+<h2 id="1-新建repository"><a href="#1-新建repository" class="headerlink" title="1.新建repository"></a>1.新建repository</h2><p>在Github下创建一个新的repository，取名为<code>myblog</code>。(与本地的Hexo源码文件夹同名即可)<br>创建的时候<code>最好为空</code>，最好<code>不要勾选创建README.md</code>,否则后面会有小问题，不过我会提供解决办法。</p>
+<h2 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2.创建仓库"></a>2.创建仓库</h2><p>进入本地的Hexo文件夹(E:\work\myblog)，在这个地方使用<code>git Bash here</code>执行以下命令创建仓库:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409192241.png" alt></p>
+<h2 id="3-修改-gitignore文件"><a href="#3-修改-gitignore文件" class="headerlink" title="3.修改.gitignore文件"></a>3.修改.gitignore文件</h2><p>如果没有请手动创建一个，在里面加入<code>*.log</code> 和 <code>public/</code> 以及<code>.deploy*/</code>。因为每次执行<code>hexo g</code>命令时，上述目录都会被重写更新。因此忽略这两个目录下的文件更新，加快push速度。<br>注：如果文件中有<code>*.log</code> 和 <code>public/</code> 以及<code>.deploy*/</code>这些的时候，直接进行下一步：</p>
+<h2 id="4-提交Hexo源码"><a href="#4-提交Hexo源码" class="headerlink" title="4.提交Hexo源码"></a>4.提交Hexo源码</h2><p>执行以下命令，完成Hexo源码在本地的提交：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;添加hexo源码文件作为备份&quot;</span><br></pre></td></tr></table></figure></p>
+<h2 id="5-设置远程仓库地址"><a href="#5-设置远程仓库地址" class="headerlink" title="5.设置远程仓库地址"></a>5.设置远程仓库地址</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/wugenqiang/myblog.git</span><br></pre></td></tr></table></figure>
+<h3 id="5-1-fatal-remote-origin-already-exists"><a href="#5-1-fatal-remote-origin-already-exists" class="headerlink" title="5.1 fatal: remote origin already exists"></a>5.1 fatal: remote origin already exists</h3><p>如果遇到如图所示问题：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409194211.png" alt></p>
+<p>解决办法如下：<br>（1）先删除远程 Git 仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br></pre></td></tr></table></figure></p>
+<p>（2）再添加远程 Git 仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/wugenqiang/myblog.git</span><br></pre></td></tr></table></figure></p>
+<p>发现问题成功解决。</p>
+<p>切记！！</p>
+<pre><code>如果在GitHub上创建远程仓库时，勾选了 Initialize this repository with a README这项，
+导致远程仓库不为空，为了不出现Bug，请先执行第4步，
+若远程仓库为空，则忽略第4步，直接进行第5步操作！
+</code></pre><h2 id="6-远程仓库合并到本地"><a href="#6-远程仓库合并到本地" class="headerlink" title="6.远程仓库合并到本地"></a>6.远程仓库合并到本地</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull --rebase origin master</span><br></pre></td></tr></table></figure>
+<p>我就属于创建README.md的一群人，真的是习惯造成的，执行这一步效果如下：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202006.png" alt></p>
+<h2 id="7-更新远程仓库"><a href="#7-更新远程仓库" class="headerlink" title="7.更新远程仓库"></a>7.更新远程仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202215.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409200850.png" alt></p>
+<p>如果创建仓库不为空而且不执行第4步直接执行第5步则会出现：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202447.png" alt></p>
+<h1 id="四、结语"><a href="#四、结语" class="headerlink" title="四、结语"></a>四、结语</h1><p>到现在为止，我们的任务已经完成了。现在可以做到的是，在任何一台电脑上，只需要<code>git clone https://github.com/wugenqiang/myblog.git</code>,即可完成将Hexo源文件复制到本地。（请将后面的<code>https://github.com/wugenqiang/myblog.git</code>替换为自己相应的仓库地址。否则，克隆的将是我的博客源码:)）<br>效果如下：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409205709.png" alt></p>
+<p>在本地编写完博客时，顺次执行实现三步骤中的4、6、7命令，即可完成Hexo博客源文件更新同步，保持Github上的Hexo源码为最新版本。ok，分享就到这里啦，如果觉得这样手动操作有点辛苦的话，可以参考我的另一篇博客：</p>
+<ul>
+<li><a href="https://blog.enjoytoshare.club/article/auto_backup_blog_source_files.html">自动备份Hexo博客源文件</a></li>
+</ul>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>原创技术分享，您的支持将鼓励我继续创作</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat.jpg" alt="WuGenQiang 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="WuGenQiang 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-envira"></i> Hexo</a>
+          
+            <a href="/tags/Git/" rel="tag"><i class="fa fa-envira"></i> Git</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/article/auto_backup_blog_source_files.html" rel="next" title="自动备份Hexo博客源文件">
+                <i class="fa fa-chevron-left"></i> 自动备份Hexo博客源文件
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -615,8 +800,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -832,6 +1026,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、前言"><span class="nav-text">一、前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、方案"><span class="nav-text">二、方案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、实现"><span class="nav-text">三、实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-新建repository"><span class="nav-text">1.新建repository</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-创建仓库"><span class="nav-text">2.创建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-修改-gitignore文件"><span class="nav-text">3.修改.gitignore文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-提交Hexo源码"><span class="nav-text">4.提交Hexo源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-设置远程仓库地址"><span class="nav-text">5.设置远程仓库地址</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-fatal-remote-origin-already-exists"><span class="nav-text">5.1 fatal: remote origin already exists</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-远程仓库合并到本地"><span class="nav-text">6.远程仓库合并到本地</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-更新远程仓库"><span class="nav-text">7.更新远程仓库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、结语"><span class="nav-text">四、结语</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -1036,6 +1247,13 @@ setInterval("createtime()",250);
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+<script type="text/javascript" src="/js/src/photoswipe.min.js?v="></script>
+<script type="text/javascript" src="/js/src/photoswipe-ui-default.min.js?v="></script>
+
+
 
   
 
@@ -1051,6 +1269,38 @@ setInterval("createtime()",250);
 
   
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '09e05981e2532e9d89eb',
+    clientSecret: 'e707a524d008294dff411fa5e7435849261b1678',
+    repo: 'wugenqiang.github.io',
+    owner: 'wugenqiang',
+    admin: ['wugenqiang'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+
+  
 
 
   

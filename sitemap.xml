@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.enjoytoshare.club/article/manual_backup_blog_source_files.html</loc>
+    
+    <lastmod>2019-04-09T19:04:19.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.enjoytoshare.club/article/auto_backup_blog_source_files.html</loc>
+    
+    <lastmod>2019-04-09T18:15:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.enjoytoshare.club/article/hexo-do-optimization.html</loc>
     
     <lastmod>2019-04-09T13:35:27.000Z</lastmod>
@@ -16,23 +30,37 @@
   </url>
   
   <url>
-    <loc>https://blog.enjoytoshare.club/article/git_idea_clone.html</loc>
+    <loc>https://blog.enjoytoshare.club/thank/index.html</loc>
     
-    <lastmod>2019-04-08T18:00:18.000Z</lastmod>
+    <lastmod>2019-04-09T12:06:32.707Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.enjoytoshare.club/about/index.html</loc>
     
-    <lastmod>2019-04-08T14:15:15.106Z</lastmod>
+    <lastmod>2019-04-09T12:06:32.678Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.enjoytoshare.club/thank/index.html</loc>
+    <loc>https://blog.enjoytoshare.club/photos/index.html</loc>
     
-    <lastmod>2019-04-08T13:22:36.574Z</lastmod>
+    <lastmod>2019-04-09T12:06:30.893Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.enjoytoshare.club/achives/index.html</loc>
+    
+    <lastmod>2019-04-09T12:06:30.754Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.enjoytoshare.club/article/git_idea_clone.html</loc>
+    
+    <lastmod>2019-04-08T18:00:18.000Z</lastmod>
     
   </url>
   
@@ -191,7 +219,7 @@
   </url>
   
   <url>
-    <loc>https://blog.enjoytoshare.club/laboratory/toolBox/index.html</loc>
+    <loc>https://blog.enjoytoshare.club/laboratory/music/index.html</loc>
     
     <lastmod>2019-03-17T12:18:28.000Z</lastmod>
     
@@ -205,7 +233,7 @@
   </url>
   
   <url>
-    <loc>https://blog.enjoytoshare.club/laboratory/music/index.html</loc>
+    <loc>https://blog.enjoytoshare.club/laboratory/toolBox/index.html</loc>
     
     <lastmod>2019-03-17T12:18:28.000Z</lastmod>
     
@@ -247,13 +275,6 @@
   </url>
   
   <url>
-    <loc>https://blog.enjoytoshare.club/photos/index.html</loc>
-    
-    <lastmod>2019-03-15T00:35:47.810Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.enjoytoshare.club/love/index.html</loc>
     
     <lastmod>2019-03-12T10:23:04.000Z</lastmod>
@@ -271,13 +292,6 @@
     <loc>https://blog.enjoytoshare.club/tags/index.html</loc>
     
     <lastmod>2019-03-12T10:21:01.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.enjoytoshare.club/achives/index.html</loc>
-    
-    <lastmod>2019-03-09T16:54:40.807Z</lastmod>
     
   </url>
   
