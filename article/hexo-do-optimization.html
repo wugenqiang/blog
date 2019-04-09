@@ -160,7 +160,12 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331200832.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331210050.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409142957.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150421.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150235.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150748.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151250.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151459.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151735.png">
 <meta property="og:updated_time" content="2019-04-09T13:35:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+NexT搭建博客拥抱舒爽">
@@ -696,10 +701,16 @@
 <p>其中Allow后面的就是你的menu<br>请自行将blog.enjoytoshare.club改成自己的域名，然后hexo g提交一下</p>
 <h2 id="4-3-开启百度自动推送"><a href="#4-3-开启百度自动推送" class="headerlink" title="4.3 开启百度自动推送"></a>4.3 开启百度自动推送</h2><p>在主题配置文件<code>_config.yml</code>中添加如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">baidu_push: true</span><br></pre></td></tr></table></figure></p>
 <h2 id="4-4-提交站点到Google"><a href="#4-4-提交站点到Google" class="headerlink" title="4.4 提交站点到Google"></a>4.4 提交站点到Google</h2><p>首先保证你要能翻墙出去，连到谷歌，如果没有VPN，可参考下面网址获取：<a href="https://blog.enjoytoshare.club/laboratory/toolBox/index.html">工具盒子</a></p>
-<p>打开<a href="https://www.google.com/webmasters/#?modal_active=none" target="_blank" rel="noopener">Google Search Console</a>，根据提示注册好之后，添加你的博客域名。</p>
-<p>然后进行站点验证：<br>我选择了备用方法中的HTML 标记，将给出的元标记复制到\themes\next\layout_partials\head\head.swig文件中。</p>
+<h3 id="4-4-1-提交博客域名"><a href="#4-4-1-提交博客域名" class="headerlink" title="4.4.1 提交博客域名"></a>4.4.1 提交博客域名</h3><p>打开<a href="https://www.google.com/webmasters/#?modal_active=none" target="_blank" rel="noopener">Google Search Console</a><br>根据提示注册好之后，添加你的博客域名。</p>
+<h3 id="4-4-2-进行站点验证："><a href="#4-4-2-进行站点验证：" class="headerlink" title="4.4.2 进行站点验证："></a>4.4.2 进行站点验证：</h3><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150421.png" alt><br>我选择了备用方法中的HTML 标记，将给出的元标记复制到\themes\next\layout_partials\head\head.swig文件中。</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150235.png" alt></p>
 <p>添加后运行hexo d -g将改动提交。稍后就可以验证成功了。</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150748.png" alt></p>
+<h3 id="4-4-3-提交站点地图"><a href="#4-4-3-提交站点地图" class="headerlink" title="4.4.3 提交站点地图"></a>4.4.3 提交站点地图</h3><p>还记得我们刚才创建创建sitemap.xml文件吧,现在它要派上用场了。点击左侧工具栏的站点地图</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151250.png" alt></p>
+<p>提交成功会提示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151459.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151735.png" alt></p>
 <h2 id="4-5-使用各大搜索引擎站长工具"><a href="#4-5-使用各大搜索引擎站长工具" class="headerlink" title="4.5 使用各大搜索引擎站长工具"></a>4.5 使用各大搜索引擎站长工具</h2><p>在搜索引擎搜索框输入<code>site:your.domain</code>可以查看域名是否被该搜索引擎收录，用户可以使用各大搜索引擎站长工具提交个人博客网址。</p>
 
       
@@ -1062,7 +1073,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-写在前面"><span class="nav-text">1 写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-博客安装和配置"><span class="nav-text">2 博客安装和配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-NexT主题优化"><span class="nav-text">3 NexT主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-修改文章底部-为图标"><span class="nav-text">3.1 修改文章底部#为图标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-点击出现爱心效果"><span class="nav-text">3.2 点击出现爱心效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-文章加密访问"><span class="nav-text">3.3 文章加密访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-优化深色代码高亮背景"><span class="nav-text">3.4 优化深色代码高亮背景</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-SEO推广"><span class="nav-text">4 SEO推广</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-生成sitemap"><span class="nav-text">4.1 生成sitemap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-添加蜘蛛协议"><span class="nav-text">4.2 添加蜘蛛协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-开启百度自动推送"><span class="nav-text">4.3 开启百度自动推送</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-提交站点到Google"><span class="nav-text">4.4 提交站点到Google</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-5-使用各大搜索引擎站长工具"><span class="nav-text">4.5 使用各大搜索引擎站长工具</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-写在前面"><span class="nav-text">1 写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-博客安装和配置"><span class="nav-text">2 博客安装和配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-NexT主题优化"><span class="nav-text">3 NexT主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-修改文章底部-为图标"><span class="nav-text">3.1 修改文章底部#为图标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-点击出现爱心效果"><span class="nav-text">3.2 点击出现爱心效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-文章加密访问"><span class="nav-text">3.3 文章加密访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-优化深色代码高亮背景"><span class="nav-text">3.4 优化深色代码高亮背景</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-SEO推广"><span class="nav-text">4 SEO推广</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-生成sitemap"><span class="nav-text">4.1 生成sitemap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-添加蜘蛛协议"><span class="nav-text">4.2 添加蜘蛛协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-开启百度自动推送"><span class="nav-text">4.3 开启百度自动推送</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-提交站点到Google"><span class="nav-text">4.4 提交站点到Google</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-1-提交博客域名"><span class="nav-text">4.4.1 提交博客域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-2-进行站点验证："><span class="nav-text">4.4.2 进行站点验证：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-3-提交站点地图"><span class="nav-text">4.4.3 提交站点地图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-5-使用各大搜索引擎站长工具"><span class="nav-text">4.5 使用各大搜索引擎站长工具</span></a></li></ol></li></ol></div>
             
 
           </div>
