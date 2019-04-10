@@ -72,7 +72,7 @@
   <entry>
     <title><![CDATA[Hexo的NexT主题打赏功能]]></title>
     <url>%2Farticle%2Fhexo-do-donate.html</url>
-    <content type="text"><![CDATA[1 准备支付宝和微信二维码首先要生成支付宝和微信收钱二维码 2 在_config.yml中配置图片wechat.jpg、alipay.jpg图片放入themes/next/source/images中 123456reward: enable: true #打赏功能 comment: 原创技术分享，您的支持将鼓励我继续创作 wechatpay: /images/wechat.jpg alipay: /images/alipay.jpg 到目前为止，已经实现了需要的功能，如图所示： 但是出现闪动Bug，所以进行下面的修复 3 修复闪动Bug修改next/source/css/_common/components/post/post-reward.styl，注释掉下面部分即可 123456/*注释此部分#QR &gt; div:hover p &#123; animation: roll 0.1s infinite linear; -webkit-animation: roll 0.1s infinite linear; -moz-animation: roll 0.1s infinite linear;&#125;*/ 好啦，到这里大功告成，完美~~]]></content>
+    <content type="text"><![CDATA[1 准备支付宝和微信二维码首先要生成支付宝和微信收钱二维码 2 在_config.yml中配置图片这里的_config.yml文件是主题中的配置文件，然后把制作好的wechat.jpg、alipay.jpg图片放入themes/next/source/images中 123456reward: enable: true #打赏功能 comment: 原创技术分享，您的支持将鼓励我继续创作 wechatpay: /images/wechat.jpg alipay: /images/alipay.jpg 到目前为止，已经实现了需要的功能，如图所示： 但是出现闪动Bug，所以进行下面的修复 3 修复闪动Bug修改next/source/css/_common/components/post/post-reward.styl，注释掉下面部分即可 123456/*注释此部分#QR &gt; div:hover p &#123; animation: roll 0.1s infinite linear; -webkit-animation: roll 0.1s infinite linear; -moz-animation: roll 0.1s infinite linear;&#125;*/ 好啦，到这里大功告成，完美~~]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
