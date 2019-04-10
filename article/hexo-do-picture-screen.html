@@ -150,21 +150,19 @@
 
 
 
-  <meta name="description" content="1 写在前面方法一存在图片放大后不美观，建议直接跳到方法二如果想尝试解决第一种方法出现的Bug，可以尝试一下，然后我们讨论一下，方便的话可以加我QQ：2422676183 2 方法一2.1 修改post-details.js文件文件目录：/themes/next/source/js/src/post-details.js在文件最后添加： 123456789101112131415161718192">
-<meta name="keywords" content="Hexo">
+  <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo文章中图片点击实现全屏查看">
 <meta property="og:url" content="https://blog.enjoytoshare.club/article/hexo-do-picture-screen.html">
 <meta property="og:site_name" content="EnjoyToShare">
-<meta property="og:description" content="1 写在前面方法一存在图片放大后不美观，建议直接跳到方法二如果想尝试解决第一种方法出现的Bug，可以尝试一下，然后我们讨论一下，方便的话可以加我QQ：2422676183 2 方法一2.1 修改post-details.js文件文件目录：/themes/next/source/js/src/post-details.js在文件最后添加： 123456789101112131415161718192">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/062.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406155520.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406155801.png">
 <meta property="og:updated_time" content="2019-04-06T14:10:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo文章中图片点击实现全屏查看">
-<meta name="twitter:description" content="1 写在前面方法一存在图片放大后不美观，建议直接跳到方法二如果想尝试解决第一种方法出现的Bug，可以尝试一下，然后我们讨论一下，方便的话可以加我QQ：2422676183 2 方法一2.1 修改post-details.js文件文件目录：/themes/next/source/js/src/post-details.js在文件最后添加： 123456789101112131415161718192">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406155520.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/062.jpg">
 
 
 
@@ -633,7 +631,9 @@
       
 
       
-        <h1 id="1-写在前面"><a href="#1-写在前面" class="headerlink" title="1 写在前面"></a>1 写在前面</h1><p>方法一存在图片放大后不美观，建议直接跳到方法二<br>如果想尝试解决第一种方法出现的Bug，可以尝试一下，然后我们讨论一下，方便的话可以加我QQ：2422676183</p>
+        <p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/062.jpg" alt></p>
+<a id="more"></a>
+<h1 id="1-写在前面"><a href="#1-写在前面" class="headerlink" title="1 写在前面"></a>1 写在前面</h1><p>方法一存在图片放大后不美观，建议直接跳到方法二<br>如果想尝试解决第一种方法出现的Bug，可以尝试一下，然后我们讨论一下，方便的话可以加我QQ：2422676183</p>
 <h1 id="2-方法一"><a href="#2-方法一" class="headerlink" title="2 方法一"></a>2 方法一</h1><h2 id="2-1-修改post-details-js文件"><a href="#2-1-修改post-details-js文件" class="headerlink" title="2.1 修改post-details.js文件"></a>2.1 修改post-details.js文件</h2><p>文件目录：/themes/next/source/js/src/post-details.js<br>在文件最后添加：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//----自定义js----------------</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createImgEventFullScreen</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> imgs = $(<span class="string">".post-body"</span>).find(<span class="string">"img"</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(imgs);</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>;i &lt; imgs.length;i++) &#123;</span><br><span class="line">    <span class="comment">// $(imgs[i]).click(createCover(imgs[i]));</span></span><br><span class="line">    imgs[i].onclick= <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> src = e.srcElement.currentSrc;</span><br><span class="line">      createCover(src)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">createCover</span> (<span class="params">src</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(src);</span><br><span class="line">    <span class="keyword">var</span> cover = $(<span class="string">"&lt;div id='fullScreenCover' class='zhao-cover-img-container'&gt;&lt;img class='zhao-cover-img' src='"</span>+src+<span class="string">"'/&gt;&lt;/div&gt;"</span>);</span><br><span class="line">    $(<span class="string">"#fullScreenCover"</span>).remove();</span><br><span class="line">    $(<span class="string">"body"</span>).append(cover);</span><br><span class="line">    $(<span class="string">"body"</span>).addClass(<span class="string">"zhao-no-scroll"</span>);</span><br><span class="line">    $(<span class="string">"#fullScreenCover"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      $(<span class="string">"#fullScreenCover"</span>).remove();</span><br><span class="line">      $(<span class="string">"body"</span>).removeClass(<span class="string">"zhao-no-scroll"</span>);</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  createImgEventFullScreen();</span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="2-2-修改custom-styl文件"><a href="#2-2-修改custom-styl文件" class="headerlink" title="2.2 修改custom.styl文件"></a>2.2 修改custom.styl文件</h2><p>文件目录：/themes/next/source/css/_custom/custom.styl<br>在文件最后添加：</p>
