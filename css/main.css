@@ -2061,7 +2061,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c8ffe9;
+  background: #ffff4f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3390,4 +3390,10 @@ ul.breadcrumb li+li:last-child {
   #footer a {
     color: #eee;
   }
+}
+.headband {
+  display: none;
+}
+img.img-topic {
+  width: 100%;
 }
