@@ -2061,7 +2061,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #22f9df;
+  background: #45fa1c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3393,7 +3393,4 @@ ul.breadcrumb li+li:last-child {
 }
 .headband {
   display: none;
-}
-img.img-topic {
-  width: 100%;
 }
