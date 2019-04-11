@@ -938,6 +938,7 @@
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
 
+<div>
 <!-- 网站运行时间的设置 -->
 <span id="timeDate">载入天数...</span>
 <span id="times">载入时分秒...</span>  Sometimes your whole life boils down to one insame move.
@@ -957,11 +958,24 @@
     }
 setInterval("createtime()",250);
 </script>
-
+</div>
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
-  <div class="powered-by"></div>
+  <i class="fa fa-pencil"></i>
   <span class="post-count">博客全站共14.3k字</span>
+</div>
+
+<!-- 不蒜字统计 -->
+<div>
+	<i class="fa fa-user-md"></i>
+	<span id="busuanzi_container_site_uv">
+	  访问人数：<span id="busuanzi_value_site_uv"></span>
+	</span>&nbsp;|&nbsp;
+
+	<i class="fa fa-eye"></i>
+	<span id="busuanzi_container_site_pv">
+	  总访问量：<span id="busuanzi_value_site_pv"></span>
+	</span>
 </div>
 
         
@@ -969,25 +983,9 @@ setInterval("createtime()",250);
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
-    <span class="post-meta-item-icon">
-      <i class="fa fa-leaf"></i>
-    </span>
-    <span class="site-uv" title="总访客量">
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-    </span>
-  
 
   
-    <span class="post-meta-divider">|</span>
-  
 
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-eye"></i>
-    </span>
-    <span class="site-pv" title="总访问量">
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-    </span>
   
 </div>
 
