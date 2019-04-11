@@ -677,6 +677,7 @@
     <footer class="post-footer">
       
 
+
       
 
       
@@ -840,6 +841,7 @@
     <footer class="post-footer">
       
 
+
       
 
       
@@ -1002,6 +1004,7 @@
 
     <footer class="post-footer">
       
+
 
       
 
@@ -1183,6 +1186,7 @@
     <footer class="post-footer">
       
 
+
       
 
       
@@ -1346,6 +1350,7 @@
     <footer class="post-footer">
       
 
+
       
 
       
@@ -1508,6 +1513,7 @@
 
     <footer class="post-footer">
       
+
 
       
 
@@ -2501,6 +2507,16 @@ if ($('body').find('div.pdf').length) {
   <script type="text/javascript" src="/dist/music.js"></script>
 
   
+
+  
+<script type="text/javascript">
+    //微信二维码点击背景关闭
+    $('body').delegate('.-mob-share-weixin-qrcode-bg','click', function(){
+         $(".-mob-share-weixin-qrcode-close").trigger("click");
+    });
+</script>
+
+
 
 </body>
 </html>
