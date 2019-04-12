@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.enjoytoshare.club/article/hexo-do-optimization.html</loc>
+    
+    <lastmod>2019-04-12T09:02:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.enjoytoshare.club/about/index.html</loc>
     
     <lastmod>2019-04-11T10:38:31.026Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://blog.enjoytoshare.club/article/auto_backup_blog_source_files.html</loc>
     
     <lastmod>2019-04-09T18:15:46.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.enjoytoshare.club/article/hexo-do-optimization.html</loc>
-    
-    <lastmod>2019-04-09T13:35:27.000Z</lastmod>
     
   </url>
   
@@ -219,13 +219,6 @@
   </url>
   
   <url>
-    <loc>https://blog.enjoytoshare.club/laboratory/music/index.html</loc>
-    
-    <lastmod>2019-03-17T12:18:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.enjoytoshare.club/laboratory/toolBox/index.html</loc>
     
     <lastmod>2019-03-17T12:18:28.000Z</lastmod>
@@ -234,6 +227,13 @@
   
   <url>
     <loc>https://blog.enjoytoshare.club/laboratory/trainingCamp/index.html</loc>
+    
+    <lastmod>2019-03-17T12:18:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.enjoytoshare.club/laboratory/music/index.html</loc>
     
     <lastmod>2019-03-17T12:18:28.000Z</lastmod>
     
