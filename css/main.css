@@ -1360,6 +1360,23 @@ pre .javascript .function {
 .use-motion .collection-title {
   opacity: 0;
 }
+.page-post-detail .post-title {
+  font-size: 26px;
+  text-align: center;
+  word-break: break-word;
+  font-weight: 400;
+  background-color: #b9d3ee;
+  border-radius: 0.3em;
+  line-height: 1em;
+  padding-bottom: 0.12em;
+  padding-top: 0.12em;
+  box-shadow: 2px 2px 7px #9fb6cd;
+}
+@media (max-width: 767px) {
+  .page-post-detail .post-title {
+    font-size: 22px;
+  }
+}
 .posts-expand {
   padding-top: 40px;
 }
@@ -2061,7 +2078,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f76598;
+  background: #ff7a46;
 }
 .links-of-blogroll {
   font-size: 13px;
