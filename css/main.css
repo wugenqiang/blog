@@ -2078,7 +2078,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b3c606;
+  background: #d7142f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3381,9 +3381,6 @@ ul.breadcrumb li+li:last-child {
 }
 .post-toc ol {
   font-size: 13px;
-}
-.site-meta {
-  background: 'normal';
 }
 .code ::selection {
   background: #2593a6;
