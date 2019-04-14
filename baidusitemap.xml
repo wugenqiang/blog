@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.enjoytoshare.club/article/hexo-do-optimization.html</loc>
+    <lastmod>2019-04-15</lastmod>
+  </url>  <url>
+    <loc>https://blog.enjoytoshare.club/article/english-arrangement.html</loc>
+    <lastmod>2019-04-15</lastmod>
+  </url>  <url>
     <loc>https://blog.enjoytoshare.club/article/hexoNextHideArticleMethod.html</loc>
     <lastmod>2019-04-14</lastmod>
   </url>  <url>
@@ -14,9 +20,6 @@
     <lastmod>2019-04-13</lastmod>
   </url>  <url>
     <loc>https://blog.enjoytoshare.club/article/hexoWikiThemeCreate.html</loc>
-    <lastmod>2019-04-12</lastmod>
-  </url>  <url>
-    <loc>https://blog.enjoytoshare.club/article/hexo-do-optimization.html</loc>
     <lastmod>2019-04-12</lastmod>
   </url>  <url>
     <loc>https://blog.enjoytoshare.club/article/manual_backup_blog_source_files.html</loc>
@@ -51,9 +54,6 @@
   </url>  <url>
     <loc>https://blog.enjoytoshare.club/article/hexo-do-domain.html</loc>
     <lastmod>2019-04-04</lastmod>
-  </url>  <url>
-    <loc>https://blog.enjoytoshare.club/article/english-arrangement.html</loc>
-    <lastmod>2019-04-02</lastmod>
   </url>  <url>
     <loc>https://blog.enjoytoshare.club/article/probability-theory-arrangement.html</loc>
     <lastmod>2019-04-02</lastmod>
