@@ -1153,7 +1153,7 @@ pre .javascript .function {
 .back-to-top {
   visibility: hidden;
   margin: 8px -10px -20px;
-  background: #f5f7f9;
+  background: #eee;
   font-size: 12px;
   opacity: 0.6;
   cursor: pointer;
@@ -2061,7 +2061,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #54eb13;
+  background: #ff5c6a;
 }
 .links-of-blogroll {
   font-size: 13px;
