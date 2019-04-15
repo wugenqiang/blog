@@ -7,6 +7,9 @@
       <categories>
         <category>Test</category>
       </categories>
+      <tags>
+        <tag>Test</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hexo+NexT搭建博客拥抱舒爽]]></title>
@@ -64,6 +67,9 @@
       <categories>
         <category>Test</category>
       </categories>
+      <tags>
+        <tag>Test</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hexo+NexT修改友链样式]]></title>
