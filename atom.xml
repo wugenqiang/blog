@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.enjoytoshare.club/"/>
-  <updated>2019-04-15T13:47:35.000Z</updated>
+  <updated>2019-04-15T16:36:47.000Z</updated>
   <id>https://blog.enjoytoshare.club/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试自定义文章底部版权声明</title>
+    <link href="https://blog.enjoytoshare.club/article/testCopyrightDeclaration.html"/>
+    <id>https://blog.enjoytoshare.club/article/testCopyrightDeclaration.html</id>
+    <published>2019-04-15T16:36:47.000Z</published>
+    <updated>2019-04-15T16:36:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本部分用于自定义文章底部版权声明</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;本部分用于自定义文章底部版权声明&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Test" scheme="https://blog.enjoytoshare.club/categories/Test/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo+NexT搭建博客拥抱舒爽</title>
@@ -135,8 +159,6 @@
     
       <category term="Test" scheme="https://blog.enjoytoshare.club/categories/Test/"/>
     
-    
-      <category term="Test" scheme="https://blog.enjoytoshare.club/tags/Test/"/>
     
   </entry>
   
@@ -462,40 +484,6 @@
     <id>https://blog.enjoytoshare.club/article/probability-theory-arrangement.html</id>
     <published>2019-04-02T10:49:14.000Z</published>
     <updated>2019-04-02T10:49:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>111</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;111&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="课程复习整理" scheme="https://blog.enjoytoshare.club/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
-    
-      <category term="考研" scheme="https://blog.enjoytoshare.club/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/"/>
-    
-      <category term="考研数学" scheme="https://blog.enjoytoshare.club/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/"/>
-    
-    
-      <category term="课程复习整理" scheme="https://blog.enjoytoshare.club/tags/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
-    
-      <category term="考研" scheme="https://blog.enjoytoshare.club/tags/%E8%80%83%E7%A0%94/"/>
-    
-      <category term="考研数学" scheme="https://blog.enjoytoshare.club/tags/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>线性代数知识整理</title>
-    <link href="https://blog.enjoytoshare.club/article/linear-arrangement.html"/>
-    <id>https://blog.enjoytoshare.club/article/linear-arrangement.html</id>
-    <published>2019-04-02T10:48:51.000Z</published>
-    <updated>2019-04-02T10:48:51.000Z</updated>
     
     <content type="html"><![CDATA[<p>111</p>]]></content>
     
