@@ -1334,7 +1334,10 @@ pre .javascript .function {
   font-weight: bold;
   line-height: 1;
 }
-.post-footer i {
+.post-tags i {
+  color: #79d626;
+}
+.post-meta-item-icon i {
   color: #79d626;
 }
 .post-sticky-flag {
@@ -2116,7 +2119,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bb30ff;
+  background: #b4ee66;
 }
 .links-of-blogroll {
   font-size: 13px;
