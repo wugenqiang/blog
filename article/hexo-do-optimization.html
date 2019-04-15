@@ -169,7 +169,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412105621.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414190059.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190415094311.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190415160207.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190415163917.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409142957.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190410180738.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409154624.png">
@@ -754,7 +754,7 @@
 <h3 id="3-18-4-修改post-styl文件"><a href="#3-18-4-修改post-styl文件" class="headerlink" title="3.18.4 修改post.styl文件"></a>3.18.4 修改<code>post.styl</code>文件</h3><p>打开 <code>themes/next/source/css/_common/components/post/post.styl</code> 文件，在最后一行增加代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;my-post-copyright&quot;</span><br></pre></td></tr></table></figure></p>
 <h3 id="3-18-5-修改post-md文件"><a href="#3-18-5-修改post-md文件" class="headerlink" title="3.18.5 修改post.md文件"></a>3.18.5 修改<code>post.md</code>文件</h3><p>设置新建文章自动开启 <code>copyright</code> ，即新建文章自动显示自定义的版权声明，设置 <code>～/scaffolds/post.md</code> 文件，如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">copyright: true #新增,开启</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
 <h3 id="3-18-6-新建文章测试"><a href="#3-18-6-新建文章测试" class="headerlink" title="3.18.6 新建文章测试"></a>3.18.6 新建文章测试</h3><p>发现新建简单文章可以显示，之前的文章不能显示<br>效果图：</p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190415160207.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190415163917.png" alt></p>
 <h1 id="4-SEO推广"><a href="#4-SEO推广" class="headerlink" title="4 SEO推广"></a>4 SEO推广</h1><p>刚搭建完博客，可能你会发现你发表的文章在谷歌或者百度都搜索不到，因为需要进行SEO优化的，什么是SEO，顾名思义，SEO即(Search Engine Optimization):汉译为搜索引擎优化，下面来总结一下SEO优化的方法，让自己的博文能在谷歌百度上搜索到。</p>
 <h2 id="4-1-生成sitemap"><a href="#4-1-生成sitemap" class="headerlink" title="4.1 生成sitemap"></a>4.1 生成sitemap</h2><p>添加站点地图sitemap<br>Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便搜索引擎可以更加智能地抓取网站。<br>安装sitemap站点地图自动生成插件<code>hexo-generator-sitemap</code>和<code>hexo-generator-baidu-sitemap</code>，用于生成<code>sitemap</code>,在<code>git Bash</code>中执行以下命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure></p>
 <p>修改站点配置文件<br>将sitemap文件添加到站点配置文件<code>_config.yml</code>中，并修改url字段的值，其值默认为<a href="http://yoursite.com。" target="_blank" rel="noopener">http://yoursite.com。</a><br>在站点配置文件 <code>_config.yml</code>中添加如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">  path: baidusitemap.xml</span><br><span class="line">  </span><br><span class="line">url: https://blog.enjoytoshare.club</span><br></pre></td></tr></table></figure></p>
@@ -886,6 +886,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/article/testCopyrightDeclaration.html" rel="prev" title="测试自定义文章底部版权声明">
+                测试自定义文章底部版权声明 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -960,7 +964,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">31</span>
+                    <span class="site-state-item-count">32</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
