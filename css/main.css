@@ -1363,7 +1363,7 @@ pre .javascript .function {
   max-width: 45em;
   margin: 2.8em auto 0;
   padding: 0.5em 1em;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #5cb85c;
   font-size: 0.93rem;
   line-height: 1.6em;
   word-break: break-all;
@@ -1375,7 +1375,7 @@ pre .javascript .function {
 .my_post_copyright span {
   display: inline-block;
   width: 5.2em;
-  color: #333;
+  color: #00c4b6;
   font-weight: bold;
 }
 .my_post_copyright .raw {
@@ -1383,7 +1383,7 @@ pre .javascript .function {
   width: 5em;
 }
 .my_post_copyright a {
-  color: #808080;
+  color: #5cb85c;
   border-bottom: 0;
 }
 .my_post_copyright a:hover {
@@ -1391,7 +1391,7 @@ pre .javascript .function {
   text-decoration: underline;
 }
 .my_post_copyright:hover .fa-clipboard {
-  color: #000;
+  color: #8959a8;
 }
 .my_post_copyright .post-url:hover {
   font-weight: normal;
@@ -1406,7 +1406,7 @@ pre .javascript .function {
   }
 }
 .my_post_copyright .copy-path:hover {
-  color: #808080;
+  color: #a2dc30;
   cursor: pointer;
 }
 .posts-expand {
@@ -2110,7 +2110,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffaac1;
+  background: #f69eff;
 }
 .links-of-blogroll {
   font-size: 13px;
