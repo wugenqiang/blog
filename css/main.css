@@ -1409,6 +1409,9 @@ pre .javascript .function {
   color: #a2dc30;
   cursor: pointer;
 }
+.my_post_copyright i {
+  color: #5cb85c;
+}
 .posts-expand {
   padding-top: 40px;
 }
@@ -2110,7 +2113,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f69eff;
+  background: #0618a8;
 }
 .links-of-blogroll {
   font-size: 13px;
