@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.enjoytoshare.club/"/>
-  <updated>2019-04-15T22:22:27.000Z</updated>
+  <updated>2019-04-17T09:46:23.000Z</updated>
   <id>https://blog.enjoytoshare.club/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode：两数之和</title>
+    <link href="https://blog.enjoytoshare.club/article/LeetCode001.html"/>
+    <id>https://blog.enjoytoshare.club/article/LeetCode001.html</id>
+    <published>2019-04-17T09:46:23.000Z</published>
+    <updated>2019-04-17T09:46:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="https://blog.enjoytoshare.club/categories/LeetCode/"/>
+    
+    
+      <category term="LeetCode" scheme="https://blog.enjoytoshare.club/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode学习(目录)</title>
+    <link href="https://blog.enjoytoshare.club/article/LeetCodeLearningCatalogue.html"/>
+    <id>https://blog.enjoytoshare.club/article/LeetCodeLearningCatalogue.html</id>
+    <published>2019-04-17T09:10:01.000Z</published>
+    <updated>2019-04-17T09:10:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>LeetCode</code>对我来说是一个训练思维、提升能力的网站，是一个非常值得去的地方，里面都是一些经典的面试题，这些题目在Google，Microsoft，Facebook，Yahoo等大型互联网公司面试题中出现过，并且题目分为易，中，难三等，也按专题进行了分类，很适合我来学习，之后我会在<a href="https://blog.enjoytoshare.club/">EnjoyToShare博客</a>上更新我的学习情况，以便今后查看，当然如果可以帮助到大家会更好，在此记录一下。</p><a id="more"></a><p>题目地址：<a href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode</a> 和 <a href="https://leetcode-cn.com/" target="_blank" rel="noopener">LeetCode-CN</a><br>ps:由于 LeetCode 开通了中国区，所以刚开始练习的时候打算先从中国区刷起，之后二刷三刷再上英语版的</p><table><thead><tr><th style="text-align:center">编号</th><th style="text-align:center">题目</th><th style="text-align:center">分类</th><th style="text-align:center">备注</th></tr></thead><tbody><tr><td style="text-align:center">1</td><td style="text-align:center"><a href="https://blog.enjoytoshare.club/article/LeetCode001.html">两数之和</a></td><td style="text-align:center">数组</td><td style="text-align:center">技巧</td></tr><tr><td style="text-align:center">7</td><td style="text-align:center">整数反转</td><td style="text-align:center">数学</td><td style="text-align:center">使用方法</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;LeetCode&lt;/code&gt;对我来说是一个训练思维、提升能力的网站，是一个非常值得去的地方，里面都是一些经典的面试题，这些题目在Google，Microsoft，Facebook，Yahoo等大型互联网公司面试题中出现过，并且题目分为易，中，难三等，也按专题进行了分类，很适合我来学习，之后我会在&lt;a href=&quot;https://blog.enjoytoshare.club/&quot;&gt;EnjoyToShare博客&lt;/a&gt;上更新我的学习情况，以便今后查看，当然如果可以帮助到大家会更好，在此记录一下。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="https://blog.enjoytoshare.club/categories/LeetCode/"/>
+    
+    
+      <category term="LeetCode" scheme="https://blog.enjoytoshare.club/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo+NexT搭建博客拥抱舒爽</title>
@@ -454,64 +502,6 @@
       <category term="域名" scheme="https://blog.enjoytoshare.club/tags/%E5%9F%9F%E5%90%8D/"/>
     
       <category term="Https" scheme="https://blog.enjoytoshare.club/tags/Https/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客绑定个人域名</title>
-    <link href="https://blog.enjoytoshare.club/article/hexo-do-domain.html"/>
-    <id>https://blog.enjoytoshare.club/article/hexo-do-domain.html</id>
-    <published>2019-04-04T15:47:54.000Z</published>
-    <updated>2019-04-04T15:47:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>前段时间用hexo搭建的gitpage个人博客，域名默认也是 github 下的二级域名：username.github.io,<br>现在为了提升格调准备将自己的博客指向一个新的域名。<br><a id="more"></a></p><p>下面来记录下过程。</p><h1 id="1-购买域名"><a href="#1-购买域名" class="headerlink" title="1 购买域名"></a>1 购买域名</h1><p>如果想要免费的域名，可以到下面网址购买：<a href="http://www.dot.tk/en/index.html?lang=en" target="_blank" rel="noopener">http://www.dot.tk/en/index.html?lang=en</a><br>当然，如果有条件，最好到阿里云或者腾讯云等地方购买域名，听说1元优惠域名还是很多的</p><h1 id="2-域名解析"><a href="#2-域名解析" class="headerlink" title="2 域名解析"></a>2 域名解析</h1><h2 id="2-1-方法一（不推荐）"><a href="#2-1-方法一（不推荐）" class="headerlink" title="2.1 方法一（不推荐）"></a>2.1 方法一（不推荐）</h2><p>首先获取自己 github 的二级域名的 IP地址，windows 下直接在 cmd 里 Ping 一下自己的博客就会得到 IP 地址：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404155814.png" alt></p><p>我的ip是185.199.111.153<br>下面通过 DNS域名解析将购买的域名指向 github 的二级域名：username.github.io，<br>我的是在腾讯云购买的1元用一年的，<br>进入腾讯云的管理控制台-域名与网站-云解析 DNS，进入域名的解析设置，点击新手指导，将得到的 IP 地址填到记录值一栏，点击确定就 OK 了。填完以后的解析列表会出现：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404162502.png" alt></p><p>记录值就是自己 github 的二级域名的 IP地址。</p><h2 id="2-2-方法二（推荐）"><a href="#2-2-方法二（推荐）" class="headerlink" title="2.2 方法二（推荐）"></a>2.2 方法二（推荐）</h2><p>直接解析域名的CNAME记录到你的Git二级域名，不要使用方法一中的A记录，因为ip地址可能会一段时间之后会改变，所以建议记录类型选择CNAME进行解析，记录值填的就是username.github.io，比如：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190410084011.png" alt></p><p>如果你只用github 的二级域名作为博客的地址，那么线路类型选择默认就好，图中我这里是因为采用<a href="https://blog.enjoytoshare.club/article/hexo-do-server-hosting.html">Github+Coding双服务器托管Hexo</a>，所以在线路类型上，国内默认选择线路是Coding的域名地址，国外选择的是Github的域名地址。</p><h1 id="3-设置CNAME"><a href="#3-设置CNAME" class="headerlink" title="3 设置CNAME"></a>3 设置CNAME</h1><p>在 hexo 项目下，source 文件夹下面创建 CNAME 文件（没有后缀名的），在里面写上购买的域名。比如：<br>blog.enjoytoshare.club</p><p>在 github 上面，打开 username.github.io 项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。比如：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404162901.png" alt></p><p>好了，新域名配置完成，可以访问了。</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404163631.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;前段时间用hexo搭建的gitpage个人博客，域名默认也是 github 下的二级域名：username.github.io,&lt;br&gt;现在为了提升格调准备将自己的博客指向一个新的域名。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Hexo" scheme="https://blog.enjoytoshare.club/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://blog.enjoytoshare.club/tags/Hexo/"/>
-    
-      <category term="域名" scheme="https://blog.enjoytoshare.club/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>概率论与数理统计知识整理</title>
-    <link href="https://blog.enjoytoshare.club/article/probability-theory-arrangement.html"/>
-    <id>https://blog.enjoytoshare.club/article/probability-theory-arrangement.html</id>
-    <published>2019-04-02T10:49:14.000Z</published>
-    <updated>2019-04-02T10:49:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>111</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;111&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="课程复习整理" scheme="https://blog.enjoytoshare.club/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
-    
-      <category term="考研" scheme="https://blog.enjoytoshare.club/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/"/>
-    
-      <category term="考研数学" scheme="https://blog.enjoytoshare.club/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/"/>
-    
-    
-      <category term="课程复习整理" scheme="https://blog.enjoytoshare.club/tags/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
-    
-      <category term="考研" scheme="https://blog.enjoytoshare.club/tags/%E8%80%83%E7%A0%94/"/>
-    
-      <category term="考研数学" scheme="https://blog.enjoytoshare.club/tags/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   

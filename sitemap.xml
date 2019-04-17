@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.enjoytoshare.club/article/LeetCode001.html</loc>
+    
+    <lastmod>2019-04-17T09:46:23.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.enjoytoshare.club/article/LeetCodeLearningCatalogue.html</loc>
+    
+    <lastmod>2019-04-17T09:10:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.enjoytoshare.club/article/hexo-do-optimization.html</loc>
     
     <lastmod>2019-04-15T22:22:27.000Z</lastmod>
