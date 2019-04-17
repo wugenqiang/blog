@@ -17,13 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>剑指offer面试编程题(C++)刷题</title>
-    <link href="https://blog.enjoytoshare.club/article/SwordForOfferC++.html"/>
-    <id>https://blog.enjoytoshare.club/article/SwordForOfferC++.html</id>
+    <title>剑指offer面试编程题刷题</title>
+    <link href="https://blog.enjoytoshare.club/article/SwordForOffer.html"/>
+    <id>https://blog.enjoytoshare.club/article/SwordForOffer.html</id>
     <published>2019-04-17T11:37:09.000Z</published>
     <updated>2019-04-17T11:37:09.000Z</updated>
     
-    <content type="html"><![CDATA[<p>书籍下载链接：<a href="https://github.com/wugenqiang/SwordDirectToOffer/raw/master/doc/剑指offer名企面试官精讲典型编程题.pdf" target="_blank" rel="noopener">剑指offer名企面试官精讲典型编程题.pdf</a><br>我的编程代码放在<a href="https://github.com/wugenqiang/SwordDirectToOffer" target="_blank" rel="noopener">SwordDirectToOffer</a>，如果有需要可以浏览</p>]]></content>
+    <content type="html"><![CDATA[<p>书籍下载链接：<a href="https://github.com/wugenqiang/SwordDirectToOffer/raw/master/doc/剑指offer名企面试官精讲典型编程题.pdf" target="_blank" rel="noopener">剑指offer名企面试官精讲典型编程题.pdf</a><br>下面的代码仅作参考：<br>我写的C++代码存放在<a href="https://github.com/wugenqiang/SwordDirectToOffer" target="_blank" rel="noopener">SwordDirectToOffer</a>，如果有需要可以浏览</p>]]></content>
     
     <summary type="html">
     

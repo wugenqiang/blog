@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[剑指offer面试编程题(C++)刷题]]></title>
-    <url>%2Farticle%2FSwordForOfferC%2B%2B.html</url>
-    <content type="text"><![CDATA[书籍下载链接：剑指offer名企面试官精讲典型编程题.pdf我的编程代码放在SwordDirectToOffer，如果有需要可以浏览]]></content>
+    <title><![CDATA[剑指offer面试编程题刷题]]></title>
+    <url>%2Farticle%2FSwordForOffer.html</url>
+    <content type="text"><![CDATA[书籍下载链接：剑指offer名企面试官精讲典型编程题.pdf下面的代码仅作参考：我写的C++代码存放在SwordDirectToOffer，如果有需要可以浏览]]></content>
       <categories>
         <category>剑指offer面试编程题</category>
       </categories>
