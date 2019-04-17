@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.enjoytoshare.club/"/>
-  <updated>2019-04-17T09:46:23.000Z</updated>
+  <updated>2019-04-17T11:37:09.000Z</updated>
   <id>https://blog.enjoytoshare.club/</id>
   
   <author>
@@ -17,39 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>LeetCode：两数之和</title>
-    <link href="https://blog.enjoytoshare.club/article/LeetCode001.html"/>
-    <id>https://blog.enjoytoshare.club/article/LeetCode001.html</id>
-    <published>2019-04-17T09:46:23.000Z</published>
-    <updated>2019-04-17T09:46:23.000Z</updated>
+    <title>剑指offer面试编程题(C++)刷题</title>
+    <link href="https://blog.enjoytoshare.club/article/SwordForOfferC++.html"/>
+    <id>https://blog.enjoytoshare.club/article/SwordForOfferC++.html</id>
+    <published>2019-04-17T11:37:09.000Z</published>
+    <updated>2019-04-17T11:37:09.000Z</updated>
     
-    <content type="html"><![CDATA[<p>1</p>]]></content>
+    <content type="html"><![CDATA[<p>书籍下载链接：<a href="https://github.com/wugenqiang/SwordDirectToOffer/raw/master/doc/剑指offer名企面试官精讲典型编程题.pdf" target="_blank" rel="noopener">剑指offer名企面试官精讲典型编程题.pdf</a><br>我的编程代码放在<a href="https://github.com/wugenqiang/SwordDirectToOffer" target="_blank" rel="noopener">SwordDirectToOffer</a>，如果有需要可以浏览</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;1&lt;/p&gt;
-
+        &lt;p&gt;书籍下载链接：&lt;a href=&quot;https://github.com/wugenqiang/SwordDirectToOffer/raw/master/doc/剑指offer名企面试官精讲典型编程题.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;剑
       
     
     </summary>
     
-      <category term="LeetCode" scheme="https://blog.enjoytoshare.club/categories/LeetCode/"/>
+      <category term="剑指offer面试编程题" scheme="https://blog.enjoytoshare.club/categories/%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
     
     
-      <category term="LeetCode" scheme="https://blog.enjoytoshare.club/tags/LeetCode/"/>
+      <category term="剑指offer面试编程题" scheme="https://blog.enjoytoshare.club/tags/%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
     
   </entry>
   
   <entry>
-    <title>LeetCode学习(目录)</title>
-    <link href="https://blog.enjoytoshare.club/article/LeetCodeLearningCatalogue.html"/>
-    <id>https://blog.enjoytoshare.club/article/LeetCodeLearningCatalogue.html</id>
+    <title>LeetCode编程训练</title>
+    <link href="https://blog.enjoytoshare.club/article/LeetCodeTraining.html"/>
+    <id>https://blog.enjoytoshare.club/article/LeetCodeTraining.html</id>
     <published>2019-04-17T09:10:01.000Z</published>
     <updated>2019-04-17T09:10:01.000Z</updated>
     
-    <content type="html"><![CDATA[<p><code>LeetCode</code>对我来说是一个训练思维、提升能力的网站，是一个非常值得去的地方，里面都是一些经典的面试题，这些题目在Google，Microsoft，Facebook，Yahoo等大型互联网公司面试题中出现过，并且题目分为易，中，难三等，也按专题进行了分类，很适合我来学习，之后我会在<a href="https://blog.enjoytoshare.club/">EnjoyToShare博客</a>上更新我的学习情况，以便今后查看，当然如果可以帮助到大家会更好，在此记录一下。</p><a id="more"></a><p>题目地址：<a href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode</a> 和 <a href="https://leetcode-cn.com/" target="_blank" rel="noopener">LeetCode-CN</a><br>ps:由于 LeetCode 开通了中国区，所以刚开始练习的时候打算先从中国区刷起，之后二刷三刷再上英语版的</p><table><thead><tr><th style="text-align:center">编号</th><th style="text-align:center">题目</th><th style="text-align:center">分类</th><th style="text-align:center">备注</th></tr></thead><tbody><tr><td style="text-align:center">1</td><td style="text-align:center"><a href="https://blog.enjoytoshare.club/article/LeetCode001.html">两数之和</a></td><td style="text-align:center">数组</td><td style="text-align:center">技巧</td></tr><tr><td style="text-align:center">7</td><td style="text-align:center">整数反转</td><td style="text-align:center">数学</td><td style="text-align:center">使用方法</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p><code>LeetCode</code>对我来说是一个训练思维、提升能力的网站，是一个非常值得去的地方，里面都是一些经典的面试题，这些题目在Google，Microsoft，Facebook，Yahoo等大型互联网公司面试题中出现过，并且题目分为易，中，难三等，也按专题进行了分类，很适合我来学习，之后我会在<a href="https://blog.enjoytoshare.club/">EnjoyToShare博客</a>上更新我的学习情况，以便今后查看，当然如果可以帮助到大家会更好，在此记录一下。</p><a id="more"></a><p>题目地址：<a href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode</a> 和 <a href="https://leetcode-cn.com/" target="_blank" rel="noopener">LeetCode-CN</a><br>ps:由于 LeetCode 开通了中国区，所以刚开始练习的时候打算先从中国区刷起，之后二刷三刷再上英语版的</p>]]></content>
     
     <summary type="html">
     

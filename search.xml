@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[LeetCode：两数之和]]></title>
-    <url>%2Farticle%2FLeetCode001.html</url>
-    <content type="text"><![CDATA[1]]></content>
+    <title><![CDATA[剑指offer面试编程题(C++)刷题]]></title>
+    <url>%2Farticle%2FSwordForOfferC%2B%2B.html</url>
+    <content type="text"><![CDATA[书籍下载链接：剑指offer名企面试官精讲典型编程题.pdf我的编程代码放在SwordDirectToOffer，如果有需要可以浏览]]></content>
       <categories>
-        <category>LeetCode</category>
+        <category>剑指offer面试编程题</category>
       </categories>
       <tags>
-        <tag>LeetCode</tag>
+        <tag>剑指offer面试编程题</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[LeetCode学习(目录)]]></title>
-    <url>%2Farticle%2FLeetCodeLearningCatalogue.html</url>
-    <content type="text"><![CDATA[LeetCode对我来说是一个训练思维、提升能力的网站，是一个非常值得去的地方，里面都是一些经典的面试题，这些题目在Google，Microsoft，Facebook，Yahoo等大型互联网公司面试题中出现过，并且题目分为易，中，难三等，也按专题进行了分类，很适合我来学习，之后我会在EnjoyToShare博客上更新我的学习情况，以便今后查看，当然如果可以帮助到大家会更好，在此记录一下。 题目地址：LeetCode 和 LeetCode-CNps:由于 LeetCode 开通了中国区，所以刚开始练习的时候打算先从中国区刷起，之后二刷三刷再上英语版的 编号 题目 分类 备注 1 两数之和 数组 技巧 7 整数反转 数学 使用方法]]></content>
+    <title><![CDATA[LeetCode编程训练]]></title>
+    <url>%2Farticle%2FLeetCodeTraining.html</url>
+    <content type="text"><![CDATA[LeetCode对我来说是一个训练思维、提升能力的网站，是一个非常值得去的地方，里面都是一些经典的面试题，这些题目在Google，Microsoft，Facebook，Yahoo等大型互联网公司面试题中出现过，并且题目分为易，中，难三等，也按专题进行了分类，很适合我来学习，之后我会在EnjoyToShare博客上更新我的学习情况，以便今后查看，当然如果可以帮助到大家会更好，在此记录一下。 题目地址：LeetCode 和 LeetCode-CNps:由于 LeetCode 开通了中国区，所以刚开始练习的时候打算先从中国区刷起，之后二刷三刷再上英语版的]]></content>
       <categories>
         <category>LeetCode</category>
       </categories>
