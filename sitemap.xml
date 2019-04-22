@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.enjoytoshare.club/article/RegularExpression.html</loc>
+    
+    <lastmod>2019-04-22T10:45:35.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.enjoytoshare.club/article/SoftwareToRecordScreen.html</loc>
     
     <lastmod>2019-04-22T09:52:06.000Z</lastmod>
@@ -296,14 +303,14 @@
   </url>
   
   <url>
-    <loc>https://blog.enjoytoshare.club/laboratory/trainingCamp/index.html</loc>
+    <loc>https://blog.enjoytoshare.club/laboratory/toolBox/index.html</loc>
     
     <lastmod>2019-03-17T12:18:28.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.enjoytoshare.club/laboratory/toolBox/index.html</loc>
+    <loc>https://blog.enjoytoshare.club/laboratory/trainingCamp/index.html</loc>
     
     <lastmod>2019-03-17T12:18:28.000Z</lastmod>
     
