@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[剑指offer面试编程题刷题]]></title>
+    <title><![CDATA[录屏软件LICEcap]]></title>
+    <url>%2Farticle%2FSoftwareToRecordScreen.html</url>
+    <content type="text"><![CDATA[1 写在前面在日常生活中，图片可能不能完全的记录我们的需要，而录屏软件就解决了其中的一个需求：动态展示操作过程 本文参考博文：小巧但功能丰富的录屏软件LICEcap今天我尝试使用了一下，发现还不错，唯一的缺点就是GIF大小几兆，看来要压缩，或者我还没完全学会使用它，不过不影响我对于这个软件的好感。 2 LICEcapLICEcap官网地址：cockos 在这个网址里面，你可以具体了解LICEcap，同时可以下载软件体验，还可以查看到软件源码，可以根据你自己的需求修改，如果有这个能力的话哈哈]]></content>
+      <categories>
+        <category>工具</category>
+        <category>录屏</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>录屏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[FreeVpnToShare]]></title>
+    <url>%2Farticle%2FFreeVpnToShare.html</url>
+    <content type="text"><![CDATA[1 写在前面如果有能力，可以尝试自己搭建VPN 本文参考地址：超详细的免费翻墙教程 2 SS &amp; SSRSS 的全称是 Shadowsocks，是一种加密的传输方式（一种基于 Socks5 代理方式的网络数据加密传输包）；SS 是目前主流的科学上网方式，是目前最稳定最好用的科学上网工具之一。 SSR（全称 ShadowsocksR ）是 SS 的修改版，也算是增强版，是在SS 的基础上做了些功能的增加和修改。 有很多的 SS 客户端，但是仅仅有 SS 客户端还不能翻墙，还得需要在SS 客户端中添加正常可用的 SS 信息，SS 信息可以自己买 VPS 服务器搭建，也可以买别人搭建好的，也有人搭建了免费共享出来的。网上卖 SS 信息的非常多非常多（不过跑路的也很多，自己当心），但都不是官方提供，SS 官网并不卖服务。 3 VPNToShare3.1 分享一 VPN免费节点分享 需要搭配SSR软件使用 SSR下载Windows版本 这个网址貌似要外网之后才可以访问，不过官网上也提供了一个网内版的链接：小胡同进入网址后只需要点击 然后使用你的SSR工具，点击剪贴板批量导入ssr，然后在服务器选项中选择合适的节点即可。 3.2 分享二点击FreeSS网址进入，点击图片即可显示二维码，扫码即可连接，然后选择服务器节点，不过每4小时更新一次]]></content>
+      <categories>
+        <category>工具</category>
+        <category>FreeVPN</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>FreeVPN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[剑指offer面试编程题刷题训练]]></title>
     <url>%2Farticle%2FSwordForOffer.html</url>
     <content type="text"><![CDATA[书籍下载链接：剑指offer名企面试官精讲典型编程题.pdf下面的代码仅作参考：我写的C++代码存放在SwordDirectToOffer，如果有需要可以浏览]]></content>
       <categories>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.enjoytoshare.club/"/>
-  <updated>2019-04-17T11:37:09.000Z</updated>
+  <updated>2019-04-22T09:52:06.000Z</updated>
   <id>https://blog.enjoytoshare.club/</id>
   
   <author>
@@ -17,7 +17,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>剑指offer面试编程题刷题</title>
+    <title>录屏软件LICEcap</title>
+    <link href="https://blog.enjoytoshare.club/article/SoftwareToRecordScreen.html"/>
+    <id>https://blog.enjoytoshare.club/article/SoftwareToRecordScreen.html</id>
+    <published>2019-04-22T09:52:06.000Z</published>
+    <updated>2019-04-22T09:52:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-写在前面"><a href="#1-写在前面" class="headerlink" title="1 写在前面"></a>1 写在前面</h1><p>在日常生活中，图片可能不能完全的记录我们的需要，而录屏软件就解决了其中的一个需求：动态展示操作过程</p><a id="more"></a><p>本文参考博文：<a href="https://anson2416.github.io/posts/6bae82eb/" target="_blank" rel="noopener">小巧但功能丰富的录屏软件LICEcap</a><br>今天我尝试使用了一下，发现还不错，唯一的缺点就是GIF大小几兆，看来要压缩，或者我还没完全学会使用它，不过不影响我对于这个软件的好感。</p><h1 id="2-LICEcap"><a href="#2-LICEcap" class="headerlink" title="2 LICEcap"></a>2 LICEcap</h1><p>LICEcap官网地址：<a href="https://www.cockos.com/licecap/" target="_blank" rel="noopener">cockos</a></p><p>在这个网址里面，你可以具体了解LICEcap，同时可以下载软件体验，还可以查看到软件源码，可以根据你自己的需求修改，如果有这个能力的话哈哈</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;1-写在前面&quot;&gt;&lt;a href=&quot;#1-写在前面&quot; class=&quot;headerlink&quot; title=&quot;1 写在前面&quot;&gt;&lt;/a&gt;1 写在前面&lt;/h1&gt;&lt;p&gt;在日常生活中，图片可能不能完全的记录我们的需要，而录屏软件就解决了其中的一个需求：动态展示操作过程&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://blog.enjoytoshare.club/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="录屏" scheme="https://blog.enjoytoshare.club/categories/%E5%B7%A5%E5%85%B7/%E5%BD%95%E5%B1%8F/"/>
+    
+    
+      <category term="工具" scheme="https://blog.enjoytoshare.club/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="录屏" scheme="https://blog.enjoytoshare.club/tags/%E5%BD%95%E5%B1%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FreeVpnToShare</title>
+    <link href="https://blog.enjoytoshare.club/article/FreeVpnToShare.html"/>
+    <id>https://blog.enjoytoshare.club/article/FreeVpnToShare.html</id>
+    <published>2019-04-22T08:40:39.000Z</published>
+    <updated>2019-04-22T08:40:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-写在前面"><a href="#1-写在前面" class="headerlink" title="1 写在前面"></a>1 写在前面</h1><p>如果有能力，可以尝试自己搭建VPN</p><a id="more"></a><p>本文参考地址：<a href="https://dotblogs.com.tw/axutongxue/2018/04/05/ssr" target="_blank" rel="noopener">超详细的免费翻墙教程</a></p><h1 id="2-SS-amp-SSR"><a href="#2-SS-amp-SSR" class="headerlink" title="2 SS &amp; SSR"></a>2 SS &amp; SSR</h1><p>SS 的全称是 Shadowsocks，是一种加密的传输方式（一种基于 Socks5 代理方式的网络数据加密传输包）；SS 是目前主流的科学上网方式，是目前最稳定最好用的科学上网工具之一。</p><p>SSR（全称 ShadowsocksR ）是 SS 的修改版，也算是增强版，是在SS 的基础上做了些功能的增加和修改。</p><p>有很多的 SS 客户端，但是仅仅有 SS 客户端还不能翻墙，还得需要在SS 客户端中添加正常可用的 SS 信息，SS 信息可以自己买 VPS 服务器搭建，也可以买别人搭建好的，也有人搭建了免费共享出来的。网上卖 SS 信息的非常多非常多（不过跑路的也很多，自己当心），但都不是官方提供，SS 官网并不卖服务。</p><h1 id="3-VPNToShare"><a href="#3-VPNToShare" class="headerlink" title="3 VPNToShare"></a>3 VPNToShare</h1><h2 id="3-1-分享一"><a href="#3-1-分享一" class="headerlink" title="3.1 分享一"></a>3.1 分享一</h2><ul><li><a href="https://lncn.org/" target="_blank" rel="noopener">VPN免费节点分享</a> 需要搭配SSR软件使用</li><li><a href="https://github.com/shadowsocksrr/shadowsocksr-csharp/releases" target="_blank" rel="noopener">SSR下载Windows版本</a></li></ul><p>这个网址貌似要外网之后才可以访问，不过官网上也提供了一个网内版的链接：<a href="https://xiaohutong.org/" target="_blank" rel="noopener">小胡同</a><br>进入网址后只需要点击</p><p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190422090142.png" alt></p><p>然后使用你的SSR工具，点击<code>剪贴板批量导入ssr</code>，然后在<code>服务器</code>选项中选择合适的节点即可。</p><h2 id="3-2-分享二"><a href="#3-2-分享二" class="headerlink" title="3.2 分享二"></a>3.2 分享二</h2><p>点击<a href="https://do.freess.today/" target="_blank" rel="noopener">FreeSS</a>网址进入，点击图片即可显示二维码，扫码即可连接，然后选择服务器节点，不过每4小时更新一次</p><p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/gif001.gif" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;1-写在前面&quot;&gt;&lt;a href=&quot;#1-写在前面&quot; class=&quot;headerlink&quot; title=&quot;1 写在前面&quot;&gt;&lt;/a&gt;1 写在前面&lt;/h1&gt;&lt;p&gt;如果有能力，可以尝试自己搭建VPN&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://blog.enjoytoshare.club/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="FreeVPN" scheme="https://blog.enjoytoshare.club/categories/%E5%B7%A5%E5%85%B7/FreeVPN/"/>
+    
+    
+      <category term="工具" scheme="https://blog.enjoytoshare.club/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="FreeVPN" scheme="https://blog.enjoytoshare.club/tags/FreeVPN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer面试编程题刷题训练</title>
     <link href="https://blog.enjoytoshare.club/article/SwordForOffer.html"/>
     <id>https://blog.enjoytoshare.club/article/SwordForOffer.html</id>
     <published>2019-04-17T11:37:09.000Z</published>
@@ -450,57 +502,6 @@
     
     
       <category term="Hexo" scheme="https://blog.enjoytoshare.club/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding+Github双服务器托管Hexo</title>
-    <link href="https://blog.enjoytoshare.club/article/hexo-do-server-hosting.html"/>
-    <id>https://blog.enjoytoshare.club/article/hexo-do-server-hosting.html</id>
-    <published>2019-04-05T09:36:34.000Z</published>
-    <updated>2019-04-05T09:36:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-写在前面"><a href="#1-写在前面" class="headerlink" title="1 写在前面"></a>1 写在前面</h1><p>其实之前是用的wordpress在阿里云上挂着。<br>觉得Hexo好像更符合现在我的审美，so, do it! 所以我选择了Hexo</p><h1 id="2-部署优化Hexo"><a href="#2-部署优化Hexo" class="headerlink" title="2 部署优化Hexo"></a>2 部署优化Hexo</h1><p>这一步我之前写过，在这里我就不详细赘述了啊</p><ul><li><a href="https://wugenqiang.github.io/article/hexo-do-optimization.html" target="_blank" rel="noopener">Hexo+NexT拥抱舒爽</a></li></ul><h1 id="3-创建Github公开库"><a href="#3-创建Github公开库" class="headerlink" title="3 创建Github公开库"></a>3 创建Github公开库</h1><ul><li><a href="https://blog.csdn.net/wugenqiang/article/details/88373385" target="_blank" rel="noopener">Hexo博客上传至Github</a></li></ul><h1 id="4-创建Coding公开库"><a href="#4-创建Coding公开库" class="headerlink" title="4 创建Coding公开库"></a>4 创建Coding公开库</h1><p>创建腾讯云开发者平台（或Coding）公开库，因为目前两家公司战略合作，现在共用了。<br><a href="https://dev.tencent.com/" target="_blank" rel="noopener">https://dev.tencent.com/</a></p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405095056.png" alt></p><h2 id="4-1-创建项目"><a href="#4-1-创建项目" class="headerlink" title="4.1 创建项目"></a>4.1 创建项目</h2><p>项目地址格式是 username.coding.me，格式不对会404哦，项目名称随便，确定就ok<br>例如我的：<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405095539.png" alt></p><h2 id="4-2-开启page服务"><a href="#4-2-开启page服务" class="headerlink" title="4.2 开启page服务"></a>4.2 开启page服务</h2><p>创建完记得进入代码浏览，看看是否正确生成，然后进入page服务，然后开启<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405095901.png" alt><br>开启成功效果图：<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405100027.png" alt></p><h1 id="5-配置服务并将文件部署到Github"><a href="#5-配置服务并将文件部署到Github" class="headerlink" title="5 配置服务并将文件部署到Github"></a>5 配置服务并将文件部署到Github</h1><h2 id="5-1-修改-config-yml"><a href="#5-1-修改-config-yml" class="headerlink" title="5.1 修改_config.yml"></a>5.1 修改_config.yml</h2><p>修改Hexo根目录下 _config.yml 文件，找到最下面的 deploy，格式类似我这样的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  #repository: https://github.com/wugenqiang/wugenqiang.github.io.git #复制过来</span><br><span class="line">  #branch: master</span><br><span class="line">  repo:</span><br><span class="line">    github: https://github.com/wugenqiang/wugenqiang.github.io.git,master</span><br><span class="line">    coding: https://dev.tencent.com/u/wugenqiang/p/wugenqiang.coding.me.git,master</span><br></pre></td></tr></table></figure><h2 id="5-2-生成静态文件发布"><a href="#5-2-生成静态文件发布" class="headerlink" title="5.2 生成静态文件发布"></a>5.2 生成静态文件发布</h2><p>执行hexo clean &amp;&amp; hexo g &amp;&amp; hexo s 清除缓存，生成静态文件，本地发布<br>页面上没问题的话，就可以执行hexo d</p><p>会弹出输入github账号密码，和腾讯开发者平台的账号密码。<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405100903.png" alt><br>后面通过生成ssh私钥，公钥就不用频繁输入用户名密码</p><p>部署成功，按照各自平台的pages服务提示的网址即可访问<br>在这里我就演示coding的吧，嘿嘿<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405101028.png" alt></p><h1 id="6-预览地址"><a href="#6-预览地址" class="headerlink" title="6 预览地址"></a>6 预览地址</h1><ul><li><a href="https://wugenqiang.coding.me/" target="_blank" rel="noopener">https://wugenqiang.coding.me/</a></li><li><a href="https://wugenqiang.github.io/" target="_blank" rel="noopener">https://wugenqiang.github.io/</a></li></ul><h1 id="7-设置自定义域名"><a href="#7-设置自定义域名" class="headerlink" title="7 设置自定义域名"></a>7 设置自定义域名</h1><p>对于Github来说，可参考：</p><ul><li><a href="https://wugenqiang.github.io/article/hexo-do-domain.html" target="_blank" rel="noopener">Hexo博客绑定个人域名</a></li></ul><p>对于Coding来说，来进行下面步骤：<br>1.进入项目，进入Page服务页<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103203.png" alt></p><p>点击设置进入</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103257.png" alt></p><p>2.设置域名指向<br>设置自定义域名指向wugenqiang.coding.me</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405103808.png" alt></p><p>ok<br><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405104001.png" alt></p><h1 id="8-加快访问速度"><a href="#8-加快访问速度" class="headerlink" title="8 加快访问速度"></a>8 加快访问速度</h1><p>修改解析记录，点击 修改，然后将github解析线路改成海外，然后保存，这样国外的用户访问你的博客的话会跳转到你的github的页面。国内默认coding.me，加快访问速度，欧耶</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190405113112.png" alt></p><p>来访问试试吧，嘿嘿嘿 <a href="https://blog.enjoytoshare.club/">死命点我吧，亲</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;1-写在前面&quot;&gt;&lt;a href=&quot;#1-写在前面&quot; class=&quot;headerlink&quot; title=&quot;1 写在前面&quot;&gt;&lt;/a&gt;1 写在前面&lt;/h1&gt;&lt;p&gt;其实之前是用的wordpress在阿里云上挂着。&lt;br&gt;觉得Hexo好像更符合现在我的审美，so, do i
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="https://blog.enjoytoshare.club/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://blog.enjoytoshare.club/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客自定义域名开启HTTPS</title>
-    <link href="https://blog.enjoytoshare.club/article/hexo-do-https.html"/>
-    <id>https://blog.enjoytoshare.club/article/hexo-do-https.html</id>
-    <published>2019-04-04T16:44:18.000Z</published>
-    <updated>2019-04-04T16:44:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>GitHub官方曾经宣布，GitHub Pages的自定义域名获得对HTTPS的支持。</p><a id="more"></a><p>自己博客没有启用HTTPS，看到消息后，就想着折腾下吧。其实，很简单的，对着官方教程一步步来就可以了。</p><p>首先，打开仓库的Settings，找到GitHub Pages项，有一个Enforce HTTPS，在前面的框打上钩就可以了。<br>完成后，博客就全站支持HTTPS了。</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404165057.png" alt></p><p>效果如下：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404165246.png" alt></p><p>但是爆红就让人心态不好了，所以下面使用Netlify来优化https方案</p><p>Netlify (推荐)</p><ul><li>可以使用 CLI 上传代码</li><li>支持自定义域名且自定义域名支持一键开启 https（证书来自 Let’s Encrype）</li><li>支持强制让用户通过 https 访问网站（开启后此功能后，http 的访问一律会 301 跳转到 https</li><li>支持自动构建</li><li>支持重定向（Redirects）和重写（Rewrites）功能</li><li>数据通过 HTTP2 协议传输</li><li>提供 webhooks 与 API</li></ul><h1 id="1-Netlify"><a href="#1-Netlify" class="headerlink" title="1 Netlify"></a>1 Netlify</h1><p>Netlify是一家专注于提供静态网站托管服务的公司，通过自己的内容分发网络，将提前建立好的静态页面呈献给访客，节约了加载的时间。</p><h2 id="1-1-部署网站"><a href="#1-1-部署网站" class="headerlink" title="1.1 部署网站"></a>1.1 部署网站</h2><p>首先去 Netlify 注册账号登录（<a href="https://www.netlify.com/）" target="_blank" rel="noopener">https://www.netlify.com/）</a></p><p>接着点击页面右上角的 New site from Git</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404170805.png" alt></p><p>这里选择的 GitHub ,别忘记勾选访问公共仓库选项.之后授权给 Netlify 指定Repository,然后 Deploy</p><p>设置自定义域名<br>点击 Domain settings 然后点击 Add custom domain.</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404171035.png" alt></p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404171134.png" alt></p><p>然后到域名解析处,修改域名CNAME记录,记录值就是设置完域名页面显示的配置值</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404172505.png" alt></p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404172429.png" alt></p><h2 id="1-2-添加SSL证书"><a href="#1-2-添加SSL证书" class="headerlink" title="1.2 添加SSL证书"></a>1.2 添加SSL证书</h2><p>设置完成域名绑定后,设置中心选项有所变化 , 点击</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404173233.png" alt></p><p>至此配置完成</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404173821.png" alt></p><p>效果显示：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404174519.png" alt></p><p>完美~~</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;GitHub官方曾经宣布，GitHub Pages的自定义域名获得对HTTPS的支持。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Hexo" scheme="https://blog.enjoytoshare.club/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://blog.enjoytoshare.club/tags/Hexo/"/>
-    
-      <category term="域名" scheme="https://blog.enjoytoshare.club/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-      <category term="Https" scheme="https://blog.enjoytoshare.club/tags/Https/"/>
     
   </entry>
   
