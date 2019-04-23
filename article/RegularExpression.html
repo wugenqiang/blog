@@ -657,7 +657,92 @@
 <li>菜鸟测试：<a href="https://c.runoob.com/front-end/854" target="_blank" rel="noopener">https://c.runoob.com/front-end/854</a></li>
 </ul>
 <h1 id="2-常用的正则校验"><a href="#2-常用的正则校验" class="headerlink" title="2 常用的正则校验"></a>2 常用的正则校验</h1><p>包括<code>校验数字</code>、<code>字符</code>、一些<code>特殊</code>的需求<br>参考博文：<a href="http://www.cnblogs.com/zxin/archive/2013/01/26/2877765.html" target="_blank" rel="noopener">最全的常用正则表达式大全——包括校验数字、字符、一些特殊的需求等等</a></p>
-<h2 id="2-1-校验数字的表达式"><a href="#2-1-校验数字的表达式" class="headerlink" title="2.1 校验数字的表达式"></a>2.1 校验数字的表达式</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">数字：^[<span class="number">0</span><span class="number">-9</span>]*$</span><br><span class="line">n位的数字：^\d&#123;n&#125;$</span><br><span class="line">至少n位的数字：^\d&#123;n,&#125;$</span><br><span class="line">m-n位的数字：^\d&#123;m,n&#125;$</span><br><span class="line">零和非零开头的数字：^(<span class="number">0</span>|[<span class="number">1</span><span class="number">-9</span>][<span class="number">0</span><span class="number">-9</span>]*)$</span><br><span class="line">非零开头的最多带两位小数的数字：^([<span class="number">1</span><span class="number">-9</span>][<span class="number">0</span><span class="number">-9</span>]*)+(.[<span class="number">0</span><span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">2</span>&#125;)?$</span><br><span class="line">带<span class="number">1</span><span class="number">-2</span>位小数的正数或负数：^(\-)?\d+(\.\d&#123;<span class="number">1</span>,<span class="number">2</span>&#125;)?$</span><br><span class="line">正数、负数、和小数：^(\-|\+)?\d+(\.\d+)?$</span><br><span class="line">有两位小数的正实数：^[<span class="number">0</span><span class="number">-9</span>]+(.[<span class="number">0</span><span class="number">-9</span>]&#123;<span class="number">2</span>&#125;)?$</span><br><span class="line">有<span class="number">1</span>~<span class="number">3</span>位小数的正实数：^[<span class="number">0</span><span class="number">-9</span>]+(.[<span class="number">0</span><span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">3</span>&#125;)?$</span><br><span class="line">非零的正整数：^[<span class="number">1</span><span class="number">-9</span>]\d*$ 或 ^([<span class="number">1</span><span class="number">-9</span>][<span class="number">0</span><span class="number">-9</span>]*)&#123;<span class="number">1</span>,<span class="number">3</span>&#125;$ 或 ^\+?[<span class="number">1</span><span class="number">-9</span>][<span class="number">0</span><span class="number">-9</span>]*$</span><br><span class="line">非零的负整数：^\-[<span class="number">1</span><span class="number">-9</span>][]<span class="number">0</span><span class="number">-9</span><span class="string">"*$ 或 ^-[1-9]\d*$</span></span><br><span class="line"><span class="string">非负整数：^\d+$ 或 ^[1-9]\d*|0$</span></span><br><span class="line"><span class="string">非正整数：^-[1-9]\d*|0$ 或 ^((-\d+)|(0+))$</span></span><br><span class="line"><span class="string">非负浮点数：^\d+(\.\d+)?$ 或 ^[1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0$</span></span><br><span class="line"><span class="string">非正浮点数：^((-\d+(\.\d+)?)|(0+(\.0+)?))$ 或 ^(-([1-9]\d*\.\d*|0\.\d*[1-9]\d*))|0?\.0+|0$</span></span><br><span class="line"><span class="string">正浮点数：^[1-9]\d*\.\d*|0\.\d*[1-9]\d*$ 或 ^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$</span></span><br><span class="line"><span class="string">负浮点数：^-([1-9]\d*\.\d*|0\.\d*[1-9]\d*)$ 或 ^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$</span></span><br><span class="line"><span class="string">浮点数：^(-?\d+)(\.\d+)?$ 或 ^-?([1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0)$</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-1-校验数字的表达式"><a href="#2-1-校验数字的表达式" class="headerlink" title="2.1 校验数字的表达式"></a>2.1 校验数字的表达式</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">校验项</th>
+<th style="text-align:center">代码/语法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">数字</td>
+<td style="text-align:center">^[0-9]*$</td>
+</tr>
+<tr>
+<td style="text-align:center">n位的数字</td>
+<td style="text-align:center">^\d{n}$</td>
+</tr>
+<tr>
+<td style="text-align:center">至少n位的数字</td>
+<td style="text-align:center">^\d{n,}$</td>
+</tr>
+<tr>
+<td style="text-align:center">m-n位的数字</td>
+<td style="text-align:center">^\d{m,n}$</td>
+</tr>
+<tr>
+<td style="text-align:center">零和非零开头的数字</td>
+<td style="text-align:center">^(0&#124;[1-9][0-9]*)$</td>
+</tr>
+<tr>
+<td style="text-align:center">非零开头的最多带两位小数的数字</td>
+<td style="text-align:center">^([1-9][0-9]*)+(.[0-9]{1,2})?$</td>
+</tr>
+<tr>
+<td style="text-align:center">带1-2位小数的正数或负数</td>
+<td style="text-align:center">^(-)?\d+(.\d{1,2})?$</td>
+</tr>
+<tr>
+<td style="text-align:center">正数、负数、和小数</td>
+<td style="text-align:center">^(-&#124;+)?\d+(.\d+)?$</td>
+</tr>
+<tr>
+<td style="text-align:center">有两位小数的正实数</td>
+<td style="text-align:center">^[0-9]+(.[0-9]{2})?$</td>
+</tr>
+<tr>
+<td style="text-align:center">有1~3位小数的正实数</td>
+<td style="text-align:center">^[0-9]+(.[0-9]{1,3})?$</td>
+</tr>
+<tr>
+<td style="text-align:center">非零的正整数</td>
+<td style="text-align:center">^[1-9]\d<em>$ 或 ^([1-9][0-9]</em>){1,3}$ 或 ^+?[1-9][0-9]*$</td>
+</tr>
+<tr>
+<td style="text-align:center">非零的负整数</td>
+<td style="text-align:center">^-[1-9][]0-9”<em>$ 或 ^-[1-9]\d</em>$</td>
+</tr>
+<tr>
+<td style="text-align:center">非负整数</td>
+<td style="text-align:center">^\d+$ 或 ^[1-9]\d*&#124;0$</td>
+</tr>
+<tr>
+<td style="text-align:center">非正整数</td>
+<td style="text-align:center">^-[1-9]\d*&#124;0$ 或 ^((-\d+)&#124;(0+))$</td>
+</tr>
+<tr>
+<td style="text-align:center">非负浮点数</td>
+<td style="text-align:center">^\d+(.\d+)?$ 或 ^[1-9]\d<em>.\d</em>&#124;0.\d<em>[1-9]\d</em>&#124;0?.0+&#124;0$</td>
+</tr>
+<tr>
+<td style="text-align:center">非正浮点数</td>
+<td style="text-align:center">^((-\d+(.\d+)?)&#124;(0+(.0+)?))$ 或 ^(-([1-9]\d<em>.\d</em>&#124;0.\d<em>[1-9]\d</em>))&#124;0?.0+&#124;0$</td>
+</tr>
+<tr>
+<td style="text-align:center">正浮点数</td>
+<td style="text-align:center">^[1-9]\d<em>.\d</em>&#124;0.\d<em>[1-9]\d</em>$ 或 ^(([0-9]+.[0-9]<em>[1-9][0-9]</em>)&#124;([0-9]<em>[1-9][0-9]</em>.[0-9]+)&#124;([0-9]<em>[1-9][0-9]</em>))$</td>
+</tr>
+<tr>
+<td style="text-align:center">负浮点数</td>
+<td style="text-align:center">^-([1-9]\d<em>.\d</em>&#124;0.\d<em>[1-9]\d</em>)$ 或 ^(-(([0-9]+.[0-9]<em>[1-9][0-9]</em>)&#124;([0-9]<em>[1-9][0-9]</em>.[0-9]+)&#124;([0-9]<em>[1-9][0-9]</em>)))$</td>
+</tr>
+<tr>
+<td style="text-align:center">浮点数</td>
+<td style="text-align:center">^(-?\d+)(.\d+)?$ 或 ^-?([1-9]\d<em>.\d</em>&#124;0.\d<em>[1-9]\d</em>&#124;0?.0+&#124;0)$</td>
+</tr>
+</tbody>
+</table>
 <h2 id="2-2-校验字符的表达式"><a href="#2-2-校验字符的表达式" class="headerlink" title="2.2 校验字符的表达式"></a>2.2 校验字符的表达式</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">汉字：^[\u4e00-\u9fa5]&#123;<span class="number">0</span>,&#125;$</span><br><span class="line">英文和数字：^[A-Za-z0<span class="number">-9</span>]+$ 或 ^[A-Za-z0<span class="number">-9</span>]&#123;<span class="number">4</span>,<span class="number">40</span>&#125;$</span><br><span class="line">长度为<span class="number">3</span><span class="number">-20</span>的所有字符：^.&#123;<span class="number">3</span>,<span class="number">20</span>&#125;$</span><br><span class="line">由<span class="number">26</span>个英文字母组成的字符串：^[A-Za-z]+$</span><br><span class="line">由<span class="number">26</span>个大写英文字母组成的字符串：^[A-Z]+$</span><br><span class="line">由<span class="number">26</span>个小写英文字母组成的字符串：^[a-z]+$</span><br><span class="line">由数字和<span class="number">26</span>个英文字母组成的字符串：^[A-Za-z0<span class="number">-9</span>]+$</span><br><span class="line">由数字、<span class="number">26</span>个英文字母或者下划线组成的字符串：^\w+$ 或 ^\w&#123;<span class="number">3</span>,<span class="number">20</span>&#125;$</span><br><span class="line">中文、英文、数字包括下划线：^[\u4E00-\u9FA5A-Za-z0<span class="number">-9</span>_]+$</span><br><span class="line">中文、英文、数字但不包括下划线等符号：^[\u4E00-\u9FA5A-Za-z0<span class="number">-9</span>]+$ 或 ^[\u4E00-\u9FA5A-Za-z0<span class="number">-9</span>]&#123;<span class="number">2</span>,<span class="number">20</span>&#125;$</span><br><span class="line">可以输入含有^%&amp;<span class="string">',;=?$\"等字符：[^%&amp;'</span>,;=?$\x22]+</span><br><span class="line">禁止输入含有~的字符：[^~\x22]+</span><br></pre></td></tr></table></figure>
 <h2 id="2-3-特殊需求表达式"><a href="#2-3-特殊需求表达式" class="headerlink" title="2.3 特殊需求表达式"></a>2.3 特殊需求表达式</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">Email地址：^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$</span><br><span class="line">域名：[a-zA-Z0<span class="number">-9</span>][-a-zA-Z0<span class="number">-9</span>]&#123;<span class="number">0</span>,<span class="number">62</span>&#125;(<span class="regexp">/.[a-zA-Z0-9][-a-zA-Z0-9]&#123;0,62&#125;)+/</span>.?</span><br><span class="line">InternetURL：[a-zA-z]+:<span class="comment">//[^\s]* 或 ^http://([\w-]+\.)+[\w-]+(/[\w-./?%&amp;=]*)?$</span></span><br><span class="line">手机号码：^(<span class="number">13</span>[<span class="number">0</span><span class="number">-9</span>]|<span class="number">14</span>[<span class="number">0</span><span class="number">-9</span>]|<span class="number">15</span>[<span class="number">0</span><span class="number">-9</span>]|<span class="number">16</span>[<span class="number">0</span><span class="number">-9</span>]|<span class="number">17</span>[<span class="number">0</span><span class="number">-9</span>]|<span class="number">18</span>[<span class="number">0</span><span class="number">-9</span>]|<span class="number">19</span>[<span class="number">0</span><span class="number">-9</span>])\d&#123;<span class="number">8</span>&#125;$ (由于工信部放号段不定时，所以建议使用泛解析 ^([<span class="number">1</span>][<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>])\d&#123;<span class="number">9</span>&#125;$)</span><br><span class="line">电话号码(<span class="string">"XXX-XXXXXXX"</span>、<span class="string">"XXXX-XXXXXXXX"</span>、<span class="string">"XXX-XXXXXXX"</span>、<span class="string">"XXX-XXXXXXXX"</span>、<span class="string">"XXXXXXX"</span>和<span class="string">"XXXXXXXX)：^(\(\d&#123;3,4&#125;-)|\d&#123;3.4&#125;-)?\d&#123;7,8&#125;$ </span></span><br><span class="line"><span class="string">国内电话号码(0511-4405222、021-87888822)：\d&#123;3&#125;-\d&#123;8&#125;|\d&#123;4&#125;-\d&#123;7&#125; </span></span><br><span class="line"><span class="string">18位身份证号码(数字、字母x结尾)：^((\d&#123;18&#125;)|([0-9x]&#123;18&#125;)|([0-9X]&#123;18&#125;))$</span></span><br><span class="line"><span class="string">帐号是否合法(字母开头，允许5-16字节，允许字母数字下划线)：^[a-zA-Z][a-zA-Z0-9_]&#123;4,15&#125;$</span></span><br><span class="line"><span class="string">密码(以字母开头，长度在6~18之间，只能包含字母、数字和下划线)：^[a-zA-Z]\w&#123;5,17&#125;$</span></span><br><span class="line"><span class="string">强密码(必须包含大小写字母和数字的组合，不能使用特殊字符，长度在8-10之间)：^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).&#123;8,10&#125;$  </span></span><br><span class="line"><span class="string">日期格式：^\d&#123;4&#125;-\d&#123;1,2&#125;-\d&#123;1,2&#125;</span></span><br><span class="line"><span class="string">一年的12个月(01～09和1～12)：^(0?[1-9]|1[0-2])$</span></span><br><span class="line"><span class="string">一个月的31天(01～09和1～31)：^((0?[1-9])|((1|2)[0-9])|30|31)$ </span></span><br><span class="line"><span class="string">钱的输入格式：</span></span><br><span class="line"><span class="string">（1）有四种钱的表示形式我们可以接受:"</span><span class="number">10000.00</span><span class="string">" 和 "</span><span class="number">10</span>,<span class="number">000.00</span><span class="string">", 和没有 "</span>分<span class="string">" 的 "</span><span class="number">10000</span><span class="string">" 和 "</span><span class="number">10</span>,<span class="number">000</span><span class="string">"：^[1-9][0-9]*$ </span></span><br><span class="line"><span class="string">（2）这表示任意一个不以0开头的数字,但是,这也意味着一个字符"</span><span class="number">0</span><span class="string">"不通过,所以我们采用下面的形式：^(0|[1-9][0-9]*)$ </span></span><br><span class="line"><span class="string">（3）一个0或者一个不以0开头的数字.我们还可以允许开头有一个负号：^(0|-?[1-9][0-9]*)$ </span></span><br><span class="line"><span class="string">（4）这表示一个0或者一个可能为负的开头不为0的数字.让用户以0开头好了.把负号的也去掉,因为钱总不能是负的吧.下面我们要加的是说明可能的小数部分：^[0-9]+(.[0-9]+)?$ </span></span><br><span class="line"><span class="string">（5）必须说明的是,小数点后面至少应该有1位数,所以"</span><span class="number">10.</span><span class="string">"是不通过的,但是 "</span><span class="number">10</span><span class="string">" 和 "</span><span class="number">10.2</span><span class="string">" 是通过的：^[0-9]+(.[0-9]&#123;2&#125;)?$ </span></span><br><span class="line"><span class="string">（6）这样我们规定小数点后面必须有两位,如果你认为太苛刻了,可以这样：^[0-9]+(.[0-9]&#123;1,2&#125;)?$ </span></span><br><span class="line"><span class="string">（7）这样就允许用户只写一位小数.下面我们该考虑数字中的逗号了,我们可以这样：^[0-9]&#123;1,3&#125;(,[0-9]&#123;3&#125;)*(.[0-9]&#123;1,2&#125;)?$ </span></span><br><span class="line"><span class="string">（8）1到3个数字,后面跟着任意个 逗号+3个数字,逗号成为可选,而不是必须：^([0-9]+|[0-9]&#123;1,3&#125;(,[0-9]&#123;3&#125;)*)(.[0-9]&#123;1,2&#125;)?$ </span></span><br><span class="line"><span class="string">（9）备注：这就是最终结果了,别忘了"</span>+<span class="string">"可以用"</span>*<span class="string">"替代如果你觉得空字符串也可以接受的话(奇怪,为什么?)最后,别忘了在用函数时去掉去掉那个反斜杠,一般的错误都在这里</span></span><br><span class="line"><span class="string">xml文件：^([a-zA-Z]+-?)+[a-zA-Z0-9]+\\.[x|X][m|M][l|L]$</span></span><br><span class="line"><span class="string">中文字符的正则表达式：[\u4e00-\u9fa5]</span></span><br><span class="line"><span class="string">双字节字符：[^\x00-\xff]    (包括汉字在内，可以用来计算字符串的长度(一个双字节字符长度计2，ASCII字符计1))</span></span><br><span class="line"><span class="string">空白行的正则表达式：\n\s*\r    (可以用来删除空白行)</span></span><br><span class="line"><span class="string">HTML标记的正则表达式：&lt;(\S*?)[^&gt;]*&gt;.*?&lt;/\1&gt;|&lt;.*? /&gt;    (网上流传的版本太糟糕，上面这个也仅仅能部分，对于复杂的嵌套标记依旧无能为力)</span></span><br><span class="line"><span class="string">首尾空白字符的正则表达式：^\s*|\s*$或(^\s*)|(\s*$)    (可以用来删除行首行尾的空白字符(包括空格、制表符、换页符等等)，非常有用的表达式)</span></span><br><span class="line"><span class="string">腾讯QQ号：[1-9][0-9]&#123;4,&#125;    (腾讯QQ号从10000开始)</span></span><br><span class="line"><span class="string">中国邮政编码：[1-9]\d&#123;5&#125;(?!\d)    (中国邮政编码为6位数字)</span></span><br><span class="line"><span class="string">IP地址：\d+\.\d+\.\d+\.\d+    (提取IP地址时有用)</span></span><br><span class="line"><span class="string">IP地址：((?:(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d)\\.)&#123;3&#125;(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d))</span></span><br></pre></td></tr></table></figure>
 <h1 id="3-正则语法"><a href="#3-正则语法" class="headerlink" title="3 正则语法"></a>3 正则语法</h1><p>教程参考：<a href="http://www.runoob.com/regexp/regexp-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a><br>博文参考：<a href="https://luke0922.gitbooks.io/learnregularexpressionin30minutes/content/chapter16.html" target="_blank" rel="noopener">正则表达式30分钟入门教程</a></p>
@@ -1579,7 +1664,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <i class="fa fa-pencil"></i>
-  <span class="post-count">博客全站共27.9k字</span>
+  <span class="post-count">博客全站共28.3k字</span>
 </div>
 
 <!-- 不蒜字统计 -->
