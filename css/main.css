@@ -2119,7 +2119,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1ce750;
+  background: #0acf03;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3554,6 +3554,6 @@ Hexo博客NexT主题美化之网站标题栏背景变色,
   height: 27px;
 }
 .pagination .page-number.current {
-  background-color: #a4d8fa;
+  background-color: #49b1f5;
   border-radius: 5px;
 }
