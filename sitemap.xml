@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.enjoytoshare.club/notes/index.html</loc>
+    
+    <lastmod>2019-04-27T22:21:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.enjoytoshare.club/laboratory/toolBox/index.html</loc>
+    
+    <lastmod>2019-04-27T12:18:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.enjoytoshare.club/article/RegularExpression.html</loc>
     
     <lastmod>2019-04-22T10:45:35.000Z</lastmod>
@@ -19,6 +33,20 @@
     <loc>https://blog.enjoytoshare.club/article/FreeVpnToShare.html</loc>
     
     <lastmod>2019-04-22T08:40:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.enjoytoshare.club/laboratory/index.html</loc>
+    
+    <lastmod>2019-04-17T12:18:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.enjoytoshare.club/laboratory/trainingCamp/index.html</loc>
+    
+    <lastmod>2019-04-17T12:18:28.000Z</lastmod>
     
   </url>
   
@@ -303,37 +331,9 @@
   </url>
   
   <url>
-    <loc>https://blog.enjoytoshare.club/laboratory/toolBox/index.html</loc>
-    
-    <lastmod>2019-03-17T12:18:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.enjoytoshare.club/laboratory/index.html</loc>
-    
-    <lastmod>2019-03-17T12:18:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.enjoytoshare.club/laboratory/trainingCamp/index.html</loc>
-    
-    <lastmod>2019-03-17T12:18:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.enjoytoshare.club/article/hexo-do-catalog.html</loc>
     
     <lastmod>2019-03-16T23:37:41.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.enjoytoshare.club/notes/index.html</loc>
-    
-    <lastmod>2019-03-16T22:21:04.000Z</lastmod>
     
   </url>
   
