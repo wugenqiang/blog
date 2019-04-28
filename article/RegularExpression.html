@@ -682,27 +682,7 @@
 <p>包括<code>校验数字</code>、<code>字符</code>、一些<code>特殊</code>的需求<br>
 参考博文：<a href="http://www.cnblogs.com/zxin/archive/2013/01/26/2877765.html" target="_blank" rel="noopener">最全的常用正则表达式大全——包括校验数字、字符、一些特殊的需求等等</a></p>
 <h2 id="2-1-校验数字的表达式">2.1 校验数字的表达式</h2>
-<p>校验项|代码/语法<br>
-:—😐:—:	<br>
-数字 | <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup><em>$<br>
-n位的数字 | ^\d{n}$<br>
-至少n位的数字 | ^\d{n,}$<br>
-m-n位的数字 | ^\d{m,n}$<br>
-零和非零开头的数字 | ^(0|[1-9][0-9]</em>)$<br>
-非零开头的最多带两位小数的数字 | ^([1-9][0-9]<em>)+(.[0-9]{1,2})?$<br>
-带1-2位小数的正数或负数 | ^(-)?\d+(.\d{1,2})?$<br>
-正数、负数、和小数 | ^(-|+)?\d+(.\d+)?$<br>
-有两位小数的正实数 | <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>+(.[0-9]{2})?$<br>
-有1~3位小数的正实数 | <sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>+(.[0-9]{1,3})?$<br>
-非零的正整数 | <sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>\d</em>$ 或 ^([1-9][0-9]<em>){1,3}$ 或 ^+?[1-9][0-9]</em>$<br>
-非零的负整数 | ^-[1-9][]0-9&quot;<em>$ 或 ^-[1-9]\d</em>$<br>
-非负整数 | ^\d+$ 或 <sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>\d*|0$<br>
-非正整数 | ^-[1-9]\d*|0$ 或 ^((-\d+)|(0+))$<br>
-非负浮点数 | ^\d+(.\d+)?$ 或 <sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>\d*.\d*|0.\d*[1-9]\d*|0?.0+|0$<br>
-非正浮点数 | ^((-\d+(.\d+)?)|(0+(.0+)?))$ 或 ^(-([1-9]\d*.\d*|0.\d*[1-9]\d*))|0?.0+|0$<br>
-正浮点数| <sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup>\d*.\d*|0.\d*[1-9]\d*$ 或 ^(([0-9]+.[0-9]<em>[1-9][0-9]</em>)|([0-9]<em>[1-9][0-9]</em>.[0-9]+)|([0-9]<em>[1-9][0-9]</em>))$<br>
-负浮点数 | ^-([1-9]\d*.\d*|0.\d*[1-9]\d*)$ 或 ^(-(([0-9]+.[0-9]<em>[1-9][0-9]</em>)|([0-9]<em>[1-9][0-9]</em>.[0-9]+)|([0-9]<em>[1-9][0-9]</em>)))$<br>
-浮点数 | ^(-?\d+)(.\d+)?$ 或 ^-?([1-9]\d*.\d*|0.\d*[1-9]\d*|0?.0+|0)$</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">数字：^[<span class="number">0</span><span class="number">-9</span>]*$</span><br><span class="line">n位的数字：^\d&#123;n&#125;$</span><br><span class="line">至少n位的数字：^\d&#123;n,&#125;$</span><br><span class="line">m-n位的数字：^\d&#123;m,n&#125;$</span><br><span class="line">零和非零开头的数字：^(<span class="number">0</span>|[<span class="number">1</span><span class="number">-9</span>][<span class="number">0</span><span class="number">-9</span>]*)$</span><br><span class="line">非零开头的最多带两位小数的数字：^([<span class="number">1</span><span class="number">-9</span>][<span class="number">0</span><span class="number">-9</span>]*)+(.[<span class="number">0</span><span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">2</span>&#125;)?$</span><br><span class="line">带<span class="number">1</span><span class="number">-2</span>位小数的正数或负数：^(\-)?\d+(\.\d&#123;<span class="number">1</span>,<span class="number">2</span>&#125;)?$</span><br><span class="line">正数、负数、和小数：^(\-|\+)?\d+(\.\d+)?$</span><br><span class="line">有两位小数的正实数：^[<span class="number">0</span><span class="number">-9</span>]+(.[<span class="number">0</span><span class="number">-9</span>]&#123;<span class="number">2</span>&#125;)?$</span><br><span class="line">有<span class="number">1</span>~<span class="number">3</span>位小数的正实数：^[<span class="number">0</span><span class="number">-9</span>]+(.[<span class="number">0</span><span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">3</span>&#125;)?$</span><br><span class="line">非零的正整数：^[<span class="number">1</span><span class="number">-9</span>]\d*$ 或 ^([<span class="number">1</span><span class="number">-9</span>][<span class="number">0</span><span class="number">-9</span>]*)&#123;<span class="number">1</span>,<span class="number">3</span>&#125;$ 或 ^\+?[<span class="number">1</span><span class="number">-9</span>][<span class="number">0</span><span class="number">-9</span>]*$</span><br><span class="line">非零的负整数：^\-[<span class="number">1</span><span class="number">-9</span>][]<span class="number">0</span><span class="number">-9</span><span class="string">"*$ 或 ^-[1-9]\d*$</span></span><br><span class="line"><span class="string">非负整数：^\d+$ 或 ^[1-9]\d*|0$</span></span><br><span class="line"><span class="string">非正整数：^-[1-9]\d*|0$ 或 ^((-\d+)|(0+))$</span></span><br><span class="line"><span class="string">非负浮点数：^\d+(\.\d+)?$ 或 ^[1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0$</span></span><br><span class="line"><span class="string">非正浮点数：^((-\d+(\.\d+)?)|(0+(\.0+)?))$ 或 ^(-([1-9]\d*\.\d*|0\.\d*[1-9]\d*))|0?\.0+|0$</span></span><br><span class="line"><span class="string">正浮点数：^[1-9]\d*\.\d*|0\.\d*[1-9]\d*$ 或 ^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$</span></span><br><span class="line"><span class="string">负浮点数：^-([1-9]\d*\.\d*|0\.\d*[1-9]\d*)$ 或 ^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$</span></span><br><span class="line"><span class="string">浮点数：^(-?\d+)(\.\d+)?$ 或 ^-?([1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0)$</span></span><br></pre></td></tr></table></figure>
 <h2 id="2-2-校验字符的表达式">2.2 校验字符的表达式</h2>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">汉字：^[\u4e00-\u9fa5]&#123;<span class="number">0</span>,&#125;$</span><br><span class="line">英文和数字：^[A-Za-z0<span class="number">-9</span>]+$ 或 ^[A-Za-z0<span class="number">-9</span>]&#123;<span class="number">4</span>,<span class="number">40</span>&#125;$</span><br><span class="line">长度为<span class="number">3</span><span class="number">-20</span>的所有字符：^.&#123;<span class="number">3</span>,<span class="number">20</span>&#125;$</span><br><span class="line">由<span class="number">26</span>个英文字母组成的字符串：^[A-Za-z]+$</span><br><span class="line">由<span class="number">26</span>个大写英文字母组成的字符串：^[A-Z]+$</span><br><span class="line">由<span class="number">26</span>个小写英文字母组成的字符串：^[a-z]+$</span><br><span class="line">由数字和<span class="number">26</span>个英文字母组成的字符串：^[A-Za-z0<span class="number">-9</span>]+$</span><br><span class="line">由数字、<span class="number">26</span>个英文字母或者下划线组成的字符串：^\w+$ 或 ^\w&#123;<span class="number">3</span>,<span class="number">20</span>&#125;$</span><br><span class="line">中文、英文、数字包括下划线：^[\u4E00-\u9FA5A-Za-z0<span class="number">-9</span>_]+$</span><br><span class="line">中文、英文、数字但不包括下划线等符号：^[\u4E00-\u9FA5A-Za-z0<span class="number">-9</span>]+$ 或 ^[\u4E00-\u9FA5A-Za-z0<span class="number">-9</span>]&#123;<span class="number">2</span>,<span class="number">20</span>&#125;$</span><br><span class="line">可以输入含有^%&amp;<span class="string">',;=?$\"等字符：[^%&amp;'</span>,;=?$\x22]+</span><br><span class="line">禁止输入含有~的字符：[^~\x22]+</span><br></pre></td></tr></table></figure>
 <h2 id="2-3-特殊需求表达式">2.3 特殊需求表达式</h2>
@@ -712,15 +692,44 @@ m-n位的数字 | ^\d{m,n}$<br>
 博文参考：<a href="https://luke0922.gitbooks.io/learnregularexpressionin30minutes/content/chapter16.html" target="_blank" rel="noopener">正则表达式30分钟入门教程</a></p>
 <h2 id="3-1-元字符">3.1 元字符</h2>
 <p>常用的元字符：</p>
-<p>代码/语法|说明<br>
-:—😐:—:	<br>
-. |	匹配除换行符以外的任意字符<br>
-\w | 匹配字母或数字或下划线或汉字<br>
-\s | 匹配任意的空白符<br>
-\d | 匹配数字<br>
-\b | 匹配单词的开始或结束<br>
-^ | 匹配字符串的开始<br>
-$ | 匹配字符串的结束</p>
+<table>
+<thead>
+<tr>
+<th>代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>匹配除换行符以外的任意字符</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>匹配字母或数字或下划线或汉字</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任意的空白符</td>
+</tr>
+<tr>
+<td>\d</td>
+<td>匹配数字</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>匹配单词的开始或结束</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配字符串的开始</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配字符串的结束</td>
+</tr>
+</tbody>
+</table>
 <p>正则表达式引擎通常会提供一个<code>测试指定的字符串是否匹配一个正则表达式</code>的方法，如JavaScript里的<code>RegExp.test()</code>方法或Python里的<code>re.match()</code>方法。这里的匹配是指字符串里有没有符合表达式规则的部分。如果不使用<code>^</code>和<code>$</code>的话，对于<code>\d{5,12}</code>而言，使用这样的方法就只能保证字符串里包含5到12连续位数字，而不是整个字符串就是5到12位数字。</p>
 <p>元字符<code>^</code>和<code>$</code>都匹配一个位置，这和<code>\b</code>有点类似。<code>^</code>匹配你要用来查找的字符串的开头，<code>$</code>匹配结尾。这两个代码在验证输入的内容时非常有用，比如一个网站如果要求你填写的QQ号必须为5位到12位数字时，可以使用：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">^\d&#123;5,12&#125;$</span><br></pre></td></tr></table></figure>
@@ -733,18 +742,40 @@ $ | 匹配字符串的结束</p>
 <h2 id="3-3-重复-限定符">3.3 重复(限定符)</h2>
 <p>正则表达式中所有的限定符：指定数量的代码，例如<code>*</code>,<code>{5,12}</code>等<br>
 常用的限定符：</p>
-<p>代码/语法|说明<br>
-:—😐:—:</p>
-<ul>
-<li>| 重复零次或更多次</li>
-</ul>
-<ul>
-<li>| 重复一次或更多次<br>
-? | 重复零次或一次<br>
-{n} | 重复n次<br>
-{n,} | 重复n次或更多次<br>
-{n,m} | 重复n到m次</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>重复零次或更多次</td>
+</tr>
+<tr>
+<td>+</td>
+<td>重复一次或更多次</td>
+</tr>
+<tr>
+<td>?</td>
+<td>重复零次或一次</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>重复n次</td>
+</tr>
+<tr>
+<td>{n,}</td>
+<td>重复n次或更多次</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>重复n到m次</td>
+</tr>
+</tbody>
+</table>
 <p>举例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">^\w+</span><br></pre></td></tr></table></figure>
 <p>匹配一行的第一个单词(或整个字符串的第一个单词，具体匹配哪个意思得看选项设置)</p>
@@ -776,14 +807,40 @@ $ | 匹配字符串的结束</p>
 <h2 id="3-7-反义">3.7 反义</h2>
 <p>有时需要查找不属于某个能简单定义的字符类的字符。比如想查找除了数字以外，其它任意字符都行的情况，这时需要用到反义。</p>
 <p>常用的反义代码：</p>
-<p>代码/语法|说明<br>
-:—😐:—:	<br>
-\W | 匹配任意不是字母，数字，下划线，汉字的字符<br>
-\S | 匹配任意不是空白符的字符<br>
-\D | 匹配任意非数字的字符<br>
-\B | 匹配不是单词开头或结束的位置<br>
-[^x] | 匹配除了x以外的任意字符<br>
-[^aeiou] | 匹配除了aeiou这几个字母以外的任意字符</p>
+<table>
+<thead>
+<tr>
+<th>代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\W</td>
+<td>匹配任意不是字母，数字，下划线，汉字的字符</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>匹配任意不是空白符的字符</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>匹配任意非数字的字符</td>
+</tr>
+<tr>
+<td>\B</td>
+<td>匹配不是单词开头或结束的位置</td>
+</tr>
+<tr>
+<td>[^x]</td>
+<td>匹配除了x以外的任意字符</td>
+</tr>
+<tr>
+<td>[^aeiou]</td>
+<td>匹配除了aeiou这几个字母以外的任意字符</td>
+</tr>
+</tbody>
+</table>
 <p>举例：</p>
 <ul>
 <li><code>\S+</code>匹配不包含空白符的字符串。</li>
@@ -799,16 +856,57 @@ $ | 匹配字符串的结束</p>
 你也可以自己指定子表达式的组名。要指定一个子表达式的组名，请使用这样的语法：(?<word>\w+)(或者把尖括号换成’也行： (?‘Word’\w+)),这样就把 \w+ 的组名指定为 Word 了。要反向引用这个分组捕获的内容，你可以使用 \k<word>,所以上一个例子也可以写成这样：</word></word></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\b(?&lt;Word&gt;\w+)\b\s+\k&lt;Word&gt;\b</span><br></pre></td></tr></table></figure>
 <p>常用分组语法:</p>
-<p>分类|代码/语法|说明<br>
-:—😐:—😐:—:	<br>
-捕获	| (exp)	| 匹配exp,并捕获文本到自动命名的组里<br>
-| (?exp) |	匹配exp,并捕获文本到名称为name的组里，也可以写成(?'name’exp)<br>
-| (?:exp)	| 匹配exp,不捕获匹配的文本，也不给此分组分配组号<br>
-零宽断言 |	(?=exp) |	匹配exp前面的位置<br>
-| (?&lt;=exp)	| 匹配exp后面的位置<br>
-| (?!exp) |	匹配后面跟的不是exp的位置<br>
-| (?&lt;!exp) |	匹配前面不是exp的位置<br>
-注释 |	(?#comment)	 | 这种类型的分组不对正则表达式的处理产生任何影响，用于提供注释让人阅读</p>
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>捕获</td>
+<td>(exp)</td>
+<td>匹配exp,并捕获文本到自动命名的组里</td>
+</tr>
+<tr>
+<td>(?exp)</td>
+<td>匹配exp,并捕获文本到名称为name的组里，也可以写成(?'name’exp)</td>
+<td></td>
+</tr>
+<tr>
+<td>(?:exp)</td>
+<td>匹配exp,不捕获匹配的文本，也不给此分组分配组号</td>
+<td></td>
+</tr>
+<tr>
+<td>零宽断言</td>
+<td>(?=exp)</td>
+<td>匹配exp前面的位置</td>
+</tr>
+<tr>
+<td>(?&lt;=exp)</td>
+<td>匹配exp后面的位置</td>
+<td></td>
+</tr>
+<tr>
+<td>(?!exp)</td>
+<td>匹配后面跟的不是exp的位置</td>
+<td></td>
+</tr>
+<tr>
+<td>(?&lt;!exp)</td>
+<td>匹配前面不是exp的位置</td>
+<td></td>
+</tr>
+<tr>
+<td>注释</td>
+<td>(?#comment)</td>
+<td>这种类型的分组不对正则表达式的处理产生任何影响，用于提供注释让人阅读</td>
+</tr>
+</tbody>
+</table>
 <h2 id="3-9-零宽断言">3.9 零宽断言</h2>
 <p>接下来的四个用于查找在某些内容(但并不包括这些内容)之前或之后的东西，也就是说它们像 \b,^,$ 那样用于指定一个位置，这个位置应该满足一定的条件(即断言)，因此它们也被称为零宽断言。<br>
 最好还是拿例子来说明吧：</p>
@@ -842,23 +940,69 @@ $ | 匹配字符串的结束</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a.*?b</span><br></pre></td></tr></table></figure>
 <p>匹配最短的，以a开始，以b结束的字符串。如果把它应用于 aabab 的话，它会匹配 aab（第一到第三个字符）和 ab（第四到第五个字符）。</p>
 <p>懒惰限定符:</p>
-<p>代码/语法|说明<br>
-:—😐:—:	<br>
-*?	| 重复任意次，但尽可能少重复<br>
-+?	| 重复1次或更多次，但尽可能少重复<br>
-??	| 重复0次或1次，但尽可能少重复<br>
-{n,m}?	| 重复n到m次，但尽可能少重复<br>
-{n,}?	| 重复n次以上，但尽可能少重复</p>
+<table>
+<thead>
+<tr>
+<th>代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*?</td>
+<td>重复任意次，但尽可能少重复</td>
+</tr>
+<tr>
+<td>+?</td>
+<td>重复1次或更多次，但尽可能少重复</td>
+</tr>
+<tr>
+<td>??</td>
+<td>重复0次或1次，但尽可能少重复</td>
+</tr>
+<tr>
+<td>{n,m}?</td>
+<td>重复n到m次，但尽可能少重复</td>
+</tr>
+<tr>
+<td>{n,}?</td>
+<td>重复n次以上，但尽可能少重复</td>
+</tr>
+</tbody>
+</table>
 <h2 id="3-13-处理选项">3.13 处理选项</h2>
 <p>Python 中常用的正则表达式选项：<br>
 常用的处理选项:</p>
-<p>代码/语法|说明<br>
-:—😐:—:	<br>
-re.IGNORECASE	| 匹配时不区分大小写。<br>
-re.MULTILINE	| 更改^和$的含义，使它们分别在任意一行的行首和行尾匹配，而不仅仅在整个字符串的开头和结尾匹配。(在此模式下,$的精确含意是:匹配\n之前的位置以及字符串结束前的位置.)<br>
-re.DOTALL	| 更改.的含义，使它与每一个字符匹配（包括换行符\n）。<br>
-re.VERBOSE	| 忽略表达式中的非转义空白并启用由#标记的注释。<br>
-re.DEBUG	| 显示编译表达式的 debug 信息</p>
+<table>
+<thead>
+<tr>
+<th>代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>re.IGNORECASE</td>
+<td>匹配时不区分大小写。</td>
+</tr>
+<tr>
+<td>re.MULTILINE</td>
+<td>更改^和$的含义，使它们分别在任意一行的行首和行尾匹配，而不仅仅在整个字符串的开头和结尾匹配。(在此模式下,$的精确含意是:匹配\n之前的位置以及字符串结束前的位置.)</td>
+</tr>
+<tr>
+<td>re.DOTALL</td>
+<td>更改.的含义，使它与每一个字符匹配（包括换行符\n）。</td>
+</tr>
+<tr>
+<td>re.VERBOSE</td>
+<td>忽略表达式中的非转义空白并启用由#标记的注释。</td>
+</tr>
+<tr>
+<td>re.DEBUG</td>
+<td>显示编译表达式的 debug 信息</td>
+</tr>
+</tbody>
+</table>
 <h2 id="3-14-平衡组-递归匹配">3.14 平衡组/递归匹配</h2>
 <p>有时我们需要匹配像( 100 * ( 50 + 15 ) )这样的可嵌套的层次性结构，这时简单地使用(.+)则只会匹配到最左边的左括号和最右边的右括号之间的内容(这里我们讨论的是贪婪模式，懒惰模式也有下面的问题)。假如原来的字符串里的左括号和右括号出现的次数不相等，比如( 5 / ( 3 + 2 ) ) )，那我们的匹配结果里两者的个数也不会相等。有没有办法在这样的字符串里匹配到最长的，配对的括号之间的内容呢？<br>
 为了避免(和(把你的大脑彻底搞糊涂，我们还是用尖括号代替圆括号吧。现在我们的问题变成了如何把xx &lt;aa <bbb> <bbb> aa&gt; yy这样的字符串里，最长的配对的尖括号内的内容捕获出来？<br>
@@ -874,52 +1018,116 @@ re.DEBUG	| 显示编译表达式的 debug 信息</p>
 <p>平衡组的一个最常见的应用就是匹配HTML,下面这个例子可以匹配嵌套的<div>标签：</div></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div[^&gt;]*&gt;[^&lt;&gt;]*(((?&apos;Open&apos;&lt;div[^&gt;]*&gt;)[^&lt;&gt;]*)+((?&apos;-Open&apos;&lt;/div&gt;)[^&lt;&gt;]*)+)*(?(Open)(?!))&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="3-15-细枝末节">3.15 细枝末节</h2>
-<p>代码/语法|说明<br>
-:—😐:—:	<br>
-\a	| 报警字符(打印它的效果是电脑嘀一声)<br>
-\b	| 通常是单词分界位置，但如果在字符类里使用代表退格<br>
-\t	| 制表符，Tab<br>
-\r	| 回车<br>
-\v	| 竖向制表符<br>
-\f	| 换页符<br>
-\n	| 换行符<br>
-\e	| Escape<br>
-\0nn |	ASCII代码中八进制代码为nn的字符<br>
-\xnn	| ASCII代码中十六进制代码为nn的字符<br>
-\unnnn	| Unicode代码中十六进制代码为nnnn的字符<br>
-\cN	| ASCII控制字符。比如\cC代表Ctrl+C<br>
-\A	| 字符串开头(类似^，但不受处理多行选项的影响)<br>
-\Z	| 字符串结尾或行尾(不受处理多行选项的影响)<br>
-\z	| 字符串结尾(类似$，但不受处理多行选项的影响)<br>
-\G	| 当前搜索的开头<br>
-\p{name}	| Unicode中命名为name的字符类，例如\p{IsGreek}<br>
-(?&gt;exp)	 | 贪婪子表达式<br>
-(?<x>-<y>exp)	| 平衡组<br>
-(?im-nsx:exp)	| 在子表达式exp中改变处理选项<br>
-(?im-nsx)	| 为表达式后面的部分改变处理选项<br>
-(?(exp)yes|no) 	|  把exp当作零宽正向先行断言，如果在这个位置能匹配，使用yes作为此组的表达式；否则使用no<br>
-(?(exp)yes) 	| 同上，只是使用空表达式作为no<br>
-(?(name)yes|no)  |  如果命名为name的组捕获到了内容，使用yes作为表达式；否则使用no<br>
-(?(name)yes)	| 同上，只是使用空表达式作为no</y></x></p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>0-9 <a href="#fnref1" class="footnote-backref">↩</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>0-9 <a href="#fnref2" class="footnote-backref">↩</a></p>
-</li>
-<li id="fn3" class="footnote-item"><p>0-9 <a href="#fnref3" class="footnote-backref">↩</a></p>
-</li>
-<li id="fn4" class="footnote-item"><p>1-9 <a href="#fnref4" class="footnote-backref">↩</a></p>
-</li>
-<li id="fn5" class="footnote-item"><p>1-9 <a href="#fnref5" class="footnote-backref">↩</a></p>
-</li>
-<li id="fn6" class="footnote-item"><p>1-9 <a href="#fnref6" class="footnote-backref">↩</a></p>
-</li>
-<li id="fn7" class="footnote-item"><p>1-9 <a href="#fnref7" class="footnote-backref">↩</a></p>
-</li>
-</ol>
-</section>
+<table>
+<thead>
+<tr>
+<th>代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\a</td>
+<td>报警字符(打印它的效果是电脑嘀一声)</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>通常是单词分界位置，但如果在字符类里使用代表退格</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符，Tab</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>竖向制表符</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>换页符</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>换行符</td>
+</tr>
+<tr>
+<td>\e</td>
+<td>Escape</td>
+</tr>
+<tr>
+<td>\0nn</td>
+<td>ASCII代码中八进制代码为nn的字符</td>
+</tr>
+<tr>
+<td>\xnn</td>
+<td>ASCII代码中十六进制代码为nn的字符</td>
+</tr>
+<tr>
+<td>\unnnn</td>
+<td>Unicode代码中十六进制代码为nnnn的字符</td>
+</tr>
+<tr>
+<td>\cN</td>
+<td>ASCII控制字符。比如\cC代表Ctrl+C</td>
+</tr>
+<tr>
+<td>\A</td>
+<td>字符串开头(类似^，但不受处理多行选项的影响)</td>
+</tr>
+<tr>
+<td>\Z</td>
+<td>字符串结尾或行尾(不受处理多行选项的影响)</td>
+</tr>
+<tr>
+<td>\z</td>
+<td>字符串结尾(类似$，但不受处理多行选项的影响)</td>
+</tr>
+<tr>
+<td>\G</td>
+<td>当前搜索的开头</td>
+</tr>
+<tr>
+<td>\p{name}</td>
+<td>Unicode中命名为name的字符类，例如\p{IsGreek}</td>
+</tr>
+<tr>
+<td>(?&gt;exp)</td>
+<td>贪婪子表达式</td>
+</tr>
+<tr>
+<td>(?<x>-<y>exp)</y></x></td>
+<td>平衡组</td>
+</tr>
+<tr>
+<td>(?im-nsx:exp)</td>
+<td>在子表达式exp中改变处理选项</td>
+</tr>
+<tr>
+<td>(?im-nsx)</td>
+<td>为表达式后面的部分改变处理选项</td>
+</tr>
+<tr>
+<td>(?(exp)yes|no)</td>
+<td>把exp当作零宽正向先行断言，如果在这个位置能匹配，使用yes作为此组的表达式；否则使用no</td>
+</tr>
+<tr>
+<td>(?(exp)yes)</td>
+<td>同上，只是使用空表达式作为no</td>
+</tr>
+<tr>
+<td>(?(name)yes|no)</td>
+<td>如果命名为name的组捕获到了内容，使用yes作为表达式；否则使用no</td>
+</tr>
+<tr>
+<td>(?(name)yes)</td>
+<td>同上，只是使用空表达式作为no</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -1449,7 +1657,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <i class="fa fa-pencil"></i>
-  <span class="post-count">博客全站共30.6k字</span>
+  <span class="post-count">博客全站共30.7k字</span>
 </div>
 
 <!-- 不蒜字统计 -->

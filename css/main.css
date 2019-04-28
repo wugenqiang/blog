@@ -2119,7 +2119,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e48cff;
+  background: #bb268c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3431,12 +3431,12 @@ ul.breadcrumb li+li:last-child {
 .post-toc ol {
   font-size: 13px;
 }
-Hexo博客NexT主题美化之网站标题栏背景变色,
 .site-meta {
   background: 'normal';
 }
+page code background-color,
 .code ::selection {
-  background: #2593a6;
+  background: #a2dc30;
   color: #fff;
 }
 .gt-container .gt-comment-content .highlight pre,
@@ -3556,4 +3556,14 @@ Hexo博客NexT主题美化之网站标题栏背景变色,
 .pagination .page-number.current {
   background-color: #49b1f5;
   border-radius: 5px;
+}
+code {
+  color: #ff7600;
+  background: #fbf7f8;
+  margin: 2px;
+}
+.highlight,
+code,
+pre {
+  border: 1px solid #d6d6d6;
 }
