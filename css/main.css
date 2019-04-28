@@ -2119,7 +2119,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bb268c;
+  background: #57b3a2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3558,12 +3558,7 @@ page code background-color,
   border-radius: 5px;
 }
 code {
-  color: #ff7600;
+  color: #fc6423;
   background: #fbf7f8;
   margin: 2px;
-}
-.highlight,
-code,
-pre {
-  border: 1px solid #d6d6d6;
 }
