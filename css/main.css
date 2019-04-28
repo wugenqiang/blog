@@ -2119,7 +2119,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #019f71;
+  background: #cbaad5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3431,6 +3431,9 @@ ul.breadcrumb li+li:last-child {
 .post-toc ol {
   font-size: 13px;
 }
+.site-meta {
+  background: 'normal';
+}
 page code background-color,
 .code ::selection {
   background: #a2dc30;
@@ -3555,7 +3558,6 @@ page code background-color,
   border-radius: 5px;
 }
 code {
-  color: #fc6423;
   background: #fbf7f8;
   margin: 2px;
 }
