@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.enjoytoshare.club/about/index.html</loc>
+    
+    <lastmod>2019-05-20T13:44:56.238Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.enjoytoshare.club/laboratory/technologyResources/index.html</loc>
     
     <lastmod>2019-05-17T12:18:28.000Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://blog.enjoytoshare.club/article/hexoEditLinkStyle.html</loc>
     
     <lastmod>2019-04-14T13:12:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.enjoytoshare.club/about/index.html</loc>
-    
-    <lastmod>2019-04-14T05:10:25.338Z</lastmod>
     
   </url>
   

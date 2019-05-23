@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 2;
   color: #555;
   background: #eee;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1200px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 h1,
@@ -1291,7 +1291,7 @@ pre .javascript .function {
 .menu .menu-item a,
 .menu .menu-item span.exturl {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   line-height: inherit;
   border-bottom: 1px solid transparent;
   transition-property: border-color;
@@ -1329,7 +1329,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1363,60 +1363,6 @@ pre .javascript .function {
 }
 .use-motion .collection-title {
   opacity: 0;
-}
-.my_post_copyright {
-  width: 85%;
-  max-width: 45em;
-  margin: 2.8em auto 0;
-  padding: 0.5em 1em;
-  border: 1px solid #5cb85c;
-  font-size: 0.93rem;
-  line-height: 1.6em;
-  word-break: break-all;
-  background: rgba(255,255,255,0.4);
-}
-.my_post_copyright p {
-  margin: 0;
-}
-.my_post_copyright span {
-  display: inline-block;
-  width: 5.2em;
-  color: #00c4b6;
-  font-weight: bold;
-}
-.my_post_copyright .raw {
-  margin-left: 1em;
-  width: 5em;
-}
-.my_post_copyright a {
-  color: #5cb85c;
-  border-bottom: 0;
-}
-.my_post_copyright a:hover {
-  color: #0593d3;
-  text-decoration: underline;
-}
-.my_post_copyright:hover .fa-clipboard {
-  color: #8959a8;
-}
-.my_post_copyright .post-url:hover {
-  font-weight: normal;
-}
-.my_post_copyright .copy-path {
-  margin-left: 1em;
-  width: 1em;
-}
-@media (max-width: 767px) {
-  .my_post_copyright .copy-path {
-    display: none;
-  }
-}
-.my_post_copyright .copy-path:hover {
-  color: #a2dc30;
-  cursor: pointer;
-}
-.my_post_copyright i {
-  color: #5cb85c;
 }
 .posts-expand {
   padding-top: 40px;
@@ -1742,7 +1688,7 @@ pre .javascript .function {
   top: 2px;
 }
 .post-nav-item .fa {
-  font-size: 12px;
+  font-size: 14px;
   margin-right: 5px;
 }
 .post-nav-next a {
@@ -2119,7 +2065,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fe2b0b;
+  background: #3045a6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2752,7 +2698,7 @@ ul.breadcrumb {
   margin: 1em 0;
   padding: 0 2em;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
 }
 ul.breadcrumb li {
   display: inline;
@@ -3429,7 +3375,7 @@ ul.breadcrumb li+li:last-child {
   display: block;
 }
 .post-toc ol {
-  font-size: 13px;
+  font-size: 14px;
 }
 .code ::selection {
   background: #a2dc30;
