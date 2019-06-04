@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.enjoytoshare.club/"/>
-  <updated>2019-05-25T17:03:04.000Z</updated>
+  <updated>2019-06-04T13:37:31.000Z</updated>
   <id>https://blog.enjoytoshare.club/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>怀味泰州老街</title>
+    <link href="https://blog.enjoytoshare.club/article/learnThroughLife001.html"/>
+    <id>https://blog.enjoytoshare.club/article/learnThroughLife001.html</id>
+    <published>2019-06-04T13:37:31.000Z</published>
+    <updated>2019-06-04T13:37:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>每一道美食都会讲述一个故事，美食把喧哗赶走，站在泰州的街角，聆听每一个美好故事。或许这才是旅行该有的样子。来泰州旅行，一定要品尝满街飘香的美食特色小吃，给旅途增添美好记忆。</p><hr><a id="more"></a><p>本文的泰州老街，是要加上引号的，包括与此毗邻的桃园的地块，原都是东郊鲍坝村的一片农田和村民住宅地。随着东城河风景区的规划和开发，泰州老街才于2007年正式动工，历经两年时间形成了现在的规模。<br><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190604135727.jpg" alt></p><p>说白了，这是一处迎合现代人怀古情愫的仿古风景区，并非真正意义的老街，也说不上复古。夜幕降临，华灯初上，霓虹闪烁，徜徉在古色古香的泰州老街，到底还能感受一些古风古韵，尽管不真实，近乎虚幻，有甚于无。</p><p>水车、石碾、饮马槽、照壁墙、古戏台……旧时的物件建筑巧妙布置，摇曳旧时风情，可供观赏，可供把玩、怀旧。古巷深深，真疑心从古戏台走出着旗袍的女子，撑一把油纸伞，婷婷袅袅，款款而行……<br><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190604135939.jpg" alt></p><p>手工米糕、草炉烧饼、黄桥烧饼、宣堡馄饨、溱湖八鲜、泰州干丝、靖江汤包、红膏大闸蟹，棒棒糖、叉叉糖、棉花糖……泰州的特色美食，泰州的老行当，汇聚老街，令人流连，让人怀想……<br><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190604140411.jpg" alt></p><p>老街南头右拐，是静安路，不远处是百凤桥。站在桥上向北遥望，长桥卧波，星光点点；河岸灯光璀璨，绿树婆娑；望海楼身披金光，绚烂夺目……</p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;每一道美食都会讲述一个故事，美食把喧哗赶走，站在泰州的街角，聆听每一个美好故事。或许这才是旅行该有的样子。来泰州旅行，一定要品尝满街飘香的美食特色小吃，给旅途增添美好记忆。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+      <category term="旅行" scheme="https://blog.enjoytoshare.club/categories/%E6%97%85%E8%A1%8C/"/>
+    
+    
+      <category term="生活" scheme="https://blog.enjoytoshare.club/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="旅行" scheme="https://blog.enjoytoshare.club/tags/%E6%97%85%E8%A1%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>分享免费下载论文的网站</title>
@@ -496,31 +522,6 @@
     
     
       <category term="Hexo" scheme="https://blog.enjoytoshare.club/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DaoVoice实现在线联系</title>
-    <link href="https://blog.enjoytoshare.club/article/hexo-do-daovoice.html"/>
-    <id>https://blog.enjoytoshare.club/article/hexo-do-daovoice.html</id>
-    <published>2019-04-06T10:13:16.000Z</published>
-    <updated>2019-04-06T10:13:16.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p><font size="4" face="verdana">绝佳的用户沟通工具</font></p></blockquote><a id="more"></a><h1 id="1-注册登录daovoice">1 注册登录DaoVoice</h1><p>注册登录地址如下:<br><a href="http://www.daovoice.io/" target="_blank" rel="noopener">http://www.daovoice.io/</a><br>官网进行注册,需要邀请码:  b6dbddb6 复制粘贴就可以了~!<br>或者通过下面链接进入：<br><a href="http://dashboard.daovoice.io/get-started?invite_code=b6dbddb6" target="_blank" rel="noopener">http://dashboard.daovoice.io/get-started?invite_code=b6dbddb6</a></p><h1 id="2-复制粘贴代码">2 复制粘贴代码</h1><p>修改的hexo的文件路劲如下: themes/next/layout/_partials/head.swig 添加下面的代码:</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> theme.daovoice %&#125;</span><br><span class="line"> &lt;script&gt;(<span class="function"><span class="keyword">function</span>(<span class="params">i,s,o,g,r,a,m</span>)</span>&#123;i[<span class="string">"DaoVoiceObject"</span>]=r;i[r]=i[r]||<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;(i[r].q=i[r].q||[]).push(<span class="built_in">arguments</span>)&#125;,i[r].l=<span class="number">1</span>*<span class="keyword">new</span> <span class="built_in">Date</span>();a=s.createElement(o),m=s.getElementsByTagName(o)[<span class="number">0</span>];a.async=<span class="number">1</span>;a.src=g;a.charset=<span class="string">"utf-8"</span>;m.parentNode.insertBefore(a,m)&#125;)(<span class="built_in">window</span>,<span class="built_in">document</span>,<span class="string">"script"</span>,(<span class="string">'https:'</span> == <span class="built_in">document</span>.location.protocol ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">"//widget.daovoice.io/widget/b6dbddb6.js"</span>,<span class="string">"daovoice"</span>)</span><br><span class="line"> daovoice(<span class="string">'init'</span>, &#123;</span><br><span class="line">  app_id: <span class="string">"你获取的appid"</span></span><br><span class="line">&#125;);</span><br><span class="line">daovoice(<span class="string">'update'</span>);</span><br><span class="line"> &lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&#123;% endif %&#125;</span></span><br></pre></td></tr></table></figure><p>这段代码从这里找：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406110355.png" alt></p><p>根据你自己的进行修改，参照下图：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406103518.png" alt></p><h1 id="3-修改主题的配置文件">3 修改主题的配置文件</h1><p>在主题的配置文件中添加:</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">daovoice: <span class="literal">true</span></span><br><span class="line">daovoice_app_id: 我们注册获取的id</span><br></pre></td></tr></table></figure><h1 id="4-重新部署">4 重新部署</h1><p>输入hexo s部署之后发现DaoVoice官网会提示</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406104400.png" alt></p><p>同时网页右下角出现了DaoVoice的图标</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406104538.png" alt></p><h1 id="5-测试">5 测试</h1><p>输入hello wugenqiang</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406104806.png" alt></p><p>回车键发送，效果如图：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406104855.png" alt></p><p>与此同时，DaoVoice后台也同样收到了信息</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406105018.png" alt></p><p>如果每次都要登录DaoVoice进行回复有些麻烦，所以建议在DaoVocie内绑定微信，然后使用DaoVoice的小程序进行手机上的回复操作就很方便了。</p><p>绑定微信的途径：</p><p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190406110140.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;&lt;font size=&quot;4&quot; face=&quot;verdana&quot;&gt;绝佳的用户沟通工具&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Hexo" scheme="https://blog.enjoytoshare.club/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://blog.enjoytoshare.club/tags/Hexo/"/>
-    
-      <category term="DaoVoice" scheme="https://blog.enjoytoshare.club/tags/DaoVoice/"/>
     
   </entry>
   
