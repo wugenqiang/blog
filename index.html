@@ -635,6 +635,17 @@
 
           
           
+            <span id="/articles/FightingForSEU.html" class="leancloud_visitors" data-flag-title="研友我有话想和你说">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">热度：</span>
+              
+                <span class="leancloud-visitors-count"></span><span>℃</span>
+            </span>
+          
 
           
 
@@ -812,6 +823,17 @@
           
 
           
+          
+            <span id="/articles/LearnC++ByMyselfAndMooc.html" class="leancloud_visitors" data-flag-title="C++程序设计学习篇">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">热度：</span>
+              
+                <span class="leancloud-visitors-count"></span><span>℃</span>
+            </span>
           
 
           
@@ -991,6 +1013,17 @@
 
           
           
+            <span id="/articles/learnThroughLife001.html" class="leancloud_visitors" data-flag-title="怀味泰州老街">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">热度：</span>
+              
+                <span class="leancloud-visitors-count"></span><span>℃</span>
+            </span>
+          
 
           
 
@@ -1168,6 +1201,17 @@
 
           
           
+            <span id="/articles/ShareToFreeDownloadPapers.html" class="leancloud_visitors" data-flag-title="分享免费下载论文的网站">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">热度：</span>
+              
+                <span class="leancloud-visitors-count"></span><span>℃</span>
+            </span>
+          
 
           
 
@@ -1344,6 +1388,17 @@
           
 
           
+          
+            <span id="/articles/RegularExpression.html" class="leancloud_visitors" data-flag-title="记录" 正则表达式"">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">热度：</span>
+              
+                <span class="leancloud-visitors-count"></span><span>℃</span>
+            </span>
           
 
           
@@ -1532,6 +1587,17 @@
           
 
           
+          
+            <span id="/articles/SoftwareToRecordScreen.html" class="leancloud_visitors" data-flag-title="录屏软件LICEcap">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">热度：</span>
+              
+                <span class="leancloud-visitors-count"></span><span>℃</span>
+            </span>
           
 
           
@@ -2133,6 +2199,42 @@ setInterval("createtime()",250);
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'j5U5IGzSMQcvLyhW1Y6opNX6-gzGzoHsz',
+    appKey: 'orYWc8ltQOxyT6Y9HEQdrizt',
+    placeholder: '交流中我们一起进步哈哈',
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true
+  });
+  //新增以下代码即可，可以移除.info下所有子节点。
+  var infoEle = document.querySelector('#comments .info');
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+    infoEle.childNodes.forEach(function(item) {
+      item.parentNode.removeChild(item);
+    });
+   }
+</script>
+
+
 
 
 
