@@ -1,0 +1,2208 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next gemini" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+<script src="/js/src/photoswipe.min.js?v="></script>
+<script src="/js/src/photoswipe-ui-default.min.js?v="></script>
+
+  <meta charset="UTF-8">
+<meta name="google-site-verification" content="RK_KkmN-cdriQT8jq3jsDsJJxFhyIRzHA4daqKePNk8">
+<meta name="baidu-site-verification" content="bqaja5HAOz">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/Han/dist/han.min.css?v=3.3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css">
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+  
+
+  
+    
+    
+    <link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
+
+
+
+
+
+
+  
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: true,
+    fancybox: true,
+    fastclick: true,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+
+ <script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/b6dbddb6.js","daovoice")
+ daovoice('init', {
+   app_id: "b6dbddb6"
+ });
+ daovoice('update');
+ </script>
+
+
+
+  <meta name="keywords" content="Hexo,NexT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【目录】Hexo+NexT搭建博客拥抱舒爽">
+<meta property="og:url" content="https://wugenqiang.gitee.io/articles/hexo-do-optimization.html">
+<meta property="og:site_name" content="EnjoyToShare">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/060.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331200159.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331200832.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331210050.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/gif008.gif">
+<meta property="og:image" content="https://i.loli.net/2019/04/11/5caef32ef0b0e.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412082710.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412083501.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412102323.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412103129.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412105951.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412105621.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414190059.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190415094311.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190415163917.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190428132730.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190429165943.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190429170024.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190429170248.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409142957.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190410180738.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409154624.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409154650.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409154938.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150421.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150235.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150748.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151250.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151459.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151735.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409165959.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409170617.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412142351.png">
+<meta property="og:updated_time" content="2019-04-27T22:22:27.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【目录】Hexo+NexT搭建博客拥抱舒爽">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/060.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="EnjoyToShare" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="https://wugenqiang.gitee.io/articles/hexo-do-optimization.html">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
+                alert('密码不正确,请询问主编大大');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+  <title>【目录】Hexo+NexT搭建博客拥抱舒爽 | EnjoyToShare</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <!--
+       <a href="https://github.com/wugenqiang" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    -->
+    <header id="header" class="header" itemscope itemtype="https://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">EnjoyToShare</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">身体和灵魂总要有一个在路上</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-photos">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/photos/" rel="section"><i class="menu-item-icon fa fa-fw fa-camera"></i> <br>摄影 & 视频</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-book">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/book/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>书籍</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-love">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="https://love.enjoytoshare.club/" rel="noopener" target="_blank"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>告白</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-links">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/links/" rel="section"><i class="menu-item-icon fa fa-fw fa-paper-plane"></i> <br>友链</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-laboratory">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/laboratory/" rel="section"><i class="menu-item-icon fa fa-fw fa-anchor"></i> <br>实验室</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-notes">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/notes" rel="section"><i class="menu-item-icon fa fa-fw fa-amazon"></i> <br>札记 & 留言板</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="https://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wugenqiang.gitee.io/articles/hexo-do-optimization.html">
+
+    <span hidden itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <meta itemprop="name" content="WuGenQiang">
+      <meta itemprop="description" content="Sometimes your whole life boils down to one insame move">
+      <meta itemprop="image" content="/images/fighting_wugenqiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+      <meta itemprop="name" content="EnjoyToShare">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">【目录】Hexo+NexT搭建博客拥抱舒爽
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-15 22:22:22" itemprop="dateCreated datePublished" datetime="2019-04-15T22:22:22Z">2019-04-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-27 22:22:27" itemprop="dateModified" datetime="2019-04-27T22:22:27Z">2019-04-27</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             热度： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span><span> ℃</span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/060.jpg" alt></p>
+<a id="more"></a>
+<h1 id="1-写在前面">1 写在前面</h1>
+<p>本文主要是Hexo+NexT搭建博客并且进行主题的配置以及页面的样式优化</p>
+<p>本篇文档参考了许多大佬的文章以及配置文件，在此感谢大佬们。</p>
+<p>本文参考的文章都会直接给出原文链接或者以注脚的形式标记出处，如有遗漏，欢迎指出。</p>
+<p>本文内容会在后续的优化中慢慢补充完整~~</p>
+<p>首先在配置Hexo+NexT之前，最好阅读一下<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo官方文档</a>和<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">NexT使用文档</a></p>
+<h1 id="2-hexo安装和配置">2 Hexo安装和配置</h1>
+<pre><code>参考博客：
+</code></pre>
+<ul>
+<li>
+<p><a href="https://blog.csdn.net/wugenqiang/article/details/88372848" target="_blank" rel="noopener">Windows下部署安装Hexo</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/wugenqiang/article/details/88373085" target="_blank" rel="noopener">创建Hexo项目</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/wugenqiang/article/details/88373385" target="_blank" rel="noopener">Hexo博客上传至Github</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/wugenqiang/article/details/88373990" target="_blank" rel="noopener">使用NexT主题优化Hexo博客</a></p>
+</li>
+</ul>
+<h1 id="3-next主题优化">3 NexT主题优化</h1>
+<h2 id="3-1-修改文章底部-为图标">3.1 修改文章底部#为图标</h2>
+<p>修改模板/themes/next/layout/_macro/post.swig，</p>
+<p>搜索 rel=“tag”&gt;#，将 # 换成 <code>&lt;i class=&quot;fa fa-envira&quot;&gt;&lt;/i&gt;</code></p>
+<p>效果如下图所示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331200159.png" alt></p>
+<h2 id="3-2-点击出现爱心效果">3.2 点击出现爱心效果</h2>
+<p>在/themes/next/source/js/love.js下新建文件love.js，接着把该链接下的代码拷贝粘贴到love.js文件中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!function (e, t, a) &#123; function n() &#123; c(&quot;.heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: &apos;&apos;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;&quot;), o(), r() &#125; function r() &#123; for (var e = 0; e &lt; d.length; e++)d[e].alpha &lt;= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y-- , d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = &quot;left:&quot; + d[e].x + &quot;px;top:&quot; + d[e].y + &quot;px;opacity:&quot; + d[e].alpha + &quot;;transform:scale(&quot; + d[e].scale + &quot;,&quot; + d[e].scale + &quot;) rotate(45deg);background:&quot; + d[e].color + &quot;;z-index:99999&quot;); requestAnimationFrame(r) &#125; function o() &#123; var t = &quot;function&quot; == typeof e.onclick &amp;&amp; e.onclick; e.onclick = function (e) &#123; t &amp;&amp; t(), i(e) &#125; &#125; function i(e) &#123; var a = t.createElement(&quot;div&quot;); a.className = &quot;heart&quot;, d.push(&#123; el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() &#125;), t.body.appendChild(a) &#125; function c(e) &#123; var a = t.createElement(&quot;style&quot;); a.type = &quot;text/css&quot;; try &#123; a.appendChild(t.createTextNode(e)) &#125; catch (t) &#123; a.styleSheet.cssText = e &#125; t.getElementsByTagName(&quot;head&quot;)[0].appendChild(a) &#125; function s() &#123; return &quot;rgb(&quot; + ~~(255 * Math.random()) + &quot;,&quot; + ~~(255 * Math.random()) + &quot;,&quot; + ~~(255 * Math.random()) + &quot;)&quot; &#125; var d = []; e.requestAnimationFrame = function () &#123; return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) &#123; setTimeout(e, 1e3 / 60) &#125; &#125;(), n() &#125;(window, document);</span><br></pre></td></tr></table></figure>
+<p>在\themes\next\layout_layout.swig文件末尾添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 页面点击小红心 --&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/love.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下图所示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331200832.png" alt></p>
+<h2 id="3-3-文章加密访问">3.3 文章加密访问</h2>
+<p>打开themes-&gt;next-&gt;layout-&gt;_partials-&gt;head-unique.swig文件,插入这样一段代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (function()&#123;</span><br><span class="line">        if(&apos;&#123;&#123; page.password &#125;&#125;&apos;)&#123;</span><br><span class="line">            if (prompt(&apos;请输入查看密码&apos;) !== &apos;&#123;&#123; page.password &#125;&#125;&apos;)&#123;</span><br><span class="line">                alert(&apos;密码不正确,请询问主编大大！&apos;);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>然后在文章上写成类似这样:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">title: Hexo+NexT拥抱舒爽</span><br><span class="line">tags:</span><br><span class="line">  - Hexo</span><br><span class="line">  - NexT</span><br><span class="line">categories:</span><br><span class="line">  - Hexo</span><br><span class="line">author: WuGenQiang</span><br><span class="line">password: 123456</span><br><span class="line">date: 2019-03-31 19:01:35</span><br><span class="line">updated: 2019-03-31 19:01:35</span><br></pre></td></tr></table></figure>
+<p>效果如图所示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190331210050.png" alt></p>
+<h2 id="3-4-优化深色代码高亮背景">3.4 优化深色代码高亮背景</h2>
+<p>在主题配置文件修改代码高亮背景为深色背景后，当在博客文章上选择代码时，选择到的颜色也为深色，虽然和背景色还是有点点区别，但是不好区分。所以经过一番研究，才有了以下优化教程。</p>
+<p>在myblog/themes/next/source/css/_custom/custom.styl中添加以下样式代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//page code background-color</span><br><span class="line">.code ::selection &#123;</span><br><span class="line">    background: #2593a6;</span><br><span class="line">    color: #fff;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//gitalk code background-color </span><br><span class="line">.gt-container .gt-comment-content .highlight pre, .markdown-body pre&#123;</span><br><span class="line">    background-color: #2d2d2d;</span><br><span class="line">&#125;</span><br><span class="line">.gt-container .gt-comment-content .highlight ::selection &#123;</span><br><span class="line">    background: #2593a6;</span><br><span class="line">    color: #fff;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上代码优化了所以高亮代码区域，包括gitalk评论区的高亮代码。 这些样式代码是通过浏览器调试而得，如有其它样式的需求，可参考本示例在浏览器中调试。</p>
+<h2 id="3-5-解决next主题访问慢">3.5 解决NexT主题访问慢</h2>
+<h3 id="3-5-1-方法一：修改外链字体库">3.5.1 方法一：修改外链字体库</h3>
+<p><code>注：</code></p>
+<table><tr><td bgcolor="#D1EEEE">现在更改后的速度大不如前了，速度也是ok的，如果想尝试可以更改成中科大的外链字体库，我一直在用中科大的外链字体库，可以参照我的速度来决定是否修改，记录于2019-04-29</td></tr></table>
+<p>当博客使用Hexo搭建在Github Page上的时候，可能会访问慢，有一个原因是因为fonts.googleapis.com加载极慢（虽然可能不慢，比如我的就很满意，速度差不多快，可能是我进行了博文压缩的原因），所以Google了一下，发现了解决方案。<br>
+<code>记录</code>:</p>
+<ul>
+<li>貌似这种解决方案不能用了，今天2019-04-28博客太卡不知道啥原因，后来F12查看网络延迟，发现是这个中科大的外链字体库出现问题了，不知道什么时候恢复，又恢复了默认状态，因为做过压缩静态资源，所以还是很快。</li>
+<li>现在是2019-04-29 15:29 抱着试一试的态度，查看了中科大的外链文字库地址，居然好啦哈哈，完美。</li>
+</ul>
+<p>方法：</p>
+<p>把在NexT主题的配置文件<code>_config.yml</code>里面的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">font:</span><br><span class="line">  enable: true</span><br><span class="line">  # 外链字体库地址，例如 //fonts.googleapis.com (默认值)</span><br><span class="line">  host:</span><br></pre></td></tr></table></figure>
+<p>改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">font:</span><br><span class="line">  enable: true</span><br><span class="line">  # 外链字体库地址，例如 //fonts.googleapis.com (默认值)</span><br><span class="line">  # Uri of fonts host. E.g. //fonts.googleapis.com (Default)</span><br><span class="line">  # fonts.lug.ustc.edu.cn是中科大的源,解决Hexo NexT主题访问慢</span><br><span class="line">  host: //fonts.lug.ustc.edu.cn</span><br></pre></td></tr></table></figure>
+<p>访问速度就很快了！哦耶，当然如果你有更好的解决办法也可以提啊</p>
+<p>效果演示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/gif008.gif" alt></p>
+<h3 id="3-5-2-方法二：博文压缩">3.5.2 方法二：博文压缩</h3>
+<p>这里我来分享以下如何压缩，参考 <a href="https://blog.enjoytoshare.club/article/hexo-do-optimization.html#3-30-%E5%AE%9E%E7%8E%B0%E5%8D%9A%E6%96%87%E5%8E%8B%E7%BC%A9" target="_blank" rel="noopener">实现博文压缩</a></p>
+<h3 id="3-5-3-方法三：双服务器托管">3.5.3 方法三：双服务器托管</h3>
+<p>还有一种方法就是采用Coding+Github双服务器托管Hexo博客，这样访问速度会更快！<br>
+如果想进行这样的操作，可以参考我的文章：<a href="https://blog.enjoytoshare.club/article/hexo-do-server-hosting.html" target="_blank" rel="noopener">Coding+Github双服务器托管Hexo</a></p>
+<h2 id="3-6-去掉顶部黑线">3.6 去掉顶部黑线</h2>
+<p>打开<code>themes\next\source\css\_custom\custom.styl</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//添加代码：</span><br><span class="line">.headband &#123;display:none;&#125;</span><br></pre></td></tr></table></figure>
+<p>保存刷新一下，黑线就没有了。</p>
+<h2 id="3-7-设置点击头像返回主页">3.7 设置点击头像返回主页</h2>
+<p>打开<code>themes\next\layout\_macro\sidebar.swig</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//添加代码：</span></span><br><span class="line">+        &lt;a href="/"&gt;</span><br><span class="line">          &lt;img class="site-author-image" itemprop="image"</span><br><span class="line">               src="&#123;&#123; url_for( theme.avatar | default(theme.images + '/avatar.gif') ) &#125;&#125;"</span><br><span class="line">               alt="&#123;&#123; theme.author &#125;&#125;" /&gt;</span><br><span class="line">+        &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">//这里注意找到中间代码，添加a标签就行了，中间不用修改。</span><br></pre></td></tr></table></figure>
+<p>如图：</p>
+<p><img src="https://i.loli.net/2019/04/11/5caef32ef0b0e.jpg" alt="20190411-02.jpg"></p>
+<p>重新部署<code>hexo s</code>，刷新页面点击头像即可返回主页。</p>
+<h2 id="3-8-实现3d动态标签云">3.8 实现3d动态标签云</h2>
+<p>效果如图所示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412082710.png" alt></p>
+<p>可参考<a href="https://github.com/MikeCoder/hexo-tag-cloud" target="_blank" rel="noopener">github上标签云使用教程</a>完成本操作，下面是我的步骤：</p>
+<h3 id="3-8-1-安装标签云hexo-tag-cloud插件">3.8.1 安装标签云<code>hexo-tag-cloud</code>插件</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-cloud@^2.* --save</span><br></pre></td></tr></table></figure>
+<h3 id="3-8-2-配置sidebar-swig文件">3.8.2 配置<code>sidebar.swig</code>文件</h3>
+<p>打开<code>next/layout/_macro/sidebar.swig</code>，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if site.tags.length &gt; 1 %&#125;</span><br><span class="line">        &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;/js/tagcloud.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">        &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;/js/tagcanvas.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">        &lt;div class=&quot;widget-wrap&quot;&gt;</span><br><span class="line">            &lt;div id=&quot;myCanvasContainer&quot; class=&quot;widget tagcloud&quot;&gt;</span><br><span class="line">                &lt;canvas width=&quot;250&quot; height=&quot;250&quot; id=&quot;resCanvas&quot; style=&quot;width=100%&quot;&gt;</span><br><span class="line">                    &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">                &lt;/canvas&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>位置如图放置，可以根据你的需要放置，下图是我的位置：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412083501.png" alt></p>
+<p>重新<code>hexo s</code>一下，就可以出现我刚刚那个3d标签云啦!</p>
+<h2 id="3-9-设置标题样式-为浅蓝色">3.9 设置标题样式（为浅蓝色）</h2>
+<p>进入主题目录 <code>themes\next\source\css\_common\components\post\</code> 修改 <code>post.styl</code> 文件(博文的样式表)，在配置的后面添加下面的代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">/*添加下面的CSS代码来修改博文标题样式*/</span><br><span class="line">.page-post-detail .post-title &#123;</span><br><span class="line">  font-size: 26px;</span><br><span class="line">  text-align: center;</span><br><span class="line">  word-break: break-word;</span><br><span class="line">  font-weight: $posts-expand-title-font-weight</span><br><span class="line">  background-color: #b9d3ee;</span><br><span class="line">  border-radius:.3em;</span><br><span class="line">  line-height:1em;</span><br><span class="line">  padding-bottom:.12em;</span><br><span class="line">  padding-top:.12em;</span><br><span class="line">  box-shadow:2px 2px 7px #9fb6cd;</span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    font-size: 22px;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">/*添加上面的CSS代码来修改博文标题样式*/</span><br><span class="line">@import &quot;post-expand&quot;;//这行以上复制就可以啦，此行不用复制</span><br></pre></td></tr></table></figure>
+<p>效果如图所示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412102323.png" alt></p>
+<p><code>注：</code>如果想把主页标题样式一同修改，可以把 .page-post-detail 去掉即可。</p>
+<p>效果如图所示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412103129.png" alt></p>
+<h2 id="3-10-设置文章封面图片-文章内不显示">3.10 设置文章封面图片(文章内不显示)</h2>
+<p>在博客首页的时候会显示文章的封面图片，进入这篇文章的详细页面后，将不显示这张图片。<br>
+操作如下：</p>
+<h3 id="3-10-1-修改post-swig文件">3.10.1 修改<code>post.swig</code>文件</h3>
+<p>修改 \themes\next\layout_macro\post.swing 文件,将下面代码复制进去：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if post.summary_img  %&#125;</span><br><span class="line">  &lt;div class=&quot;out-img-topic&quot;&gt;</span><br><span class="line">    &lt;img src=&#123;&#123; post.summary_img &#125;&#125; class=&quot;img-topic&quot;&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>添加到下图所示的位置:</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412105951.png" alt></p>
+<p>这样的话，就可以使用<code>summary_img: imageurl</code>来设置文章封面了。</p>
+<h3 id="3-10-2-添加summary-img字段">3.10.2 添加<code>summary_img</code>字段</h3>
+<p>在新建的文章添加一个字段属性：<code>summary_img</code>，summary_img的值是图片的路径，如下图，但是请注意一下，亲测，本地图片要放在images目录下，网络图片随意啊</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412105621.png" alt></p>
+<h2 id="3-11-修改阅读全文颜色">3.11 修改阅读全文颜色</h2>
+<p>修改<code>themes\next\source\css\_custom\custom.styl</code>文件，添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 修改按键（button）样式</span><br><span class="line">.btn &#123;</span><br><span class="line">  color: #49b1f5;</span><br><span class="line">  background: #fff;</span><br><span class="line">  border: 2px solid #49b1f5;</span><br><span class="line">&#125;</span><br><span class="line">// 按键（button）点击时样式</span><br><span class="line">.btn:hover &#123;</span><br><span class="line">  border-color: #49b1f5;</span><br><span class="line">  color: #fff;</span><br><span class="line">  background: #49b1f5;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>即可，颜色自己定义。</p>
+<h2 id="3-12-修改主题页面布局为圆角">3.12 修改主题页面布局为圆角</h2>
+<h3 id="3-12-1-方法一">3.12.1 方法一</h3>
+<p>在<code>/themes/next/source/css/_variables/custom.styl</code>文件种添加如下代码（以Gemini风格为例）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 修改主题页面布局为圆角</span></span><br><span class="line"><span class="comment">// Variables of Gemini scheme</span></span><br><span class="line"><span class="comment">// =================================================</span></span><br><span class="line">@<span class="keyword">import</span> <span class="string">"Pisces.styl"</span>;</span><br><span class="line"><span class="comment">// Settings for some of the most global styles.</span></span><br><span class="line"><span class="comment">// --------------------------------------------------</span></span><br><span class="line">$body-bg-color                    = #eee</span><br><span class="line"><span class="comment">// Borders.</span></span><br><span class="line"><span class="comment">// --------------------------------------------------</span></span><br><span class="line">$box-shadow-inner                 = <span class="number">0</span> <span class="number">2</span>px <span class="number">2</span>px <span class="number">0</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">.12</span>), <span class="number">0</span> <span class="number">3</span>px <span class="number">1</span>px <span class="number">-2</span>px rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">.06</span>), <span class="number">0</span> <span class="number">1</span>px <span class="number">5</span>px <span class="number">0</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">.12</span>)</span><br><span class="line">$box-shadow                       = <span class="number">0</span> <span class="number">2</span>px <span class="number">2</span>px <span class="number">0</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">.12</span>), <span class="number">0</span> <span class="number">3</span>px <span class="number">1</span>px <span class="number">-2</span>px rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">.06</span>), <span class="number">0</span> <span class="number">1</span>px <span class="number">5</span>px <span class="number">0</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">.12</span>), <span class="number">0</span> <span class="number">-1</span>px <span class="number">.5</span>px <span class="number">0</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">.09</span>)</span><br><span class="line">$border-radius-inner              = initial</span><br><span class="line">$border-radius                    = initial</span><br><span class="line">$border-radius-inner            = <span class="number">15</span>px <span class="number">15</span>px <span class="number">15</span>px <span class="number">15</span>px;</span><br><span class="line">$border-radius                  = <span class="number">15</span>px;</span><br></pre></td></tr></table></figure>
+<h3 id="3-12-2-方法二">3.12.2 方法二</h3>
+<p>在<code>\themes\next\source\css\_variables\Gemini.styl</code>文件中直接添加：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 修改主题页面布局为圆角</span></span><br><span class="line">$border-radius-inner            = <span class="number">15</span>px <span class="number">15</span>px <span class="number">15</span>px <span class="number">15</span>px;</span><br><span class="line">$border-radius                  = <span class="number">15</span>px;</span><br></pre></td></tr></table></figure>
+<p>即可</p>
+<h2 id="3-13-修改友链样式">3.13 修改友链样式</h2>
+<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexoEditLinkStyle.html" target="_blank" rel="noopener">Hexo+NexT修改友链样式</a></p>
+<h2 id="3-14-博文图片模式">3.14 博文图片模式</h2>
+<p>新建博文，设置 <code>type: picture</code>，使用 { % gp x-x % }…{ % endgp % } 标签引用要展示的图片地址，如下所示：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">title: 测试图片展示</span><br><span class="line">tags:</span><br><span class="line">  - Picture</span><br><span class="line">  - Hexo</span><br><span class="line">urlname: pictureToDisplayTest_5<span class="number">-3</span></span><br><span class="line">categories:</span><br><span class="line">  - Hexo</span><br><span class="line">author: WuGenQiang</span><br><span class="line">type: picture</span><br><span class="line">date: <span class="number">2019</span><span class="number">-04</span><span class="number">-14</span> <span class="number">18</span>:<span class="number">02</span>:<span class="number">40</span></span><br><span class="line">updated: <span class="number">2019</span><span class="number">-04</span><span class="number">-14</span> <span class="number">18</span>:<span class="number">02</span>:<span class="number">40</span></span><br><span class="line">---</span><br><span class="line">&#123;% gp <span class="number">5</span><span class="number">-3</span> %&#125;</span><br><span class="line">![](https:<span class="comment">//raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/070.gif)</span></span><br><span class="line">![](https:<span class="comment">//raw.githubusercontent.com/wugenqiang/picGo/master/pictures/013.jpg)</span></span><br><span class="line">![](https:<span class="comment">//raw.githubusercontent.com/wugenqiang/picGo/master/pictures/003.jpg)</span></span><br><span class="line">![](https:<span class="comment">//raw.githubusercontent.com/wugenqiang/picGo/master/pictures/004.jpg)</span></span><br><span class="line">![](https:<span class="comment">//raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404142303.png)</span></span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
+<p><code>图片展示效果</code>:<br>
+{ % gp 5-3 % }：设置图片展示效果，参考 <code>themes\next\scripts\tags\group-pictures.js</code> ,<code>5-3</code> 的意思就是5张图片将会按照这种布局来展示，Next 提供了多张图片的多种布局，你可以随意选择，请到官网查看：<a href="https://theme-next.org/docs/tag-plugins/group-pictures" target="_blank" rel="noopener">https://theme-next.org/docs/tag-plugins/group-pictures</a></p>
+<p><code>注意点</code></p>
+<p>主题目前首页可以正常显示设置的图片效果，但是点击进入后显示效果丢失，所以需要修改一下<code>themes\next\source\css\_common\components\tags\group-pictures.styl</code> 中的以下样式：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.page-post-detail .post-body .group-picture-column &#123;</span><br><span class="line">  <span class="comment">//float: none;</span></span><br><span class="line">  margin-top: <span class="number">10</span>px;</span><br><span class="line">  <span class="comment">//width: auto !important;</span></span><br><span class="line">  img &#123; <span class="attr">margin</span>: <span class="number">0</span> auto; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>效果参照我的测试博文页面：<a href="https://blog.enjoytoshare.club/article/pictureToDisplayTest_5-3.html" target="_blank" rel="noopener">测试5-3图片展示</a></p>
+<p>效果如图所示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414190059.png" alt></p>
+<h2 id="3-15-隐藏特定文章">3.15 隐藏特定文章</h2>
+<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexoNextHideArticleMethod.html" target="_blank" rel="noopener">Hexo+NexT隐藏特定文章</a></p>
+<h2 id="3-16-增加分享功能">3.16 增加分享功能</h2>
+<h3 id="3-16-1-方法一">3.16.1 方法一</h3>
+<p>编辑主题配置文件<code>_config.yml</code>，添加/修改字段<code>baidushare</code>，值为 <code>true</code> 即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 百度分享服务</span><br><span class="line">baidushare: true</span><br></pre></td></tr></table></figure>
+<p>效果不太适合我，所以选择了第二种方法</p>
+<h3 id="3-16-2-方法二">3.16.2 方法二</h3>
+<p>git bash输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ rm -rf themes/next/source/lib/needsharebutton</span><br><span class="line">$ git clone https://github.com/theme-next/theme-next-needmoreshare2 themes/next/source/lib/needsharebutton</span><br></pre></td></tr></table></figure>
+<p>然后在<code>/themes/next/_config.yml</code>中，搜索 <code>needmoreshare2</code>，修改如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">needmoreshare2:</span><br><span class="line">  enable: true</span><br><span class="line">  postbottom:</span><br><span class="line">    enable: true</span><br><span class="line">    options:</span><br><span class="line">      iconStyle: box</span><br><span class="line">      boxForm: horizontal</span><br><span class="line">      position: bottomCenter</span><br><span class="line">      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook</span><br><span class="line">  float:</span><br><span class="line">    enable: false # 这里是浮动分享，我没有设置</span><br><span class="line">    options:</span><br><span class="line">      iconStyle: box</span><br><span class="line">      boxForm: horizontal</span><br><span class="line">      position: middleRight</span><br><span class="line">      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190415094311.png" alt></p>
+<h2 id="3-17-鼠标选取文字提示版权信息">3.17 鼠标选取文字提示版权信息</h2>
+<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexoNextSelectWords.html" target="_blank" rel="noopener">Hexo+NexT选取文字提示版权信息</a></p>
+<h2 id="3-18-自定义文章底部版权声明">3.18 自定义文章底部版权声明</h2>
+<h3 id="3-18-1-新建my-copyright-swig文件">3.18.1 新建<code>my-copyright.swig</code>文件</h3>
+<p>在 <code>themes/next/layout/_macro/</code> 下添加 <code>my-copyright.swig</code> ，内容如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> page.copyright %&#125;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"my_post_copyright"</span>&gt;</span><br><span class="line">  &lt;script src=<span class="string">"//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- JS库 sweetalert 可修改路径 --&gt;</span><br><span class="line">  &lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"https://code.jquery.com/jquery-3.2.1.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;script src=<span class="string">"https://cdn.bootcss.com/sweetalert/2.1.2/sweetalert.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;link rel=<span class="string">"stylesheet"</span> type=<span class="string">"text/css"</span> href=<span class="string">"https://cdn.bootcss.com/sweetalert/1.1.2/sweetalert.min.css"</span>&gt;</span><br><span class="line"></span><br><span class="line">  &lt;p&gt;&lt;span&gt;本文标题:&lt;/span&gt;&#123;&#123; page.title &#125;&#125;&lt;<span class="regexp">/a&gt;&lt;/</span>p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;文章作者:&lt;/span&gt;&#123;&#123; theme.author &#125;&#125;&lt;<span class="regexp">/a&gt;&lt;/</span>p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;发布时间:&lt;/span&gt;&#123;&#123; page.date.format(<span class="string">"YYYY年MM月DD日 - HH:mm:ss"</span>) &#125;&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">  &lt;p&gt;&lt;span&gt;最后更新:&lt;/</span>span&gt;&#123;&#123; page.updated.format(<span class="string">"YYYY年MM月DD日 - HH:mm:ss"</span>) &#125;&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">  &lt;p&gt;&lt;span&gt;原始链接:&lt;/</span>span&gt;&lt;a href="&#123;&#123; url_for(page.path) &#125;&#125;" title="&#123;&#123; page.title &#125;&#125;"&gt;&#123;&#123; page.permalink &#125;&#125;&lt;/a&gt;</span><br><span class="line">    &lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">"copy-path"</span>  title=<span class="string">"点击复制文章链接"</span>&gt;&lt;i class="fa fa-clipboard" data-clipboard-text="&#123;&#123; page.permalink &#125;&#125;"  aria-label="复制成功！"&gt;&lt;/i&gt;&lt;/span&gt;</span><br><span class="line">  &lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">  &lt;p&gt;&lt;span&gt;许可协议:&lt;/</span>span&gt;&lt;i class="fa fa-creative-commons"&gt;&lt;/i&gt; &lt;a rel=<span class="string">"license"</span> href=<span class="string">"https://creativecommons.org/licenses/by-nc-nd/4.0/"</span> target=<span class="string">"_blank"</span> title=<span class="string">"Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"</span>&gt;署名-非商业性使用-禁止演绎 <span class="number">4.0</span> 国际&lt;<span class="regexp">/a&gt; 转载请保留原文链接及作者。&lt;/</span>p&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">    var clipboard = new Clipboard('.fa-clipboard');</span></span><br><span class="line"><span class="regexp">    clipboard.on('success', $(function()&#123;</span></span><br><span class="line"><span class="regexp">      $(".fa-clipboard").click(function()&#123;</span></span><br><span class="line"><span class="regexp">        swal(&#123;</span></span><br><span class="line"><span class="regexp">          title: "",</span></span><br><span class="line"><span class="regexp">          text: '复制成功',</span></span><br><span class="line"><span class="regexp">          html: false,</span></span><br><span class="line"><span class="regexp">          timer: 500,</span></span><br><span class="line"><span class="regexp">          showConfirmButton: false</span></span><br><span class="line"><span class="regexp">        &#125;);</span></span><br><span class="line"><span class="regexp">      &#125;);</span></span><br><span class="line"><span class="regexp">    &#125;));</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-18-2-新建my-post-copyright-styl文件">3.18.2 新建<code>my-post-copyright.styl</code>文件</h3>
+<p>在 <code>themes/next/source/css/_common/components/post/</code> 下添加 <code>my-post-copyright.styl</code>，内容如下:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">85%</span>;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">45em</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">2.8em</span> auto <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0.5em</span> <span class="number">1.0em</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#d3d3d3</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">0.93rem</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1.6em</span>;</span><br><span class="line">  <span class="attribute">word-break</span>: break-all;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(255,255,255,0.4);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">p</span>&#123;<span class="attribute">margin</span>:<span class="number">0</span>;&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">span</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">5.2em</span>;</span><br><span class="line">  color: #333333; // title color</span><br><span class="line">  <span class="selector-tag">font-weight</span>: <span class="selector-tag">bold</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.raw</span> &#123;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">1em</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">5em</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#808080</span>;</span><br><span class="line">  <span class="attribute">border-bottom</span>:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  color: #0593d3; // link color</span><br><span class="line">  <span class="selector-tag">text-decoration</span>: <span class="selector-tag">underline</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span><span class="selector-pseudo">:hover</span> <span class="selector-class">.fa-clipboard</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.post-url</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">font-weight</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.copy-path</span> &#123;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">1em</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1em</span>;</span><br><span class="line">  +mobile()&#123;display:none;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.copy-path</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#808080</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-18-3-修改post-swig文件">3.18.3 修改<code>post.swig</code>文件</h3>
+<p>修改 <code>themes/next/layout/_macro/post.swig</code> ，如下：<br>
+在<code>end post body</code>之后根据你个人需要放置位置，添加以下代码：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &#123;% include 'my-copyright.swig' %&#125;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="3-18-4-修改post-styl文件">3.18.4 修改<code>post.styl</code>文件</h3>
+<p>打开 <code>themes/next/source/css/_common/components/post/post.styl</code> 文件，在最后一行增加代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;my-post-copyright&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="3-18-5-修改post-md文件">3.18.5 修改<code>post.md</code>文件</h3>
+<p>设置新建文章自动开启 <code>copyright</code> ，即新建文章自动显示自定义的版权声明，设置 <code>～/scaffolds/post.md</code> 文件，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">copyright: true #新增,开启</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="3-18-6-新建文章测试">3.18.6 新建文章测试</h3>
+<p>发现新建简单文章可以显示，之前的文章不能显示<br>
+效果图：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190415163917.png" alt></p>
+<h2 id="3-19-增加词云">3.19 增加词云</h2>
+<p>方法比较简单，加个js脚本就好了，至于加载哪里都无所谓了，就放在标签云的页面。<br>
+就加在标签的那个页面好了。</p>
+<p>打开<code>themes\next\layout\page.swig</code>找到:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if page.type === &quot;tags&quot; %&#125;</span><br></pre></td></tr></table></figure>
+<p>将下面这段代码:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class="tag-cloud"&gt;</span><br><span class="line"></span><br><span class="line">   &lt;!-- &lt;div class="tag-cloud-title"&gt;</span><br><span class="line">       &#123;&#123; _p('counter.tag_cloud', site.tags.length) &#125;&#125;</span><br><span class="line">   &lt;/div&gt; --&gt;</span><br><span class="line">   &lt;div class="tag-cloud-tags" id="tags"&gt;</span><br><span class="line">     &#123;&#123; tagcloud(&#123;min_font: 16, max_font: 16, amount: 300, color: true, start_color: '#fff', end_color: '#fff'&#125;) &#125;&#125;</span><br><span class="line">   &lt;/div&gt;</span><br><span class="line"> &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>换成下面这段代码：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"> &lt;div class=&quot;tag-cloud&quot;&gt;</span><br><span class="line">  &lt;!-- &lt;div class=&quot;tag-cloud-title&quot;&gt;</span><br><span class="line">      &#123;&#123; _p(&apos;counter.tag_cloud&apos;, site.tags.length) &#125;&#125;</span><br><span class="line">  &lt;/div&gt; --&gt;</span><br><span class="line">  &lt;div class=&quot;tag-cloud-tags&quot; id=&quot;tags&quot;&gt;</span><br><span class="line">    &#123;&#123; tagcloud(&#123;min_font: 16, max_font: 16, amount: 300, color: true, start_color: &apos;#fff&apos;, end_color: &apos;#fff&apos;&#125;) &#125;&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;br&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">   var alltags=document.getElementById(&apos;tags&apos;);</span><br><span class="line">   var tags=alltags.getElementsByTagName(&apos;a&apos;);</span><br><span class="line"></span><br><span class="line">   for (var i = tags.length - 1; i &gt;= 0; i--) &#123;</span><br><span class="line">     var r=Math.floor(Math.random()*75+130);</span><br><span class="line">     var g=Math.floor(Math.random()*75+100);</span><br><span class="line">     var b=Math.floor(Math.random()*75+80);</span><br><span class="line">     tags[i].style.background = &quot;rgb(&quot;+r+&quot;,&quot;+g+&quot;,&quot;+b+&quot;)&quot;;</span><br><span class="line">   &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    div#posts.posts-expand .tag-cloud a&#123;</span><br><span class="line">   background-color: #f5f7f1;</span><br><span class="line">   border-radius: 6px;</span><br><span class="line">   padding-left: 10px;</span><br><span class="line">   padding-right: 10px;</span><br><span class="line">   margin-top: 18px;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> .tag-cloud a&#123;</span><br><span class="line">   background-color: #f5f7f1;</span><br><span class="line">   border-radius: 4px;</span><br><span class="line">   padding-right: 5px;</span><br><span class="line">   padding-left: 5px;</span><br><span class="line">   margin-right: 5px;</span><br><span class="line">   margin-left: 0px;</span><br><span class="line">   margin-top: 8px;</span><br><span class="line">   margin-bottom: 0px;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> .tag-cloud a:before&#123;</span><br><span class="line">      content: &quot;📜&quot;;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> .tag-cloud-tags&#123;</span><br><span class="line">   text-align: left;</span><br><span class="line">   counter-reset: tags;</span><br><span class="line"> &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<p>就好啦</p>
+<h2 id="3-20-开启文章目录">3.20 开启文章目录</h2>
+<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-catalog.html" target="_blank" rel="noopener">Hexo博客NexT主题开启文章目录和调整样式</a></p>
+<h2 id="3-21-图片点击实现全屏查看">3.21 图片点击实现全屏查看</h2>
+<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-picture-screen.html" target="_blank" rel="noopener">Hexo文章中图片点击实现全屏查看</a></p>
+<h2 id="3-22-修改内容区域的宽度">3.22 修改内容区域的宽度</h2>
+<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-edit-screen.html" target="_blank" rel="noopener">Hexo之修改内容区域的宽度</a></p>
+<h2 id="3-23-daovoice实现在线联系">3.23 DaoVoice实现在线联系</h2>
+<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-daovoice.html" target="_blank" rel="noopener">DaoVoice实现在线联系</a></p>
+<h2 id="3-24-打赏功能">3.24 打赏功能</h2>
+<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-donate.html" target="_blank" rel="noopener">Hexo的NexT主题打赏功能</a></p>
+<h2 id="3-25-加入评论功能gitalk">3.25 加入评论功能gitalk</h2>
+<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-gitalk.html" target="_blank" rel="noopener">Hexo NexT 加入评论功能gitalk</a></p>
+<h2 id="3-26-获取网易云音乐外链">3.26 获取网易云音乐外链</h2>
+<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-music-link.html" target="_blank" rel="noopener">Hexo获取网易云音乐外链</a></p>
+<h2 id="3-27-开启emoji表情">3.27 开启emoji表情</h2>
+<p>如何让 <code>markdown</code> 可以解析 <code>emoji</code> 呢？实际上我们发现，在编辑器中输入 <code>:smile:</code> 并没有表情出现，是为什么呢？<br>
+这是 <code>markdown</code> 渲染引擎的问题 ，将 <code>markdown</code> 变成 <code>html</code> 的转换器叫做<code>markdown渲染器</code> 。 Hexo默认是采用 <code>hexo-renderer-marked</code> ,这个渲染器不支持插件扩展，当然就不行了，还有一个支持插件扩展的是 <code>hexo-renderer-markdown-it</code> ，这个支持插件配置，可以使用 <code>markwon-it-emoji</code> 插件来支持emoji。需要将原来的 <code>marked</code> 渲染器换成 <code>markdown-it</code> 渲染器。所以我们可以使用这个渲染引擎来支持emoji表情。</p>
+<h3 id="3-27-1-安装新的渲染器">3.27.1 安装新的渲染器</h3>
+<p>首先进入博客目录，卸载hexo默认的 <code>marked</code> 渲染器，安装 <code>markdown-it</code> 渲染器，运行的命令如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm un hexo-renderer-marked --save</span><br><span class="line">$ npm i hexo-renderer-markdown-it --save</span><br></pre></td></tr></table></figure>
+<p>之后安装 <code>markdown-it-emoji</code> 插件 ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install markdown-it-emoji --save</span><br></pre></td></tr></table></figure>
+<p>据说 <code>hexo-renderer-markdown-it</code> 的速度要比 <code>Hexo</code> 原装插件要快，而且功能更多</p>
+<h3 id="3-27-2-编辑站点配置文件">3.27.2 编辑站点配置文件</h3>
+<p>这里的站点配置文件是指位于博客根目录下的<code>_config.yml</code>，编辑它，然后在末尾添加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"># Markdown-it config</span><br><span class="line">## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki</span><br><span class="line">markdown:</span><br><span class="line">  render:</span><br><span class="line">    html: true</span><br><span class="line">    xhtmlOut: false</span><br><span class="line">    breaks: true</span><br><span class="line">    linkify: true</span><br><span class="line">    typographer: true</span><br><span class="line">    quotes: &apos;“”‘’&apos;</span><br><span class="line">  plugins:</span><br><span class="line">    - markdown-it-abbr</span><br><span class="line">    - markdown-it-footnote</span><br><span class="line">    - markdown-it-ins</span><br><span class="line">    - markdown-it-sub</span><br><span class="line">    - markdown-it-sup</span><br><span class="line">    - markdown-it-emoji  ## add emoji</span><br><span class="line">  anchors:</span><br><span class="line">    level: 1</span><br><span class="line">    collisionSuffix: &apos;v&apos;</span><br><span class="line">    # If `true`, creates an anchor tag with a permalink besides the heading.</span><br><span class="line">    permalink: true  </span><br><span class="line">    permalinkClass: header-anchor</span><br><span class="line">    # The symbol used to make the permalink</span><br><span class="line">    permalinkSymbol: ¶</span><br></pre></td></tr></table></figure>
+<p>说明一下：</p>
+<ul>
+<li>level：生成 Heading ID 的标题等级</li>
+<li>collisionSuffix：Heading ID 重复时，数字的后缀</li>
+<li>permalink：‘true’，则创建一个锚标记，除标题外还有一个固定链接</li>
+<li>permalinkClass：用于固定链接锚标记的样式</li>
+<li>permalinkSymbol：用于固定链接标记的符号</li>
+</ul>
+<p>若想更改 <code>permalinkSymbol</code> 里面符号，可以参考：<a href="https://graphemica.com/unicode/characters" target="_blank" rel="noopener">permalinkSymbol</a></p>
+<p>注：如果不想显示 <code>permalinkSymbol</code> 的符号，可以改 <code>permalink: true</code> 为 <code>permalink: false</code> 即可</p>
+<ul>
+<li>html：定义文档中的HTML内容是否应转义或传递给最终结果。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html: true # 不转义 HTML 内容</span><br><span class="line">html: false # 转义 HTML 内容，使标签作为文本输出</span><br></pre></td></tr></table></figure>
+<ul>
+<li>xhtmlOut：定义解析器是否将导出完全兼容XHTML的标记。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xhtmlOut: true # 必须使用完全的 XHTML 代码，换行必须为 &lt;br/&gt;</span><br><span class="line">xhtmlOut: false # 不必必使用完全的 XHTML 代码，换行可以为 &lt;br&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>breaks：使源文件中的换行符被解析为<br>标记。每次按Enter键都会创建换行符。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">breaks: true # 每次会车换行相当于一个 &lt;br/&gt; 标签</span><br><span class="line">breaks: false # Pa每次会车换行会被忽略</span><br></pre></td></tr></table></figure>
+<ul>
+<li>linkify：解析器能够将直接粘贴到文本中的链接内联。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">linkify: true # 类似链接的文本，作为链接输出</span><br><span class="line">linkify: false # 类似链接的文本，依然作为文本输出</span><br></pre></td></tr></table></figure>
+<ul>
+<li>typographer：可以替换常见的排版元素。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">typographer: true # 替换常见的排版元素</span><br><span class="line">typographer: false # 不替换常见的排版元素</span><br></pre></td></tr></table></figure>
+<ul>
+<li>quotes：单引号、双引号如何被替换</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">quotes: &apos;“”‘’&apos; # &apos;single&apos;、&quot;double&quot; 变成 ‘single’、“double”</span><br><span class="line">quotes: &apos;«»“”&apos; # &apos;single&apos;、&quot;double&quot; 变成 “single”、«single»</span><br></pre></td></tr></table></figure>
+<h3 id="3-27-3-使用方法">3.27.3 使用方法</h3>
+<p>在 <a href="https://www.emojicopy.com/" target="_blank" rel="noopener">Emoji</a> 中找到你想要的表情，然后点击复制即可<br>
+或者你想发一个笑脸 😄 也可以直接输入笑脸对应的 <code>emoji</code> 编码 <code>:smile:</code></p>
+<h2 id="3-28-修改-代码块自定义样式">3.28 修改``代码块自定义样式</h2>
+<p>打开 <code>\themes\next\source\css\_custom\custom.styl</code> ,向里面加入：(颜色可以自己定义)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 以下修改``代码块自定义样式</span><br><span class="line">// Custom styles.</span><br><span class="line"><span class="selector-tag">code</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff7600</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#fbf7f8</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">2px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.highlight</span>, <span class="selector-tag">code</span>, <span class="selector-tag">pre</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#d6d6d6</span>;</span><br><span class="line">&#125;</span><br><span class="line">// 以上修改``代码块自定义样式</span><br></pre></td></tr></table></figure>
+<p>效果图如下：<br>
+<img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190428132730.png" alt></p>
+<h2 id="3-29-添加pdf">3.29 添加PDF</h2>
+<p>参考博文：<a href="https://blog.csdn.net/wugenqiang/article/details/88377669" target="_blank" rel="noopener">Hexo NexT主题内添加pdf 插件</a></p>
+<h2 id="3-30-实现博文压缩">3.30 实现博文压缩</h2>
+<p>在站点的根目录下执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install gulp -g</span><br><span class="line">$ npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save</span><br></pre></td></tr></table></figure>
+<p>在如下图所示，新建 gulpfile.js ，并填入以下内容：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190429165943.png" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">var gulp = require(&apos;gulp&apos;);</span><br><span class="line">var minifycss = require(&apos;gulp-minify-css&apos;);</span><br><span class="line">var uglify = require(&apos;gulp-uglify&apos;);</span><br><span class="line">var htmlmin = require(&apos;gulp-htmlmin&apos;);</span><br><span class="line">var htmlclean = require(&apos;gulp-htmlclean&apos;);</span><br><span class="line">// 压缩 public 目录 css</span><br><span class="line">gulp.task(&apos;minify-css&apos;, function() &#123;</span><br><span class="line">    return gulp.src(&apos;./public/**/*.css&apos;)</span><br><span class="line">        .pipe(minifycss())</span><br><span class="line">        .pipe(gulp.dest(&apos;./public&apos;));</span><br><span class="line">&#125;);</span><br><span class="line">// 压缩 public 目录 html</span><br><span class="line">gulp.task(&apos;minify-html&apos;, function() &#123;</span><br><span class="line">  return gulp.src(&apos;./public/**/*.html&apos;)</span><br><span class="line">    .pipe(htmlclean())</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">         removeComments: true,</span><br><span class="line">         minifyJS: true,</span><br><span class="line">         minifyCSS: true,</span><br><span class="line">         minifyURLs: true,</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(gulp.dest(&apos;./public&apos;))</span><br><span class="line">&#125;);</span><br><span class="line">// 压缩 public/js 目录 js</span><br><span class="line">gulp.task(&apos;minify-js&apos;, function() &#123;</span><br><span class="line">    return gulp.src(&apos;./public/**/*.js&apos;)</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(&apos;./public&apos;));</span><br><span class="line">&#125;);</span><br><span class="line">// 执行 gulp 命令时执行的任务</span><br><span class="line">gulp.task(&apos;default&apos;, [</span><br><span class="line">    &apos;minify-html&apos;,&apos;minify-css&apos;,&apos;minify-js&apos;</span><br><span class="line">]);</span><br></pre></td></tr></table></figure>
+<p>生成博文是执行 hexo g &amp;&amp; gulp 就会根据 gulpfile.js 中的配置，对 public 目录中的静态资源文件进行压缩。</p>
+<p>但是注意：</p>
+<p>在hexo 最新3.8版本里面安装gulp 进行压缩。发现会进行报错。百思不得其解，发现是因为网络上的gulp教程均适用于 gulp 4.0 版本以下 ，如果是安装了最新的gulp 4.0 版本的情况下，则就会进行报错。解决办法在下面有说明</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190429170024.png" alt></p>
+<p>解决办法参考：<a href="https://master.compassionate-raman-1e7f63.netlify.com/posts/74d69307.html" target="_blank" rel="noopener">https://master.compassionate-raman-1e7f63.netlify.com/posts/74d69307.html</a></p>
+<p>由于我的gulp4…0所以配置文件改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">var gulp = require(&apos;gulp&apos;);</span><br><span class="line">var minifycss = require(&apos;gulp-minify-css&apos;);</span><br><span class="line">var uglify = require(&apos;gulp-uglify&apos;);</span><br><span class="line">var htmlmin = require(&apos;gulp-htmlmin&apos;);</span><br><span class="line">var htmlclean = require(&apos;gulp-htmlclean&apos;);</span><br><span class="line">// 压缩 public 目录 css</span><br><span class="line">gulp.task(&apos;minify-css&apos;, function() &#123;</span><br><span class="line">    return gulp.src(&apos;./public/**/*.css&apos;)</span><br><span class="line">        .pipe(minifycss())</span><br><span class="line">        .pipe(gulp.dest(&apos;./public&apos;));</span><br><span class="line">&#125;);</span><br><span class="line">// 压缩 public 目录 html</span><br><span class="line">gulp.task(&apos;minify-html&apos;, function() &#123;</span><br><span class="line">    return gulp.src(&apos;./public/**/*.html&apos;)</span><br><span class="line">        .pipe(htmlclean())</span><br><span class="line">        .pipe(htmlmin(&#123;</span><br><span class="line">            removeComments: true,</span><br><span class="line">            minifyJS: true,</span><br><span class="line">            minifyCSS: true,</span><br><span class="line">            minifyURLs: true,</span><br><span class="line">        &#125;))</span><br><span class="line">        .pipe(gulp.dest(&apos;./public&apos;))</span><br><span class="line">&#125;);</span><br><span class="line">// 压缩 public/js 目录 js</span><br><span class="line">gulp.task(&apos;minify-js&apos;, function() &#123;</span><br><span class="line">    return gulp.src(&apos;./public/**/*.js&apos;)</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(&apos;./public&apos;));</span><br><span class="line">&#125;);</span><br><span class="line">// 执行 gulp 命令时执行的任务</span><br><span class="line">// gulp 4.0 适用的方式</span><br><span class="line">gulp.task(&apos;build&apos;, gulp.parallel(&apos;minify-html&apos;, &apos;minify-css&apos;, &apos;minify-js&apos;</span><br><span class="line">    //build the website</span><br><span class="line">));</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190429170248.png" alt></p>
+<p>欧克，成功</p>
+<h1 id="4-自定义域名">4 自定义域名</h1>
+<h2 id="4-1-绑定个人域名">4.1 绑定个人域名</h2>
+<p>参考博文：<a href="https://blog.enjoytoshare.club/article/hexo-do-domain.html" target="_blank" rel="noopener">Hexo博客绑定个人域名</a></p>
+<h2 id="4-2-开启https">4.2 开启HTTPS</h2>
+<p>参考博文：<a href="https://blog.enjoytoshare.club/article/hexo-do-https.html" target="_blank" rel="noopener">Hexo博客自定义域名开启HTTPS</a></p>
+<h2 id="4-3-coding-github托管hexo">4.3 Coding+Github托管Hexo</h2>
+<p>参考博文：<a href="https://blog.enjoytoshare.club/article/hexo-do-server-hosting.html" target="_blank" rel="noopener">Coding+Github双服务器托管Hexo</a></p>
+<p>欧克，成功</p>
+<h1 id="5-seo推广">5 SEO推广</h1>
+<p>刚搭建完博客，可能你会发现你发表的文章在谷歌或者百度都搜索不到，因为需要进行SEO优化的，什么是SEO，顾名思义，SEO即(Search Engine Optimization):汉译为搜索引擎优化，下面来总结一下SEO优化的方法，让自己的博文能在谷歌百度上搜索到。</p>
+<h2 id="5-1-生成sitemap">5.1 生成sitemap</h2>
+<p>添加站点地图sitemap<br>
+Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便搜索引擎可以更加智能地抓取网站。<br>
+安装sitemap站点地图自动生成插件<code>hexo-generator-sitemap</code>和<code>hexo-generator-baidu-sitemap</code>，用于生成<code>sitemap</code>,在<code>git Bash</code>中执行以下命令:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>修改站点配置文件<br>
+将sitemap文件添加到站点配置文件<code>_config.yml</code>中，并修改url字段的值，其值默认为http://yoursite.com。<br>
+在站点配置文件 <code>_config.yml</code>中添加如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">  path: baidusitemap.xml</span><br><span class="line">  </span><br><span class="line">url: https://blog.enjoytoshare.club</span><br></pre></td></tr></table></figure>
+<p>配置好后，执行hexo g 就能在网站根目录(public目录)中生成sitemap.xml 和 baidusitemap.xml了;其中第一个是一会要提交给google的，后面那个看名字当然就是提交给Baidu的了；</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409142957.png" alt></p>
+<h2 id="5-2-添加蜘蛛协议">5.2 添加蜘蛛协议</h2>
+<p>网站通过<code>Robots协议</code>告诉搜索引擎哪些页面可以抓取，哪些页面不能抓取。<code>robots.txt</code> 通常存放于网站根目录(public目录)。由于我们每次hexo clean都会清空public，着实不方便，我们都知道source目录下的文件通过hexo g命令会转换成public中的文件，所以为了方便起见，我们把<code>robots.txt</code>文件放在<code>source</code>目录下，我的 robots.txt 内容为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">User-agent: *</span><br><span class="line">Allow: /</span><br><span class="line">Allow: /archives/</span><br><span class="line">Allow: /categories/</span><br><span class="line">Allow: /tags/</span><br><span class="line">Allow: /notes/</span><br><span class="line">Allow: /love/</span><br><span class="line">Allow: /page/</span><br><span class="line">Disallow: /js/</span><br><span class="line">Disallow: /css/</span><br><span class="line">Disallow: /fonts/</span><br><span class="line">Disallow: /vendors/</span><br><span class="line">Disallow: /fancybox/</span><br><span class="line">Sitemap: https://blog.enjoytoshare.club/sitemap.xml</span><br><span class="line">Sitemap: https://blog.enjoytoshare.club/baidusitemap.xml</span><br></pre></td></tr></table></figure>
+<p>其中Allow后面的就是你的menu<br>
+请自行将blog.enjoytoshare.club改成自己的域名，然后hexo g提交一下</p>
+<h2 id="5-3-打开seo">5.3 打开SEO</h2>
+<p>在主题配置文件<code>_config.yml</code>中找到：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">seo: false</span><br></pre></td></tr></table></figure>
+<p>将其设置为<code>true</code></p>
+<h2 id="5-4-提交站点到百度">5.4 提交站点到百度</h2>
+<h3 id="5-4-1-开启百度自动推送">5.4.1 开启百度自动推送</h3>
+<p>在主题配置文件<code>_config.yml</code>中添加如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">baidu_push: true</span><br></pre></td></tr></table></figure>
+<h3 id="5-4-2-将网站链接提交到百度">5.4.2 将网站链接提交到百度</h3>
+<p><a href="http://www.sousuoyinqingtijiao.com/baidu/tijiao/" target="_blank" rel="noopener">百度搜索引擎非验证提交入口</a><br>
+<a href="https://ziyuan.baidu.com/site/siteadd" target="_blank" rel="noopener">正式提交入口</a></p>
+<p>正式提交需要验证，有三种验证方式，我选择Html标签验证，在themes\next\layout \ _partials\head.swing中添加验证代码(根据你实际验证代码来决定这里写什么)：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;baidu-site-verification&quot; content=&quot;bqaja5HAOz&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190410180738.png" alt></p>
+<p>添加后运行hexo d -g将改动提交，然后点击完成验证，通过即可。</p>
+<h3 id="5-4-3-登录百度站长平台">5.4.3 登录<a href="https://ziyuan.baidu.com/site/index" target="_blank" rel="noopener">百度站长平台</a></h3>
+<p>进行链接提交<br>
+添加：<br>
+<img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409154624.png" alt></p>
+<p>出现这个即成功：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409154650.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409154938.png" alt></p>
+<h2 id="5-5-提交站点到google">5.5 提交站点到Google</h2>
+<p>首先保证你要能翻墙出去，连到谷歌，如果没有VPN，可参考下面网址获取：<a href="https://blog.enjoytoshare.club/laboratory/toolBox/index.html" target="_blank" rel="noopener">工具盒子</a></p>
+<h3 id="5-5-1-提交博客域名">5.5.1 提交博客域名</h3>
+<p>打开<a href="https://www.google.com/webmasters/#?modal_active=none" target="_blank" rel="noopener">Google Search Console</a><br>
+根据提示注册好之后，添加你的博客域名。</p>
+<h3 id="5-5-2-进行站点验证">5.5.2 进行站点验证</h3>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150421.png" alt><br>
+我选择了备用方法中的HTML 标记，将给出的元标记复制到\themes\next\layout\ _partials \head\head.swig文件中。</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150235.png" alt></p>
+<p>添加后运行hexo d -g将改动提交，稍后就可以验证成功了。</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409150748.png" alt></p>
+<h3 id="5-5-3-提交站点地图">5.5.3 提交站点地图</h3>
+<p>还记得我们刚才创建创建sitemap.xml文件吧,现在它要派上用场了。点击左侧工具栏的站点地图</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151250.png" alt></p>
+<p>提交成功会提示：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151459.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409151735.png" alt></p>
+<h2 id="5-6-验证站点是否被收录">5.6 验证站点是否被收录</h2>
+<p>在搜索引擎搜索框输入<code>site:your.domain</code>可以查看域名是否被该搜索引擎收录，用户可以使用各大搜索引擎站长工具提交个人博客网址。</p>
+<h3 id="5-6-1-验证谷歌收录">5.6.1 验证谷歌收录</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:blog.enjoytoshare.club</span><br></pre></td></tr></table></figure>
+<p>域名换成你自己的，谷歌是一定支持的，不过你需要翻墙VPN！如果没有，可参考下面网址获取：<a href="https://blog.enjoytoshare.club/laboratory/toolBox/index.html" target="_blank" rel="noopener">工具盒子</a>，如果没有找到你的博客说明没有被收录！<br>
+成功收录会如下图一样：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409165959.png" alt></p>
+<h3 id="5-6-2-验证百度收录">5.6.2 验证百度收录</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:blog.enjoytoshare.club</span><br></pre></td></tr></table></figure>
+<p>域名换成你自己的，如果没有找到你的博客说明没有被收录！<br>
+百度收录是真的需要时间，你看下图还没收录：</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409170617.png" alt></p>
+<p>今天是2019-04-12，很幸运，今天查看了一下<code>site:blog.enjoytoshare.club</code>，发现已经收录了，很开心！nice</p>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190412142351.png" alt></p>
+<hr>
+<p>到这里，应该博客超级炫了吧哈哈，如果觉得以上操作很多想直接跳过这些配置，可以参考我的博客源码：<a href="https://github.com/wugenqiang/myblog" target="_blank" rel="noopener">myblog</a></p>
+<hr>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果你喜欢这篇文章，可以请我喝一杯 Coffee ~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="WuGenQiang 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+          <div id="wechat" style="display: inline-block">
+            <img id="wechat_qr" src="/images/wechat.jpg" alt="WuGenQiang 微信支付">
+            <p>微信支付</p>
+          </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-envira"></i> Hexo</a>
+          
+            <a href="/tags/NexT/" rel="tag"><i class="fa fa-envira"></i> NexT</a>
+          
+        </div>
+      
+
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/articles/testCopyrightDeclaration.html" rel="next" title="测试自定义文章底部版权声明">
+                <i class="fa fa-chevron-left"></i> 测试自定义文章底部版权声明
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/articles/LeetCodeTraining.html" rel="prev" title="LeetCode编程训练">
+                LeetCode编程训练 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+      <div id="giteementDiv"></div>
+      <link rel="stylesheet" href="https://giteement.oss-cn-beijing.aliyuncs.com/default.css">
+      <script src="https://giteement.oss-cn-beijing.aliyuncs.com/giteement.browser.js"></script>
+      <script>
+      var giteement = new Giteement({
+        id:20190415222222,
+        owner:'wugenqiang',
+        repo:'wugenqiang',
+        backcall_uri:'https://wugenqiang.gitee.io/',
+        oauth_uri:'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+        oauth:{
+          client_id:'',
+          client_secret:''
+        },
+      })
+      giteement.render('giteementDiv')
+      </script>
+
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            
+              <a href="/">
+                <img class="site-author-image" itemprop="image" src="/images/fighting_wugenqiang.jpg" alt="WuGenQiang">
+              </a>
+            
+              <p class="site-author-name" itemprop="name">WuGenQiang</p>
+              <div class="site-description motion-element" itemprop="description">Sometimes your whole life boils down to one insame move</div>
+          </div>
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">41</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">34</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/wugenqiang" title="GitHub &rarr; https://github.com/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://gitee.com/wugenqiang" title="Gitee &rarr; https://gitee.com/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-gitlab"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://www.jianshu.com/u/60afda94ea5a" title="简书 &rarr; https://www.jianshu.com/u/60afda94ea5a" rel="noopener" target="_blank"><i class="fa fa-fw fa-heartbeat"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://dev.tencent.com/u/wugenqiang" title="Coding &rarr; https://dev.tencent.com/u/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://blog.csdn.net/wugenqiang" title="CSDN &rarr; https://blog.csdn.net/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-git-square"></i></a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-paper-plane"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://nanaandlee.github.io/" title="https://nanaandlee.github.io/" rel="noopener" target="_blank">Lee 的博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://x1aolin.com/" title="https://x1aolin.com/" rel="noopener" target="_blank">筱林博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://my.oschina.net/wugenqiang" title="https://my.oschina.net/wugenqiang" rel="noopener" target="_blank">开源中国</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.jelliclecat.cn" title="https://www.jelliclecat.cn" rel="noopener" target="_blank">zhengrenjie's Blog</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-写在前面"><span class="nav-text">1 写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-hexo安装和配置"><span class="nav-text">2 Hexo安装和配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-next主题优化"><span class="nav-text">3 NexT主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-修改文章底部-为图标"><span class="nav-text">3.1 修改文章底部#为图标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-点击出现爱心效果"><span class="nav-text">3.2 点击出现爱心效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-文章加密访问"><span class="nav-text">3.3 文章加密访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-优化深色代码高亮背景"><span class="nav-text">3.4 优化深色代码高亮背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-解决next主题访问慢"><span class="nav-text">3.5 解决NexT主题访问慢</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-1-方法一：修改外链字体库"><span class="nav-text">3.5.1 方法一：修改外链字体库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-2-方法二：博文压缩"><span class="nav-text">3.5.2 方法二：博文压缩</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-3-方法三：双服务器托管"><span class="nav-text">3.5.3 方法三：双服务器托管</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-去掉顶部黑线"><span class="nav-text">3.6 去掉顶部黑线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7-设置点击头像返回主页"><span class="nav-text">3.7 设置点击头像返回主页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-8-实现3d动态标签云"><span class="nav-text">3.8 实现3d动态标签云</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-8-1-安装标签云hexo-tag-cloud插件"><span class="nav-text">3.8.1 安装标签云hexo-tag-cloud插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-8-2-配置sidebar-swig文件"><span class="nav-text">3.8.2 配置sidebar.swig文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-9-设置标题样式-为浅蓝色"><span class="nav-text">3.9 设置标题样式（为浅蓝色）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-10-设置文章封面图片-文章内不显示"><span class="nav-text">3.10 设置文章封面图片(文章内不显示)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-10-1-修改post-swig文件"><span class="nav-text">3.10.1 修改post.swig文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-10-2-添加summary-img字段"><span class="nav-text">3.10.2 添加summary_img字段</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-11-修改阅读全文颜色"><span class="nav-text">3.11 修改阅读全文颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-12-修改主题页面布局为圆角"><span class="nav-text">3.12 修改主题页面布局为圆角</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-12-1-方法一"><span class="nav-text">3.12.1 方法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-12-2-方法二"><span class="nav-text">3.12.2 方法二</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-13-修改友链样式"><span class="nav-text">3.13 修改友链样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-14-博文图片模式"><span class="nav-text">3.14 博文图片模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-15-隐藏特定文章"><span class="nav-text">3.15 隐藏特定文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-16-增加分享功能"><span class="nav-text">3.16 增加分享功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-16-1-方法一"><span class="nav-text">3.16.1 方法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-16-2-方法二"><span class="nav-text">3.16.2 方法二</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-17-鼠标选取文字提示版权信息"><span class="nav-text">3.17 鼠标选取文字提示版权信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-18-自定义文章底部版权声明"><span class="nav-text">3.18 自定义文章底部版权声明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-18-1-新建my-copyright-swig文件"><span class="nav-text">3.18.1 新建my-copyright.swig文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-18-2-新建my-post-copyright-styl文件"><span class="nav-text">3.18.2 新建my-post-copyright.styl文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-18-3-修改post-swig文件"><span class="nav-text">3.18.3 修改post.swig文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-18-4-修改post-styl文件"><span class="nav-text">3.18.4 修改post.styl文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-18-5-修改post-md文件"><span class="nav-text">3.18.5 修改post.md文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-18-6-新建文章测试"><span class="nav-text">3.18.6 新建文章测试</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-19-增加词云"><span class="nav-text">3.19 增加词云</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-20-开启文章目录"><span class="nav-text">3.20 开启文章目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-21-图片点击实现全屏查看"><span class="nav-text">3.21 图片点击实现全屏查看</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-22-修改内容区域的宽度"><span class="nav-text">3.22 修改内容区域的宽度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-23-daovoice实现在线联系"><span class="nav-text">3.23 DaoVoice实现在线联系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-24-打赏功能"><span class="nav-text">3.24 打赏功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-25-加入评论功能gitalk"><span class="nav-text">3.25 加入评论功能gitalk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-26-获取网易云音乐外链"><span class="nav-text">3.26 获取网易云音乐外链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-27-开启emoji表情"><span class="nav-text">3.27 开启emoji表情</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-27-1-安装新的渲染器"><span class="nav-text">3.27.1 安装新的渲染器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-27-2-编辑站点配置文件"><span class="nav-text">3.27.2 编辑站点配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-27-3-使用方法"><span class="nav-text">3.27.3 使用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-28-修改-代码块自定义样式"><span class="nav-text">3.28 修改``代码块自定义样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-29-添加pdf"><span class="nav-text">3.29 添加PDF</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-30-实现博文压缩"><span class="nav-text">3.30 实现博文压缩</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-自定义域名"><span class="nav-text">4 自定义域名</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-绑定个人域名"><span class="nav-text">4.1 绑定个人域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-开启https"><span class="nav-text">4.2 开启HTTPS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-coding-github托管hexo"><span class="nav-text">4.3 Coding+Github托管Hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-seo推广"><span class="nav-text">5 SEO推广</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1-生成sitemap"><span class="nav-text">5.1 生成sitemap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-添加蜘蛛协议"><span class="nav-text">5.2 添加蜘蛛协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3-打开seo"><span class="nav-text">5.3 打开SEO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4-提交站点到百度"><span class="nav-text">5.4 提交站点到百度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-1-开启百度自动推送"><span class="nav-text">5.4.1 开启百度自动推送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-2-将网站链接提交到百度"><span class="nav-text">5.4.2 将网站链接提交到百度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-3-登录百度站长平台"><span class="nav-text">5.4.3 登录百度站长平台</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-5-提交站点到google"><span class="nav-text">5.5 提交站点到Google</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5-1-提交博客域名"><span class="nav-text">5.5.1 提交博客域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5-2-进行站点验证"><span class="nav-text">5.5.2 进行站点验证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5-3-提交站点地图"><span class="nav-text">5.5.3 提交站点地图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-6-验证站点是否被收录"><span class="nav-text">5.6 验证站点是否被收录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-6-1-验证谷歌收录"><span class="nav-text">5.6.1 验证谷歌收录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-6-2-验证百度收录"><span class="nav-text">5.6.2 验证百度收录</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+  
+
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 1995 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WuGenQiang</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+
+<div>
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>  Sometimes your whole life boils down to one insame move.
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("03/09/2019 13:14:21");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+</div>
+<!-- 网站底部字数统计 -->
+<div class="theme-info">
+  <i class="fa fa-pencil"></i>
+  <span class="post-count">博客全站共34.2k字</span>
+</div>
+
+<!-- 不蒜字统计 -->
+<div>
+	<i class="fa fa-user-md"></i>
+	<span id="busuanzi_container_site_uv">
+	  访问人数：<span id="busuanzi_value_site_uv"></span>
+	</span>&nbsp;|&nbsp;
+
+	<i class="fa fa-eye"></i>
+	<span id="busuanzi_container_site_pv">
+	  总访问量：<span id="busuanzi_value_site_pv"></span>
+	</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+      
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+<script type="text/javascript" src="/js/src/photoswipe.min.js?v="></script>
+<script type="text/javascript" src="/js/src/photoswipe-ui-default.min.js?v="></script>
+
+
+
+  
+
+
+  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+        // ref: https://github.com/ForbesLindesay/unescape-html
+        var unescapeHtml = function(html) {
+          return String(html)
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, '\'')
+            .replace(/&#x3A;/g, ':')
+            // replace all the other &#x; chars
+            .replace(/&#(\d+);/g, function (m, p) { return String.fromCharCode(p); })
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&amp;/g, '&');
+        };
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                content = unescapeHtml(content);
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+<style>
+.pdfobject-container {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}
+</style>
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<style>
+  .copy-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+    
+    user-select: none;
+    outline: 0;
+  }
+
+  .highlight-wrap .copy-btn {
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    padding: 2px 6px;
+    position: absolute;
+    
+      right: 4px;
+      top: 8px;
+    
+  }
+
+  .highlight-wrap:hover .copy-btn,
+  .highlight-wrap .copy-btn:focus {
+    opacity: 1;
+  }
+
+  .highlight-wrap {
+    position: relative;
+  }
+</style>
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('复制');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
+
+  
+
+</body>
+</html>
