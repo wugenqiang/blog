@@ -5,9 +5,9 @@
   <subtitle>身体和灵魂总要有一个在路上</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://wugenqiang.gitee.io/"/>
+  <link href="https://wugenqiang.github.io/"/>
   <updated>2019-11-03T21:06:57.000Z</updated>
-  <id>https://wugenqiang.gitee.io/</id>
+  <id>https://wugenqiang.github.io/</id>
   
   <author>
     <name>WuGenQiang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>研友我有话想和你说</title>
-    <link href="https://wugenqiang.gitee.io/articles/FightingForSEU.html"/>
-    <id>https://wugenqiang.gitee.io/articles/FightingForSEU.html</id>
+    <link href="https://wugenqiang.github.io/articles/FightingForSEU.html"/>
+    <id>https://wugenqiang.github.io/articles/FightingForSEU.html</id>
     <published>2019-11-03T21:06:57.000Z</published>
     <updated>2019-11-03T21:06:57.000Z</updated>
     
@@ -34,17 +34,17 @@
     
     </summary>
     
-      <category term="考研" scheme="https://wugenqiang.gitee.io/categories/%E8%80%83%E7%A0%94/"/>
+      <category term="考研" scheme="https://wugenqiang.github.io/categories/%E8%80%83%E7%A0%94/"/>
     
     
-      <category term="考研" scheme="https://wugenqiang.gitee.io/tags/%E8%80%83%E7%A0%94/"/>
+      <category term="考研" scheme="https://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94/"/>
     
   </entry>
   
   <entry>
     <title>C++程序设计学习篇</title>
-    <link href="https://wugenqiang.gitee.io/articles/LearnC++ByMyselfAndMooc.html"/>
-    <id>https://wugenqiang.gitee.io/articles/LearnC++ByMyselfAndMooc.html</id>
+    <link href="https://wugenqiang.github.io/articles/LearnC++ByMyselfAndMooc.html"/>
+    <id>https://wugenqiang.github.io/articles/LearnC++ByMyselfAndMooc.html</id>
     <published>2019-06-22T21:06:57.000Z</published>
     <updated>2019-06-22T21:06:57.000Z</updated>
     
@@ -59,17 +59,17 @@
     
     </summary>
     
-      <category term="C++" scheme="https://wugenqiang.gitee.io/categories/C/"/>
+      <category term="C++" scheme="https://wugenqiang.github.io/categories/C/"/>
     
     
-      <category term="C++" scheme="https://wugenqiang.gitee.io/tags/C/"/>
+      <category term="C++" scheme="https://wugenqiang.github.io/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>怀味泰州老街</title>
-    <link href="https://wugenqiang.gitee.io/articles/learnThroughLife001.html"/>
-    <id>https://wugenqiang.gitee.io/articles/learnThroughLife001.html</id>
+    <link href="https://wugenqiang.github.io/articles/learnThroughLife001.html"/>
+    <id>https://wugenqiang.github.io/articles/learnThroughLife001.html</id>
     <published>2019-06-04T13:37:31.000Z</published>
     <updated>2019-06-04T13:37:31.000Z</updated>
     
@@ -83,19 +83,19 @@
     
     </summary>
     
-      <category term="旅行" scheme="https://wugenqiang.gitee.io/categories/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://wugenqiang.github.io/categories/%E6%97%85%E8%A1%8C/"/>
     
     
-      <category term="生活" scheme="https://wugenqiang.gitee.io/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://wugenqiang.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-      <category term="旅行" scheme="https://wugenqiang.gitee.io/tags/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://wugenqiang.github.io/tags/%E6%97%85%E8%A1%8C/"/>
     
   </entry>
   
   <entry>
     <title>分享免费下载论文的网站</title>
-    <link href="https://wugenqiang.gitee.io/articles/ShareToFreeDownloadPapers.html"/>
-    <id>https://wugenqiang.gitee.io/articles/ShareToFreeDownloadPapers.html</id>
+    <link href="https://wugenqiang.github.io/articles/ShareToFreeDownloadPapers.html"/>
+    <id>https://wugenqiang.github.io/articles/ShareToFreeDownloadPapers.html</id>
     <published>2019-05-25T17:03:04.000Z</published>
     <updated>2019-05-25T17:03:04.000Z</updated>
     
@@ -109,19 +109,19 @@
     
     </summary>
     
-      <category term="工具" scheme="https://wugenqiang.gitee.io/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://wugenqiang.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="工具" scheme="https://wugenqiang.gitee.io/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://wugenqiang.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="论文下载" scheme="https://wugenqiang.gitee.io/tags/%E8%AE%BA%E6%96%87%E4%B8%8B%E8%BD%BD/"/>
+      <category term="论文下载" scheme="https://wugenqiang.github.io/tags/%E8%AE%BA%E6%96%87%E4%B8%8B%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title>记录&quot;正则表达式&quot;</title>
-    <link href="https://wugenqiang.gitee.io/articles/RegularExpression.html"/>
-    <id>https://wugenqiang.gitee.io/articles/RegularExpression.html</id>
+    <link href="https://wugenqiang.github.io/articles/RegularExpression.html"/>
+    <id>https://wugenqiang.github.io/articles/RegularExpression.html</id>
     <published>2019-04-22T10:45:35.000Z</published>
     <updated>2019-04-22T10:45:35.000Z</updated>
     
@@ -139,17 +139,17 @@
     
     </summary>
     
-      <category term="正则表达式" scheme="https://wugenqiang.gitee.io/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+      <category term="正则表达式" scheme="https://wugenqiang.github.io/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
     
-      <category term="正则表达式" scheme="https://wugenqiang.gitee.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+      <category term="正则表达式" scheme="https://wugenqiang.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>录屏软件LICEcap</title>
-    <link href="https://wugenqiang.gitee.io/articles/SoftwareToRecordScreen.html"/>
-    <id>https://wugenqiang.gitee.io/articles/SoftwareToRecordScreen.html</id>
+    <link href="https://wugenqiang.github.io/articles/SoftwareToRecordScreen.html"/>
+    <id>https://wugenqiang.github.io/articles/SoftwareToRecordScreen.html</id>
     <published>2019-04-22T09:52:06.000Z</published>
     <updated>2019-04-22T09:52:06.000Z</updated>
     
@@ -162,21 +162,21 @@
     
     </summary>
     
-      <category term="工具" scheme="https://wugenqiang.gitee.io/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://wugenqiang.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="录屏" scheme="https://wugenqiang.gitee.io/categories/%E5%B7%A5%E5%85%B7/%E5%BD%95%E5%B1%8F/"/>
+      <category term="录屏" scheme="https://wugenqiang.github.io/categories/%E5%B7%A5%E5%85%B7/%E5%BD%95%E5%B1%8F/"/>
     
     
-      <category term="工具" scheme="https://wugenqiang.gitee.io/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://wugenqiang.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="录屏" scheme="https://wugenqiang.gitee.io/tags/%E5%BD%95%E5%B1%8F/"/>
+      <category term="录屏" scheme="https://wugenqiang.github.io/tags/%E5%BD%95%E5%B1%8F/"/>
     
   </entry>
   
   <entry>
     <title>FreeVpnToShare</title>
-    <link href="https://wugenqiang.gitee.io/articles/FreeVpnToShare.html"/>
-    <id>https://wugenqiang.gitee.io/articles/FreeVpnToShare.html</id>
+    <link href="https://wugenqiang.github.io/articles/FreeVpnToShare.html"/>
+    <id>https://wugenqiang.github.io/articles/FreeVpnToShare.html</id>
     <published>2019-04-22T08:40:39.000Z</published>
     <updated>2019-04-22T08:40:39.000Z</updated>
     
@@ -189,21 +189,21 @@
     
     </summary>
     
-      <category term="工具" scheme="https://wugenqiang.gitee.io/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://wugenqiang.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="FreeVPN" scheme="https://wugenqiang.gitee.io/categories/%E5%B7%A5%E5%85%B7/FreeVPN/"/>
+      <category term="FreeVPN" scheme="https://wugenqiang.github.io/categories/%E5%B7%A5%E5%85%B7/FreeVPN/"/>
     
     
-      <category term="工具" scheme="https://wugenqiang.gitee.io/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://wugenqiang.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="FreeVPN" scheme="https://wugenqiang.gitee.io/tags/FreeVPN/"/>
+      <category term="FreeVPN" scheme="https://wugenqiang.github.io/tags/FreeVPN/"/>
     
   </entry>
   
   <entry>
     <title>剑指offer面试编程题刷题训练</title>
-    <link href="https://wugenqiang.gitee.io/articles/SwordForOffer.html"/>
-    <id>https://wugenqiang.gitee.io/articles/SwordForOffer.html</id>
+    <link href="https://wugenqiang.github.io/articles/SwordForOffer.html"/>
+    <id>https://wugenqiang.github.io/articles/SwordForOffer.html</id>
     <published>2019-04-17T11:37:09.000Z</published>
     <updated>2019-04-17T11:37:09.000Z</updated>
     
@@ -218,17 +218,17 @@
     
     </summary>
     
-      <category term="剑指offer面试编程题" scheme="https://wugenqiang.gitee.io/categories/%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
+      <category term="剑指offer面试编程题" scheme="https://wugenqiang.github.io/categories/%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
     
     
-      <category term="剑指offer面试编程题" scheme="https://wugenqiang.gitee.io/tags/%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
+      <category term="剑指offer面试编程题" scheme="https://wugenqiang.github.io/tags/%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode编程训练</title>
-    <link href="https://wugenqiang.gitee.io/articles/LeetCodeTraining.html"/>
-    <id>https://wugenqiang.gitee.io/articles/LeetCodeTraining.html</id>
+    <link href="https://wugenqiang.github.io/articles/LeetCodeTraining.html"/>
+    <id>https://wugenqiang.github.io/articles/LeetCodeTraining.html</id>
     <published>2019-04-17T09:10:01.000Z</published>
     <updated>2019-04-17T09:10:01.000Z</updated>
     
@@ -240,17 +240,17 @@
     
     </summary>
     
-      <category term="LeetCode" scheme="https://wugenqiang.gitee.io/categories/LeetCode/"/>
+      <category term="LeetCode" scheme="https://wugenqiang.github.io/categories/LeetCode/"/>
     
     
-      <category term="LeetCode" scheme="https://wugenqiang.gitee.io/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="https://wugenqiang.github.io/tags/LeetCode/"/>
     
   </entry>
   
   <entry>
     <title>【目录】Hexo+NexT搭建博客拥抱舒爽</title>
-    <link href="https://wugenqiang.gitee.io/articles/hexo-do-optimization.html"/>
-    <id>https://wugenqiang.gitee.io/articles/hexo-do-optimization.html</id>
+    <link href="https://wugenqiang.github.io/articles/hexo-do-optimization.html"/>
+    <id>https://wugenqiang.github.io/articles/hexo-do-optimization.html</id>
     <published>2019-04-15T22:22:22.000Z</published>
     <updated>2019-04-27T22:22:27.000Z</updated>
     
@@ -262,19 +262,19 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/tags/Hexo/"/>
     
-      <category term="NexT" scheme="https://wugenqiang.gitee.io/tags/NexT/"/>
+      <category term="NexT" scheme="https://wugenqiang.github.io/tags/NexT/"/>
     
   </entry>
   
   <entry>
     <title>测试自定义文章底部版权声明</title>
-    <link href="https://wugenqiang.gitee.io/articles/testCopyrightDeclaration.html"/>
-    <id>https://wugenqiang.gitee.io/articles/testCopyrightDeclaration.html</id>
+    <link href="https://wugenqiang.github.io/articles/testCopyrightDeclaration.html"/>
+    <id>https://wugenqiang.github.io/articles/testCopyrightDeclaration.html</id>
     <published>2019-04-15T20:28:03.000Z</published>
     <updated>2019-04-15T20:28:03.000Z</updated>
     
@@ -291,17 +291,17 @@
     
     </summary>
     
-      <category term="Test" scheme="https://wugenqiang.gitee.io/categories/Test/"/>
+      <category term="Test" scheme="https://wugenqiang.github.io/categories/Test/"/>
     
     
-      <category term="Test" scheme="https://wugenqiang.gitee.io/tags/Test/"/>
+      <category term="Test" scheme="https://wugenqiang.github.io/tags/Test/"/>
     
   </entry>
   
   <entry>
     <title>Hexo+NexT选取文字提示版权信息</title>
-    <link href="https://wugenqiang.gitee.io/articles/hexoNextSelectWords.html"/>
-    <id>https://wugenqiang.gitee.io/articles/hexoNextSelectWords.html</id>
+    <link href="https://wugenqiang.github.io/articles/hexoNextSelectWords.html"/>
+    <id>https://wugenqiang.github.io/articles/hexoNextSelectWords.html</id>
     <published>2019-04-15T13:37:07.000Z</published>
     <updated>2019-04-15T13:37:07.000Z</updated>
     
@@ -315,17 +315,17 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>英语知识整理</title>
-    <link href="https://wugenqiang.gitee.io/articles/english-arrangement.html"/>
-    <id>https://wugenqiang.gitee.io/articles/english-arrangement.html</id>
+    <link href="https://wugenqiang.github.io/articles/english-arrangement.html"/>
+    <id>https://wugenqiang.github.io/articles/english-arrangement.html</id>
     <published>2019-04-15T10:49:43.000Z</published>
     <updated>2019-04-15T10:49:43.000Z</updated>
     
@@ -338,25 +338,25 @@
     
     </summary>
     
-      <category term="课程复习整理" scheme="https://wugenqiang.gitee.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
+      <category term="课程复习整理" scheme="https://wugenqiang.github.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
     
-      <category term="考研" scheme="https://wugenqiang.gitee.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/"/>
+      <category term="考研" scheme="https://wugenqiang.github.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/"/>
     
-      <category term="考研英语" scheme="https://wugenqiang.gitee.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
+      <category term="考研英语" scheme="https://wugenqiang.github.io/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/%E8%80%83%E7%A0%94/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
     
     
-      <category term="课程复习整理" scheme="https://wugenqiang.gitee.io/tags/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
+      <category term="课程复习整理" scheme="https://wugenqiang.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/"/>
     
-      <category term="考研" scheme="https://wugenqiang.gitee.io/tags/%E8%80%83%E7%A0%94/"/>
+      <category term="考研" scheme="https://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94/"/>
     
-      <category term="考研英语" scheme="https://wugenqiang.gitee.io/tags/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
+      <category term="考研英语" scheme="https://wugenqiang.github.io/tags/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>Hexo+NexT隐藏特定文章</title>
-    <link href="https://wugenqiang.gitee.io/articles/hexoNextHideArticleMethod.html"/>
-    <id>https://wugenqiang.gitee.io/articles/hexoNextHideArticleMethod.html</id>
+    <link href="https://wugenqiang.github.io/articles/hexoNextHideArticleMethod.html"/>
+    <id>https://wugenqiang.github.io/articles/hexoNextHideArticleMethod.html</id>
     <published>2019-04-14T20:32:01.000Z</published>
     <updated>2019-04-14T21:32:01.000Z</updated>
     
@@ -369,17 +369,17 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>测试图片展示</title>
-    <link href="https://wugenqiang.gitee.io/articles/pictureToDisplayTest_5-3.html"/>
-    <id>https://wugenqiang.gitee.io/articles/pictureToDisplayTest_5-3.html</id>
+    <link href="https://wugenqiang.github.io/articles/pictureToDisplayTest_5-3.html"/>
+    <id>https://wugenqiang.github.io/articles/pictureToDisplayTest_5-3.html</id>
     <published>2019-04-14T18:02:40.000Z</published>
     <updated>2019-04-14T18:02:40.000Z</updated>
     
@@ -394,15 +394,15 @@
     
     </summary>
     
-      <category term="Test" scheme="https://wugenqiang.gitee.io/categories/Test/"/>
+      <category term="Test" scheme="https://wugenqiang.github.io/categories/Test/"/>
     
     
   </entry>
   
   <entry>
     <title>Hexo+NexT修改友链样式</title>
-    <link href="https://wugenqiang.gitee.io/articles/hexoEditLinkStyle.html"/>
-    <id>https://wugenqiang.gitee.io/articles/hexoEditLinkStyle.html</id>
+    <link href="https://wugenqiang.github.io/articles/hexoEditLinkStyle.html"/>
+    <id>https://wugenqiang.github.io/articles/hexoEditLinkStyle.html</id>
     <published>2019-04-14T13:12:26.000Z</published>
     <updated>2019-04-14T13:12:26.000Z</updated>
     
@@ -415,17 +415,17 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>程序报错解决方法汇总</title>
-    <link href="https://wugenqiang.gitee.io/articles/errorSolveSolution.html"/>
-    <id>https://wugenqiang.gitee.io/articles/errorSolveSolution.html</id>
+    <link href="https://wugenqiang.github.io/articles/errorSolveSolution.html"/>
+    <id>https://wugenqiang.github.io/articles/errorSolveSolution.html</id>
     <published>2019-04-13T10:51:22.000Z</published>
     <updated>2019-04-13T10:51:22.000Z</updated>
     
@@ -439,19 +439,19 @@
     
     </summary>
     
-      <category term="Error" scheme="https://wugenqiang.gitee.io/categories/Error/"/>
+      <category term="Error" scheme="https://wugenqiang.github.io/categories/Error/"/>
     
     
-      <category term="Error" scheme="https://wugenqiang.gitee.io/tags/Error/"/>
+      <category term="Error" scheme="https://wugenqiang.github.io/tags/Error/"/>
     
-      <category term="Method" scheme="https://wugenqiang.gitee.io/tags/Method/"/>
+      <category term="Method" scheme="https://wugenqiang.github.io/tags/Method/"/>
     
   </entry>
   
   <entry>
     <title>Hexo构建个人Wiki知识管理系统</title>
-    <link href="https://wugenqiang.gitee.io/articles/hexoWikiThemeCreate.html"/>
-    <id>https://wugenqiang.gitee.io/articles/hexoWikiThemeCreate.html</id>
+    <link href="https://wugenqiang.github.io/articles/hexoWikiThemeCreate.html"/>
+    <id>https://wugenqiang.github.io/articles/hexoWikiThemeCreate.html</id>
     <published>2019-04-12T14:29:59.000Z</published>
     <updated>2019-04-12T14:29:59.000Z</updated>
     
@@ -464,19 +464,19 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/tags/Hexo/"/>
     
-      <category term="Wiki" scheme="https://wugenqiang.gitee.io/tags/Wiki/"/>
+      <category term="Wiki" scheme="https://wugenqiang.github.io/tags/Wiki/"/>
     
   </entry>
   
   <entry>
     <title>Git命令手动备份Hexo博客源文件</title>
-    <link href="https://wugenqiang.gitee.io/articles/manual_backup_blog_source_files.html"/>
-    <id>https://wugenqiang.gitee.io/articles/manual_backup_blog_source_files.html</id>
+    <link href="https://wugenqiang.github.io/articles/manual_backup_blog_source_files.html"/>
+    <id>https://wugenqiang.github.io/articles/manual_backup_blog_source_files.html</id>
     <published>2019-04-09T19:04:19.000Z</published>
     <updated>2019-04-09T19:04:19.000Z</updated>
     
@@ -490,19 +490,19 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/tags/Hexo/"/>
     
-      <category term="Git" scheme="https://wugenqiang.gitee.io/tags/Git/"/>
+      <category term="Git" scheme="https://wugenqiang.github.io/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>自动备份Hexo博客源文件</title>
-    <link href="https://wugenqiang.gitee.io/articles/auto_backup_blog_source_files.html"/>
-    <id>https://wugenqiang.gitee.io/articles/auto_backup_blog_source_files.html</id>
+    <link href="https://wugenqiang.github.io/articles/auto_backup_blog_source_files.html"/>
+    <id>https://wugenqiang.github.io/articles/auto_backup_blog_source_files.html</id>
     <published>2019-04-09T18:15:46.000Z</published>
     <updated>2019-04-09T18:15:46.000Z</updated>
     
@@ -516,10 +516,10 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://wugenqiang.gitee.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://wugenqiang.github.io/tags/Hexo/"/>
     
   </entry>
   
