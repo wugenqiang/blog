@@ -631,9 +631,33 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/articles/linear-arrangement.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/articles/linear-arrangement.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
+          
+            <span id="/articles/linear-arrangement.html" class="leancloud_visitors" data-flag-title="线性代数知识整理">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">热度：</span>
+              
+                <span class="leancloud-visitors-count"></span><span>℃</span>
+            </span>
           
 
           
@@ -787,24 +811,8 @@
           
 
   
-      <div id="giteementDiv"></div>
-      <link rel="stylesheet" href="https://gitee.com/wugenqiang/giteement/raw/master/style/default.css">
-      <script src="https://gitee.com/wugenqiang/giteement/raw/master/dist/giteement.browser.js"></script>
-      <script>
-      var giteement = new Giteement({
-        id: 20190402104851,
-        owner: 'wugenqiang',
-        repo: 'wugenqiang',
-        backcall_uri: 'https://wugenqiang.gitee.io/',
-        oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
-        oauth: {
-          client_id:'c538d0941b98891594a80ce063a029b55090ec5c21468ac6a72e7bdc2d968092',
-          client_secret:'fd4b0d5c31f6ac9aa9f4354134c3949665325cfca71eb2d42213cfefb9f5669b'
-        },
-      })
-      giteement.render('giteementDiv')
-      </script>
-
+    <div class="comments" id="comments">
+    </div>
 
   
 
@@ -1352,6 +1360,42 @@ setInterval("createtime()",250);
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'j5U5IGzSMQcvLyhW1Y6opNX6-gzGzoHsz',
+    appKey: 'orYWc8ltQOxyT6Y9HEQdrizt',
+    placeholder: 'Just go go ^_^',
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true
+  });
+  //新增以下代码即可，可以移除.info下所有子节点。
+  var infoEle = document.querySelector('#comments .info');
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+    infoEle.childNodes.forEach(function(item) {
+      item.parentNode.removeChild(item);
+    });
+   }
+</script>
+
+
 
 
   
