@@ -170,8 +170,6 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="EnjoyToShare" type="application/atom+xml">
-
 
 
 
@@ -570,35 +568,18 @@
           
             
             
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/articles/hexo-do-optimization-markdown.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/articles/hexo-do-optimization-markdown.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
           
-            <span id="/articles/hexo-do-optimization-markdown.html" class="leancloud_visitors" data-flag-title="Hexo中Markdown语法(GFM)使用">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">热度：</span>
-              
-                <span class="leancloud-visitors-count"></span><span>℃</span>
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             热度： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span><span> ℃</span>
             </span>
-          
-
           
 
           
@@ -1046,7 +1027,7 @@ belong to the previous footnote. <a href="#fnref2" class="footnote-backref">↩<
           
 
   
-    <div class="comments" id="comments">
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -1201,13 +1182,6 @@ belong to the previous footnote. <a href="#fnref2" class="footnote-backref">↩<
             </nav>
           
 
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
           
 
           
@@ -1499,42 +1473,36 @@ setInterval("createtime()",250);
   
 
   
+
+
   
+    
 
-<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
 
 
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
+  var gitalk = new Gitalk({
+    clientID: 'bab1ce865740e8dbb948',
+    clientSecret: 'ed5f8cbee851daad7d00d45dae1956f29f85bc21',
+    repo: 'wugenqiang.github.io',
+    owner: 'wugenqiang',
+    admin: ['wugenqiang'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
   });
-  new Valine({
-    el: '#comments',
-    verify: false,
-    notify: true,
-    appId: 'j5U5IGzSMQcvLyhW1Y6opNX6-gzGzoHsz',
-    appKey: 'orYWc8ltQOxyT6Y9HEQdrizt',
-    placeholder: '交流中我们一起进步哈哈',
-    avatar: 'wavatar',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true
-  });
-  //新增以下代码即可，可以移除.info下所有子节点。
-  var infoEle = document.querySelector('#comments .info');
-  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
-    infoEle.childNodes.forEach(function(item) {
-      item.parentNode.removeChild(item);
-    });
-   }
+  gitalk.render('gitalk-container');
 </script>
-
-
 
 
   

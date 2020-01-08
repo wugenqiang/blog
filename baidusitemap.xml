@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://wugenqiang.gitee.io/articles/hexo-do-optimization.html</loc>
+    <lastmod>2020-01-07</lastmod>
+  </url>  <url>
     <loc>https://wugenqiang.gitee.io/articles/FightingForSEU.html</loc>
     <lastmod>2019-11-03</lastmod>
   </url>  <url>
@@ -12,9 +15,6 @@
   </url>  <url>
     <loc>https://wugenqiang.gitee.io/articles/ShareToFreeDownloadPapers.html</loc>
     <lastmod>2019-05-25</lastmod>
-  </url>  <url>
-    <loc>https://wugenqiang.gitee.io/articles/hexo-do-optimization.html</loc>
-    <lastmod>2019-04-27</lastmod>
   </url>  <url>
     <loc>https://wugenqiang.gitee.io/articles/hexo-do-optimization-markdown.html</loc>
     <lastmod>2019-04-27</lastmod>
