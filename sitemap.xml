@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wugenqiang.gitee.io/ibooks/index.html</loc>
+    
+    <lastmod>2020-01-08T15:50:26.229Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wugenqiang.gitee.io/articles/hexo-do-optimization.html</loc>
     
     <lastmod>2020-01-07T22:22:27.000Z</lastmod>
