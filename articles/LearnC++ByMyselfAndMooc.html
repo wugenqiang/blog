@@ -485,7 +485,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="WuGenQiang">
-      <meta itemprop="description" content="This is my timestamp">
+      <meta itemprop="description" content="向阳花开">
       <meta itemprop="image" content="/images/fighting_wugenqiang.jpg">
     </span>
 
@@ -553,18 +553,35 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/articles/LearnC++ByMyselfAndMooc.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/articles/LearnC++ByMyselfAndMooc.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-icon">
-            <i class="fa fa-eye"></i>
-             热度： 
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span><span> ℃</span>
+            <span id="/articles/LearnC++ByMyselfAndMooc.html" class="leancloud_visitors" data-flag-title="C++程序设计学习篇">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">热度：</span>
+              
+                <span class="leancloud-visitors-count"></span><span>℃</span>
             </span>
+          
+
           
 
           
@@ -910,7 +927,7 @@ false 值代表假。<br>
           
 
   
-    <div class="comments" id="gitalk-container">
+    <div class="comments" id="comments">
     </div>
 
   
@@ -954,7 +971,7 @@ false 值代表假。<br>
               </a>
             
               <p class="site-author-name" itemprop="name">WuGenQiang</p>
-              <div class="site-description motion-element" itemprop="description">This is my timestamp</div>
+              <div class="site-description motion-element" itemprop="description">向阳花开</div>
           </div>
           
             <nav class="site-state motion-element">
@@ -1363,36 +1380,42 @@ setInterval("createtime()",250);
   
 
   
-
-
   
-    
 
-<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-
-
-
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
 
 
 
-<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
 <script>
-  var gitalk = new Gitalk({
-    clientID: 'bab1ce865740e8dbb948',
-    clientSecret: 'ed5f8cbee851daad7d00d45dae1956f29f85bc21',
-    repo: 'wugenqiang.github.io',
-    owner: 'wugenqiang',
-    admin: ['wugenqiang'],
-    id: md5(location.pathname),
-    
-      language: window.navigator.language || window.navigator.userLanguage,
-    
-    distractionFreeMode: 'true'
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
   });
-  gitalk.render('gitalk-container');
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: true,
+    appId: 'j5U5IGzSMQcvLyhW1Y6opNX6-gzGzoHsz',
+    appKey: 'orYWc8ltQOxyT6Y9HEQdrizt',
+    placeholder: '交流中我们一起进步哈哈',
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true
+  });
+  //新增以下代码即可，可以移除.info下所有子节点。
+  var infoEle = document.querySelector('#comments .info');
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+    infoEle.childNodes.forEach(function(item) {
+      item.parentNode.removeChild(item);
+    });
+   }
 </script>
+
+
 
 
   
