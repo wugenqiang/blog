@@ -1,3 +1,57 @@
-// build time:Wed Jan 08 2020 23:53:49 GMT+0800 (GMT+08:00)
-$(document).ready(function(){var t=$(".sidebar-inner");var i=CONFIG.sidebar.offset||12;function e(){return $(".header-inner").height()+i}function a(){var t=$("#footer");var i=$(".footer-inner");var e=t.outerHeight()-i.outerHeight();var a=t.outerHeight()+e;return a}function r(){var r=e();var o=a();var f=$("#sidebar").height()+NexT.utils.getSidebarb2tHeight();var n=$("#content").height();if(r+f<n){t.affix({offset:{top:r-i,bottom:o}});t.affix("checkPosition")}$("#sidebar").css({"margin-top":r,"margin-left":"auto"})}function o(){$(window).off(".affix");t.removeData("bs.affix").removeClass("affix affix-top affix-bottom");r()}function f(){var t=window.matchMedia("(min-width: 992px)");t.addListener(function(t){if(t.matches){o()}})}r();f()});
-//rebuild by neat 
+/* global NexT, CONFIG */
+
+$(document).ready(function() {
+
+  var sidebarInner = $('.sidebar-inner');
+  var sidebarOffset = CONFIG.sidebar.offset || 12;
+
+  function getHeaderOffset() {
+    return $('.header-inner').height() + sidebarOffset;
+  }
+
+  function getFooterOffset() {
+    var footer = $('#footer');
+    var footerInner = $('.footer-inner');
+    var footerMargin = footer.outerHeight() - footerInner.outerHeight();
+    var footerOffset = footer.outerHeight() + footerMargin;
+    return footerOffset;
+  }
+
+  function initAffix() {
+    var headerOffset = getHeaderOffset();
+    var footerOffset = getFooterOffset();
+    var sidebarHeight = $('#sidebar').height() + NexT.utils.getSidebarb2tHeight();
+    var contentHeight = $('#content').height();
+
+    // Not affix if sidebar taller than content (to prevent bottom jumping).
+    if (headerOffset + sidebarHeight < contentHeight) {
+      sidebarInner.affix({
+        offset: {
+          top   : headerOffset - sidebarOffset,
+          bottom: footerOffset
+        }
+      });
+      sidebarInner.affix('checkPosition');
+    }
+
+    $('#sidebar').css({ 'margin-top': headerOffset, 'margin-left': 'auto' });
+  }
+
+  function recalculateAffixPosition() {
+    $(window).off('.affix');
+    sidebarInner.removeData('bs.affix').removeClass('affix affix-top affix-bottom');
+    initAffix();
+  }
+
+  function resizeListener() {
+    var mql = window.matchMedia('(min-width: 992px)');
+    mql.addListener(function(e) {
+      if (e.matches) {
+        recalculateAffixPosition();
+      }
+    });
+  }
+
+  initAffix();
+  resizeListener();
+});
