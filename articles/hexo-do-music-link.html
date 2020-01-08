@@ -11,8 +11,10 @@
 
 
 
+  
 
-<html class="theme-next gemini" lang="zh-CN">
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
 <script src="/js/src/photoswipe.min.js?v="></script>
 <script src="/js/src/photoswipe-ui-default.min.js?v="></script>
@@ -123,7 +125,7 @@
     fastclick: true,
     lazyload: true,
     tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -151,7 +153,7 @@
 
 
   <meta name="description" content="Hexo获取网易云音乐外链 网易云音乐MP3外链真实地址获取方法，可用于各种背景音乐、直链播放… 一、进入网易云音乐官网 打开网易云音乐，找到喜欢的歌，复制网址的ID， 例如：  地址为：https://music.163.com/#/song?id=350909 id就是350909 那么，这首歌的MP3外链地址就是：https://music.163.com/song/media/outer/">
-<meta name="keywords" content="Hexo">
+<meta name="keywords" content="Hexo-NexT-Template">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo获取网易云音乐外链">
 <meta property="og:url" content="https://wugenqiang.gitee.io/articles/hexo-do-music-link.html">
@@ -168,8 +170,6 @@
 <meta name="twitter:image" content="https://i.loli.net/2019/03/17/5c8def694f412.png">
 
 
-
-  <link rel="alternate" href="/atom.xml" title="EnjoyToShare" type="application/atom+xml">
 
 
 
@@ -305,74 +305,6 @@
         
         
           
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-photos">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/photos/" rel="section"><i class="menu-item-icon fa fa-fw fa-camera"></i> <br>摄影 & 视频</a>
-
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-about">
 
     
@@ -383,7 +315,7 @@
 
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>作者</a>
 
   </li>
         
@@ -424,7 +356,7 @@
         
         
           
-          <li class="menu-item menu-item-laboratory">
+          <li class="menu-item menu-item-photos">
 
     
     
@@ -434,14 +366,14 @@
 
     
 
-    <a href="/laboratory/" rel="section"><i class="menu-item-icon fa fa-fw fa-anchor"></i> <br>实验室</a>
+    <a href="/photos/" rel="section"><i class="menu-item-icon fa fa-fw fa-camera"></i> <br>相册</a>
 
   </li>
         
         
         
           
-          <li class="menu-item menu-item-notes">
+          <li class="menu-item menu-item-toolbox">
 
     
     
@@ -451,7 +383,7 @@
 
     
 
-    <a href="/notes" rel="section"><i class="menu-item-icon fa fa-fw fa-amazon"></i> <br>札记 & 留言板</a>
+    <a href="/laboratory/toolBox/index.html" rel="section"><i class="menu-item-icon fa fa-fw fa-amazon"></i> <br>工具Box</a>
 
   </li>
 
@@ -536,7 +468,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="name" content="WuGenQiang">
-      <meta itemprop="description" content="Sometimes your whole life boils down to one insame move">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/fighting_wugenqiang.jpg">
     </span>
 
@@ -593,7 +525,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/Hexo-NexT-Template/" itemprop="url" rel="index"><span itemprop="name">Hexo-NexT-Template</span></a></span>
 
                 
                 
@@ -651,7 +583,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/song/media/outer/url?id=350909.mp3&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
 <p><img src="https://i.loli.net/2019/03/17/5c8df101905c1.png" alt="网易云音乐外链9.png"></p>
 <p>可以自己到我的技术博客那个音乐吧浏览，底部哦</p>
-<p>这是地址，比小心心~~ <a href="https://wugenqiang.github.io/laboratory/music/index.html" target="_blank" rel="noopener">我是地址点我点我哟</a></p>
+<p>这是地址，比小心心~~ <a href="https://wugenqiang.gitee.io/laboratory/music/index.html">我是地址点我点我哟</a></p>
 <p>其实这个还有一个好处就是可以下载，唯一的小缺憾就是不美观耶，不过耳朵舒服呢</p>
 
       
@@ -669,7 +601,7 @@
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>如果你喜欢这篇文章，可以请我喝一杯 Coffee ~</div>
+  <div></div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>打赏</span>
   </button>
@@ -705,7 +637,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-envira"></i> Hexo</a>
+            <a href="/tags/Hexo-NexT-Template/" rel="tag"><i class="fa fa-envira"></i> Hexo-NexT-Template</a>
           
         </div>
       
@@ -798,16 +730,16 @@
               </a>
             
               <p class="site-author-name" itemprop="name">WuGenQiang</p>
-              <div class="site-description motion-element" itemprop="description">Sometimes your whole life boils down to one insame move</div>
+              <div class="site-description motion-element" itemprop="description"></div>
           </div>
           
             <nav class="site-state motion-element">
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/">
+                  <a href="/archives">
                 
-                    <span class="site-state-item-count">41</span>
+                    <span class="site-state-item-count">33</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -832,43 +764,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -937,23 +833,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">34</span>
+                    <span class="site-state-item-count">26</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -961,13 +841,6 @@
             </nav>
           
 
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
           
 
           
@@ -997,24 +870,6 @@
                   
                     
                   
-                  <a href="https://www.jianshu.com/u/60afda94ea5a" title="简书 &rarr; https://www.jianshu.com/u/60afda94ea5a" rel="noopener" target="_blank"><i class="fa fa-fw fa-heartbeat"></i></a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                  
-                    
-                  
-                  <a href="https://dev.tencent.com/u/wugenqiang" title="Coding &rarr; https://dev.tencent.com/u/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                  
-                    
-                  
                   <a href="https://blog.csdn.net/wugenqiang" title="CSDN &rarr; https://blog.csdn.net/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-git-square"></i></a>
                 </span>
               
@@ -1024,32 +879,6 @@
           
 
           
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-paper-plane"></i>
-                推荐阅读
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://nanaandlee.github.io/" title="https://nanaandlee.github.io/" rel="noopener" target="_blank">Lee 的博客</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://x1aolin.com/" title="https://x1aolin.com/" rel="noopener" target="_blank">筱林博客</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://my.oschina.net/wugenqiang" title="https://my.oschina.net/wugenqiang" rel="noopener" target="_blank">开源中国</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://www.jelliclecat.cn" title="https://www.jelliclecat.cn" rel="noopener" target="_blank">zhengrenjie's Blog</a>
-                  </li>
-                
-              </ul>
-            </div>
           
 
           
@@ -1101,7 +930,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 1995 – <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
@@ -1147,7 +976,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <i class="fa fa-pencil"></i>
-  <span class="post-count">博客全站共34.2k字</span>
+  <span class="post-count">博客全站共31.8k字</span>
 </div>
 
 <!-- 不蒜字统计 -->

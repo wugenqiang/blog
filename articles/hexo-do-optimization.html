@@ -11,8 +11,10 @@
 
 
 
+  
 
-<html class="theme-next gemini" lang="zh-CN">
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
 <script src="/js/src/photoswipe.min.js?v="></script>
 <script src="/js/src/photoswipe-ui-default.min.js?v="></script>
@@ -123,7 +125,7 @@
     fastclick: true,
     lazyload: true,
     tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -150,7 +152,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,NexT">
+  <meta name="keywords" content="Hexo-NexT-Template">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【目录】Hexo+NexT搭建博客拥抱舒爽">
 <meta property="og:url" content="https://wugenqiang.gitee.io/articles/hexo-do-optimization.html">
@@ -195,8 +197,6 @@
 <meta name="twitter:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/060.jpg">
 
 
-
-  <link rel="alternate" href="/atom.xml" title="EnjoyToShare" type="application/atom+xml">
 
 
 
@@ -332,74 +332,6 @@
         
         
           
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-photos">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/photos/" rel="section"><i class="menu-item-icon fa fa-fw fa-camera"></i> <br>摄影 & 视频</a>
-
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-about">
 
     
@@ -410,7 +342,7 @@
 
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>作者</a>
 
   </li>
         
@@ -451,7 +383,7 @@
         
         
           
-          <li class="menu-item menu-item-laboratory">
+          <li class="menu-item menu-item-photos">
 
     
     
@@ -461,14 +393,14 @@
 
     
 
-    <a href="/laboratory/" rel="section"><i class="menu-item-icon fa fa-fw fa-anchor"></i> <br>实验室</a>
+    <a href="/photos/" rel="section"><i class="menu-item-icon fa fa-fw fa-camera"></i> <br>相册</a>
 
   </li>
         
         
         
           
-          <li class="menu-item menu-item-notes">
+          <li class="menu-item menu-item-toolbox">
 
     
     
@@ -478,7 +410,7 @@
 
     
 
-    <a href="/notes" rel="section"><i class="menu-item-icon fa fa-fw fa-amazon"></i> <br>札记 & 留言板</a>
+    <a href="/laboratory/toolBox/index.html" rel="section"><i class="menu-item-icon fa fa-fw fa-amazon"></i> <br>工具Box</a>
 
   </li>
 
@@ -563,7 +495,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="name" content="WuGenQiang">
-      <meta itemprop="description" content="Sometimes your whole life boils down to one insame move">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/fighting_wugenqiang.jpg">
     </span>
 
@@ -636,7 +568,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/Hexo-NexT-Template/" itemprop="url" rel="index"><span itemprop="name">Hexo-NexT-Template</span></a></span>
 
                 
                 
@@ -747,10 +679,10 @@
 <p>效果演示：</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/gif008.gif" alt></p>
 <h3 id="3-5-2-方法二：博文压缩">3.5.2 方法二：博文压缩</h3>
-<p>这里我来分享以下如何压缩，参考 <a href="https://blog.enjoytoshare.club/article/hexo-do-optimization.html#3-30-%E5%AE%9E%E7%8E%B0%E5%8D%9A%E6%96%87%E5%8E%8B%E7%BC%A9" target="_blank" rel="noopener">实现博文压缩</a></p>
+<p>这里我来分享以下如何压缩，参考 <a href="https://wugenqiang.gitee.io/articles/hexo-do-optimization.html#3-30-%E5%AE%9E%E7%8E%B0%E5%8D%9A%E6%96%87%E5%8E%8B%E7%BC%A9">实现博文压缩</a></p>
 <h3 id="3-5-3-方法三：双服务器托管">3.5.3 方法三：双服务器托管</h3>
 <p>还有一种方法就是采用Coding+Github双服务器托管Hexo博客，这样访问速度会更快！<br>
-如果想进行这样的操作，可以参考我的文章：<a href="https://blog.enjoytoshare.club/article/hexo-do-server-hosting.html" target="_blank" rel="noopener">Coding+Github双服务器托管Hexo</a></p>
+如果想进行这样的操作，可以参考我的文章：<a href="https://wugenqiang.gitee.io/articles/hexo-do-server-hosting.html">Coding+Github双服务器托管Hexo</a></p>
 <h2 id="3-6-去掉顶部黑线">3.6 去掉顶部黑线</h2>
 <p>打开<code>themes\next\source\css\_custom\custom.styl</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//添加代码：</span><br><span class="line">.headband &#123;display:none;&#125;</span><br></pre></td></tr></table></figure>
@@ -806,7 +738,7 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 修改主题页面布局为圆角</span></span><br><span class="line">$border-radius-inner            = <span class="number">15</span>px <span class="number">15</span>px <span class="number">15</span>px <span class="number">15</span>px;</span><br><span class="line">$border-radius                  = <span class="number">15</span>px;</span><br></pre></td></tr></table></figure>
 <p>即可</p>
 <h2 id="3-13-修改友链样式">3.13 修改友链样式</h2>
-<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexoEditLinkStyle.html" target="_blank" rel="noopener">Hexo+NexT修改友链样式</a></p>
+<p>点此链接查看：<a href="https://wugenqiang.gitee.io/articles/hexoEditLinkStyle.html">Hexo+NexT修改友链样式</a></p>
 <h2 id="3-14-博文图片模式">3.14 博文图片模式</h2>
 <p>新建博文，设置 <code>type: picture</code>，使用 { % gp x-x % }…{ % endgp % } 标签引用要展示的图片地址，如下所示：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">title: 测试图片展示</span><br><span class="line">tags:</span><br><span class="line">  - Picture</span><br><span class="line">  - Hexo</span><br><span class="line">urlname: pictureToDisplayTest_5<span class="number">-3</span></span><br><span class="line">categories:</span><br><span class="line">  - Hexo</span><br><span class="line">author: WuGenQiang</span><br><span class="line">type: picture</span><br><span class="line">date: <span class="number">2019</span><span class="number">-04</span><span class="number">-14</span> <span class="number">18</span>:<span class="number">02</span>:<span class="number">40</span></span><br><span class="line">updated: <span class="number">2019</span><span class="number">-04</span><span class="number">-14</span> <span class="number">18</span>:<span class="number">02</span>:<span class="number">40</span></span><br><span class="line">---</span><br><span class="line">&#123;% gp <span class="number">5</span><span class="number">-3</span> %&#125;</span><br><span class="line">![](https:<span class="comment">//raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/070.gif)</span></span><br><span class="line">![](https:<span class="comment">//raw.githubusercontent.com/wugenqiang/picGo/master/pictures/013.jpg)</span></span><br><span class="line">![](https:<span class="comment">//raw.githubusercontent.com/wugenqiang/picGo/master/pictures/003.jpg)</span></span><br><span class="line">![](https:<span class="comment">//raw.githubusercontent.com/wugenqiang/picGo/master/pictures/004.jpg)</span></span><br><span class="line">![](https:<span class="comment">//raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190404142303.png)</span></span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
@@ -815,11 +747,11 @@
 <p><code>注意点</code></p>
 <p>主题目前首页可以正常显示设置的图片效果，但是点击进入后显示效果丢失，所以需要修改一下<code>themes\next\source\css\_common\components\tags\group-pictures.styl</code> 中的以下样式：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.page-post-detail .post-body .group-picture-column &#123;</span><br><span class="line">  <span class="comment">//float: none;</span></span><br><span class="line">  margin-top: <span class="number">10</span>px;</span><br><span class="line">  <span class="comment">//width: auto !important;</span></span><br><span class="line">  img &#123; <span class="attr">margin</span>: <span class="number">0</span> auto; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>效果参照我的测试博文页面：<a href="https://blog.enjoytoshare.club/article/pictureToDisplayTest_5-3.html" target="_blank" rel="noopener">测试5-3图片展示</a></p>
+<p>效果参照我的测试博文页面：<a href="https://wugenqiang.gitee.io/articles/pictureToDisplayTest_5-3.html">测试5-3图片展示</a></p>
 <p>效果如图所示：</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414190059.png" alt></p>
 <h2 id="3-15-隐藏特定文章">3.15 隐藏特定文章</h2>
-<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexoNextHideArticleMethod.html" target="_blank" rel="noopener">Hexo+NexT隐藏特定文章</a></p>
+<p>点此链接查看：<a href="https://wugenqiang.gitee.io/articles/hexoNextHideArticleMethod.html">Hexo+NexT隐藏特定文章</a></p>
 <h2 id="3-16-增加分享功能">3.16 增加分享功能</h2>
 <h3 id="3-16-1-方法一">3.16.1 方法一</h3>
 <p>编辑主题配置文件<code>_config.yml</code>，添加/修改字段<code>baidushare</code>，值为 <code>true</code> 即可。</p>
@@ -833,7 +765,7 @@
 <p>效果如下：</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190415094311.png" alt></p>
 <h2 id="3-17-鼠标选取文字提示版权信息">3.17 鼠标选取文字提示版权信息</h2>
-<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexoNextSelectWords.html" target="_blank" rel="noopener">Hexo+NexT选取文字提示版权信息</a></p>
+<p>点此链接查看：<a href="https://wugenqiang.gitee.io/articles/hexoNextSelectWords.html">Hexo+NexT选取文字提示版权信息</a></p>
 <h2 id="3-18-自定义文章底部版权声明">3.18 自定义文章底部版权声明</h2>
 <h3 id="3-18-1-新建my-copyright-swig文件">3.18.1 新建<code>my-copyright.swig</code>文件</h3>
 <p>在 <code>themes/next/layout/_macro/</code> 下添加 <code>my-copyright.swig</code> ，内容如下：</p>
@@ -866,19 +798,19 @@
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"> &lt;div class=&quot;tag-cloud&quot;&gt;</span><br><span class="line">  &lt;!-- &lt;div class=&quot;tag-cloud-title&quot;&gt;</span><br><span class="line">      &#123;&#123; _p(&apos;counter.tag_cloud&apos;, site.tags.length) &#125;&#125;</span><br><span class="line">  &lt;/div&gt; --&gt;</span><br><span class="line">  &lt;div class=&quot;tag-cloud-tags&quot; id=&quot;tags&quot;&gt;</span><br><span class="line">    &#123;&#123; tagcloud(&#123;min_font: 16, max_font: 16, amount: 300, color: true, start_color: &apos;#fff&apos;, end_color: &apos;#fff&apos;&#125;) &#125;&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;br&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">   var alltags=document.getElementById(&apos;tags&apos;);</span><br><span class="line">   var tags=alltags.getElementsByTagName(&apos;a&apos;);</span><br><span class="line"></span><br><span class="line">   for (var i = tags.length - 1; i &gt;= 0; i--) &#123;</span><br><span class="line">     var r=Math.floor(Math.random()*75+130);</span><br><span class="line">     var g=Math.floor(Math.random()*75+100);</span><br><span class="line">     var b=Math.floor(Math.random()*75+80);</span><br><span class="line">     tags[i].style.background = &quot;rgb(&quot;+r+&quot;,&quot;+g+&quot;,&quot;+b+&quot;)&quot;;</span><br><span class="line">   &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    div#posts.posts-expand .tag-cloud a&#123;</span><br><span class="line">   background-color: #f5f7f1;</span><br><span class="line">   border-radius: 6px;</span><br><span class="line">   padding-left: 10px;</span><br><span class="line">   padding-right: 10px;</span><br><span class="line">   margin-top: 18px;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> .tag-cloud a&#123;</span><br><span class="line">   background-color: #f5f7f1;</span><br><span class="line">   border-radius: 4px;</span><br><span class="line">   padding-right: 5px;</span><br><span class="line">   padding-left: 5px;</span><br><span class="line">   margin-right: 5px;</span><br><span class="line">   margin-left: 0px;</span><br><span class="line">   margin-top: 8px;</span><br><span class="line">   margin-bottom: 0px;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> .tag-cloud a:before&#123;</span><br><span class="line">      content: &quot;📜&quot;;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> .tag-cloud-tags&#123;</span><br><span class="line">   text-align: left;</span><br><span class="line">   counter-reset: tags;</span><br><span class="line"> &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 <p>就好啦</p>
 <h2 id="3-20-开启文章目录">3.20 开启文章目录</h2>
-<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-catalog.html" target="_blank" rel="noopener">Hexo博客NexT主题开启文章目录和调整样式</a></p>
+<p>点此链接查看：<a href="https://wugenqiang.gitee.io/articles/hexo-do-catalog.html">Hexo博客NexT主题开启文章目录和调整样式</a></p>
 <h2 id="3-21-图片点击实现全屏查看">3.21 图片点击实现全屏查看</h2>
-<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-picture-screen.html" target="_blank" rel="noopener">Hexo文章中图片点击实现全屏查看</a></p>
+<p>点此链接查看：<a href="https://wugenqiang.gitee.io/articles/hexo-do-picture-screen.html">Hexo文章中图片点击实现全屏查看</a></p>
 <h2 id="3-22-修改内容区域的宽度">3.22 修改内容区域的宽度</h2>
-<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-edit-screen.html" target="_blank" rel="noopener">Hexo之修改内容区域的宽度</a></p>
+<p>点此链接查看：<a href="https://wugenqiang.gitee.io/articles/hexo-do-edit-screen.html">Hexo之修改内容区域的宽度</a></p>
 <h2 id="3-23-daovoice实现在线联系">3.23 DaoVoice实现在线联系</h2>
-<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-daovoice.html" target="_blank" rel="noopener">DaoVoice实现在线联系</a></p>
+<p>点此链接查看：<a href="https://wugenqiang.gitee.io/articles/hexo-do-daovoice.html">DaoVoice实现在线联系</a></p>
 <h2 id="3-24-打赏功能">3.24 打赏功能</h2>
-<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-donate.html" target="_blank" rel="noopener">Hexo的NexT主题打赏功能</a></p>
+<p>点此链接查看：<a href="https://wugenqiang.gitee.io/articles/hexo-do-donate.html">Hexo的NexT主题打赏功能</a></p>
 <h2 id="3-25-加入评论功能gitalk">3.25 加入评论功能gitalk</h2>
-<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-gitalk.html" target="_blank" rel="noopener">Hexo NexT 加入评论功能gitalk</a></p>
+<p>点此链接查看：<a href="https://wugenqiang.gitee.io/articles/hexo-do-gitalk.html">Hexo NexT 加入评论功能gitalk</a></p>
 <h2 id="3-26-获取网易云音乐外链">3.26 获取网易云音乐外链</h2>
-<p>点此链接查看：<a href="https://blog.enjoytoshare.club/article/hexo-do-music-link.html" target="_blank" rel="noopener">Hexo获取网易云音乐外链</a></p>
+<p>点此链接查看：<a href="https://wugenqiang.gitee.io/articles/hexo-do-music-link.html">Hexo获取网易云音乐外链</a></p>
 <h2 id="3-27-开启emoji表情">3.27 开启emoji表情</h2>
 <p>如何让 <code>markdown</code> 可以解析 <code>emoji</code> 呢？实际上我们发现，在编辑器中输入 <code>:smile:</code> 并没有表情出现，是为什么呢？<br>
 这是 <code>markdown</code> 渲染引擎的问题 ，将 <code>markdown</code> 变成 <code>html</code> 的转换器叫做<code>markdown渲染器</code> 。 Hexo默认是采用 <code>hexo-renderer-marked</code> ,这个渲染器不支持插件扩展，当然就不行了，还有一个支持插件扩展的是 <code>hexo-renderer-markdown-it</code> ，这个支持插件配置，可以使用 <code>markwon-it-emoji</code> 插件来支持emoji。需要将原来的 <code>marked</code> 渲染器换成 <code>markdown-it</code> 渲染器。所以我们可以使用这个渲染引擎来支持emoji表情。</p>
@@ -952,11 +884,11 @@
 <p>欧克，成功</p>
 <h1 id="4-自定义域名">4 自定义域名</h1>
 <h2 id="4-1-绑定个人域名">4.1 绑定个人域名</h2>
-<p>参考博文：<a href="https://blog.enjoytoshare.club/article/hexo-do-domain.html" target="_blank" rel="noopener">Hexo博客绑定个人域名</a></p>
+<p>参考博文：<a href="https://wugenqiang.gitee.io/articles/hexo-do-domain.html">Hexo博客绑定个人域名</a></p>
 <h2 id="4-2-开启https">4.2 开启HTTPS</h2>
-<p>参考博文：<a href="https://blog.enjoytoshare.club/article/hexo-do-https.html" target="_blank" rel="noopener">Hexo博客自定义域名开启HTTPS</a></p>
+<p>参考博文：<a href="https://wugenqiang.gitee.io/articles/hexo-do-https.html">Hexo博客自定义域名开启HTTPS</a></p>
 <h2 id="4-3-coding-github托管hexo">4.3 Coding+Github托管Hexo</h2>
-<p>参考博文：<a href="https://blog.enjoytoshare.club/article/hexo-do-server-hosting.html" target="_blank" rel="noopener">Coding+Github双服务器托管Hexo</a></p>
+<p>参考博文：<a href="https://wugenqiang.gitee.io/articles/hexo-do-server-hosting.html">Coding+Github双服务器托管Hexo</a></p>
 <p>欧克，成功</p>
 <h1 id="5-seo推广">5 SEO推广</h1>
 <p>刚搭建完博客，可能你会发现你发表的文章在谷歌或者百度都搜索不到，因为需要进行SEO优化的，什么是SEO，顾名思义，SEO即(Search Engine Optimization):汉译为搜索引擎优化，下面来总结一下SEO优化的方法，让自己的博文能在谷歌百度上搜索到。</p>
@@ -999,7 +931,7 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409154650.png" alt></p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409154938.png" alt></p>
 <h2 id="5-5-提交站点到google">5.5 提交站点到Google</h2>
-<p>首先保证你要能翻墙出去，连到谷歌，如果没有VPN，可参考下面网址获取：<a href="https://blog.enjoytoshare.club/laboratory/toolBox/index.html" target="_blank" rel="noopener">工具盒子</a></p>
+<p>首先保证你要能翻墙出去，连到谷歌，如果没有VPN，可参考下面网址获取：<a href="https://wugenqiang.gitee.io/laboratory/toolBox/index.html">工具盒子</a></p>
 <h3 id="5-5-1-提交博客域名">5.5.1 提交博客域名</h3>
 <p>打开<a href="https://www.google.com/webmasters/#?modal_active=none" target="_blank" rel="noopener">Google Search Console</a><br>
 根据提示注册好之后，添加你的博客域名。</p>
@@ -1019,7 +951,7 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
 <p>在搜索引擎搜索框输入<code>site:your.domain</code>可以查看域名是否被该搜索引擎收录，用户可以使用各大搜索引擎站长工具提交个人博客网址。</p>
 <h3 id="5-6-1-验证谷歌收录">5.6.1 验证谷歌收录</h3>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:blog.enjoytoshare.club</span><br></pre></td></tr></table></figure>
-<p>域名换成你自己的，谷歌是一定支持的，不过你需要翻墙VPN！如果没有，可参考下面网址获取：<a href="https://blog.enjoytoshare.club/laboratory/toolBox/index.html" target="_blank" rel="noopener">工具盒子</a>，如果没有找到你的博客说明没有被收录！<br>
+<p>域名换成你自己的，谷歌是一定支持的，不过你需要翻墙VPN！如果没有，可参考下面网址获取：<a href="https://wugenqiang.gitee.io/laboratory/toolBox/index.html">工具盒子</a>，如果没有找到你的博客说明没有被收录！<br>
 成功收录会如下图一样：</p>
 <p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409165959.png" alt></p>
 <h3 id="5-6-2-验证百度收录">5.6.2 验证百度收录</h3>
@@ -1048,7 +980,7 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>如果你喜欢这篇文章，可以请我喝一杯 Coffee ~</div>
+  <div></div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>打赏</span>
   </button>
@@ -1084,9 +1016,7 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-envira"></i> Hexo</a>
-          
-            <a href="/tags/NexT/" rel="tag"><i class="fa fa-envira"></i> NexT</a>
+            <a href="/tags/Hexo-NexT-Template/" rel="tag"><i class="fa fa-envira"></i> Hexo-NexT-Template</a>
           
         </div>
       
@@ -1179,16 +1109,16 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
               </a>
             
               <p class="site-author-name" itemprop="name">WuGenQiang</p>
-              <div class="site-description motion-element" itemprop="description">Sometimes your whole life boils down to one insame move</div>
+              <div class="site-description motion-element" itemprop="description"></div>
           </div>
           
             <nav class="site-state motion-element">
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/">
+                  <a href="/archives">
                 
-                    <span class="site-state-item-count">41</span>
+                    <span class="site-state-item-count">33</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1213,43 +1143,7 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1318,23 +1212,7 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">34</span>
+                    <span class="site-state-item-count">26</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1342,13 +1220,6 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
             </nav>
           
 
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
           
 
           
@@ -1378,24 +1249,6 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
                   
                     
                   
-                  <a href="https://www.jianshu.com/u/60afda94ea5a" title="简书 &rarr; https://www.jianshu.com/u/60afda94ea5a" rel="noopener" target="_blank"><i class="fa fa-fw fa-heartbeat"></i></a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                  
-                    
-                  
-                  <a href="https://dev.tencent.com/u/wugenqiang" title="Coding &rarr; https://dev.tencent.com/u/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                  
-                    
-                  
                   <a href="https://blog.csdn.net/wugenqiang" title="CSDN &rarr; https://blog.csdn.net/wugenqiang" rel="noopener" target="_blank"><i class="fa fa-fw fa-git-square"></i></a>
                 </span>
               
@@ -1405,32 +1258,6 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
           
 
           
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-paper-plane"></i>
-                推荐阅读
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://nanaandlee.github.io/" title="https://nanaandlee.github.io/" rel="noopener" target="_blank">Lee 的博客</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://x1aolin.com/" title="https://x1aolin.com/" rel="noopener" target="_blank">筱林博客</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://my.oschina.net/wugenqiang" title="https://my.oschina.net/wugenqiang" rel="noopener" target="_blank">开源中国</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://www.jelliclecat.cn" title="https://www.jelliclecat.cn" rel="noopener" target="_blank">zhengrenjie's Blog</a>
-                  </li>
-                
-              </ul>
-            </div>
           
 
           
@@ -1482,7 +1309,7 @@ Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便�
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 1995 – <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
@@ -1528,7 +1355,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <i class="fa fa-pencil"></i>
-  <span class="post-count">博客全站共34.2k字</span>
+  <span class="post-count">博客全站共31.8k字</span>
 </div>
 
 <!-- 不蒜字统计 -->

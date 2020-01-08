@@ -1,3 +1,18 @@
+.header {
+  width: 80%;
+tablet()
+mobile()
+}
+.container .main-inner {
+  width: 80%;
+tablet()
+mobile()
+}
+.content-wrap {
+  width: calc(100% - 260px);
+tablet()
+mobile()
+}
 /* normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif; /* 1 */
@@ -1334,12 +1349,6 @@ pre .javascript .function {
   font-weight: bold;
   line-height: 1;
 }
-.post-tags i {
-  color: #79d626;
-}
-.post-meta-item-icon i {
-  color: #79d626;
-}
 .post-sticky-flag {
   display: inline-block;
   font-size: 16px;
@@ -1614,9 +1623,6 @@ pre .javascript .function {
 .posts-expand .post-meta time {
   border-bottom: 1px dashed #999;
   cursor: help;
-}
-.post-symbolscount {
-  display: inline-block;
 }
 .post-meta-divider {
   margin: 0 0.5em;
@@ -2065,7 +2071,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb653;
+  background: #4a63e0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3040,6 +3046,7 @@ ul.breadcrumb li+li:last-child {
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: 15px;
+  opacity: 0;
 }
 .sidebar-inner.affix {
   position: fixed;
@@ -3388,17 +3395,6 @@ ul.breadcrumb li+li:last-child {
 .gt-container .gt-comment-content .highlight ::selection {
   background: #2593a6;
   color: #fff;
-}
-@media screen and (min-width: 1200px) {
-  body {
-    background-image: url("/images/bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-  }
-  #footer a {
-    color: #eee;
-  }
 }
 .headband {
   display: none;
