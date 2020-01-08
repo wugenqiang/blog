@@ -152,19 +152,19 @@
 
 
 
-  <meta name="description" content="前言程序是练会的，而不是听会和看会的，不能满足于纸上谈兵!">
+  <meta name="description" content="前言 程序是练会的，而不是听会和看会的，不能满足于纸上谈兵!">
 <meta name="keywords" content="C++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++程序设计学习篇">
 <meta property="og:url" content="https://wugenqiang.gitee.io/articles/LearnC++ByMyselfAndMooc.html">
 <meta property="og:site_name" content="EnjoyToShare">
-<meta property="og:description" content="前言程序是练会的，而不是听会和看会的，不能满足于纸上谈兵!">
+<meta property="og:description" content="前言 程序是练会的，而不是听会和看会的，不能满足于纸上谈兵!">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190827203204.png">
 <meta property="og:updated_time" content="2019-06-22T21:06:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++程序设计学习篇">
-<meta name="twitter:description" content="前言程序是练会的，而不是听会和看会的，不能满足于纸上谈兵!">
+<meta name="twitter:description" content="前言 程序是练会的，而不是听会和看会的，不能满足于纸上谈兵!">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190827203204.png">
 
 
@@ -582,7 +582,232 @@
       
 
       
-        <!-- build time:Wed Jan 08 2020 23:53:22 GMT+0800 (GMT+08:00) --><hr><h1 id="前言">前言</h1><p>程序是练会的，而不是听会和看会的，不能满足于纸上谈兵!</p><hr><a id="more"></a><h1 id="安装开发工具">安装开发工具</h1><ul><li><p><a href="https://blog.csdn.net/pshiping2014/article/details/81562696" target="_blank" rel="noopener">C++开发之Visual Studio 2017 安装与使用</a></p></li><li><p><a href="https://blog.csdn.net/wugenqiang/article/details/87860056" target="_blank" rel="noopener">C++开发工具CLion安装并破解至2100年（windows10)</a></p></li></ul><h1 id="c-基本语法">C++基本语法</h1><p>C++ 程序可以定义为对象的集合，这些对象通过调用彼此的方法进行交互。现在让我们简要地看一下什么是类、对象，方法、即时变量。</p><ul><li>对象 - 对象具有状态和行为。例如：一只狗的状态 - 颜色、名称、品种，行为 - 摇动、叫唤、吃。对象是类的实例。</li><li>类 - 类可以定义为描述对象行为/状态的模板/蓝图。</li><li>方法 - 从基本上说，一个方法表示一种行为。一个类可以包含多个方法。可以在方法中写入逻辑、操作数据以及执行所有的动作。</li><li>即时变量 - 每个对象都有其独特的即时变量。对象的状态是由这些即时变量的值创建的。</li></ul><h2 id="01-hello-world">01 Hello World</h2><p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190827203204.png" alt></p><p>接下来我们讲解一下上面这段程序：</p><p>C++ 语言定义了一些头文件，这些<code>头文件</code>包含了程序中必需的或有用的信息。上面这段程序中，包含了头文件<iostream>。<br>下一行 <code>using namespace std;</code> 告诉编译器使用 std 命名空间。<code>命名空间</code>是 C++ 中一个相对新的概念。<br>下一行 <code>int main()</code> 是主函数，程序从这里开始执行。<br>下一行 <code>cout &lt;&lt; &quot;Hello World&quot;;</code>会在屏幕上显示消息 “Hello World”。<br>下一行 <code>return 0;</code> 终止 main( )函数，并向调用进程返回值 0。</iostream></p><h2 id="02-分号-语句块">02 分号 &amp; 语句块</h2><p>在 C++ 中，分号是语句结束符。也就是说，每个语句必须以分号结束。它表明一个逻辑实体的结束。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = y;</span><br><span class="line">y = y+<span class="number">1</span>;</span><br><span class="line">add(x, y);</span><br></pre></td></tr></table></figure><p>语句块是一组使用大括号括起来的按逻辑连接的语句。例如：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World"</span>; <span class="comment">// 输出 Hello World</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="03-标识符">03 标识符</h2><p>C++ 标识符是用来标识变量、函数、类、模块，或任何其他用户自定义项目的名称。一个标识符以字母 A-Z 或 a-z 或下划线 _ 开始，后跟零个或多个字母、下划线和数字（0-9）。</p><p>C++ 标识符内不允许出现标点字符，比如 @、&amp; 和 %。C++ 是区分大小写的编程语言。因此，在 C++ 中，Manpower 和 manpower 是两个不同的标识符。</p><p>下面列出几个有效的标识符：</p><table><thead><tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead><tbody><tr><td>mohd</td><td>zara</td><td>abc</td><td>move_name</td><td>a_123</td></tr><tr><td>myname50</td><td>_temp</td><td>j</td><td>a23b9</td><td>retVal</td></tr></tbody></table><h2 id="04-关键字">04 关键字</h2><p>下表列出了 C++ 中的保留字。这些保留字不能作为常量名、变量名或其他标识符名称。</p><table><thead><tr><th>1</th><th>2</th><th>3</th><th>4</th></tr></thead><tbody><tr><td>asm</td><td>else</td><td>new</td><td>this</td></tr><tr><td>auto</td><td>enum</td><td>operator</td><td>throw</td></tr><tr><td>bool</td><td>explicit</td><td>private</td><td>true</td></tr><tr><td>break</td><td>export</td><td>protected</td><td>try</td></tr><tr><td>case</td><td>extern</td><td>public</td><td>typedef</td></tr><tr><td>catch</td><td>false</td><td>register</td><td>typeid</td></tr><tr><td>char</td><td>float</td><td>reinterpret_cast</td><td>typename</td></tr><tr><td>class</td><td>for</td><td>return</td><td>union</td></tr><tr><td>const</td><td>friend</td><td>short</td><td>unsigned</td></tr><tr><td>const_cast</td><td>goto</td><td>signed</td><td>using</td></tr><tr><td>continue</td><td>if</td><td>sizeof</td><td>virtual</td></tr><tr><td>default v	inline</td><td>static</td><td>void</td><td></td></tr><tr><td>delete</td><td>int</td><td>static_cast</td><td>volatile</td></tr><tr><td>do</td><td>long</td><td>struct</td><td>wchar_t</td></tr><tr><td>double</td><td>mutable</td><td>switch</td><td>while</td></tr><tr><td>dynamic_cast</td><td>namespace</td><td>template</td><td></td></tr></tbody></table><h2 id="05-数据类型-基本内置类型">05 数据类型（基本内置类型）</h2><p>C++ 为程序员提供了种类丰富的内置数据类型和用户自定义的数据类型。下表列出了七种基本的 C++ 数据类型：</p><table><thead><tr><th>类型</th><th>关键字</th></tr></thead><tbody><tr><td>布尔型</td><td>bool</td></tr><tr><td>字符型</td><td>char</td></tr><tr><td>整型</td><td>int</td></tr><tr><td>浮点型</td><td>float</td></tr><tr><td>双浮点型</td><td>double</td></tr><tr><td>无类型</td><td>void</td></tr><tr><td>宽字符型</td><td>wchar_t</td></tr></tbody></table><p>其实 wchar_t 是这样来的：</p><p>typedef short int wchar_t;<br>所以 wchar_t 实际上的空间是和 short int 一样。</p><h2 id="06-布尔常量">06 布尔常量</h2><p>布尔常量共有两个，它们都是标准的 C++ 关键字：</p><p>true 值代表真。<br>false 值代表假。<br>我们不应把 true 的值看成 1，把 false 的值看成 0。</p><hr><!-- rebuild by neat -->
+        <hr>
+<h1 id="前言">前言</h1>
+<p>程序是练会的，而不是听会和看会的，不能满足于纸上谈兵!</p>
+<hr>
+<a id="more"></a>
+<h1 id="安装开发工具">安装开发工具</h1>
+<ul>
+<li>
+<p><a href="https://blog.csdn.net/pshiping2014/article/details/81562696" target="_blank" rel="noopener">C++开发之Visual Studio 2017 安装与使用</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/wugenqiang/article/details/87860056" target="_blank" rel="noopener">C++开发工具CLion安装并破解至2100年（windows10)</a></p>
+</li>
+</ul>
+<h1 id="c-基本语法">C++基本语法</h1>
+<p>C++ 程序可以定义为对象的集合，这些对象通过调用彼此的方法进行交互。现在让我们简要地看一下什么是类、对象，方法、即时变量。</p>
+<ul>
+<li>对象 - 对象具有状态和行为。例如：一只狗的状态 - 颜色、名称、品种，行为 - 摇动、叫唤、吃。对象是类的实例。</li>
+<li>类 - 类可以定义为描述对象行为/状态的模板/蓝图。</li>
+<li>方法 - 从基本上说，一个方法表示一种行为。一个类可以包含多个方法。可以在方法中写入逻辑、操作数据以及执行所有的动作。</li>
+<li>即时变量 - 每个对象都有其独特的即时变量。对象的状态是由这些即时变量的值创建的。</li>
+</ul>
+<h2 id="01-hello-world">01 Hello World</h2>
+<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190827203204.png" alt></p>
+<p>接下来我们讲解一下上面这段程序：</p>
+<p>C++ 语言定义了一些头文件，这些<code>头文件</code>包含了程序中必需的或有用的信息。上面这段程序中，包含了头文件 <iostream>。<br>
+下一行 <code>using namespace std;</code> 告诉编译器使用 std 命名空间。<code>命名空间</code>是 C++ 中一个相对新的概念。<br>
+下一行 <code>int main()</code> 是主函数，程序从这里开始执行。<br>
+下一行 <code>cout &lt;&lt; &quot;Hello World&quot;;</code>会在屏幕上显示消息 “Hello World”。<br>
+下一行 <code>return 0;</code> 终止 main( )函数，并向调用进程返回值 0。</iostream></p>
+<h2 id="02-分号-语句块">02 分号 &amp; 语句块</h2>
+<p>在 C++ 中，分号是语句结束符。也就是说，每个语句必须以分号结束。它表明一个逻辑实体的结束。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = y;</span><br><span class="line">y = y+<span class="number">1</span>;</span><br><span class="line">add(x, y);</span><br></pre></td></tr></table></figure>
+<p>语句块是一组使用大括号括起来的按逻辑连接的语句。例如：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World"</span>; <span class="comment">// 输出 Hello World</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="03-标识符">03 标识符</h2>
+<p>C++ 标识符是用来标识变量、函数、类、模块，或任何其他用户自定义项目的名称。一个标识符以字母 A-Z 或 a-z 或下划线 _ 开始，后跟零个或多个字母、下划线和数字（0-9）。</p>
+<p>C++ 标识符内不允许出现标点字符，比如 @、&amp; 和 %。C++ 是区分大小写的编程语言。因此，在 C++ 中，Manpower 和 manpower 是两个不同的标识符。</p>
+<p>下面列出几个有效的标识符：</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mohd</td>
+<td>zara</td>
+<td>abc</td>
+<td>move_name</td>
+<td>a_123</td>
+</tr>
+<tr>
+<td>myname50</td>
+<td>_temp</td>
+<td>j</td>
+<td>a23b9</td>
+<td>retVal</td>
+</tr>
+</tbody>
+</table>
+<h2 id="04-关键字">04 关键字</h2>
+<p>下表列出了 C++ 中的保留字。这些保留字不能作为常量名、变量名或其他标识符名称。</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>asm</td>
+<td>else</td>
+<td>new</td>
+<td>this</td>
+</tr>
+<tr>
+<td>auto</td>
+<td>enum</td>
+<td>operator</td>
+<td>throw</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>explicit</td>
+<td>private</td>
+<td>true</td>
+</tr>
+<tr>
+<td>break</td>
+<td>export</td>
+<td>protected</td>
+<td>try</td>
+</tr>
+<tr>
+<td>case</td>
+<td>extern</td>
+<td>public</td>
+<td>typedef</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>false</td>
+<td>register</td>
+<td>typeid</td>
+</tr>
+<tr>
+<td>char</td>
+<td>float</td>
+<td>reinterpret_cast</td>
+<td>typename</td>
+</tr>
+<tr>
+<td>class</td>
+<td>for</td>
+<td>return</td>
+<td>union</td>
+</tr>
+<tr>
+<td>const</td>
+<td>friend</td>
+<td>short</td>
+<td>unsigned</td>
+</tr>
+<tr>
+<td>const_cast</td>
+<td>goto</td>
+<td>signed</td>
+<td>using</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>if</td>
+<td>sizeof</td>
+<td>virtual</td>
+</tr>
+<tr>
+<td>default v	inline</td>
+<td>static</td>
+<td>void</td>
+<td></td>
+</tr>
+<tr>
+<td>delete</td>
+<td>int</td>
+<td>static_cast</td>
+<td>volatile</td>
+</tr>
+<tr>
+<td>do</td>
+<td>long</td>
+<td>struct</td>
+<td>wchar_t</td>
+</tr>
+<tr>
+<td>double</td>
+<td>mutable</td>
+<td>switch</td>
+<td>while</td>
+</tr>
+<tr>
+<td>dynamic_cast</td>
+<td>namespace</td>
+<td>template</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="05-数据类型-基本内置类型">05 数据类型（基本内置类型）</h2>
+<p>C++ 为程序员提供了种类丰富的内置数据类型和用户自定义的数据类型。下表列出了七种基本的 C++ 数据类型：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>关键字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>布尔型</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>字符型</td>
+<td>char</td>
+</tr>
+<tr>
+<td>整型</td>
+<td>int</td>
+</tr>
+<tr>
+<td>浮点型</td>
+<td>float</td>
+</tr>
+<tr>
+<td>双浮点型</td>
+<td>double</td>
+</tr>
+<tr>
+<td>无类型</td>
+<td>void</td>
+</tr>
+<tr>
+<td>宽字符型</td>
+<td>wchar_t</td>
+</tr>
+</tbody>
+</table>
+<p>其实 wchar_t 是这样来的：</p>
+<p>typedef short int wchar_t;<br>
+所以 wchar_t 实际上的空间是和 short int 一样。</p>
+<h2 id="06-布尔常量">06 布尔常量</h2>
+<p>布尔常量共有两个，它们都是标准的 C++ 关键字：</p>
+<p>true 值代表真。<br>
+false 值代表假。<br>
+我们不应把 true 的值看成 1，把 false 的值看成 0。</p>
+<hr>
+
       
     </div>
 
@@ -973,7 +1198,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <i class="fa fa-pencil"></i>
-  <span class="post-count">博客全站共31.6k字</span>
+  <span class="post-count">博客全站共31.8k字</span>
 </div>
 
 <!-- 不蒜字统计 -->

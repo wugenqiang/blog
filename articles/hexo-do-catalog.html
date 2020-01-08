@@ -152,19 +152,19 @@
 
 
 
-  <meta name="description" content="一、前言Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。二、修改样式文件custom.styl文章目录样式文件custom.styl文件位于themes/next/source/css/_custom打开后添加内容：1.文章目录默认展开12//文章目录默认展开.post-toc .nav .nav-child &amp;#123; display: block; &amp;#1">
+  <meta name="description" content="一、前言 Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。 二、修改样式文件custom.styl 文章目录样式文件custom.styl文件位于themes/next/source/css/_custom 打开后添加内容： 1.文章目录默认展开 12//文章目录默认展开.post-toc .nav .nav-child &amp;#123; display: bloc">
 <meta name="keywords" content="Hexo-NexT-Template">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客NexT主题开启文章目录和调整样式">
 <meta property="og:url" content="https://wugenqiang.gitee.io/articles/hexo-do-catalog.html">
 <meta property="og:site_name" content="EnjoyToShare">
-<meta property="og:description" content="一、前言Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。二、修改样式文件custom.styl文章目录样式文件custom.styl文件位于themes/next/source/css/_custom打开后添加内容：1.文章目录默认展开12//文章目录默认展开.post-toc .nav .nav-child &amp;#123; display: block; &amp;#1">
+<meta property="og:description" content="一、前言 Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。 二、修改样式文件custom.styl 文章目录样式文件custom.styl文件位于themes/next/source/css/_custom 打开后添加内容： 1.文章目录默认展开 12//文章目录默认展开.post-toc .nav .nav-child &amp;#123; display: bloc">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://i.loli.net/2019/03/16/5c8d1b75707ae.png">
 <meta property="og:updated_time" content="2019-03-16T23:37:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客NexT主题开启文章目录和调整样式">
-<meta name="twitter:description" content="一、前言Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。二、修改样式文件custom.styl文章目录样式文件custom.styl文件位于themes/next/source/css/_custom打开后添加内容：1.文章目录默认展开12//文章目录默认展开.post-toc .nav .nav-child &amp;#123; display: block; &amp;#1">
+<meta name="twitter:description" content="一、前言 Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。 二、修改样式文件custom.styl 文章目录样式文件custom.styl文件位于themes/next/source/css/_custom 打开后添加内容： 1.文章目录默认展开 12//文章目录默认展开.post-toc .nav .nav-child &amp;#123; display: bloc">
 <meta name="twitter:image" content="https://i.loli.net/2019/03/16/5c8d1b75707ae.png">
 
 
@@ -582,7 +582,22 @@
       
 
       
-        <!-- build time:Wed Jan 08 2020 23:53:23 GMT+0800 (GMT+08:00) --><h2 id="一-前言">一、前言</h2><p>Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。</p><h2 id="二-修改样式文件custom-styl">二、修改样式文件custom.styl</h2><p>文章目录样式文件custom.styl文件位于<code>themes/next/source/css/_custom</code></p><p>打开后添加内容：</p><h3 id="1-文章目录默认展开">1.文章目录默认展开</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//文章目录默认展开</span><br><span class="line">.post-toc .nav .nav-child &#123; display: block; &#125;</span><br></pre></td></tr></table></figure><h3 id="2-文章目录字体大小调整">2.文章目录字体大小调整</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.post-toc ol &#123;  </span><br><span class="line">  font-size : 13px;     </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="三-修改主题配置文件">三、修改主题配置文件</h2><p>主题配置文件位于<code>themes/next/_config.yml</code></p><p>每行目录超长自动换行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  enable: true  </span><br><span class="line">  wrap: true</span><br></pre></td></tr></table></figure><h2 id="四-结果图展示">四、结果图展示</h2><p><img src="https://i.loli.net/2019/03/16/5c8d1b75707ae.png" alt="文章目录.png"></p><!-- rebuild by neat -->
+        <h2 id="一-前言">一、前言</h2>
+<p>Hexo博客NexT主题中是有目录的，只是在默认情况下没有开启，需要我们来手动开启。</p>
+<h2 id="二-修改样式文件custom-styl">二、修改样式文件custom.styl</h2>
+<p>文章目录样式文件custom.styl文件位于<code>themes/next/source/css/_custom</code></p>
+<p>打开后添加内容：</p>
+<h3 id="1-文章目录默认展开">1.文章目录默认展开</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//文章目录默认展开</span><br><span class="line">.post-toc .nav .nav-child &#123; display: block; &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-文章目录字体大小调整">2.文章目录字体大小调整</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.post-toc ol &#123;  </span><br><span class="line">  font-size : 13px;     </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="三-修改主题配置文件">三、修改主题配置文件</h2>
+<p>主题配置文件位于<code>themes/next/_config.yml</code></p>
+<p>每行目录超长自动换行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  enable: true  </span><br><span class="line">  wrap: true</span><br></pre></td></tr></table></figure>
+<h2 id="四-结果图展示">四、结果图展示</h2>
+<p><img src="https://i.loli.net/2019/03/16/5c8d1b75707ae.png" alt="文章目录.png"></p>
+
       
     </div>
 
@@ -973,7 +988,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <i class="fa fa-pencil"></i>
-  <span class="post-count">博客全站共31.6k字</span>
+  <span class="post-count">博客全站共31.8k字</span>
 </div>
 
 <!-- 不蒜字统计 -->

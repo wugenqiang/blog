@@ -152,18 +152,18 @@
 
 
 
-  <meta name="description" content="1 写在前言说实话，实现这个功能的初衷，是因为我在做博文图片展示的时候，发现博文不显示标题，所以在主页显示难免有点突兀，所以萌生出想隐藏它的想法，所以经查阅相关资料，结合本人所需的功能设计，实现了功能，下面我就把详细的解决方法整理出来，方便更多有需要的人……">
+  <meta name="description" content="1 写在前言 说实话，实现这个功能的初衷，是因为我在做博文图片展示的时候，发现博文不显示标题，所以在主页显示难免有点突兀，所以萌生出想隐藏它的想法，所以经查阅相关资料，结合本人所需的功能设计，实现了功能，下面我就把详细的解决方法整理出来，方便更多有需要的人……">
 <meta name="keywords" content="Hexo-NexT-Template">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+NexT隐藏特定文章">
 <meta property="og:url" content="https://wugenqiang.gitee.io/articles/hexoNextHideArticleMethod.html">
 <meta property="og:site_name" content="EnjoyToShare">
-<meta property="og:description" content="1 写在前言说实话，实现这个功能的初衷，是因为我在做博文图片展示的时候，发现博文不显示标题，所以在主页显示难免有点突兀，所以萌生出想隐藏它的想法，所以经查阅相关资料，结合本人所需的功能设计，实现了功能，下面我就把详细的解决方法整理出来，方便更多有需要的人……">
+<meta property="og:description" content="1 写在前言 说实话，实现这个功能的初衷，是因为我在做博文图片展示的时候，发现博文不显示标题，所以在主页显示难免有点突兀，所以萌生出想隐藏它的想法，所以经查阅相关资料，结合本人所需的功能设计，实现了功能，下面我就把详细的解决方法整理出来，方便更多有需要的人……">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-04-14T21:32:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+NexT隐藏特定文章">
-<meta name="twitter:description" content="1 写在前言说实话，实现这个功能的初衷，是因为我在做博文图片展示的时候，发现博文不显示标题，所以在主页显示难免有点突兀，所以萌生出想隐藏它的想法，所以经查阅相关资料，结合本人所需的功能设计，实现了功能，下面我就把详细的解决方法整理出来，方便更多有需要的人……">
+<meta name="twitter:description" content="1 写在前言 说实话，实现这个功能的初衷，是因为我在做博文图片展示的时候，发现博文不显示标题，所以在主页显示难免有点突兀，所以萌生出想隐藏它的想法，所以经查阅相关资料，结合本人所需的功能设计，实现了功能，下面我就把详细的解决方法整理出来，方便更多有需要的人……">
 
 
 
@@ -584,7 +584,24 @@
       
 
       
-        <!-- build time:Wed Jan 08 2020 23:53:23 GMT+0800 (GMT+08:00) --><h1 id="1-写在前言">1 写在前言</h1><p>说实话，实现这个功能的初衷，是因为我在做博文图片展示的时候，发现博文不显示标题，所以在主页显示难免有点突兀，所以萌生出想隐藏它的想法，所以经查阅相关资料，结合本人所需的功能设计，实现了功能，下面我就把详细的解决方法整理出来，方便更多有需要的人……</p><a id="more"></a><h1 id="2-实现">2 实现</h1><h2 id="2-1-修改首页模板index-swig文件">2.1 修改首页模板<code>index.swig</code>文件</h2><p>修改 <code>/themes/next/layout/index.swig</code> 文件，在把 <code>&lt;section id=&quot;posts&quot; class=&quot;posts-expand&quot;&gt;</code> 和 <code>&lt;/section&gt;</code> 之间的代码：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">for</span> post <span class="keyword">in</span> page.posts %&#125;</span><br><span class="line">     &#123;&#123; post_template.render(post, <span class="literal">true</span>) &#125;&#125;</span><br><span class="line">   &#123;% endfor %&#125;</span><br></pre></td></tr></table></figure><p>替换成下面的代码：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">for</span> post <span class="keyword">in</span> page.posts %&#125;</span><br><span class="line">      &#123;% <span class="keyword">set</span> hide = false %&#125;</span><br><span class="line">      &#123;% <span class="keyword">if</span> theme.hide.hide_post %&#125;</span><br><span class="line">        &#123;% <span class="keyword">if</span> post.hide %&#125;</span><br><span class="line">          &#123;% <span class="keyword">set</span> hide = true %&#125;</span><br><span class="line">        &#123;% endif %&#125;</span><br><span class="line">      &#123;% endif %&#125;</span><br><span class="line">      &#123;% <span class="keyword">if</span> !hide %&#125;</span><br><span class="line">        &#123;&#123; post_template.render(post, <span class="literal">true</span>) &#125;&#125;</span><br><span class="line">      &#123;% endif %&#125;</span><br><span class="line">    &#123;% endfor %&#125;</span><br></pre></td></tr></table></figure><h2 id="2-2-修改主题配置-config-yml文件">2.2 修改主题配置<code>_config.yml</code>文件</h2><p>打开<code>next</code>主题配置文件<code>/themes/next/_config.yml</code>, 在里面加入以下代码:</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Hide single post</span><br><span class="line">hide:</span><br><span class="line">  hide_post: <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>如果 <code>hide_post</code> 设置为 <code>true</code> , 新建文章时设置字段 <code>hide: true</code> 即可隐藏指定文章, 设置样式可参考下面：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">title: 测试图片展示</span><br><span class="line">urlname: pictureToDisplayTest_5<span class="number">-3</span></span><br><span class="line">author: WuGenQiang</span><br><span class="line">type: picture</span><br><span class="line">hide: <span class="literal">true</span></span><br><span class="line">categories:</span><br><span class="line">  - Test</span><br><span class="line">date: <span class="number">2019</span><span class="number">-04</span><span class="number">-14</span> <span class="number">18</span>:<span class="number">02</span>:<span class="number">40</span></span><br><span class="line">updated: <span class="number">2019</span><span class="number">-04</span><span class="number">-14</span> <span class="number">18</span>:<span class="number">02</span>:<span class="number">40</span></span><br></pre></td></tr></table></figure><p>即可隐藏啦</p><h1 id="3-说明">3 说明</h1><p>如果设置 <code>hide</code> 字段值为 <code>false</code> , 这样就不会在首页隐藏，当然不写默认是不会隐藏的~~ 好了，就分享到这边了，应该可以实现了，嘿嘿</p><!-- rebuild by neat -->
+        <h1 id="1-写在前言">1 写在前言</h1>
+<p>说实话，实现这个功能的初衷，是因为我在做博文图片展示的时候，发现博文不显示标题，所以在主页显示难免有点突兀，所以萌生出想隐藏它的想法，所以经查阅相关资料，结合本人所需的功能设计，实现了功能，下面我就把详细的解决方法整理出来，方便更多有需要的人……</p>
+<a id="more"></a>
+<h1 id="2-实现">2 实现</h1>
+<h2 id="2-1-修改首页模板index-swig文件">2.1 修改首页模板<code>index.swig</code>文件</h2>
+<p>修改 <code>/themes/next/layout/index.swig</code> 文件，在把 <code>&lt;section id=&quot;posts&quot; class=&quot;posts-expand&quot;&gt;</code> 和 <code>&lt;/section&gt;</code> 之间的代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">for</span> post <span class="keyword">in</span> page.posts %&#125;</span><br><span class="line">     &#123;&#123; post_template.render(post, <span class="literal">true</span>) &#125;&#125;</span><br><span class="line">   &#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
+<p>替换成下面的代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">for</span> post <span class="keyword">in</span> page.posts %&#125;</span><br><span class="line">      &#123;% <span class="keyword">set</span> hide = false %&#125;</span><br><span class="line">      &#123;% <span class="keyword">if</span> theme.hide.hide_post %&#125;</span><br><span class="line">        &#123;% <span class="keyword">if</span> post.hide %&#125;</span><br><span class="line">          &#123;% <span class="keyword">set</span> hide = true %&#125;</span><br><span class="line">        &#123;% endif %&#125;</span><br><span class="line">      &#123;% endif %&#125;</span><br><span class="line">      &#123;% <span class="keyword">if</span> !hide %&#125;</span><br><span class="line">        &#123;&#123; post_template.render(post, <span class="literal">true</span>) &#125;&#125;</span><br><span class="line">      &#123;% endif %&#125;</span><br><span class="line">    &#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="2-2-修改主题配置-config-yml文件">2.2 修改主题配置<code>_config.yml</code>文件</h2>
+<p>打开<code>next</code>主题配置文件<code>/themes/next/_config.yml</code>, 在里面加入以下代码:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Hide single post</span><br><span class="line">hide:</span><br><span class="line">  hide_post: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>如果 <code>hide_post</code> 设置为 <code>true</code> , 新建文章时设置字段 <code>hide: true</code> 即可隐藏指定文章, 设置样式可参考下面：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">title: 测试图片展示</span><br><span class="line">urlname: pictureToDisplayTest_5<span class="number">-3</span></span><br><span class="line">author: WuGenQiang</span><br><span class="line">type: picture</span><br><span class="line">hide: <span class="literal">true</span></span><br><span class="line">categories:</span><br><span class="line">  - Test</span><br><span class="line">date: <span class="number">2019</span><span class="number">-04</span><span class="number">-14</span> <span class="number">18</span>:<span class="number">02</span>:<span class="number">40</span></span><br><span class="line">updated: <span class="number">2019</span><span class="number">-04</span><span class="number">-14</span> <span class="number">18</span>:<span class="number">02</span>:<span class="number">40</span></span><br></pre></td></tr></table></figure>
+<p>即可隐藏啦</p>
+<h1 id="3-说明">3 说明</h1>
+<p>如果设置 <code>hide</code> 字段值为 <code>false</code> , 这样就不会在首页隐藏，当然不写默认是不会隐藏的~~ 好了，就分享到这边了，应该可以实现了，嘿嘿</p>
+
       
     </div>
 
@@ -975,7 +992,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <i class="fa fa-pencil"></i>
-  <span class="post-count">博客全站共31.6k字</span>
+  <span class="post-count">博客全站共31.8k字</span>
 </div>
 
 <!-- 不蒜字统计 -->
