@@ -2059,7 +2059,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9aff41;
+  background: #8f9812;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3375,17 +3375,6 @@ ul.breadcrumb li+li:last-child {
 .gt-container .gt-comment-content .highlight ::selection {
   background: #2593a6;
   color: #fff;
-}
-@media screen and (min-width: 1200px) {
-  body {
-    background-image: url("/images/bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-  }
-  #footer a {
-    color: #eee;
-  }
 }
 .headband {
   display: none;
