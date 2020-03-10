@@ -1179,27 +1179,9 @@ pre .javascript .function {
 }
 .header {
   background: transparent;
-  margin: 0 auto;
 }
 .header-inner {
-  overflow: hidden;
-  padding: 0;
-  background: #fff;
-  border-radius: 15px 15px 15px 15px;
-}
-.main-header {
-  display: none;
-}
-.main-header > .header-inner {
   position: relative;
-  width: auto;
-  border-radius: initial;
-  margin-top: 10px;
-}
-@media (max-width: 991px) {
-  .main-header {
-    display: block;
-  }
 }
 .headband {
   height: 3px;
@@ -1318,112 +1300,41 @@ pre .javascript .function {
 .btn-bar+.btn-bar {
   margin-top: 4px;
 }
-.menu-item-active a,
-.menu .menu-item a:hover,
-.menu .menu-item span.exturl:hover {
-  background: #f9f9f9;
-  border-bottom-color: #fff;
-}
-.menu-item-active a:after,
-.menu .menu-item a:hover:after,
-.menu .menu-item span.exturl:hover:after {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  margin-top: -3px;
-  right: 15px;
-  width: 6px;
-  height: 6px;
-  background-color: #bbb;
-  border-radius: 50%;
-}
 .menu {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
 .menu .menu-item {
-  display: block !important;
-  margin: 0;
+  display: inline-block;
+  margin: 0 10px;
   list-style: none;
 }
-.menu .menu-item a {
-  display: block !important;
-  position: relative;
-  font-size: 13px;
+@media screen and (max-width: 767px) {
+  .menu .menu-item {
+    margin-top: 10px;
+  }
+}
+.menu .menu-item a,
+.menu .menu-item span.exturl {
+  display: block;
+  font-size: 14px;
   line-height: inherit;
-  border: 0;
-  box-sizing: border-box;
-  padding: 5px 20px;
-  text-align: left;
-  transition-property: background-color;
+  border-bottom: 1px solid transparent;
+  transition-property: border-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
 }
-@media (hover: none) {
-  .menu .menu-item a:hover {
-    background: none;
-  }
+.menu .menu-item a:hover,
+.menu .menu-item span.exturl:hover {
+  border-bottom-color: #222;
 }
-.menu .menu-item .fa,
-.menu .menu-item .fas,
-.menu .menu-item .fab,
-.menu .menu-item .far,
-.menu .menu-item .fal,
-.menu .menu-item .fad {
+.menu .menu-item .fa {
   margin-right: 5px;
-  width: 1rem;
 }
-.menu .menu-item br {
-  display: none;
-}
-.sub-menu-wrap {
-  background-color: #fff;
-  border-radius: 0.5rem;
-}
-.sub-menu {
-  margin: 0;
-  padding: 6px 0;
-  border-top: 0.5px dotted #dedfe1;
-}
-.sub-menu+ #content > #posts .post-block {
-  margin-top: 12px;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .sub-menu+ #content > #posts .post-block {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 767px) {
-  .sub-menu+ #content > #posts .post-block {
-    margin-top: 8px;
-  }
-}
-.sub-menu:first-child {
-  margin-top: 10px;
-  border-top: initial !important;
-}
-.sub-menu .menu-item {
-  display: inline-block !important;
-}
-.sub-menu .menu-item a {
-  padding: initial !important;
-  margin: 5px 10px;
-}
-.sub-menu .menu-item a:hover {
-  background: initial !important;
-  color: #fc6423;
-}
-.sub-menu .menu-item a:after {
-  display: none !important;
-}
-.sub-menu .menu-item-active a {
-  background: #fff !important;
-  color: #fc6423;
-}
-.sub-menu .menu-item-active a:hover {
-  background: #fff !important;
+.use-motion .menu-item {
+  opacity: 0;
 }
 .post-body {
   overflow-wrap: break-word;
@@ -2186,7 +2097,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6bdbff;
+  background: #1c04fa;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2837,7 +2748,7 @@ ul.breadcrumb li+li:last-child {
   width: 240px;
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 0.5rem;
 }
 @media (min-width: 1200px) {
   .container .header-inner {
@@ -2884,7 +2795,7 @@ ul.breadcrumb li+li:last-child {
   background: #fff;
   min-height: 700px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 0.5rem;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
@@ -3132,7 +3043,7 @@ ul.breadcrumb li+li:last-child {
   color: #59606a;
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  border-radius: 15px;
+  border-radius: 0.5rem;
   opacity: 0;
 }
 .sidebar-inner.affix {
@@ -3275,12 +3186,12 @@ ul.breadcrumb li+li:last-child {
   padding: 40px;
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 0.5rem;
 }
 #posts > article + article .post-block {
   margin-top: 12px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  border-radius: 15px;
+  border-radius: 0.5rem;
 }
 .comments {
   padding: 40px;
@@ -3288,7 +3199,7 @@ ul.breadcrumb li+li:last-child {
   margin-top: 12px;
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  border-radius: 15px;
+  border-radius: 0.5rem;
 }
 .posts-expand {
   padding-top: initial;
@@ -3308,7 +3219,7 @@ ul.breadcrumb li+li:last-child {
   border-top: initial;
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  border-radius: 15px;
+  border-radius: 0.5rem;
   padding: 10px 0 10px;
 }
 .pagination .prev,
@@ -3404,7 +3315,7 @@ ul.breadcrumb li+li:last-child {
   .post-block {
     padding: 20px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-    border-radius: 15px;
+    border-radius: 0.5rem;
   }
   #posts > article + article .post-block {
     margin-top: 10px;
@@ -3434,7 +3345,7 @@ ul.breadcrumb li+li:last-child {
     padding: 12px;
     min-height: auto;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-    border-radius: 15px;
+    border-radius: 0.5rem;
   }
   #posts > article + article .post-block {
     margin-top: 8px;
