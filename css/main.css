@@ -1182,6 +1182,10 @@ pre .javascript .function {
 }
 .header-inner {
   position: relative;
+  margin-top: 10px;
+}
+.main-inner {
+  margin-top: 10px;
 }
 .headband {
   height: 3px;
@@ -2070,7 +2074,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #86a1eb;
+  background: #2199f2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3017,7 +3021,6 @@ ul.breadcrumb li+li:last-child {
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: 0.5rem;
-  opacity: 0;
 }
 .sidebar-inner.affix {
   position: fixed;
@@ -3330,6 +3333,9 @@ ul.breadcrumb li+li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.site-meta {
+  background: #414852;
 }
 .post-body p a {
   color: #0593d3;
