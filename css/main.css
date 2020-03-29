@@ -185,11 +185,11 @@ th {
 }
 body {
   position: relative;
-  font-family: 'Itim', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 1.8;
-  color: #59606a;
-  background: #eee;
+  color: #555;
+  background: #beddd6;
 }
 @media (max-width: 767px) {
   body {
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Itim', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 h1,
 h2,
@@ -540,8 +540,8 @@ pre,
   margin: 20px 0;
   padding: 0;
   font-size: 15px;
-  color: #4d4d4c;
-  background: #f7f7f7;
+  color: #c5c8c6;
+  background: #1d1f21;
   line-height: 1.6;
 }
 pre,
@@ -554,7 +554,7 @@ code {
   padding: 2px 4px;
   color: #555;
   background: #eee;
-  border-radius: 3px;
+  border-radius: 0.5rem;
   font-size: 15px;
 }
 pre {
@@ -562,12 +562,12 @@ pre {
 }
 pre code {
   padding: 0;
-  color: #4d4d4c;
+  color: #c5c8c6;
   background: none;
   text-shadow: none;
 }
 .highlight {
-  border-radius: 1px;
+  border-radius: 5px;
 }
 .highlight pre {
   border: none;
@@ -585,7 +585,7 @@ pre code {
 }
 .highlight figcaption {
   font-size: 1em;
-  color: #4d4d4c;
+  color: #c5c8c6;
   line-height: 1em;
   margin-bottom: 1em;
   margin: 0em;
@@ -603,23 +603,23 @@ pre code {
 }
 .highlight figcaption a {
   float: right;
-  color: #4d4d4c;
+  color: #c5c8c6;
 }
 .highlight figcaption a:hover {
-  border-bottom-color: #4d4d4c;
+  border-bottom-color: #c5c8c6;
 }
 .highlight .gutter pre {
   padding-left: 10px;
   padding-right: 10px;
-  color: #869194;
+  color: #888f96;
   text-align: right;
-  background-color: #eff2f3;
+  background-color: #000;
 }
 .highlight .code pre {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #f7f7f7;
+  background-color: #1d1f21;
 }
 .highlight .line {
   height: 20px;
@@ -637,16 +637,16 @@ pre code {
   border: none;
 }
 pre .deletion {
-  background: #fdd;
+  background: #800000;
 }
 pre .addition {
-  background: #dfd;
+  background: #008000;
 }
 pre .meta {
-  color: #8959a8;
+  color: #b294bb;
 }
 pre .comment {
-  color: #8e908c;
+  color: #969896;
 }
 pre .variable,
 pre .attribute,
@@ -661,7 +661,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: #c66;
 }
 pre .number,
 pre .preprocessor,
@@ -671,7 +671,7 @@ pre .literal,
 pre .params,
 pre .constant,
 pre .command {
-  color: #f5871f;
+  color: #de935f;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute,
@@ -684,11 +684,11 @@ pre .ruby .symbol,
 pre .xml .cdata,
 pre .special,
 pre .formula {
-  color: #718c00;
+  color: #b5bd68;
 }
 pre .title,
 pre .css .hexcolor {
-  color: #3e999f;
+  color: #8abeb7;
 }
 pre .function,
 pre .python .decorator,
@@ -698,11 +698,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #81a2be;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #8959a8;
+  color: #b294bb;
 }
 .posts-expand .post-body img.full-image {
   border: none;
@@ -1029,9 +1029,9 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 20px;
   font-size: 14px;
-  color: #59606a;
+  color: #555;
   background: #fff;
-  border: 2px solid #59606a;
+  border: 2px solid #555;
   text-decoration: none;
   border-radius: 2px;
   transition-property: background-color;
@@ -1056,7 +1056,7 @@ pre .javascript .function {
   display: block;
   width: 22px;
   height: 2px;
-  background: #59606a;
+  background: #555;
   border-radius: 1px;
 }
 .btn-bar+.btn-bar {
@@ -1151,7 +1151,7 @@ pre .javascript .function {
 .back-to-top {
   visibility: hidden;
   margin: 8px -10px -20px;
-  background: #eee;
+  background: #beddd6;
   font-size: 12px;
   opacity: 0.6;
   cursor: pointer;
@@ -1189,7 +1189,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #eee;
+  background: #222;
 }
 .site-meta {
   margin: 0;
@@ -1223,7 +1223,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 24px;
   font-weight: normal;
-  font-family: 'Itim', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1316,7 +1316,7 @@ pre .javascript .function {
 .post-body {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  font-family: 'Itim', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .post-body .fancybox img {
   display: block !important;
@@ -1600,7 +1600,7 @@ pre .javascript .function {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-family: 'Itim', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
 }
@@ -2071,7 +2071,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffc278;
+  background: #9559ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2791,7 +2791,7 @@ ul.breadcrumb li+li:last-child {
   float: left;
   margin-left: -100%;
   width: 240px;
-  background: #eee;
+  background: #beddd6;
   box-shadow: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3014,10 +3014,11 @@ ul.breadcrumb li+li:last-child {
 .sidebar-inner {
   box-sizing: border-box;
   width: 240px;
-  color: #59606a;
+  color: #555;
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: 0.5rem;
+  opacity: 0;
 }
 .sidebar-inner.affix {
   position: fixed;
@@ -3237,28 +3238,28 @@ ul.breadcrumb li+li:last-child {
 }
 .post-body h1 {
   font-size: 1.6em;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #beddd6;
 }
 .post-body h1 code {
   font-size: 1em;
 }
 .post-body h2 {
   font-size: 1.45em;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #beddd6;
 }
 .post-body h2 code {
   font-size: 1em;
 }
 .post-body h3 {
   font-size: 1.3em;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #beddd6;
 }
 .post-body h3 code {
   font-size: 1em;
 }
 .post-body h4 {
   font-size: 1.2em;
-  border-bottom: 1px dotted #eee;
+  border-bottom: 1px dotted #beddd6;
 }
 .post-body h4 code {
   font-size: 1em;
@@ -3332,7 +3333,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 .site-meta {
-  background: #414852;
+  background: #222;
 }
 .post-body p a {
   color: #0593d3;
