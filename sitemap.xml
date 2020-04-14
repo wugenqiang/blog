@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wugenqiang.github.io/articles/computerExamGuide.html</loc>
+    <loc>https://wugenqiang.github.io/articles/IDEA-Used-Methods.html</loc>
     
-    <lastmod>2020-03-28T20:56:40.000Z</lastmod>
+    <lastmod>2020-04-14T16:26:47.000Z</lastmod>
     
   </url>
   
@@ -12,20 +12,6 @@
     <loc>https://wugenqiang.github.io/photos/index.html</loc>
     
     <lastmod>2020-03-14T02:44:12.072Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wugenqiang.github.io/articles/C-Notes.html</loc>
-    
-    <lastmod>2020-03-07T15:20:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wugenqiang.github.io/articles/TheNewBlogAndCS-Notes.html</loc>
-    
-    <lastmod>2020-02-26T21:49:44.000Z</lastmod>
     
   </url>
   
@@ -47,13 +33,6 @@
     <loc>https://wugenqiang.github.io/articles/FightingForSEU.html</loc>
     
     <lastmod>2019-11-03T21:06:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wugenqiang.github.io/articles/LearnC++ByMyselfAndMooc.html</loc>
-    
-    <lastmod>2019-06-22T21:06:57.000Z</lastmod>
     
   </url>
   
@@ -142,13 +121,6 @@
   </url>
   
   <url>
-    <loc>https://wugenqiang.github.io/laboratory/index.html</loc>
-    
-    <lastmod>2019-04-17T12:18:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://wugenqiang.github.io/laboratory/trainingCamp/index.html</loc>
     
     <lastmod>2019-04-17T12:18:28.000Z</lastmod>
@@ -156,16 +128,9 @@
   </url>
   
   <url>
-    <loc>https://wugenqiang.github.io/articles/SwordForOffer.html</loc>
+    <loc>https://wugenqiang.github.io/laboratory/index.html</loc>
     
-    <lastmod>2019-04-17T11:37:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wugenqiang.github.io/articles/LeetCodeTraining.html</loc>
-    
-    <lastmod>2019-04-17T09:10:01.000Z</lastmod>
+    <lastmod>2019-04-17T12:18:28.000Z</lastmod>
     
   </url>
   

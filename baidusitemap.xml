@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://wugenqiang.github.io/articles/computerExamGuide.html</loc>
-    <lastmod>2020-03-28</lastmod>
-  </url>  <url>
-    <loc>https://wugenqiang.github.io/articles/C-Notes.html</loc>
-    <lastmod>2020-03-07</lastmod>
-  </url>  <url>
-    <loc>https://wugenqiang.github.io/articles/TheNewBlogAndCS-Notes.html</loc>
-    <lastmod>2020-02-26</lastmod>
+    <loc>https://wugenqiang.github.io/articles/IDEA-Used-Methods.html</loc>
+    <lastmod>2020-04-14</lastmod>
   </url>  <url>
     <loc>https://wugenqiang.github.io/articles/hexo-do-optimization.html</loc>
     <lastmod>2020-01-07</lastmod>
   </url>  <url>
     <loc>https://wugenqiang.github.io/articles/FightingForSEU.html</loc>
     <lastmod>2019-11-03</lastmod>
-  </url>  <url>
-    <loc>https://wugenqiang.github.io/articles/LearnC++ByMyselfAndMooc.html</loc>
-    <lastmod>2019-06-22</lastmod>
   </url>  <url>
     <loc>https://wugenqiang.github.io/articles/learnThroughLife001.html</loc>
     <lastmod>2019-06-04</lastmod>
@@ -36,12 +27,6 @@
   </url>  <url>
     <loc>https://wugenqiang.github.io/articles/FreeVpnToShare.html</loc>
     <lastmod>2019-04-22</lastmod>
-  </url>  <url>
-    <loc>https://wugenqiang.github.io/articles/SwordForOffer.html</loc>
-    <lastmod>2019-04-17</lastmod>
-  </url>  <url>
-    <loc>https://wugenqiang.github.io/articles/LeetCodeTraining.html</loc>
-    <lastmod>2019-04-17</lastmod>
   </url>  <url>
     <loc>https://wugenqiang.github.io/articles/testCopyrightDeclaration.html</loc>
     <lastmod>2019-04-15</lastmod>
