@@ -160,18 +160,18 @@
 <meta property="og:site_name" content="EnjoyToShare">
 <meta property="og:description" content="一、前言 自从接触了Hexo+NexT之后，发现离不开了，以后有能力的时候一定重新架构一下，使得更加个性化，最大程度的满足我们对于软件的需求，大家都知道，如果写东西在本地的话，最怕的应该就是更换电脑，还要重新搭建博客了，所以备份对于我们来说特别重要！备份博客就是本篇博客文章的主旨了，一定要攻下这座城堡。 我曾经看过Git备份Hexo博客源文件的方式，所以在这里记录一下……">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409192241.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409194211.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202006.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202215.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409200850.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202447.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409205709.png">
+<meta property="og:image" content="https://wugenqiang.github.io/PictureBed/pictures/20190409192241.png">
+<meta property="og:image" content="https://wugenqiang.github.io/PictureBed/pictures/20190409194211.png">
+<meta property="og:image" content="https://wugenqiang.github.io/PictureBed/pictures/20190409202006.png">
+<meta property="og:image" content="https://wugenqiang.github.io/PictureBed/pictures/20190409202215.png">
+<meta property="og:image" content="https://wugenqiang.github.io/PictureBed/pictures/20190409200850.png">
+<meta property="og:image" content="https://wugenqiang.github.io/PictureBed/pictures/20190409202447.png">
+<meta property="og:image" content="https://wugenqiang.github.io/PictureBed/pictures/20190409205709.png">
 <meta property="og:updated_time" content="2019-04-09T19:04:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git命令手动备份Hexo博客源文件">
 <meta name="twitter:description" content="一、前言 自从接触了Hexo+NexT之后，发现离不开了，以后有能力的时候一定重新架构一下，使得更加个性化，最大程度的满足我们对于软件的需求，大家都知道，如果写东西在本地的话，最怕的应该就是更换电脑，还要重新搭建博客了，所以备份对于我们来说特别重要！备份博客就是本篇博客文章的主旨了，一定要攻下这座城堡。 我曾经看过Git备份Hexo博客源文件的方式，所以在这里记录一下……">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409192241.png">
+<meta name="twitter:image" content="https://wugenqiang.github.io/PictureBed/pictures/20190409192241.png">
 
 
 
@@ -646,7 +646,7 @@
 <h2 id="2-创建仓库">2.创建仓库</h2>
 <p>进入本地的Hexo文件夹(E:\work\myblog)，在这个地方使用<code>git Bash here</code>执行以下命令创建仓库:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409192241.png" alt></p>
+<p><img src="https://wugenqiang.github.io/PictureBed/pictures/20190409192241.png" alt></p>
 <h2 id="3-修改-gitignore文件">3.修改.gitignore文件</h2>
 <p>如果没有请手动创建一个，在里面加入<code>*.log</code> 和 <code>public/</code> 以及<code>.deploy*/</code>。因为每次执行<code>hexo g</code>命令时，上述目录都会被重写更新。因此忽略这两个目录下的文件更新，加快push速度。<br>
 注：如果文件中有<code>*.log</code> 和 <code>public/</code> 以及<code>.deploy*/</code>这些的时候，直接进行下一步：</p>
@@ -656,7 +656,7 @@
 <h2 id="5-设置远程仓库地址">5.设置远程仓库地址</h2>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/wugenqiang/myblog.git</span><br></pre></td></tr></table></figure>
 <p>如果出现问题：fatal: remote origin already exists</p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409194211.png" alt></p>
+<p><img src="https://wugenqiang.github.io/PictureBed/pictures/20190409194211.png" alt></p>
 <p>解决办法如下：<br>
 （1）先删除远程 Git 仓库</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br></pre></td></tr></table></figure>
@@ -671,18 +671,21 @@
 <h2 id="6-远程仓库合并到本地">6.远程仓库合并到本地</h2>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull --rebase origin master</span><br></pre></td></tr></table></figure>
 <p>我就属于创建README.md的一群人，真的是习惯造成的，执行这一步效果如下：</p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202006.png" alt></p>
+<p><img src="https://wugenqiang.github.io/PictureBed/pictures/20190409202006.png" alt></p>
 <h2 id="7-更新远程仓库">7.更新远程仓库</h2>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202215.png" alt></p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409200850.png" alt></p>
+<p><img src="https://wugenqiang.github.io/PictureBed/pictures/20190409202215.png" alt></p>
+<p><img src="https://wugenqiang.github.io/PictureBed/pictures/20190409200850.png" alt></p>
 <p>如果创建仓库不为空而且不执行第4步直接执行第5步则会出现：</p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409202447.png" alt></p>
+<p><img src="https://wugenqiang.github.io/PictureBed/pictures/20190409202447.png" alt></p>
 <h1 id="四-结语">四、结语</h1>
-<p>到现在为止，我们的任务已经完成了。现在可以做到的是，在任何一台电脑上，只需要<code>git clone https://github.com/wugenqiang/myblog.git</code>,即可完成将Hexo源文件复制到本地。（请将后面的<code>https://github.com/wugenqiang/myblog.git</code>替换为自己相应的仓库地址。否则，克隆的将是我的博客源码:)）<br>
+<blockquote>
+<p>注明：写于 2020 - 04 - 23 目前源代码地址已经从 myblog 变成了 CS-BlogSource，如果是参考本文的话，源文件地址记得修改哈！再次强调一下，不然访问不了的。</p>
+</blockquote>
+<p>到现在为止，我们的任务已经完成了。现在可以做到的是，在任何一台电脑上，只需要<code>git clone https://github.com/wugenqiang/CS-BlogSource.git</code>,即可完成将Hexo源文件复制到本地。（请将后面的<code>https://github.com/wugenqiang/CS-BlogSource.git</code>替换为自己相应的仓库地址。否则，克隆的将是我的博客源码:)）<br>
 效果如下：</p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/picGo/master/pictures/20190409205709.png" alt></p>
+<p><img src="https://wugenqiang.github.io/PictureBed/pictures/20190409205709.png" alt></p>
 <p>在本地编写完博客时，顺次执行实现三步骤中的4、6、7命令，即可完成Hexo博客源文件更新同步，保持Github上的Hexo源码为最新版本。ok，分享就到这里啦，如果觉得这样手动操作有点辛苦的话，可以参考我的另一篇博客：</p>
 <ul>
 <li><a href="https://wugenqiang.gitee.io/articles/auto_backup_blog_source_files.html" target="_blank" rel="noopener">自动备份Hexo博客源文件</a></li>
