@@ -2071,7 +2071,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #32feff;
+  background: #ff5339;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3473,4 +3473,7 @@ ul.breadcrumb li+li:last-child {
 code {
   background: #fbf7f8;
   margin: 2px;
+}
+.vcopy.txt-right {
+  display: none;
 }
