@@ -143,14 +143,6 @@
 
 
 
- <script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/b6dbddb6.js","daovoice")
- daovoice('init', {
-   app_id: "b6dbddb6"
- });
- daovoice('update');
- </script>
-
-
 
   <meta name="description" content="1 前言 本文主要是Hexo+NexT搭建博客并且进行主题的配置以及页面的样式优化 本篇文档参考了许多大佬的文章以及配置文件，在此感谢大佬们。 本文参考的文章都会直接给出原文链接或者以注脚的形式标记出处，如有遗漏，欢迎指出。 本文内容会在后续的优化中慢慢补充完整~~">
 <meta name="keywords" content="Hexo-NexT-Template">
@@ -2062,6 +2054,15 @@ if ($('body').find('div.pdf').length) {
     }).append(e);
   })
 </script>
+
+
+  <!--使用 Gitter 实现一个 IM 即时通讯聊天室功能-->
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'enjoytoshare/community'
+    };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 
   
