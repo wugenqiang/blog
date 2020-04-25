@@ -531,7 +531,7 @@
         
          
         
-        老铁儿! 目前只有 33 篇良品日志, 要继续向前进啊, fighting! Oliver
+        老铁儿! 目前只有 35 篇良品日志, 要继续向前进啊, fighting! Oliver
       </span>
       
 
@@ -546,6 +546,76 @@
           <div class="collection-title">
             <h2 class="archive-year" id="archive-year-2020">2020</h2>
           </div>
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="https://schema.org/Article">
+    <header class="post-header">
+
+      <h3 class="post-title">
+        
+          <a class="post-title-link" href="/articles/Hexo-NexT-Valine.html" itemprop="url">
+            
+              <span itemprop="name">Hexo NexT 评论系统 Valine 的使用</span>
+            
+          </a>
+        
+      </h3>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2020-04-25T09:21:29Z" content="2020-04-25">
+          04-25
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="https://schema.org/Article">
+    <header class="post-header">
+
+      <h3 class="post-title">
+        
+          <a class="post-title-link" href="/articles/Hexo-NexT-Gitter.html" itemprop="url">
+            
+              <span itemprop="name">添加 Gitter 在线交流</span>
+            
+          </a>
+        
+      </h3>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2020-04-24T16:21:24Z" content="2020-04-24">
+          04-24
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
         
         
 
@@ -698,7 +768,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-count">35</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -800,7 +870,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">26</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">28</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -911,6 +985,47 @@
 <!-- https://unpkg.com/valine/dist/Valine.min.js -->
 <script src="./js/src/Valine.min.js"></script>
 
+<!-- 评论框美化 -->
+<style>
+    #comments .veditor{
+        min-height: 10rem;
+        background-image: url(https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200425091751.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: rgba(255,255,255,0);
+        resize: none;}
+</style>
+
+<script>
+    //   自定义邮箱审核规则
+    document.body.addEventListener('click', function(e) {
+        if (e.target.classList.contains('vsubmit')) {
+            const email = document.querySelector('input[type=email]');
+            const nick = document.querySelector('input[name=nick]');
+            const reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+            if (!email.value || !nick.value || !reg.test(email.value)) {
+                const str = `<div class="valert text-center"><div class="vtext">请填写正确的昵称和邮箱！</div></div>`;
+                const vmark = document.querySelector('.vmark');
+                vmark.innerHTML = str;
+                vmark.style.display = 'block';
+                setTimeout(function() {
+                    vmark.style.display = 'none';
+                    vmark.innerHTML = '';
+                }, 2500);
+            }
+        }
+    });
+    // 点击回复直接评论,官方版本点击回复时都是跳回到页面上方的评论框进行回复，评论框是固定不动的
+    // 参考https://immmmm.com/valine-diy,用到jQuery
+    $(document).ready(function(){
+        //$('.vemoji-btn').text('😀');
+        $("#vcomments").on('click', 'span.vat',function(){
+            $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+            $('textarea#veditor').focus();
+        })
+    })
+</script>
 
 <div>
 <!-- 网站运行时间的设置 -->
@@ -936,7 +1051,7 @@ setInterval("createtime()",250);
 <!-- 网站底部字数统计 -->
 <div class="theme-info">
   <i class="fa fa-pencil"></i>
-  <span class="post-count">博客全站共 35.7k 字</span>
+  <span class="post-count">博客全站共 39.2k 字</span>
 </div>
 
 <!-- 不蒜字统计 -->
@@ -1084,7 +1199,7 @@ setInterval("createtime()",250);
   new Valine({
     el: '#comments',
     verify: false,
-    notify: true,
+    notify: false,
     appId: 'KIlqXsCmzBUnovnvh5ih8mk9-gzGzoHsz',
     appKey: 'e0v6zIg2NGg44PM6MVLa7voo',
     placeholder: '交流中让我们一起进步',

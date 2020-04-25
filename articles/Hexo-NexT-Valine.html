@@ -144,30 +144,51 @@
 
 
 
-  <meta name="description" content="1 写在前言 友链的设置是参考大佬 三水非冰 的博客来完成的，在此表示感谢，样式效果如下：">
-<meta name="keywords" content="Hexo-NexT-Template">
+  <meta name="description" content="评论系统 Valine 的使用 注明：以下方案是在 Valine 1.4.9 版本下完成，对于其他版本应该会根据实际情况修改参数，使用 F12 查看参数修改即可使用！（说明于 2020 - 04 - 25） 强烈推荐大佬们直接去看 cungudafa 对于 Valine 评论系统的优化，实在是棒，本人博客：EnjoyToShare 的评论系统也是根据这位大佬的文章阐述修改而来，在此对她表示感谢！">
+<meta name="keywords" content="Hexo-NexT-Template,Valine">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+NexT修改友链样式">
-<meta property="og:url" content="https://wugenqiang.github.io/articles/hexoEditLinkStyle.html">
+<meta property="og:title" content="Hexo NexT 评论系统 Valine 的使用">
+<meta property="og:url" content="https://wugenqiang.github.io/articles/Hexo-NexT-Valine.html">
 <meta property="og:site_name" content="EnjoyToShare">
-<meta property="og:description" content="1 写在前言 友链的设置是参考大佬 三水非冰 的博客来完成的，在此表示感谢，样式效果如下：">
+<meta property="og:description" content="评论系统 Valine 的使用 注明：以下方案是在 Valine 1.4.9 版本下完成，对于其他版本应该会根据实际情况修改参数，使用 F12 查看参数修改即可使用！（说明于 2020 - 04 - 25） 强烈推荐大佬们直接去看 cungudafa 对于 Valine 评论系统的优化，实在是棒，本人博客：EnjoyToShare 的评论系统也是根据这位大佬的文章阐述修改而来，在此对她表示感谢！">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414131508.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414133048.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414135327.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414135751.png">
-<meta property="og:updated_time" content="2019-04-14T13:12:26.000Z">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424152854.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424193358.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424193932.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424183458.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424184936.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424183458.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424184936.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424160158.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424162618.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424191415.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424162805.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424163011.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424163217.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424163354.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424164155.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424164345.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424164657.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424191359.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424174606.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424174743.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424180313.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424182741.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200425085135.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200425085301.png">
+<meta property="og:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200425091911.png">
+<meta property="og:updated_time" content="2020-04-25T09:21:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+NexT修改友链样式">
-<meta name="twitter:description" content="1 写在前言 友链的设置是参考大佬 三水非冰 的博客来完成的，在此表示感谢，样式效果如下：">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414131508.png">
+<meta name="twitter:title" content="Hexo NexT 评论系统 Valine 的使用">
+<meta name="twitter:description" content="评论系统 Valine 的使用 注明：以下方案是在 Valine 1.4.9 版本下完成，对于其他版本应该会根据实际情况修改参数，使用 F12 查看参数修改即可使用！（说明于 2020 - 04 - 25） 强烈推荐大佬们直接去看 cungudafa 对于 Valine 评论系统的优化，实在是棒，本人博客：EnjoyToShare 的评论系统也是根据这位大佬的文章阐述修改而来，在此对她表示感谢！">
+<meta name="twitter:image" content="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424152854.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://wugenqiang.github.io/articles/hexoEditLinkStyle.html">
+  <link rel="canonical" href="https://wugenqiang.github.io/articles/Hexo-NexT-Valine.html">
 
 
 
@@ -188,7 +209,7 @@
     })();
 </script>
 
-  <title>Hexo+NexT修改友链样式 | EnjoyToShare</title>
+  <title>Hexo NexT 评论系统 Valine 的使用 | EnjoyToShare</title>
   
 
 
@@ -506,7 +527,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wugenqiang.github.io/articles/hexoEditLinkStyle.html">
+    <link itemprop="mainEntityOfPage" href="https://wugenqiang.github.io/articles/Hexo-NexT-Valine.html">
 
     <span hidden itemprop="author" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="name" content="WuGenQiang">
@@ -523,7 +544,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hexo+NexT修改友链样式
+          <h2 class="post-title" itemprop="name headline">Hexo NexT 评论系统 Valine 的使用
 
               
             
@@ -549,7 +570,7 @@
                 
               
 
-              <time title="创建时间：2019-04-14 13:12:26" itemprop="dateCreated datePublished" datetime="2019-04-14T13:12:26Z">2019-04-14</time>
+              <time title="创建时间：2020-04-25 09:21:29" itemprop="dateCreated datePublished" datetime="2020-04-25T09:21:29Z">2020-04-25</time>
             
 
             
@@ -586,8 +607,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/articles/hexoEditLinkStyle.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/articles/hexoEditLinkStyle.html" itemprop="commentCount"></span>
+                <a href="/articles/Hexo-NexT-Valine.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/articles/Hexo-NexT-Valine.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -595,7 +616,7 @@
 
           
           
-            <span id="/articles/hexoEditLinkStyle.html" class="leancloud_visitors" data-flag-title="Hexo+NexT修改友链样式">
+            <span id="/articles/Hexo-NexT-Valine.html" class="leancloud_visitors" data-flag-title="Hexo NexT 评论系统 Valine 的使用">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -626,45 +647,254 @@
       
 
       
-        <h1 id="1-写在前言">1 写在前言</h1>
-<p>友链的设置是参考大佬 <a href="https://www.sanshuifeibing.cn/" target="_blank" rel="noopener">三水非冰</a> 的博客来完成的，在此表示感谢，样式效果如下：</p>
-<a id="more"></a>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414131508.png" alt></p>
-<h1 id="2-实现">2 实现</h1>
-<h2 id="2-1-新建links-swig文件">2.1 新建<code>links.swig</code>文件</h2>
-<p>在<code>/themes/next/layout/</code>路径下，新建一个文件<code>links.swig</code>，其内容为以下代码：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block content %&#125;</span><br><span class="line">  &#123;######################&#125;</span><br><span class="line">  &#123;### LINKS BLOCK ###&#125;</span><br><span class="line">  &#123;######################&#125;</span><br><span class="line">  </span><br><span class="line">    &lt;div id=<span class="string">"links"</span>&gt;</span><br><span class="line">        &lt;style&gt;</span><br><span class="line">            .links-content&#123;</span><br><span class="line">                margin-top:<span class="number">1</span>rem;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            .link-navigation::after &#123;</span><br><span class="line">                content: <span class="string">" "</span>;</span><br><span class="line">                display: block;</span><br><span class="line">                clear: both;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            .card &#123;</span><br><span class="line">                width: <span class="number">300</span>px;</span><br><span class="line">                font-size: <span class="number">1</span>rem;</span><br><span class="line">                padding: <span class="number">10</span>px <span class="number">20</span>px;</span><br><span class="line">                border-radius: <span class="number">4</span>px;</span><br><span class="line">                transition-duration: <span class="number">0.15</span>s;</span><br><span class="line">                margin-bottom: <span class="number">1</span>rem;</span><br><span class="line">                display:flex;</span><br><span class="line">            &#125;</span><br><span class="line">            .card:nth-child(odd) &#123;</span><br><span class="line">                float: left;</span><br><span class="line">            &#125;</span><br><span class="line">            .card:nth-child(even) &#123;</span><br><span class="line">                float: right;</span><br><span class="line">            &#125;</span><br><span class="line">            .card:hover &#123;</span><br><span class="line">                transform: scale(<span class="number">1.1</span>);</span><br><span class="line">                box-shadow: <span class="number">0</span> <span class="number">2</span>px <span class="number">6</span>px <span class="number">0</span> rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.12</span>), <span class="number">0</span> <span class="number">0</span> <span class="number">6</span>px <span class="number">0</span> rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.04</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            .card a &#123;</span><br><span class="line">                border:none; </span><br><span class="line">            &#125;</span><br><span class="line">            .card .ava &#123;</span><br><span class="line">                width: <span class="number">3</span>rem!important;</span><br><span class="line">                height: <span class="number">3</span>rem!important;</span><br><span class="line">                margin:<span class="number">0</span>!important;</span><br><span class="line">                margin-right: <span class="number">1</span>em!important;</span><br><span class="line">                border-radius:<span class="number">4</span>px;</span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">            .card .card-header &#123;</span><br><span class="line">                font-style: italic;</span><br><span class="line">                overflow: hidden;</span><br><span class="line">                width: <span class="number">236</span>px;</span><br><span class="line">            &#125;</span><br><span class="line">            .card .card-header a &#123;</span><br><span class="line">                font-style: normal;</span><br><span class="line">                color: #2bbc8a;</span><br><span class="line">                font-weight: bold;</span><br><span class="line">                text-decoration: none;</span><br><span class="line">            &#125;</span><br><span class="line">            .card .card-header a:hover &#123;</span><br><span class="line">                color: #d480aa;</span><br><span class="line">                text-decoration: none;</span><br><span class="line">            &#125;</span><br><span class="line">            .card .card-header .info &#123;</span><br><span class="line">                font-style:normal;</span><br><span class="line">                color:#a3a3a3;</span><br><span class="line">                font-size:<span class="number">14</span>px;</span><br><span class="line">                min-width: <span class="number">0</span>;</span><br><span class="line">                text-overflow: ellipsis;</span><br><span class="line">                overflow: hidden;</span><br><span class="line">                white-space: nowrap;</span><br><span class="line">            &#125;</span><br><span class="line">        &lt;<span class="regexp">/style&gt;</span></span><br><span class="line"><span class="regexp">        &lt;div class="links-content"&gt;</span></span><br><span class="line"><span class="regexp">            &lt;div class="link-navigation"&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">                &#123;% for link in theme.mylinks %&#125;</span></span><br><span class="line"><span class="regexp">                </span></span><br><span class="line"><span class="regexp">                    &lt;div class="card"&gt;</span></span><br><span class="line"><span class="regexp">                        &lt;img class="ava" src="&#123;&#123; link.avatar &#125;&#125;"/</span>&gt;</span><br><span class="line">                        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"card-header"</span>&gt;</span><br><span class="line">                        &lt;div&gt;&lt;a href="&#123;&#123; link.site &#125;&#125;" target="_blank"&gt;@ &#123;&#123; link.nickname &#125;&#125;&lt;/a&gt;&lt;/div&gt;</span><br><span class="line">                        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"info"</span>&gt;&#123;&#123; link.info &#125;&#125;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">                        &lt;/</span>div&gt;</span><br><span class="line">                    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">                </span></span><br><span class="line"><span class="regexp">                &#123;% endfor %&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            &lt;/</span>div&gt;</span><br><span class="line">            &#123;&#123; page.content &#125;&#125;</span><br><span class="line">            &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">        &lt;/</span>div&gt;</span><br><span class="line">  </span><br><span class="line">  &#123;##########################&#125;</span><br><span class="line">  &#123;### END LINKS BLOCK ###&#125;</span><br><span class="line">  &#123;##########################&#125;</span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="2-2-修改page-swig文件">2.2 修改<code>page.swig</code>文件</h2>
-<p>修改<code>/themes/next/layout/page.swig</code>:</p>
-<p>在</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#&#125;&#123;&#123; __('title.schedule') + page_title_suffix &#125;&#125;&#123;#</span><br></pre></td></tr></table></figure>
-<p>下方添加两行代码：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#&#125;&#123;% elif page.type === 'links' and not page.title %&#125;&#123;#</span><br><span class="line">    #&#125;&#123;&#123; __('title.links') + page_title_suffix &#125;&#125;&#123;#</span><br></pre></td></tr></table></figure>
-<p>在</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include <span class="string">'schedule.swig'</span> %&#125;</span><br></pre></td></tr></table></figure>
-<p>下方添加两行代码：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% elif page.type === <span class="string">'links'</span> %&#125;</span><br><span class="line">  &#123;% include <span class="string">'links.swig'</span> %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="2-3-修改-config-yml文件">2.3 修改<code>_config.yml</code>文件</h2>
-<p>在主题配置文件<code>/themes/_config.yml</code>末尾处添加友链：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mylinks:</span><br><span class="line">  - nickname: 青果先生  #友链名称</span><br><span class="line">    avatar: https:<span class="comment">//raw.githubusercontent.com/wugenqiang/picGo/master/pictures/003.jpg  #友链头像</span></span><br><span class="line">    site: https:<span class="comment">//blog.enjoytoshare.club  #友链地址</span></span><br><span class="line">    info: Sometimes your whole life boils down to one insame move.  #友链说明</span><br></pre></td></tr></table></figure>
-<h2 id="2-4-创建links页面">2.4 创建<code>links</code>页面</h2>
-<p>创建一个<code>links</code>页面，页面将自动加载已添加的友链。<br>
-确保links页面index.md文件中有</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: 友链</span><br><span class="line">author: WuGenQiang</span><br><span class="line">type: links</span><br><span class="line">---</span><br><span class="line">此处放置你想写的东西，此处默认显示在链接下方</span><br><span class="line">比如放置申请友链的要求等等</span><br></pre></td></tr></table></figure>
-<p>原因：</p>
+        <h1 id="评论系统-valine-的使用">评论系统 Valine 的使用</h1>
+<p>注明：以下方案是在 Valine 1.4.9 版本下完成，对于其他版本应该会根据实际情况修改参数，使用 F12 查看参数修改即可使用！（说明于 2020 - 04 - 25）</p>
+<p>强烈推荐大佬们直接去看 <a href="https://blog.csdn.net/cungudafa/article/details/105548858" target="_blank" rel="noopener">cungudafa</a> 对于 Valine 评论系统的优化，实在是棒，本人博客：<a href="https://wugenqiang.github.io/">EnjoyToShare</a> 的评论系统也是根据这位大佬的文章阐述修改而来，在此对她表示感谢！</p>
+<h2 id="1-valine-的介绍">1 Valine 的介绍</h2>
+<p>一款快速、简洁且高效的无后端评论系统。</p>
+<p><a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 诞生于 2017 年 8 月 7 日，是一款基于 <a href="https://www.leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a> 的快速、简洁且高效的无后端评论系统。</p>
+<p>理论上支持但不限于静态博客，目前已有 Hexo、Jekyll、Typecho、Hugo、Ghost 等博客程序在使用 <a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a>。</p>
+<blockquote>
+<p>Valine 特性</p>
+</blockquote>
 <ul>
-<li>添加<code>title</code>，是为了标题中出现<code>title</code>，</li>
-<li>添加<code>type</code>，是为了显示友链的对象，不添加不显示</li>
+<li>快速</li>
+<li>安全</li>
+<li>Emoji 😉</li>
+<li>无后端实现</li>
+<li>MarkDown 全语法支持</li>
+<li>轻量易用(~15kb gzipped)</li>
+<li>文章阅读量统计 v1.2.0+</li>
 </ul>
-<h1 id="3-结束语">3 结束语</h1>
-<p>点击效果最终显示这样:</p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414133048.png" alt></p>
-<p>点击这里查看实际效果：<a href="https://wugenqiang.gitee.io/links/" target="_blank" rel="noopener">戳我戳我好疼啊</a></p>
-<p>肯定到这里有人会问了，这是链接一个人的效果，如果链接两个人以及以上呢？当然也有办法：<br>
-在2.3步骤中如图设置即可，需要链接几个人就添加几条记录：</p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414135327.png" alt></p>
-<p>效果显示：</p>
-<p><img src="https://raw.githubusercontent.com/wugenqiang/PictureBed/master/pictures/20190414135751.png" alt></p>
+<h2 id="2-valine-的使用">2 Valine 的使用</h2>
+<p>1 注册 <a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a></p>
+<p>2 创建 Valine 应用，名称任意，例如 Valine-Admin</p>
+<p>3 进入对应的应用，点击 <code>设置 -&gt; 应用 Keys</code>，获取 <code>AppID</code> 和 <code>AppKey</code></p>
+<p>4 在 Hexo 博客主题配置文件 <code>next/_config.yml</code> 中进行配置，大家也可根据自己来设置该评论设置。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">valine:</span><br><span class="line">  enable: true # 设置为true，默认为false</span><br><span class="line">  appid:  # 将应用key的App ID设置在这里</span><br><span class="line">  appkey: # 将应用key的App Key设置在这里</span><br><span class="line">  notify: false# 邮箱通知 , https://github.com/xCss/Valine/wiki，默认为false</span><br><span class="line">  verify: false# 验证码 默认为false</span><br><span class="line">  placeholder: Just go go ^_^ # 初始化评论显示，根据自己修改，这里默认，</span><br><span class="line">  avatar: monsterid # 头像风格，默认为mm，可进入网址：https://valine.js.org/visitor.html查看头像设置，这里有许多头像风格，进行设置</span><br><span class="line">  guest_info: nick,mail,link # 自定义评论标题</span><br><span class="line">  pageSize: 10 # 分页大小，10页就自动分页</span><br><span class="line">  visitor: true # 是否允许游客评论 ，进入官网查看设置：https://valine.js.org/visitor.html</span><br></pre></td></tr></table></figure>
+<p>了解更多 Valine 配置参数信息请参考：<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine 官方文档</a></p>
+<h2 id="3-valine-的配置">3 Valine 的配置</h2>
+<p>1 查看评论</p>
+<p>点击 <code>存储 -&gt; 结构化数据</code>，选择 <code>创建 Class</code>，名称 <code>Comment</code>，其他保持默认，以后就可在此 Class 内查看</p>
+<blockquote>
+<p>注：选择 <code>Valine</code> 评论系统是因为支持国内网络，不需要连接外网（翻墙）就可以进行显示评论系统，而且很好管理，页面简单</p>
+</blockquote>
+<p>2 文章阅读量统计</p>
+<p>点击 <code>存储 -&gt; 结构化数据</code>，选择<code>创建 Class</code>，名称 <code>Counter</code>，其他保持默认，以后就可在此 Class 内查看</p>
+<h2 id="4-valine-的优化">4 Valine 的优化</h2>
+<h3 id="4-1-去除-valine的-powered-by">4.1 去除 Valine的 Powered By</h3>
+<p>我喜欢简洁一点，所以想去掉这个提示。查看 Elements 可以看到这个 div，那么我只要移除这个 div 下的所有子节点，就可以去掉这个 Powered By 了。</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424152854.png" alt="image-20200424152853285"></p>
+<p>但是怎么改呢？</p>
+<p>使用 <code>F12</code>，按 <code>ctrl + shift + c</code>，鼠标放到 Powered By 的地方，点击一下，看到如下图：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424193358.png" alt="image-20200424193355880"></p>
+<p>这个 div 里的就是要修改的，打开 <code>themes/next/source/css/_custom/custom.styl</code> 文件，添加以下内容：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 隐藏 valine 的 powered by</span><br><span class="line"><span class="selector-class">.vcopy</span><span class="selector-class">.txt-right</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424193932.png" alt="image-20200424193931176"></p>
+<h3 id="4-2-邮件通知功能">4.2 邮件通知功能</h3>
+<h4 id="4-2-1-原邮箱模板通知功能">4.2.1 原邮箱模板通知功能</h4>
+<p>登录 <a href="https://leancloud.cn/dashboard/login.html" target="_blank" rel="noopener">leadcloud</a> 后台，在应用的<code>设置-&gt;邮件模板-&gt;邮件主题</code>（修改主题名称和内容，保存）</p>
+<p>修改邮件主题：<code>你在的评论收到了新的评论</code></p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424183458.png" alt="image-20200424183457064"></p>
+<p>内容如下：（链接为你的博客主页链接）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Hi, &#123;&#123;username&#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;你在 &#123;&#123;appname&#125;&#125; 的评论收到了新的回复，请点击查看：&lt;/p&gt;</span><br><span class="line">&lt;p&gt;</span><br><span class="line">&lt;a href=&quot;https://cungudafa.gitee.io&quot; style=&quot;display: inline-block; padding: 10px 20px; border-radius: 4px; background-color: #3090e4; color: #fff; text-decoration: none;&quot;&gt;马上查看&lt;/a&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>点击 “保存” 按钮</p>
+<p>并且修改主题配置文件：改成 true</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424184936.png" alt="image-20200424184935074">邮件回复功能</p>
+<p>登录 <a href="https://leancloud.cn/dashboard/login.html" target="_blank" rel="noopener">leadcloud</a> 后台，在应用的<code>设置-&gt;邮件模板-&gt;邮件主题</code>（修改主题名称和内容，保存）</p>
+<p>修改邮件主题：<code>你在的评论收到了新的评论</code></p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424183458.png" alt="image-20200424183457064"></p>
+<p>内容如下：（链接为你的博客主页链接）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Hi, &#123;&#123;username&#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;你在 &#123;&#123;appname&#125;&#125; 的评论收到了新的回复，请点击查看：&lt;/p&gt;</span><br><span class="line">&lt;p&gt;</span><br><span class="line">&lt;a href=&quot;https://cungudafa.gitee.io&quot; style=&quot;display: inline-block; padding: 10px 20px; border-radius: 4px; background-color: #3090e4; color: #fff; text-decoration: none;&quot;&gt;马上查看&lt;/a&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>点击 “保存” 按钮</p>
+<p>并且修改主题配置文件：改成 true</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424184936.png" alt="image-20200424184935074"></p>
+<p>不是很 nice！下面给出一个加强 plus 版</p>
+<h4 id="4-2-2-valine-admin-通知功能">4.2.2 Valine-Admin 通知功能</h4>
+<p>这里会使用到 Valine Admin，Valine Admin 项目是一个对 <a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 评论系统的拓展应用，可增强 Valine 的邮件通知功能。基于 Leancloud 的云引擎与云函数，主要实现评论邮件通知、评论管理、自定义邮件通知模板等功能，而且还可以提供邮件 <code>通知站长</code> 和 <code>@ 通知</code> 的功能。</p>
+<p>（1）设置云引擎</p>
+<ul>
+<li>
+<p>需要确保 Valine 的基础功能是正常的，参考 <a href="https://valine.js.org/" target="_blank" rel="noopener">Valine 官方文档</a></p>
+</li>
+<li>
+<p>进入 <a href="https://leancloud.cn/dashboard/applist.html#/apps" target="_blank" rel="noopener">Leancloud</a> 对应的 Valine 应用中。</p>
+</li>
+<li>
+<p>点击 <code>云引擎 -&gt; 设置</code> 填写代码库：<code>https://github.com/wugenqiang/Valine-Admin</code>，保存</p>
+</li>
+</ul>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424160158.png" alt="image-20200424160156609"></p>
+<ul>
+<li>设置<code>自定义环境变量</code>，需要设置云引擎的环境变量以提供必要的信息，变量参数参考下面的<code>配置项</code></li>
+</ul>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424162618.png" alt="image-20200424162617782"></p>
+<p>配置项</p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>示例</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SITE_NAME</td>
+<td>HONGWEI’S Blog</td>
+<td>[必填] 网站名称</td>
+</tr>
+<tr>
+<td>SITE_URL</td>
+<td><a href="https://wugenqiang.github.io">https://wugenqiang.github.io</a></td>
+<td>[必填] 网站地址，最后不要加 /</td>
+</tr>
+<tr>
+<td>SMTP_SERVICE</td>
+<td>QQ</td>
+<td>[必填] 邮件服务提供商，支持 QQ、163、126、Gmail 以及 更多。 — 如这里没有你使用的邮件提供商，请查看自定义邮件服务器</td>
+</tr>
+<tr>
+<td>SMTP_USER</td>
+<td><a href="mailto:xxxx@qq.com" target="_blank" rel="noopener">xxxx@qq.com</a></td>
+<td>[必填] SMTP登录用户，一般为邮箱地址</td>
+</tr>
+<tr>
+<td>SMTP_PASS</td>
+<td>xxxx</td>
+<td>[必填] SMTP登录密码，一般为授权码，而不是邮箱的登陆密码，请自行查询对应邮件服务商的获取方式</td>
+</tr>
+<tr>
+<td>SENDER_NAME</td>
+<td>HONGWEI’S Blog Valine 评论提醒</td>
+<td>[可选] 发件人</td>
+</tr>
+<tr>
+<td>ADMIN_URL</td>
+<td><a href="https://xxx.leanapp.cn/" target="_blank" rel="noopener">https://xxx.leanapp.cn/</a></td>
+<td>[建议] Web主机二级域名，用于自动唤醒</td>
+</tr>
+<tr>
+<td>TO_EMAIL</td>
+<td><a href="mailto:xxxxx@gmail.com" target="_blank" rel="noopener">xxxxx@gmail.com</a></td>
+<td>[可选] 指定站长收信邮箱，默认值为SITE_USER。用于 SMTP 发件人与站长收件人不一致的情况下使用。</td>
+</tr>
+<tr>
+<td>TEMPLATE_NAME</td>
+<td>rainbow</td>
+<td>[可选] 通知邮件的模板（default和rainbow），参考高级功能</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>点击 <code>云引擎 -&gt; 部署</code>，选择 <code>Git 源码部署</code>，分支或版本号输入 <code>master</code>，下载最新依赖（可选），部署</li>
+</ul>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424191415.png" alt="image-20200424191414775"></p>
+<p>（2）评论后台管理</p>
+<ul>
+<li>点击 <code>云引擎 -&gt; 设置</code>，在<code>Web主机域名</code>位置点击<code>申请</code>，获取二级域名，现在的二级域名不支持自定义，如果想好记请参考高级功能</li>
+</ul>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424162805.png" alt="image-20200424162804234"></p>
+<ul>
+<li>设置后台管理登录信息，点击 存储 -&gt; 结构化数据，选择 _ User  -&gt;  添加行，只需要填写 password、username、email 这三个字段即可, 使用 email 作为账号登陆、password 作为账号密码、username 任意即可。（为了安全考虑，此 email 必须为配置中的 SMTP_USER 或 TO_EMAIL， 否则不允许登录）_</li>
+</ul>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424163011.png" alt="image-20200424163010234"></p>
+<p>输入 <a href="https://kilqxscmpyri.leanapp.cn/" target="_blank" rel="noopener">https://kilqxscmpyri.leanapp.cn/</a> 登陆测试：输入你自己的二级域名</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424163217.png" alt="image-20200424163216542"></p>
+<p>此后，可以通过 <code>https://二级域名.leanapp.cn/</code> 管理评论</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424163354.png" alt="image-20200424163353928"></p>
+<p>（3）定时任务接收</p>
+<blockquote>
+<p>防止云引擎休眠</p>
+</blockquote>
+<p>免费版的 LeanCloud 容器，是有强制性休眠策略的，不能 24 小时运行：</p>
+<ul>
+<li>每天必须休眠 6 个小时</li>
+<li>30 分钟内没有外部请求，则休眠</li>
+<li>休眠后如果有新的外部请求实例则马上启动（但激活时此次发送邮件会失败）。</li>
+</ul>
+<p>分析了一下上方的策略，如果不想付费的话，最佳使用方案就设置定时器，目前基于 LeanCloud 自带定时器实现了两种云函数定时任务：</p>
+<ul>
+<li>自动唤醒，定时访问 Web APP 二级域名防止云引擎休眠（推荐）</li>
+<li>定时检查，每天定时检查 24 小时内漏发的邮件通知</li>
+</ul>
+<blockquote>
+<p>配置</p>
+</blockquote>
+<ul>
+<li>
+<p>首先需要添加环境变量，点击 <code>云引擎 -&gt; 设置</code>，配置<code>自定义环境变量</code>，变量名<code>ADMIN_URL</code>，变量值 <code>Web 主机域名，即二级域名地址</code>，添加后重启容器环境变量才会生效</p>
+</li>
+<li>
+<p>配置定时任务，击 <code>云引擎 -&gt; 定时任务</code></p>
+<ul>
+<li>配置自动唤醒（推荐），创建定时任务，名称任意，生产环境选择 self-wake 云函数，Cron 表达式填入 0 */20 7-23 * * ?，表示每天  7 - 23 点每 20 分钟访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</li>
+<li><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424164155.png" alt="image-20200424164154408"></li>
+<li>配置定时检查，创建定时任务，名称任意，生产环境选择 resend-mails 云函数，Cron 表达式填入 0 0 8 * * ?，表示每天早 8 点检查过去 24 小时内漏发的通知邮件并补发</li>
+<li><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424164345.png" alt="image-20200424164343847"></li>
+</ul>
+</li>
+</ul>
+<p>显示这样表明 OK</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424164657.png" alt="image-20200424164656692"></p>
+<p>效果图：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424191359.png" alt="image-20200424191357751"></p>
+<h3 id="4-3-实现评论显示-qq-邮箱头像">4.3 实现评论显示 QQ 邮箱头像</h3>
+<p>1 获取接口</p>
+<p>一个是 QQ 头像的，一个是 Gravatar 国内源，它们的调用方式如下：</p>
+<ul>
+<li>QQ头像： <a href="http://q1.qlogo.cn/g?b=qq&amp;nk=QQ%E5%8F%B7&amp;s=100" target="_blank" rel="noopener">http://q1.qlogo.cn/g?b=qq&amp;nk=QQ号&amp;s=100</a></li>
+<li>Gravatar头像： <a href="http://cdn.v2ex.com/gravatar/md5%E5%8A%A0%E5%AF%86%E5%90%8E%E7%9A%84%E9%82%AE%E7%AE%B1?s=100" target="_blank" rel="noopener">http://cdn.v2ex.com/gravatar/md5加密后的邮箱?s=100</a></li>
+</ul>
+<p>以上就是两个头像接口的信息，值得注意的是 Gravatar 后面的 s 分辨率参数可以随意定义，而 QQ 不行，QQ 只有几个有限的分辨率，比如 100, 200, 640，其它的数字会报 400 错误，所以 QQ 的 s 参数更像是一种清晰度，宽高还是通过 css 定义比较好。</p>
+<p>2 步骤实现：</p>
+<ul>
+<li>获取邮箱判断是否为 qq 邮箱</li>
+<li>提取 qq 号</li>
+<li>将 valine 中的头像地址改为上述接口地址</li>
+</ul>
+<p>3 F12 查看源码–发现 valine 中显示头像的相关代码是：（关键标签：<code>vimg</code>）</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424174606.png" alt="image-20200424174604675"></p>
+<p>再以<code>ctrl+F</code>快速查找（关键词：<code>vimg</code>），不负众望，在 <a href="https://unpkg.com/valine/dist/Valine.min.js" target="_blank" rel="noopener">Valine.min.js</a> 中找到</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424174743.png" alt="image-20200424174742603"></p>
+<p>替换掉 src 即可，好了，思路清晰，下面开始实现：</p>
+<h4 id="4-3-1-下载-valine-min-js">4.3.1 下载 Valine.min.js</h4>
+<p>引入 <a href="https://unpkg.com/valine/dist/Valine.min.js" target="_blank" rel="noopener">Valine.min.js</a> 到本地<code>themes/next/source/js/src/Valine.min.js</code><br>
+修改引入本地的 Valine</p>
+<p>在 themes/next/layout/_partials/footer.swig 中引入 <code>&lt;script src=&quot;./js/src/Valine.min.js&quot;&gt;&lt;/script&gt;</code></p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424180313.png" alt="image-20200424180312422"></p>
+<h4 id="4-3-2-增加-qq-头像判别">4.3.2 增加 QQ 头像判别</h4>
+<p>注意你的 valine 的版本号，我这里是 v1.4.9</p>
+<p>打开 Valine.min.js，<code>ctrl+F</code> 快速查找关键词：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(j.cdn+(0,s.default)(t.get(&quot;mail&quot;))+j.params)</span><br></pre></td></tr></table></figure>
+<p>稍加换行如图所示：(换行按分号换行)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//var qq_img = m.cdn + a(e.get("mail")) + m.params;</span></span><br><span class="line"><span class="keyword">var</span> qq_img = E.cdn+(<span class="number">0</span>,s.default)(t.get(<span class="string">"mail"</span>))+E.params;</span><br><span class="line"><span class="keyword">if</span> (t.get(<span class="string">"mail"</span>).indexOf(<span class="string">"@qq.com"</span>) &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">	<span class="keyword">var</span> prefix = t.get(<span class="string">"mail"</span>).replace(<span class="regexp">/@.*/</span>, <span class="string">""</span>);<span class="comment">//前缀</span></span><br><span class="line">	<span class="keyword">var</span> pattern = <span class="regexp">/^\d+$/g</span>;  <span class="comment">//正则表达式</span></span><br><span class="line">	<span class="keyword">var</span> result = prefix.match(pattern);<span class="comment">//match 是匹配的意思</span></span><br><span class="line">	<span class="keyword">if</span> (result !== <span class="literal">null</span>) &#123;</span><br><span class="line">		qq_img = <span class="string">"//q1.qlogo.cn/g?b=qq&amp;nk="</span> + prefix + <span class="string">"&amp;s=100"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>流程：</p>
+<ul>
+<li>默认还是 gravator 头像接口</li>
+<li>判断是否是 qq 邮箱，提取前缀 prefix</li>
+<li>qq 头像接口是 qq 号，如正则筛选剔除–重命名了带英文的 qq 邮箱</li>
+<li>拼接头像地址</li>
+<li>加入 src 显示！</li>
+</ul>
+<p>测试使用：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200424182741.png" alt="image-20200424182739812"></p>
+<h3 id="4-4-设置邮箱审核规则">4.4 设置邮箱审核规则</h3>
+<p>在 themes/next/layout/_partials/footer.swig 中引入：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="comment">//   自定义邮箱审核规则</span></span><br><span class="line">    <span class="built_in">document</span>.body.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (e.target.classList.contains(<span class="string">'vsubmit'</span>)) &#123;</span><br><span class="line">            <span class="keyword">const</span> email = <span class="built_in">document</span>.querySelector(<span class="string">'input[type=email]'</span>);</span><br><span class="line">            <span class="keyword">const</span> nick = <span class="built_in">document</span>.querySelector(<span class="string">'input[name=nick]'</span>);</span><br><span class="line">            <span class="keyword">const</span> reg = <span class="regexp">/^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/</span>;</span><br><span class="line">            <span class="keyword">if</span> (!email.value || !nick.value || !reg.test(email.value)) &#123;</span><br><span class="line">                <span class="keyword">const</span> str = <span class="string">`&lt;div class="valert text-center"&gt;&lt;div class="vtext"&gt;请填写正确的昵称和邮箱！&lt;/div&gt;&lt;/div&gt;`</span>;</span><br><span class="line">                <span class="keyword">const</span> vmark = <span class="built_in">document</span>.querySelector(<span class="string">'.vmark'</span>);</span><br><span class="line">                vmark.innerHTML = str;</span><br><span class="line">                vmark.style.display = <span class="string">'block'</span>;</span><br><span class="line">                setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                    vmark.style.display = <span class="string">'none'</span>;</span><br><span class="line">                    vmark.innerHTML = <span class="string">''</span>;</span><br><span class="line">                &#125;, <span class="number">2500</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200425085135.png" alt="image-20200425085106285"></p>
+<h3 id="4-5-点击回复直接评论">4.5 点击回复直接评论</h3>
+<p>在 themes/next/layout/_partials/footer.swig 中引入：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="comment">// 点击回复直接评论,官方版本点击回复时都是跳回到页面上方的评论框进行回复，评论框是固定不动的</span></span><br><span class="line">    <span class="comment">// 参考https://immmmm.com/valine-diy,用到jQuery</span></span><br><span class="line">    $(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="comment">//$('.vemoji-btn').text('😀');</span></span><br><span class="line">        $(<span class="string">"#vcomments"</span>).on(<span class="string">'click'</span>, <span class="string">'span.vat'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            $(<span class="keyword">this</span>).parent(<span class="string">'div.vmeta'</span>).next(<span class="string">"div.vcontent"</span>).after($(<span class="string">"div.vwrap"</span>));</span><br><span class="line">            $(<span class="string">'textarea#veditor'</span>).focus();</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200425085301.png" alt="image-20200425085300007"></p>
+<h3 id="4-6-实现评论自定义背景">4.6 实现评论自定义背景</h3>
+<p>在 themes/next/layout/_partials/footer.swig 中引入：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!<span class="selector-tag">--</span> 评论框美化 <span class="selector-tag">--</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line">    <span class="selector-id">#comments</span> <span class="selector-class">.veditor</span>&#123;</span><br><span class="line">        <span class="attribute">min-height</span>: <span class="number">10rem</span>;</span><br><span class="line">        <span class="attribute">background-image</span>: <span class="built_in">url</span>(https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200425091751.png);</span><br><span class="line">        <span class="attribute">background-size</span>: contain;</span><br><span class="line">        <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">        <span class="attribute">background-position</span>: right;</span><br><span class="line">        <span class="attribute">background-color</span>: <span class="built_in">rgba</span>(255,255,255,0);</span><br><span class="line">        <span class="attribute">resize</span>: none;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200425091911.png" alt="image-20200425091909658"></p>
 
       
     </div>
@@ -719,6 +949,8 @@
           
             <a href="/tags/Hexo-NexT-Template/" rel="tag"><i class="fa fa-envira"></i> Hexo-NexT-Template</a>
           
+            <a href="/tags/Valine/" rel="tag"><i class="fa fa-envira"></i> Valine</a>
+          
         </div>
       
 
@@ -731,8 +963,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/articles/errorSolveSolution.html" rel="next" title="程序报错解决方法汇总">
-                <i class="fa fa-chevron-left"></i> 程序报错解决方法汇总
+              <a href="/articles/Hexo-NexT-Gitter.html" rel="next" title="添加 Gitter 在线交流">
+                <i class="fa fa-chevron-left"></i> 添加 Gitter 在线交流
               </a>
             
           </div>
@@ -740,10 +972,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/articles/pictureToDisplayTest_5-3.html" rel="prev" title="测试图片展示">
-                测试图片展示 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -993,7 +1221,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-写在前言"><span class="nav-text">1 写在前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-实现"><span class="nav-text">2 实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-新建links-swig文件"><span class="nav-text">2.1 新建links.swig文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-修改page-swig文件"><span class="nav-text">2.2 修改page.swig文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-修改-config-yml文件"><span class="nav-text">2.3 修改_config.yml文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-创建links页面"><span class="nav-text">2.4 创建links页面</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-结束语"><span class="nav-text">3 结束语</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#评论系统-valine-的使用"><span class="nav-text">评论系统 Valine 的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-valine-的介绍"><span class="nav-text">1 Valine 的介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-valine-的使用"><span class="nav-text">2 Valine 的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-valine-的配置"><span class="nav-text">3 Valine 的配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-valine-的优化"><span class="nav-text">4 Valine 的优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-去除-valine的-powered-by"><span class="nav-text">4.1 去除 Valine的 Powered By</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-邮件通知功能"><span class="nav-text">4.2 邮件通知功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-1-原邮箱模板通知功能"><span class="nav-text">4.2.1 原邮箱模板通知功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-2-valine-admin-通知功能"><span class="nav-text">4.2.2 Valine-Admin 通知功能</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-实现评论显示-qq-邮箱头像"><span class="nav-text">4.3 实现评论显示 QQ 邮箱头像</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-1-下载-valine-min-js"><span class="nav-text">4.3.1 下载 Valine.min.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-2-增加-qq-头像判别"><span class="nav-text">4.3.2 增加 QQ 头像判别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-设置邮箱审核规则"><span class="nav-text">4.4 设置邮箱审核规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-点击回复直接评论"><span class="nav-text">4.5 点击回复直接评论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-6-实现评论自定义背景"><span class="nav-text">4.6 实现评论自定义背景</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
