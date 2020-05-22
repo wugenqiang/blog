@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[博主笔记推荐（notebook.js.org）]]></title>
+    <url>%2Farticles%2Fnotebook-wonderful.html</url>
+    <content type="text"><![CDATA[经历过 2019 年的本科毕业年，在这个社会上疯狂谋生，慢慢接近梦想，逐渐触摸阳光！ 总是会有技术需要分享，总是会有问题需要解答，或许我们遇到的问题出奇的一致，所以，我逐渐喜欢上了写博客，和大家一起分享那些年一起遇到的坎坎坷坷！ 用过 CSDN，写过简书，使用过语雀，19 年突然接触 Hexo，疯狂的改造优化 Hexo - NexT 版本，然而今年，遇到了那个内敛而又不失稳重的 Ta —— Docsify。已经使用了将近 4 个月，文档网站雏形已经建立，内容也在不断完善，记录一路走来的计算机专业知识，记录一群人的成长！ 浏览我的文档网站：https://notebook.js.org 如果觉得文档不错，也想尝试自己建立一个，可以参考本人写的教程：优化使用 Docsify 在此说明一下：如果觉得我的分享内容很好，记得关注这个文档网站，今后的正常更新会在这里完成，这里会最全 博客使用说明 目前使用下面 3 个博客进行记录生活： NoteBook CSDN Hexo !&gt; 其他地方若出现，仅仅表示被转载！在此特别声明！ 使用一：日常笔记 所有的博客、笔记、分享的内容都会在 NoteBook 中进行编排整理然后分享出来，包含我在全网分享的大多数！ 使用二：分享面试题 今后 CSDN 主要更新 LeetCode 和牛客上的算法题和面试题的解题思路和遇到的问题等等，让 CSDN 博客显得内容更清洁！更好！（写于 2020 年 5 月 22 日） 使用三：分享本人成果 今后 Hexo 博客主要更新本人的最新成果、对于常用软件的破解方法的文档以及对于知识点的总结等等]]></content>
+      <categories>
+        <category>思录</category>
+        <category>笔记推荐</category>
+      </categories>
+      <tags>
+        <tag>推荐</tag>
+        <tag>思录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[考研复试英语口语模板推荐]]></title>
     <url>%2Farticles%2Fenglish-interview-speaking.html</url>
     <content type="text"><![CDATA[考研复试英语口语模板推荐 复试口语模板文件包括： 需要获取模板文件以及配套视频，可在公众号 “码客 E 分享” 回复 复试口语 即可获取（会持续更新）我觉得很棒！ 说明：考研复试英语口语模板文件是在 b 站获取，我觉得质量不错就和大家一起分享了，希望大家认真学习！如果可以的话，希望大家去小白考研官网购买正品！！ 最后祝愿大家都能上岸！让我们一起努力！考研 QQ 资源共享群：647430671]]></content>
